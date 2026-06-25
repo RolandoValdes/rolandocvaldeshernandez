@@ -1,0 +1,1293 @@
+{
+  "audit": [
+    {
+      "keyStage": "KS5",
+      "year": "Year 13",
+      "domain": "Advanced Algorithms & Complexity",
+      "confidence": "Amber",
+      "keywords": [
+        "algorithm",
+        "complexity",
+        "big o",
+        "trace",
+        "search",
+        "sort",
+        "recursion"
+      ],
+      "standards": [
+        "TS2",
+        "TS3",
+        "TS4",
+        "TS6"
+      ],
+      "ofsted": [
+        "Quality of Education",
+        "Subject Knowledge",
+        "Assessment"
+      ],
+      "evidence": "A Level exam preparation, trace-table modelling, algorithm comparison and synoptic retrieval tasks.",
+      "impact": "Students practise higher-order evaluation and explain efficiency trade-offs using correct terminology.",
+      "cpd": "Review exam-board mark schemes and create worked examples for Big-O and optimisation.",
+      "linkedLessons": []
+    },
+    {
+      "keyStage": "KS5",
+      "year": "Year 13",
+      "domain": "NEA Development, Testing & Evaluation",
+      "confidence": "Green",
+      "keywords": [
+        "nea",
+        "project",
+        "testing",
+        "evaluation",
+        "development",
+        "design"
+      ],
+      "standards": [
+        "TS2",
+        "TS3",
+        "TS4",
+        "TS6"
+      ],
+      "ofsted": [
+        "Quality of Education",
+        "Impact",
+        "Assessment"
+      ],
+      "evidence": "Independent project mentoring, iterative development logs, testing plans and evaluation conversations.",
+      "impact": "Students refine solutions through decomposition, testing and evidence-based evaluation.",
+      "cpd": "Continue building anonymised exemplar portfolios.",
+      "linkedLessons": []
+    },
+    {
+      "keyStage": "KS5",
+      "year": "Year 13",
+      "domain": "Databases, SQL & Normalisation",
+      "confidence": "Green",
+      "keywords": [
+        "database",
+        "sql",
+        "normalisation",
+        "query",
+        "table"
+      ],
+      "standards": [
+        "TS3",
+        "TS4",
+        "TS6"
+      ],
+      "ofsted": [
+        "Quality of Education",
+        "Subject Knowledge"
+      ],
+      "evidence": "Relational database teaching, SQL query practice and schema design support.",
+      "impact": "Students apply database concepts to practical and exam contexts.",
+      "cpd": "Extend practice using complex joins and normalisation scenarios.",
+      "linkedLessons": []
+    },
+    {
+      "keyStage": "KS5",
+      "year": "Year 12",
+      "domain": "Computer Systems & Architecture",
+      "confidence": "Green",
+      "keywords": [
+        "cpu",
+        "processor",
+        "architecture",
+        "memory",
+        "storage",
+        "operating system"
+      ],
+      "standards": [
+        "TS3",
+        "TS4"
+      ],
+      "ofsted": [
+        "Quality of Education",
+        "Sequencing"
+      ],
+      "evidence": "CPU, memory, storage, systems software and architecture lessons.",
+      "impact": "Students build secure foundations for A Level theory.",
+      "cpd": "Refresh examples using current hardware/cloud contexts.",
+      "linkedLessons": [
+        {
+          "id": "lesson-4",
+          "year": "Unspecified",
+          "unit": "Unspecified Unit",
+          "title": "2025-10-21 00:00:00",
+          "status": "Evidence available",
+          "date": ""
+        },
+        {
+          "id": "lesson-26",
+          "year": "Unspecified",
+          "unit": "Unspecified Unit",
+          "title": "2026-03-10 00:00:00",
+          "status": "Evidence available",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "keyStage": "KS5",
+      "year": "Year 12",
+      "domain": "Programming, OOP & Problem Solving",
+      "confidence": "Green",
+      "keywords": [
+        "programming",
+        "python",
+        "oop",
+        "object",
+        "class",
+        "debug",
+        "decomposition"
+      ],
+      "standards": [
+        "TS2",
+        "TS3",
+        "TS4",
+        "TS5"
+      ],
+      "ofsted": [
+        "Quality of Education",
+        "Adaptive Teaching"
+      ],
+      "evidence": "Python programming, OOP design, decomposition, debugging and testing lessons.",
+      "impact": "Students develop robust programming habits.",
+      "cpd": "Create more real-world OOP mini-projects.",
+      "linkedLessons": [
+        {
+          "id": "lesson-10",
+          "year": "Unspecified",
+          "unit": "Unspecified Unit",
+          "title": "2025-12-02 00:00:00",
+          "status": "Evidence available",
+          "date": ""
+        },
+        {
+          "id": "lesson-18",
+          "year": "Unspecified",
+          "unit": "Unspecified Unit",
+          "title": "2026-01-20 00:00:00",
+          "status": "Evidence available",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "keyStage": "KS5",
+      "year": "Year 12",
+      "domain": "Legal, Moral, Ethical & Cultural Issues",
+      "confidence": "Green",
+      "keywords": [
+        "legal",
+        "moral",
+        "ethical",
+        "privacy",
+        "data protection",
+        "ai"
+      ],
+      "standards": [
+        "TS3",
+        "TS8",
+        "Part Two"
+      ],
+      "ofsted": [
+        "Personal Development",
+        "Subject Knowledge"
+      ],
+      "evidence": "Case-study discussion, AI/privacy debate and data-protection examples.",
+      "impact": "Students construct balanced arguments using accurate terminology.",
+      "cpd": "Maintain current examples on AI, cybersecurity and data ethics.",
+      "linkedLessons": [
+        {
+          "id": "lesson-4",
+          "year": "Unspecified",
+          "unit": "Unspecified Unit",
+          "title": "2025-10-21 00:00:00",
+          "status": "Evidence available",
+          "date": ""
+        },
+        {
+          "id": "lesson-24",
+          "year": "Unspecified",
+          "unit": "Unspecified Unit",
+          "title": "2026-02-24 00:00:00",
+          "status": "Evidence available",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "keyStage": "KS4",
+      "year": "Year 11",
+      "domain": "Cybersecurity, Threats & Prevention",
+      "confidence": "Green",
+      "keywords": [
+        "cyber",
+        "security",
+        "malware",
+        "phishing",
+        "firewall",
+        "encryption",
+        "authentication"
+      ],
+      "standards": [
+        "TS3",
+        "TS4",
+        "TS6"
+      ],
+      "ofsted": [
+        "Safeguarding",
+        "Subject Knowledge"
+      ],
+      "evidence": "Malware, phishing, social engineering, firewalls, encryption and authentication lessons.",
+      "impact": "Students connect threats to prevention strategies and exam-style explanations.",
+      "cpd": "Use current cybersecurity incidents as anonymised examples.",
+      "linkedLessons": []
+    },
+    {
+      "keyStage": "KS4",
+      "year": "Year 11",
+      "domain": "Exam Technique & Retrieval Practice",
+      "confidence": "Green",
+      "keywords": [
+        "exam",
+        "retrieval",
+        "revision",
+        "assessment",
+        "mark scheme",
+        "practice"
+      ],
+      "standards": [
+        "TS2",
+        "TS6"
+      ],
+      "ofsted": [
+        "Assessment",
+        "Impact"
+      ],
+      "evidence": "Past-paper practice, command-word modelling, quizzes and feedback cycles.",
+      "impact": "Students improve precision and accuracy in written responses.",
+      "cpd": "Review examiner reports and update misconception banks.",
+      "linkedLessons": [
+        {
+          "id": "lesson-19",
+          "year": "Unspecified",
+          "unit": "Unspecified Unit",
+          "title": "2026-01-27 00:00:00",
+          "status": "Evidence available",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "keyStage": "KS4",
+      "year": "Year 11",
+      "domain": "Programming Application & Debugging",
+      "confidence": "Green",
+      "keywords": [
+        "programming",
+        "debug",
+        "test",
+        "trace",
+        "python",
+        "code"
+      ],
+      "standards": [
+        "TS3",
+        "TS4",
+        "TS5"
+      ],
+      "ofsted": [
+        "Quality of Education",
+        "Adaptive Teaching"
+      ],
+      "evidence": "Structured programming, dry runs, test data and debugging routines.",
+      "impact": "Students become more independent in correcting errors.",
+      "cpd": "Develop scaffolded challenges for borderline learners.",
+      "linkedLessons": []
+    },
+    {
+      "keyStage": "KS4",
+      "year": "Year 10",
+      "domain": "Networks & Internet Technologies",
+      "confidence": "Green",
+      "keywords": [
+        "network",
+        "lan",
+        "wan",
+        "protocol",
+        "dns",
+        "packet",
+        "internet"
+      ],
+      "standards": [
+        "TS3",
+        "TS4"
+      ],
+      "ofsted": [
+        "Subject Knowledge",
+        "Sequencing"
+      ],
+      "evidence": "LAN/WAN, protocols, DNS, packet switching and network hardware lessons.",
+      "impact": "Students explain how data moves across networks.",
+      "cpd": "Add simulation and diagram-based resources.",
+      "linkedLessons": [
+        {
+          "id": "lesson-20",
+          "year": "Unspecified",
+          "unit": "Unspecified Unit",
+          "title": "2026-02-03 00:00:00",
+          "status": "Evidence available",
+          "date": ""
+        },
+        {
+          "id": "lesson-29",
+          "year": "Unspecified",
+          "unit": "Know Your Network",
+          "title": "2026-03-24 00:00:00",
+          "status": "Evidence available",
+          "date": ""
+        },
+        {
+          "id": "lesson-31",
+          "year": "Unspecified",
+          "unit": "Unspecified Unit",
+          "title": "2026-04-07 00:00:00",
+          "status": "Evidence available",
+          "date": ""
+        },
+        {
+          "id": "lesson-32",
+          "year": "Unspecified",
+          "unit": "Unspecified Unit",
+          "title": "2026-04-14 00:00:00",
+          "status": "Evidence available",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "keyStage": "KS4",
+      "year": "Year 10",
+      "domain": "Data Representation",
+      "confidence": "Amber",
+      "keywords": [
+        "binary",
+        "hex",
+        "data representation",
+        "sound",
+        "image",
+        "compression"
+      ],
+      "standards": [
+        "TS3",
+        "TS4",
+        "TS6"
+      ],
+      "ofsted": [
+        "Subject Knowledge",
+        "Assessment"
+      ],
+      "evidence": "Binary, hexadecimal, character sets, images, sound and compression activities.",
+      "impact": "Students link representation to real digital media.",
+      "cpd": "Create misconception-led examples for binary arithmetic/compression.",
+      "linkedLessons": [
+        {
+          "id": "lesson-11",
+          "year": "Unspecified",
+          "unit": "Unspecified Unit",
+          "title": "2025-12-09 00:00:00",
+          "status": "Evidence available",
+          "date": ""
+        },
+        {
+          "id": "lesson-37",
+          "year": "Unspecified",
+          "unit": "Unspecified Unit",
+          "title": "2026-05-12 00:00:00",
+          "status": "Evidence available",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "keyStage": "KS4",
+      "year": "Year 10",
+      "domain": "Algorithms & Computational Thinking",
+      "confidence": "Green",
+      "keywords": [
+        "algorithm",
+        "sequence",
+        "selection",
+        "iteration",
+        "search",
+        "sort",
+        "flowchart"
+      ],
+      "standards": [
+        "TS2",
+        "TS3",
+        "TS4"
+      ],
+      "ofsted": [
+        "Sequencing",
+        "Quality of Education"
+      ],
+      "evidence": "Sequencing, selection, iteration, searching, sorting, flowcharts and pseudocode.",
+      "impact": "Students move from concrete programming to abstract reasoning.",
+      "cpd": "Interleave algorithm tracing with programming.",
+      "linkedLessons": [
+        {
+          "id": "lesson-9",
+          "year": "Unspecified",
+          "unit": "Unspecified Unit",
+          "title": "2025-11-25 00:00:00",
+          "status": "Evidence available",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "keyStage": "KS3",
+      "year": "Year 9",
+      "domain": "Data Privacy, Tracking & Digital Systems",
+      "confidence": "Green",
+      "keywords": [
+        "data",
+        "privacy",
+        "cookie",
+        "tracking",
+        "permission",
+        "platform"
+      ],
+      "standards": [
+        "TS3",
+        "TS4",
+        "TS5"
+      ],
+      "ofsted": [
+        "Personal Development",
+        "Safeguarding"
+      ],
+      "evidence": "Lessons on data collection, cookies, app permissions and platform evaluation.",
+      "impact": "Students critically evaluate online platforms.",
+      "cpd": "Use updated examples from current digital services.",
+      "linkedLessons": [
+        {
+          "id": "lesson-32",
+          "year": "Unspecified",
+          "unit": "Unspecified Unit",
+          "title": "2026-04-14 00:00:00",
+          "status": "Evidence available",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "keyStage": "KS3",
+      "year": "Year 9",
+      "domain": "Cybersecurity Foundations",
+      "confidence": "Green",
+      "keywords": [
+        "cyber",
+        "password",
+        "scam",
+        "phishing",
+        "security",
+        "online safety"
+      ],
+      "standards": [
+        "TS3",
+        "TS4",
+        "TS7"
+      ],
+      "ofsted": [
+        "Safeguarding",
+        "Behaviour and Attitudes"
+      ],
+      "evidence": "Introductory teaching on passwords, scams, phishing and protective behaviours.",
+      "impact": "Students connect personal online safety to technical security.",
+      "cpd": "Add GCSE transition scenario retrieval.",
+      "linkedLessons": [
+        {
+          "id": "lesson-2",
+          "year": "Unspecified",
+          "unit": "Unspecified Unit",
+          "title": "2025-09-30 00:00:00",
+          "status": "Evidence available",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "keyStage": "KS3",
+      "year": "Year 8",
+      "domain": "Cyberbullying, Online Ethics & Responsibility",
+      "confidence": "Green",
+      "keywords": [
+        "cyberbullying",
+        "ethics",
+        "online behaviour",
+        "responsibility",
+        "respect"
+      ],
+      "standards": [
+        "TS1",
+        "TS3",
+        "TS7",
+        "Part Two"
+      ],
+      "ofsted": [
+        "Behaviour and Attitudes",
+        "Personal Development"
+      ],
+      "evidence": "Scenario analysis, discussion tasks and ethical decision-making lessons.",
+      "impact": "Students justify safe and respectful online behaviour.",
+      "cpd": "Expand safeguarding-informed discussion frameworks.",
+      "linkedLessons": []
+    },
+    {
+      "keyStage": "KS3",
+      "year": "Year 8",
+      "domain": "Programming Development",
+      "confidence": "Green",
+      "keywords": [
+        "programming",
+        "variable",
+        "selection",
+        "iteration",
+        "debug",
+        "project"
+      ],
+      "standards": [
+        "TS3",
+        "TS4",
+        "TS5"
+      ],
+      "ofsted": [
+        "Quality of Education",
+        "Adaptive Teaching"
+      ],
+      "evidence": "Variables, selection, iteration, debugging and simple projects.",
+      "impact": "Students increase independence in constructing programs.",
+      "cpd": "Add paired-programming and code-review opportunities.",
+      "linkedLessons": []
+    },
+    {
+      "keyStage": "KS3",
+      "year": "Year 7",
+      "domain": "Digital Footprints & Personal Data",
+      "confidence": "Green",
+      "keywords": [
+        "digital footprint",
+        "personal data",
+        "online safety",
+        "privacy",
+        "risk"
+      ],
+      "standards": [
+        "TS3",
+        "TS4",
+        "TS7"
+      ],
+      "ofsted": [
+        "Safeguarding",
+        "Personal Development"
+      ],
+      "evidence": "Anonymised lessons on personal information, digital footprints and online risk.",
+      "impact": "Students explain consequences of online actions.",
+      "cpd": "Continue updating safeguarding examples.",
+      "linkedLessons": []
+    },
+    {
+      "keyStage": "KS3",
+      "year": "Year 7",
+      "domain": "Programming Fundamentals",
+      "confidence": "Green",
+      "keywords": [
+        "programming",
+        "sequence",
+        "algorithm",
+        "selection",
+        "loop",
+        "debug"
+      ],
+      "standards": [
+        "TS2",
+        "TS3",
+        "TS4"
+      ],
+      "ofsted": [
+        "Sequencing",
+        "Quality of Education"
+      ],
+      "evidence": "Sequencing, algorithms, selection, loops and debugging activities.",
+      "impact": "Students establish core computational thinking routines.",
+      "cpd": "Embed more unplugged activities.",
+      "linkedLessons": [
+        {
+          "id": "lesson-9",
+          "year": "Unspecified",
+          "unit": "Unspecified Unit",
+          "title": "2025-11-25 00:00:00",
+          "status": "Evidence available",
+          "date": ""
+        },
+        {
+          "id": "lesson-10",
+          "year": "Unspecified",
+          "unit": "Unspecified Unit",
+          "title": "2025-12-02 00:00:00",
+          "status": "Evidence available",
+          "date": ""
+        },
+        {
+          "id": "lesson-18",
+          "year": "Unspecified",
+          "unit": "Unspecified Unit",
+          "title": "2026-01-20 00:00:00",
+          "status": "Evidence available",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "keyStage": "KS2",
+      "year": "Year 6",
+      "domain": "Responsible Online Communication",
+      "confidence": "Green",
+      "keywords": [
+        "communication",
+        "online",
+        "report",
+        "respect",
+        "message",
+        "safety"
+      ],
+      "standards": [
+        "TS1",
+        "TS3",
+        "TS7",
+        "Part Two"
+      ],
+      "ofsted": [
+        "Safeguarding",
+        "Personal Development"
+      ],
+      "evidence": "Lessons on respectful communication, reporting concerns and responding to messages.",
+      "impact": "Students understand when to seek adult support.",
+      "cpd": "Refresh age-appropriate platform examples.",
+      "linkedLessons": [
+        {
+          "id": "lesson-6",
+          "year": "Unspecified",
+          "unit": "Unspecified Unit",
+          "title": "2025-11-11 00:00:00",
+          "status": "Evidence available",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "keyStage": "KS2",
+      "year": "Year 6",
+      "domain": "Transition Computing Knowledge",
+      "confidence": "Amber",
+      "keywords": [
+        "transition",
+        "computing",
+        "vocabulary",
+        "programming",
+        "online safety"
+      ],
+      "standards": [
+        "TS2",
+        "TS3",
+        "TS5"
+      ],
+      "ofsted": [
+        "Sequencing",
+        "Quality of Education"
+      ],
+      "evidence": "Bridging activities linking primary digital literacy to KS3 vocabulary.",
+      "impact": "Students enter KS3 with clearer conceptual language.",
+      "cpd": "Develop transition diagnostics.",
+      "linkedLessons": []
+    },
+    {
+      "keyStage": "KS2",
+      "year": "Year 5",
+      "domain": "Online Safety & Digital Citizenship",
+      "confidence": "Green",
+      "keywords": [
+        "online safety",
+        "personal information",
+        "trusted adult",
+        "sharing",
+        "risk"
+      ],
+      "standards": [
+        "TS1",
+        "TS3",
+        "TS7",
+        "Part Two"
+      ],
+      "ofsted": [
+        "Safeguarding",
+        "Personal Development"
+      ],
+      "evidence": "Lessons on personal information, trusted adults, safe sharing and basic online risks.",
+      "impact": "Students explain safer choices in age-appropriate language.",
+      "cpd": "Embed more retrieval and parent/carer communication examples.",
+      "linkedLessons": [
+        {
+          "id": "lesson-1",
+          "year": "Unspecified",
+          "unit": "Unspecified Unit",
+          "title": "2025-09-23 00:00:00",
+          "status": "Evidence available",
+          "date": ""
+        },
+        {
+          "id": "lesson-38",
+          "year": "Unspecified",
+          "unit": "Unspecified Unit",
+          "title": "2026-05-19 00:00:00",
+          "status": "Evidence available",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "keyStage": "KS2",
+      "year": "Year 5",
+      "domain": "Introductory Algorithms & Sequencing",
+      "confidence": "Amber",
+      "keywords": [
+        "algorithm",
+        "sequence",
+        "instructions",
+        "block",
+        "debug"
+      ],
+      "standards": [
+        "TS2",
+        "TS3",
+        "TS4",
+        "TS5"
+      ],
+      "ofsted": [
+        "Sequencing",
+        "Adaptive Teaching"
+      ],
+      "evidence": "Unplugged sequencing, simple instructions and block-based programming.",
+      "impact": "Students understand algorithms as precise ordered steps.",
+      "cpd": "Increase visual debugging examples.",
+      "linkedLessons": [
+        {
+          "id": "lesson-8",
+          "year": "Unspecified",
+          "unit": "Unit 2: Scratch Jr / Basic",
+          "title": "2025-11-18 00:00:00",
+          "status": "Evidence available",
+          "date": ""
+        },
+        {
+          "id": "lesson-9",
+          "year": "Unspecified",
+          "unit": "Unspecified Unit",
+          "title": "2025-11-25 00:00:00",
+          "status": "Evidence available",
+          "date": ""
+        },
+        {
+          "id": "lesson-11",
+          "year": "Unspecified",
+          "unit": "Unspecified Unit",
+          "title": "2025-12-09 00:00:00",
+          "status": "Evidence available",
+          "date": ""
+        },
+        {
+          "id": "lesson-13",
+          "year": "Unspecified",
+          "unit": "Unspecified Unit",
+          "title": "2025-12-23 00:00:00",
+          "status": "Evidence available",
+          "date": ""
+        }
+      ]
+    }
+  ],
+  "trackerLessons": [
+    {
+      "id": "lesson-1",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "2025-09-23 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2025-09-23 00:00:00 2025-09-24 00:00:00 l2. recognise trusted adults and websites y 5.0 5.0 4.0 5.0 5.0 5.0 4.0 5.0 4.0 5.0 4.0 5.0 y 5.0 3.0 5.0 3.0 4.0 3.0 4.0 4.0 3.0 4.0 5.0 4.0 5.0 5.0"
+    },
+    {
+      "id": "lesson-2",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "2025-09-30 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2025-09-30 00:00:00 2025-10-03 00:00:00 l3. understand why passwords matter y 5.0 5.0 4.0 5.0 4.0 4.0 5.0 4.0 5.0 4.0 5.0 5.0 y 3.0 5.0 4.0 5.0 3.0 5.0 3.0 5.0 4.0 5.0 4.0 5.0 5.0 5.0"
+    },
+    {
+      "id": "lesson-3",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "2025-10-14 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2025-10-14 00:00:00 2025-10-17 00:00:00 l4. identify input and output devices y 7.0 11.0 5.0 9.0 14.0 10.0 10.0 10.0 13.0 13.0 y 15.0 15.0 14.0 15.0 15.0 14.0 15.0 15.0 15.0 15.0 15.0 14.0 14.0 12.0"
+    },
+    {
+      "id": "lesson-4",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "2025-10-21 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2025-10-21 00:00:00 2025-10-22 00:00:00 l5. (a)understand how we use technology in school and home.\n(b) use a word processor to type and edit text\n(c) use a paint or drawing tool to create digital art y 5.0 4.0 3.0 4.0 5.0 4.0 5.0 4.0 5.0 4.0 5.0 3.0 5.0 y 5.0 3.0 5.0 4.0 5.0 4.0 3.0 5.0 4.0 5.0 4.0 5.0 5.0 5.0"
+    },
+    {
+      "id": "lesson-5",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "2025-11-04 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2025-11-04 00:00:00 2025-11-05 00:00:00 l6. file names, folders, and saving work y 3.0 4.0 3.0 4.0 3.0 4.0 3.0 4.0 3.0 4.0 3.0 3.0 4.0 y 3.0 4.0 4.0 3.0 3.0 4.0 3.0 4.0 3.0 4.0 3.0 3.0"
+    },
+    {
+      "id": "lesson-6",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "2025-11-11 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2025-11-11 00:00:00 2025-11-14 00:00:00 l7: create a digital poster on safety y 4.0 4.0 4.0 5.0 5.0 5.0 5.0 4.0 4.0 3.0 5.0 5.0 5.0 y 5.0 5.0 4.0 4.0 5.0 4.0 5.0 4.0 4.0 4.0 4.0 5.0"
+    },
+    {
+      "id": "lesson-7",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "27",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "27 28 24 37 23 32 36 40 36 35 36 38 42 41 39 41 38 40 38 38 40 37 42 38 41 34 32"
+    },
+    {
+      "id": "lesson-8",
+      "year": "Unspecified",
+      "unit": "Unit 2: Scratch Jr / Basic",
+      "title": "2025-11-18 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2025-11-18 00:00:00 2025-11-19 00:00:00 unit 2: scratch jr / basic l1. use blocks to move a character y 5.0 4.0 5.0 5.0 5.0 4.0 5.0 2.0 3.0 3.0 4.0 y 5.0 4.0 5.0 5.0 5.0 4.0 5.0 5.0 4.0 5.0 5.0 5.0 5.0 4.0"
+    },
+    {
+      "id": "lesson-9",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "2025-11-25 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2025-11-25 00:00:00 2025-11-28 00:00:00 l2. create a short animated sequence"
+    },
+    {
+      "id": "lesson-10",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "2025-12-02 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2025-12-02 00:00:00 2025-12-03 00:00:00 l3. use loops to repeat actions"
+    },
+    {
+      "id": "lesson-11",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "2025-12-09 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2025-12-09 00:00:00 2025-12-12 00:00:00 l4. add sound and looks blocks y 5.0 5.0 5.0 5.0 4.0 4.0 5.0 5.0 5.0 4.0 5.0 y 5.0 5.0 5.0 5.0 5.0 5.0 5.0 5.0 5.0 5.0 5.0 5.0 5.0 5.0"
+    },
+    {
+      "id": "lesson-12",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "2025-12-16 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2025-12-16 00:00:00 2025-12-17 00:00:00 l5. use events to control characters"
+    },
+    {
+      "id": "lesson-13",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "2025-12-23 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2025-12-23 00:00:00 2025-12-26 00:00:00 l6. combine blocks for story scenes"
+    },
+    {
+      "id": "lesson-14",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "2025-12-30 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2025-12-30 00:00:00 2025-12-31 00:00:00 l7. build your story animation"
+    },
+    {
+      "id": "lesson-15",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "10",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "10 9 10 10 0 9 8 10 7 8 7 0 9 10 9 10 10 10 9 10 10 9 10 10 10 10 9"
+    },
+    {
+      "id": "lesson-16",
+      "year": "Unspecified",
+      "unit": "Robotics & Logic",
+      "title": "2026-01-06 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2026-01-06 00:00:00 2026-01-02 00:00:00 robotics & logic understand how robots like sphero follow commands y 5.0 4.0 4.0 5.0 5.0 5.0 4.0 5.0 4.0 4.0 5.0 5.0 5.0 y"
+    },
+    {
+      "id": "lesson-17",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "2026-01-13 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2026-01-13 00:00:00 2026-01-09 00:00:00 program sphero to follow a path y 4.0 4.0 4.0 5.0 4.0 5.0 5.0 5.0 4.0 4.0 4.0 5.0 4.0 y"
+    },
+    {
+      "id": "lesson-18",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "2026-01-20 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2026-01-20 00:00:00 2026-01-14 00:00:00 use loops and delays with sphero y y"
+    },
+    {
+      "id": "lesson-19",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "2026-01-27 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2026-01-27 00:00:00 2026-01-23 00:00:00 practice logical reasoning with unplugged tasks y y"
+    },
+    {
+      "id": "lesson-20",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "2026-02-03 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2026-02-03 00:00:00 2026-01-28 00:00:00 plan and present robot journey y y"
+    },
+    {
+      "id": "lesson-21",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "2026-02-10 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2026-02-10 00:00:00 2026-02-06 00:00:00 summative assesment y y"
+    },
+    {
+      "id": "lesson-22",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "9",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "9 8 8 10 9 10 9 10 8 8 9 10 9 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
+    },
+    {
+      "id": "lesson-23",
+      "year": "Unspecified",
+      "unit": "Computer Hardware",
+      "title": "2026-02-17 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2026-02-17 00:00:00 2026-02-11 00:00:00 computer hardware l1 \u2013 what is computer hardware? y 5.0 5.0 5.0 5.0 5.0 5.0 5.0 5.0 5.0 5.0 5.0 5.0 5.0 y 5.0 4.0 5.0 5.0 4.0 5.0 5.0 5.0 4.0 5.0 5.0 5.0 5.0 4.0"
+    },
+    {
+      "id": "lesson-24",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "2026-02-24 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2026-02-24 00:00:00 2026-02-20 00:00:00 l2 \u2013 inside the computer (main components) y 4.0 5.0 4.0 5.0 4.0 4.0 5.0 5.0 5.0 4.0 4.0 5.0 4.0 y 5.0 5.0 4.0 5.0 5.0 4.0 5.0 4.0 5.0 4.0 5.0 5.0 4.0 5.0"
+    },
+    {
+      "id": "lesson-25",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "2026-03-03 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2026-03-03 00:00:00 2026-02-25 00:00:00 l3 \u2013 input and output devices y 5.0 5.0 5.0 5.0 5.0 5.0 5.0 5.0 5.0 5.0 5.0 5.0 y 5.0 5.0 5.0 5.0 5.0 5.0 5.0 5.0 5.0 5.0 5.0 5.0 5.0"
+    },
+    {
+      "id": "lesson-26",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "2026-03-10 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2026-03-10 00:00:00 2026-03-06 00:00:00 l4 \u2013 storage devices y 7.0 5.0 5.0 7.0 6.0 7.0 7.0 8.0 7.0 8.0 7.0 7.0 4.0 y 5.0 5.0 5.0 5.0 5.0 5.0 5.0 5.0 5.0 5.0"
+    },
+    {
+      "id": "lesson-27",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "2026-03-17 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2026-03-17 00:00:00 2026-03-11 00:00:00 l5 \u2013 how a computer works (putting the parts together)"
+    },
+    {
+      "id": "lesson-28",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "30",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "30 28 27 32 29 31 31 28 30 30 30 32 27 15 19 19 15 14 19 20 19 19 19 20 15 14 19"
+    },
+    {
+      "id": "lesson-29",
+      "year": "Unspecified",
+      "unit": "Know Your Network",
+      "title": "2026-03-24 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2026-03-24 00:00:00 2026-03-20 00:00:00 know your network l1 \u2013 what is a computer network?"
+    },
+    {
+      "id": "lesson-30",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "2026-03-31 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2026-03-31 00:00:00 2026-03-25 00:00:00 l2 \u2013 how devices connect (wired and wireless)"
+    },
+    {
+      "id": "lesson-31",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "2026-04-07 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2026-04-07 00:00:00 2026-04-03 00:00:00 l3 \u2013 network hardware (router, switch, access point)"
+    },
+    {
+      "id": "lesson-32",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "2026-04-14 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2026-04-14 00:00:00 2026-04-08 00:00:00 l4 \u2013 the internet and how data travels"
+    },
+    {
+      "id": "lesson-33",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "30",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "30 28 27 32 29 31 31 28 30 30 30 32 27 15 19 19 15 14 19 20 19 19 19 20 15 14 19"
+    },
+    {
+      "id": "lesson-34",
+      "year": "Unspecified",
+      "unit": "Developing for the Web",
+      "title": "2026-04-21 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2026-04-21 00:00:00 2026-04-17 00:00:00 developing for the web l1 \u2013 what is a website?"
+    },
+    {
+      "id": "lesson-35",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "2026-04-28 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2026-04-28 00:00:00 2026-04-22 00:00:00 l2 \u2013 how web pages work (html basics)"
+    },
+    {
+      "id": "lesson-36",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "2026-05-05 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2026-05-05 00:00:00 2026-05-01 00:00:00 l3 \u2013 creating a simple web page"
+    },
+    {
+      "id": "lesson-37",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "2026-05-12 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2026-05-12 00:00:00 2026-05-06 00:00:00 l4 \u2013 adding text, images, and links"
+    },
+    {
+      "id": "lesson-38",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "2026-05-19 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2026-05-19 00:00:00 2026-05-15 00:00:00 l5 \u2013 publishing and sharing your web page"
+    },
+    {
+      "id": "lesson-39",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "30",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "30 28 27 32 29 31 31 28 30 30 30 32 27 15 19 19 15 14 19 20 19 19 19 20 15 14 19"
+    },
+    {
+      "id": "lesson-40",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "2026-05-26 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2026-05-26 00:00:00 2026-05-20 00:00:00"
+    },
+    {
+      "id": "lesson-41",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "2026-06-02 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2026-06-02 00:00:00 2026-05-29 00:00:00"
+    },
+    {
+      "id": "lesson-42",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "2026-06-09 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2026-06-09 00:00:00 2026-06-03 00:00:00"
+    },
+    {
+      "id": "lesson-43",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "2026-06-16 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2026-06-16 00:00:00 2026-06-12 00:00:00"
+    },
+    {
+      "id": "lesson-44",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "2026-06-23 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2026-06-23 00:00:00 2026-06-17 00:00:00"
+    },
+    {
+      "id": "lesson-45",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "2026-06-30 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2026-06-30 00:00:00 2026-06-26 00:00:00"
+    },
+    {
+      "id": "lesson-46",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "2026-07-07 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2026-07-07 00:00:00 2026-07-01 00:00:00"
+    },
+    {
+      "id": "lesson-47",
+      "year": "Unspecified",
+      "unit": "Unspecified Unit",
+      "title": "2026-07-10 00:00:00",
+      "status": "Evidence available",
+      "date": "",
+      "searchText": "2026-07-10 00:00:00"
+    }
+  ],
+  "resources": [
+    {
+      "name": "Eduaide",
+      "category": "AI Planning",
+      "url": "https://www.eduaide.ai/app/dashboard",
+      "use": "Lesson planning, questioning, rubrics, differentiation and instructional routines."
+    },
+    {
+      "name": "CSNewbs",
+      "category": "Subject Knowledge",
+      "url": "https://www.csnewbs.com/",
+      "use": "GCSE Computing explanations, revision materials and student-friendly theory support."
+    },
+    {
+      "name": "Save My Exams",
+      "category": "Assessment / Revision",
+      "url": "https://www.savemyexams.com/",
+      "use": "Revision notes, exam practice and specification-aligned assessment preparation."
+    },
+    {
+      "name": "NotebookLM",
+      "category": "AI Research / CPD",
+      "url": "https://notebooklm.google.com/",
+      "use": "Organising CPD notes, specification summaries and reflective preparation."
+    },
+    {
+      "name": "Diffit",
+      "category": "Adaptive Teaching",
+      "url": "https://app.diffit.me/",
+      "use": "Adapting reading materials and scaffolds for different learner needs."
+    },
+    {
+      "name": "Craig'n'Dave",
+      "category": "Subject Knowledge / Exam Prep",
+      "url": "https://craigndave.org/",
+      "use": "Computer Science explanations, exam-board aligned theory and revision."
+    },
+    {
+      "name": "Teach Cambridge",
+      "category": "Exam Board / CPD",
+      "url": "https://teachcambridge.org/landing",
+      "use": "OCR specification support, updates, resources and professional development."
+    }
+  ]
+}

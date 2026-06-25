@@ -1,0 +1,199 @@
+{
+  "name": "Rolando Valdés Hernández MSc",
+  "role": "Computer Science Teacher | Boarding Tutor | Curriculum Developer | AI in Education Practitioner",
+  "location": "Liverpool area opportunities",
+  "currentSalary": "£43,000",
+  "minimumSalary": "£48,000+",
+  "summary": "Dedicated Computer Science educator with 20+ years of teaching, curriculum development, leadership and technology experience. Currently teaching Computer Science across KS2–KS5, including GCSE and A Level, with additional boarding responsibilities. Strong interest in AI-supported learning, interactive dashboards, assessment systems, programming, robotics and evidence-informed teaching.",
+  "pages": [
+    [
+      "index.html",
+      "Home"
+    ],
+    [
+      "about.html",
+      "About"
+    ],
+    [
+      "career.html",
+      "Opportunity"
+    ],
+    [
+      "teaching.html",
+      "Teaching"
+    ],
+    [
+      "curriculum.html",
+      "Curriculum"
+    ],
+    [
+      "qts.html",
+      "QTS"
+    ],
+    [
+      "evidence.html",
+      "Evidence"
+    ],
+    [
+      "observations.html",
+      "Observations"
+    ],
+    [
+      "ai.html",
+      "AI"
+    ],
+    [
+      "contact.html",
+      "Contact"
+    ]
+  ],
+  "stats": [
+    [
+      "20+",
+      "Years of teaching and training experience"
+    ],
+    [
+      "KS2–KS5",
+      "Current teaching range"
+    ],
+    [
+      "£43k",
+      "Current salary"
+    ],
+    [
+      "£48k+",
+      "Minimum salary expectation"
+    ]
+  ],
+  "career": {
+    "seeking": [
+      "Permanent full-time Computer Science Teacher role",
+      "Lead Teacher of Computing or Head of Computing considered",
+      "GCSE and A Level Computer Science teaching",
+      "Curriculum development and digital learning leadership",
+      "Liverpool area or reasonable commuting/relocation distance"
+    ],
+    "location": [
+      "Liverpool",
+      "Wirral",
+      "Sefton",
+      "Knowsley",
+      "St Helens",
+      "Southport",
+      "Warrington",
+      "Cheshire and surrounding areas"
+    ],
+    "salary": "Current salary: £43,000. Minimum expectation: £48,000+, depending on leadership responsibility, TLR, boarding expectations, relocation support and total package.",
+    "ideal": "A supportive school with a collaborative staff culture, strong behaviour systems, scope for innovation, and an opportunity to develop Computer Science provision across GCSE and A Level."
+  },
+  "documents": [
+    {
+      "category": "CV",
+      "title": "Full CV 2026",
+      "desc": "Current professional CV with teaching experience, employment history and contact details.",
+      "type": "PDF",
+      "url": "downloads/rolando_valdes_hernandez_cv_2026.pdf"
+    },
+    {
+      "category": "Qualifications",
+      "title": "UK ENIC Bachelor Statement",
+      "desc": "Statement of comparability confirming Bachelor degree equivalence.",
+      "type": "PDF",
+      "url": "documents/uk_enic_bachelors_statement.pdf"
+    },
+    {
+      "category": "Qualifications",
+      "title": "UK ENIC Master Statement",
+      "desc": "Statement of comparability confirming Master degree equivalence.",
+      "type": "PDF",
+      "url": "documents/uk_enic_masters_statement.pdf"
+    },
+    {
+      "category": "Safeguarding",
+      "title": "DBS Update Service",
+      "desc": "DBS Update Service supporting document.",
+      "type": "PDF",
+      "url": "documents/dbs_update_service.pdf"
+    },
+    {
+      "category": "Safeguarding",
+      "title": "DBS Certificate Page 1",
+      "desc": "Enhanced DBS certificate evidence, page 1.",
+      "type": "Image",
+      "url": "documents/dbs_certificate_page_1.jpg"
+    },
+    {
+      "category": "Safeguarding",
+      "title": "DBS Certificate Page 2",
+      "desc": "Enhanced DBS certificate evidence, page 2.",
+      "type": "Image",
+      "url": "documents/dbs_certificate_page_2.jpg"
+    },
+    {
+      "category": "Career History",
+      "title": "Employment and Study History 1980–2014",
+      "desc": "Extended employment and study history document.",
+      "type": "DOCX",
+      "url": "documents/employment_and_study_history_1980_2014.docx"
+    },
+    {
+      "category": "Dashboards",
+      "title": "Final QTS Observation Dashboard",
+      "desc": "Interactive Year 10 Binary Fractions in Python observation evidence dashboard.",
+      "type": "HTML",
+      "url": "dashboards/final_qts_observation_binary_fractions_dashboard.html"
+    },
+    {
+      "category": "Dashboards",
+      "title": "Ofsted Evidence Map",
+      "desc": "Interactive Ofsted/QTS evidence mapping dashboard.",
+      "type": "HTML",
+      "url": "dashboards/index_ofsted_evidence_map.html"
+    },
+    {
+      "category": "Dashboards",
+      "title": "Fully Interactive Ofsted Evidence Map",
+      "desc": "Expanded interactive evidence map with standards and subject audit evidence.",
+      "type": "HTML",
+      "url": "dashboards/mr_valdes_fully_interactive_ofsted_evidence_map.html"
+    }
+  ],
+  "videoMarkers": [
+    {
+      "time": "00:00",
+      "title": "Lesson opening / routines",
+      "standard": "TS1 / TS7",
+      "evidence": "Establishes expectations, learning climate and lesson purpose."
+    },
+    {
+      "time": "03:00",
+      "title": "Prior knowledge and questioning",
+      "standard": "TS2 / TS6",
+      "evidence": "Checks understanding and activates prior learning."
+    },
+    {
+      "time": "08:00",
+      "title": "Teacher modelling",
+      "standard": "TS3 / TS4",
+      "evidence": "Subject knowledge, explicit instruction and worked examples."
+    },
+    {
+      "time": "15:00",
+      "title": "Adaptive support",
+      "standard": "TS5",
+      "evidence": "Scaffolding, differentiated prompts and support for mixed attainment."
+    },
+    {
+      "time": "24:00",
+      "title": "Independent practice",
+      "standard": "TS2 / TS4",
+      "evidence": "Students apply learning while teacher circulates and intervenes."
+    },
+    {
+      "time": "35:00",
+      "title": "Review / plenary",
+      "standard": "TS6",
+      "evidence": "Assessment for learning and next-step feedback."
+    }
+  ]
+}

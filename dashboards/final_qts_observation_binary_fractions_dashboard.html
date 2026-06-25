@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Final QTS Observation Evidence Map - Year 10 Binary Fractions in Python</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+:root{--bg:#f4f7fb;--panel:#fff;--soft:#f8fbff;--text:#14213d;--muted:#52677f;--border:#c8d7ea;--accent:#0b4f6c;--accent2:#e85d04;--shadow:0 12px 32px rgba(20,33,61,.10)}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font-family:Segoe UI,Arial,sans-serif;line-height:1.45}
+.wrap{max-width:1450px;margin:auto;padding:18px} .hero{background:linear-gradient(135deg,#14213d,#0b4f6c);color:white;border-radius:26px;padding:28px;box-shadow:var(--shadow)}
+h1{font-size:clamp(28px,4vw,48px);margin:0 0 8px} h2{margin-top:0} .card,.qcard,.std{background:var(--panel);border:1px solid var(--border);border-radius:20px;padding:18px;margin:14px 0;box-shadow:var(--shadow)}
+.nav{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0} .nav a,button{border:1px solid var(--border);border-radius:999px;background:white;color:var(--accent);font-weight:800;padding:10px 13px;text-decoration:none;cursor:pointer}
+.controls{display:grid;grid-template-columns:2fr 1fr 1fr auto;gap:10px} input,select{width:100%;padding:11px;border:1px solid var(--border);border-radius:14px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px} .meta,.pill{display:inline-block;background:#eaf2fb;border:1px solid var(--border);border-radius:999px;padding:5px 9px;font-size:12px;font-weight:800;color:#0b4f6c}
+.answer{display:none;border-top:1px solid var(--border);margin-top:12px;padding-top:10px;background:var(--soft);border-radius:14px;padding:12px}
+table{width:100%;border-collapse:collapse;background:white} th,td{padding:10px;border-bottom:1px solid var(--border);text-align:left;vertical-align:top} th{background:#eaf2fb}
+ul{margin-top:8px} .taglist{display:flex;flex-wrap:wrap;gap:6px} .tag{background:#fff3e8;color:#8a3600;border:1px solid #ffd1a8;border-radius:999px;padding:6px 10px;font-weight:700}
+@media(max-width:900px){.grid,.controls{grid-template-columns:1fr}} @media print{.nav,.controls,button{display:none} .card,.qcard,.std,.hero{box-shadow:none;break-inside:avoid}}
+</style>
+<script>
+function toggle(btn){let a=btn.parentElement.querySelector('.answer'); a.style.display=a.style.display==='block'?'none':'block';}
+function filterAll(){
+ const q=document.getElementById('search').value.toLowerCase();
+ const cat=document.getElementById('category').value;
+ const std=document.getElementById('standard').value;
+ document.querySelectorAll('.qcard,.std').forEach(el=>{
+   const text=el.innerText.toLowerCase();
+   const okText=text.includes(q);
+   const okCat=cat==='all'||el.dataset.cat===cat;
+   const okStd=std==='all'||el.dataset.std===std||text.includes(std.toLowerCase());
+   el.style.display=(okText && okCat && okStd)?'block':'none';
+ });
+}
+function resetFilters(){document.getElementById('search').value='';document.getElementById('category').value='all';document.getElementById('standard').value='all';filterAll();}
+</script>
+</head>
+<body>
+<div class="wrap">
+<section class="hero">
+<h1>Final QTS Observation Evidence Map</h1>
+<p><b>Topic:</b> Binary Fractions in Python | <b>Class:</b> Year 10 Computer Science | <b>Duration:</b> 2 x 45 minutes (90 minutes)</p>
+<p><b>Learning Objective:</b> Convert decimal numbers with fractional parts into binary and explain how Python can automate the conversion process.</p>
+</section>
+
+<nav class="nav">
+<a href="#overview">Overview</a><a href="#standards">Teachers' Standards</a><a href="#sequence">Lesson Sequence</a><a href="#questions">Interview Questions</a><a href="#slides">Slide Map</a>
+<button onclick="window.print()">Print / Save PDF</button>
+</nav>
+
+<section class="card controls">
+<input id="search" onkeyup="filterAll()" placeholder="Search binary fractions, assessment, adaptive teaching, precision, Python...">
+<select id="category" onchange="filterAll()"><option value="all">All categories</option><option>Adaptive teaching</option><option>Assessment</option><option>Behaviour</option><option>Challenge</option><option>Curriculum</option><option>Planning</option><option>Recorded lesson</option><option>Reflection</option><option>Safeguarding</option><option>Subject knowledge</option></select>
+<select id="standard" onchange="filterAll()"><option value="all">All standards</option><option>TS1</option><option>TS2</option><option>TS3</option><option>TS4</option><option>TS5</option><option>TS6</option><option>TS7</option><option>TS8</option></select>
+<button onclick="resetFilters()">Reset</button>
+</section>
+
+<section id="overview" class="card">
+<h2>Observation Overview</h2>
+<p><b>Observation type:</b> Final AO QTS Observation</p>
+<p><b>Success criteria:</b></p>
+<ul><li>Identify binary fractional place values such as 1/2, 1/4, 1/8 and 1/16.</li><li>Convert simple decimal fractions and mixed denary numbers into binary manually.</li><li>Use repeated division and repeated multiplication to convert whole and fractional parts.</li><li>Trace, interpret and modify Python code that converts decimal numbers into binary.</li></ul>
+<p><b>Prior learning:</b> Denary and binary whole number place values, Basic denary-to-binary conversion, Variables and simple Python input/output, Sequence and iteration in Python</p>
+<p><b>Common misconceptions:</b></p>
+<div class="taglist"><span class="tag">Thinking binary fractions use tenths, hundredths and thousandths</span><span class="tag">Reading repeated-division remainders from top to bottom</span><span class="tag">Recording the decimal result instead of the integer part during repeated multiplication</span><span class="tag">Forgetting to combine the whole and fractional binary parts with a binary point</span><span class="tag">Assuming every decimal fraction can be represented exactly in binary</span></div>
+</section>
+
+<section id="standards" class="card">
+<h2>Teachers' Standards Evidence</h2>
+<div class="grid">
+    <article class="std" data-std="TS1">
+      <strong>TS1: Set high expectations</strong>
+      <p>Clear GCSE-level learning goals, precise vocabulary, differentiated challenge and expectation that all pupils can access demanding binary conversion concepts.</p>
+      <p><b>Quick answer:</b> I set high expectations by positioning the lesson as genuine GCSE preparation and giving every pupil access to challenging but scaffolded binary fraction work.</p>
+    </article>
+
+    <article class="std" data-std="TS2">
+      <strong>TS2: Promote good progress</strong>
+      <p>Progression moves from prior binary knowledge to fractional place values, manual conversion, algorithmic thinking and Python implementation.</p>
+      <p><b>Quick answer:</b> Progress is shown through a clear sequence from retrieval to manual conversion, then from manual steps to an automated Python algorithm.</p>
+    </article>
+
+    <article class="std" data-std="TS3">
+      <strong>TS3: Subject and curriculum knowledge</strong>
+      <p>Accurate teaching of binary fractional place values, repeated division, repeated multiplication, binary point notation and Python loops.</p>
+      <p><b>Quick answer:</b> The lesson demonstrates secure Computer Science subject knowledge by connecting data representation with programming and explaining precision.</p>
+    </article>
+
+    <article class="std" data-std="TS4">
+      <strong>TS4: Plan and teach well-structured lessons</strong>
+      <p>The lesson is structured in two connected phases: conceptual data representation followed by programming implementation.</p>
+      <p><b>Quick answer:</b> The lesson is deliberately sequenced so pupils first understand the mathematics of binary fractions before using Python to automate the process.</p>
+    </article>
+
+    <article class="std" data-std="TS5">
+      <strong>TS5: Adapt teaching</strong>
+      <p>Bronze/Silver/Gold tasks, visual place-value charts, worked examples, mini-whiteboards, paired programming and extension through precision errors.</p>
+      <p><b>Quick answer:</b> I adapted teaching through visual models, chunked worked examples, tiered tasks and targeted challenge for pupils ready to move into Python and precision.</p>
+    </article>
+
+    <article class="std" data-std="TS6">
+      <strong>TS6: Use assessment effectively</strong>
+      <p>Think-Pair-Share, mini-whiteboards, targeted questioning, self-checking answers, live coding checks, debugging and exit ticket.</p>
+      <p><b>Quick answer:</b> Assessment is embedded throughout, allowing me to identify misconceptions quickly and adjust explanation before pupils move to the next stage.</p>
+    </article>
+
+    <article class="std" data-std="TS7">
+      <strong>TS7: Manage behaviour effectively</strong>
+      <p>Clear routines for discussion, transitions, practical coding, device use and independent work; active circulation and positive reinforcement.</p>
+      <p><b>Quick answer:</b> Behaviour is supported by clear task structure, purposeful transitions and active monitoring during both written and practical coding tasks.</p>
+    </article>
+
+    <article class="std" data-std="TS8">
+      <strong>TS8: Wider professional responsibilities</strong>
+      <p>Final AO QTS evidence pack, reflective planning, curriculum alignment to GCSE, literacy through technical vocabulary and collaborative learning.</p>
+      <p><b>Quick answer:</b> This pack demonstrates professional preparation, curriculum awareness and reflection on how Year 10 pupils transition into GCSE Computer Science.</p>
+    </article></div>
+</section>
+
+<section id="sequence" class="card">
+<h2>Detailed Lesson Sequence</h2>
+<table><thead><tr><th>Time</th><th>Stage</th><th>Activity</th><th>Evidence</th></tr></thead><tbody><tr><td>0-5 mins</td><td>Starter / Think-Pair-Share</td><td>Students discuss: How would a computer store 13.75? Teacher samples responses to reveal prior knowledge and misconceptions.</td><td>Retrieval, curiosity, diagnostic assessment and GCSE transition.</td></tr>
+<tr><td>5-15 mins</td><td>The Big Idea</td><td>Explain that computers store numbers using 1s and 0s. Introduce the binary point and fractional place values: 1/2, 1/4, 1/8 and 1/16.</td><td>Secure subject knowledge and explicit teaching of new GCSE content.</td></tr>
+<tr><td>15-25 mins</td><td>Guided Manual Conversion</td><td>Model conversion of 13.75: convert 13 by repeated division, convert 0.75 by repeated multiplication, then combine as 1101.11₂.</td><td>Modelling, worked example, questioning and misconception correction.</td></tr>
+<tr><td>25-38 mins</td><td>Differentiated Practice</td><td>Bronze: 5.5. Silver: 6.125. Gold: 13.1875. Students show working using place values or repeated division/multiplication.</td><td>Adaptive teaching, independent practice and live feedback.</td></tr>
+<tr><td>38-45 mins</td><td>Mini Plenary</td><td>Review answers and address common misconceptions such as reading remainders in the wrong direction and using decimal place values.</td><td>Assessment for learning and responsive teaching.</td></tr>
+<tr><td>45-50 mins</td><td>Retrieval Restart</td><td>Quick quiz on fractional place values and conversion from binary fractions back to denary.</td><td>Checks retention after transition between periods.</td></tr>
+<tr><td>50-60 mins</td><td>Transition to Algorithms</td><td>Pose the question: How can we teach a computer to perform these steps automatically? Link manual steps to algorithmic thinking.</td><td>Curriculum sequencing from data representation to programming.</td></tr>
+<tr><td>60-75 mins</td><td>Python Code Walkthrough</td><td>Walk through Python code that inputs a decimal number, splits it into whole and fractional parts, uses loops, stores binary digits, and prints the final output.</td><td>Programming subject knowledge, explanation, live tracing and modelling.</td></tr>
+<tr><td>75-85 mins</td><td>Paired Programming / Debugging</td><td>Students trace or run the program with 5.5, 6.25 and 13.75. Higher attainers test additional values and explain precision limits.</td><td>Collaboration, practical application, debugging and challenge.</td></tr>
+<tr><td>85-90 mins</td><td>Exit Ticket</td><td>Students answer: What is 0.75 in binary? What does 2⁻³ represent? Why do we multiply the fraction by 2? Why might precision matter?</td><td>Summative check, reflection and next-step planning.</td></tr></tbody></table>
+</section>
+
+<section id="questions" class="card">
+<h2>Likely Observation / Professional Dialogue Questions</h2>
+<div class="grid">
+    <article class="qcard" data-cat="Recorded lesson">
+      <div class="meta">Recorded lesson</div>
+      <h3>Why did you choose this lesson for your final observation?</h3>
+      <button onclick="toggle(this)">Show / Hide Answer</button>
+      <div class="answer">
+        <h4>30-second answer</h4><p>It shows a clear transition into GCSE content and provides evidence of subject knowledge, modelling, assessment, adaptive teaching and programming links.</p>
+        <h4>Detailed answer</h4><p>I chose this lesson because binary fractions are demanding but accessible when carefully scaffolded. It allows me to demonstrate how I move pupils from prior knowledge of whole-number binary into new GCSE data representation content, then connect that knowledge to Python algorithms.</p>
+      </div>
+    </article>
+
+    <article class="qcard" data-cat="Planning">
+      <div class="meta">Planning</div>
+      <h3>How does the lesson build on prior learning?</h3>
+      <button onclick="toggle(this)">Show / Hide Answer</button>
+      <div class="answer">
+        <h4>30-second answer</h4><p>It builds on whole-number binary, place value, basic Python variables, input and iteration.</p>
+        <h4>Detailed answer</h4><p>Students already know that computers use binary and have encountered whole-number place values. This lesson extends that by introducing fractional place values to the right of the binary point and then links the manual method to Python loops and variables.</p>
+      </div>
+    </article>
+
+    <article class="qcard" data-cat="Subject knowledge">
+      <div class="meta">Subject knowledge</div>
+      <h3>What are the key concepts pupils need to understand?</h3>
+      <button onclick="toggle(this)">Show / Hide Answer</button>
+      <div class="answer">
+        <h4>30-second answer</h4><p>They need to understand the binary point, negative powers of two, repeated division, repeated multiplication and why precision matters.</p>
+        <h4>Detailed answer</h4><p>The central concepts are that binary fractions use negative powers of two, the whole and fractional parts are converted using different methods, and Python can automate this algorithm. The precision discussion introduces pupils to the idea that not all denary fractions have exact binary representations.</p>
+      </div>
+    </article>
+
+    <article class="qcard" data-cat="Assessment">
+      <div class="meta">Assessment</div>
+      <h3>How did you check that pupils understood the conversion process?</h3>
+      <button onclick="toggle(this)">Show / Hide Answer</button>
+      <div class="answer">
+        <h4>30-second answer</h4><p>I used questioning, mini-whiteboards, worked examples, differentiated practice, live checking and an exit ticket.</p>
+        <h4>Detailed answer</h4><p>I checked understanding at several points: during the starter, when pupils identified fractional place values, during manual conversion practice, while they traced Python code, and at the end through the exit ticket. This helped identify whether errors came from place value, method or programming syntax.</p>
+      </div>
+    </article>
+
+    <article class="qcard" data-cat="Adaptive teaching">
+      <div class="meta">Adaptive teaching</div>
+      <h3>How did you support pupils who struggled?</h3>
+      <button onclick="toggle(this)">Show / Hide Answer</button>
+      <div class="answer">
+        <h4>30-second answer</h4><p>I used visual place-value charts, chunked examples, repeated modelling and Bronze tasks with simple fractions.</p>
+        <h4>Detailed answer</h4><p>Support was built in through visual models, step-by-step worked examples and simpler Bronze tasks such as 5.5 and 0.75. I also separated the whole-number and fractional steps so pupils did not have to process the entire algorithm at once.</p>
+      </div>
+    </article>
+
+    <article class="qcard" data-cat="Challenge">
+      <div class="meta">Challenge</div>
+      <h3>How did you stretch higher-attaining pupils?</h3>
+      <button onclick="toggle(this)">Show / Hide Answer</button>
+      <div class="answer">
+        <h4>30-second answer</h4><p>They converted more complex values, traced Python logic and explored binary precision limits.</p>
+        <h4>Detailed answer</h4><p>Higher-attaining pupils moved to Gold conversions such as 13.1875, then tested the Python code with additional values. They were also challenged to explain why values such as 0.1 may not be stored exactly in binary.</p>
+      </div>
+    </article>
+
+    <article class="qcard" data-cat="Behaviour">
+      <div class="meta">Behaviour</div>
+      <h3>How did you maintain focus during a technical lesson?</h3>
+      <button onclick="toggle(this)">Show / Hide Answer</button>
+      <div class="answer">
+        <h4>30-second answer</h4><p>Through clear routines, short teacher input, frequent checks, structured tasks and active circulation.</p>
+        <h4>Detailed answer</h4><p>Because the content is conceptually demanding, I maintained focus by chunking the lesson into short stages, using mini-whiteboards and paired discussion, and circulating during independent and programming tasks to keep pupils accountable.</p>
+      </div>
+    </article>
+
+    <article class="qcard" data-cat="Reflection">
+      <div class="meta">Reflection</div>
+      <h3>What would you improve next time?</h3>
+      <button onclick="toggle(this)">Show / Hide Answer</button>
+      <div class="answer">
+        <h4>30-second answer</h4><p>I would add an earlier diagnostic question to separate mathematical misconceptions from Python misconceptions.</p>
+        <h4>Detailed answer</h4><p>Next time I would include a quick hinge question before moving into Python, so I could confirm that pupils understand manual conversion before adding programming complexity. This would make the transition from data representation to coding even sharper.</p>
+      </div>
+    </article>
+
+    <article class="qcard" data-cat="Safeguarding">
+      <div class="meta">Safeguarding</div>
+      <h3>How does the lesson promote responsible computing?</h3>
+      <button onclick="toggle(this)">Show / Hide Answer</button>
+      <div class="answer">
+        <h4>30-second answer</h4><p>It helps pupils understand that digital systems represent numbers in ways that can affect accuracy and decision-making.</p>
+        <h4>Detailed answer</h4><p>The lesson introduces pupils to the fact that computers represent values using finite binary patterns. This supports responsible computing because pupils begin to understand that software output depends on representation, precision and algorithm design.</p>
+      </div>
+    </article>
+
+    <article class="qcard" data-cat="Curriculum">
+      <div class="meta">Curriculum</div>
+      <h3>Why is this appropriate as an introduction to GCSE content?</h3>
+      <button onclick="toggle(this)">Show / Hide Answer</button>
+      <div class="answer">
+        <h4>30-second answer</h4><p>It links KS3 binary knowledge to GCSE data representation and programming in a structured, accessible way.</p>
+        <h4>Detailed answer</h4><p>The lesson is appropriate because Year 10 pupils can access it through prior binary knowledge, but it also raises the level of challenge by introducing binary fractions, algorithms and Python implementation. This gives them a strong bridge into GCSE Computer Science.</p>
+      </div>
+    </article></div>
+</section>
+
+<section id="slides" class="card">
+<h2>Slide and Resource Map</h2>
+<table><thead><tr><th>Page</th><th>Focus</th></tr></thead><tbody><tr><td>1</td><td>Starter: how would a computer store 13.75? Think-Pair-Share diagnostic discussion.</td></tr>
+<tr><td>2</td><td>Overview infographic showing decimal-to-binary conversion and the result 1101.11.</td></tr>
+<tr><td>3</td><td>The big idea: computers store all numbers using binary and fractional place values.</td></tr>
+<tr><td>4</td><td>Learning objectives: binary fractions, manual conversion, Python code and debugging.</td></tr>
+<tr><td>5</td><td>Bronze, Silver and Gold success criteria for differentiation.</td></tr>
+<tr><td>6</td><td>Binary fraction place values: 2⁻¹, 2⁻², 2⁻³ and examples.</td></tr>
+<tr><td>7</td><td>Worked example converting 13.75 to 1101.11 using repeated division and multiplication.</td></tr>
+<tr><td>8</td><td>Student practice: 5.5, 6.125 and 13.1875 with answers.</td></tr>
+<tr><td>10</td><td>Review of manual methods and transition from manual conversion to computer automation.</td></tr>
+<tr><td>11</td><td>Common misconceptions for binary place values, repeated division and repeated multiplication.</td></tr>
+<tr><td>12</td><td>Big question: how can we teach a computer to perform these steps automatically?</td></tr>
+<tr><td>13</td><td>Transition to Python: place values → manual conversion → algorithm → Python code.</td></tr>
+<tr><td>14</td><td>Precision decimal-to-binary engine diagram showing whole number, fraction and string concatenation logic.</td></tr>
+<tr><td>15</td><td>Python code walkthrough overview from input to final output.</td></tr>
+<tr><td>16</td><td>Step 1: get decimal number using float(input()).</td></tr>
+<tr><td>17</td><td>Step 2: split number into whole and fractional parts.</td></tr>
+<tr><td>18</td><td>Step 3: prepare storage for whole-number binary string.</td></tr></tbody></table>
+</section>
+</div>
+</body></html>

@@ -1,0 +1,273 @@
+{
+  "title": "Final QTS Observation Evidence Map - Year 10 Binary Fractions in Python",
+  "context": {
+    "class": "Year 10 Computer Science",
+    "duration": "2 x 45 minutes (90 minutes)",
+    "observation_type": "Final AO QTS Observation",
+    "topic": "Introduction to GCSE Computer Science: Binary Fractions and Python Conversion",
+    "learning_objective": "Convert decimal numbers with fractional parts into binary and explain how Python can automate the conversion process.",
+    "success_criteria": [
+      "Identify binary fractional place values such as 1/2, 1/4, 1/8 and 1/16.",
+      "Convert simple decimal fractions and mixed denary numbers into binary manually.",
+      "Use repeated division and repeated multiplication to convert whole and fractional parts.",
+      "Trace, interpret and modify Python code that converts decimal numbers into binary."
+    ],
+    "prior_learning": [
+      "Denary and binary whole number place values",
+      "Basic denary-to-binary conversion",
+      "Variables and simple Python input/output",
+      "Sequence and iteration in Python"
+    ],
+    "misconceptions": [
+      "Thinking binary fractions use tenths, hundredths and thousandths",
+      "Reading repeated-division remainders from top to bottom",
+      "Recording the decimal result instead of the integer part during repeated multiplication",
+      "Forgetting to combine the whole and fractional binary parts with a binary point",
+      "Assuming every decimal fraction can be represented exactly in binary"
+    ]
+  },
+  "lesson_sequence": [
+    {
+      "time": "0-5 mins",
+      "stage": "Starter / Think-Pair-Share",
+      "activity": "Students discuss: How would a computer store 13.75? Teacher samples responses to reveal prior knowledge and misconceptions.",
+      "evidence": "Retrieval, curiosity, diagnostic assessment and GCSE transition."
+    },
+    {
+      "time": "5-15 mins",
+      "stage": "The Big Idea",
+      "activity": "Explain that computers store numbers using 1s and 0s. Introduce the binary point and fractional place values: 1/2, 1/4, 1/8 and 1/16.",
+      "evidence": "Secure subject knowledge and explicit teaching of new GCSE content."
+    },
+    {
+      "time": "15-25 mins",
+      "stage": "Guided Manual Conversion",
+      "activity": "Model conversion of 13.75: convert 13 by repeated division, convert 0.75 by repeated multiplication, then combine as 1101.11\u2082.",
+      "evidence": "Modelling, worked example, questioning and misconception correction."
+    },
+    {
+      "time": "25-38 mins",
+      "stage": "Differentiated Practice",
+      "activity": "Bronze: 5.5. Silver: 6.125. Gold: 13.1875. Students show working using place values or repeated division/multiplication.",
+      "evidence": "Adaptive teaching, independent practice and live feedback."
+    },
+    {
+      "time": "38-45 mins",
+      "stage": "Mini Plenary",
+      "activity": "Review answers and address common misconceptions such as reading remainders in the wrong direction and using decimal place values.",
+      "evidence": "Assessment for learning and responsive teaching."
+    },
+    {
+      "time": "45-50 mins",
+      "stage": "Retrieval Restart",
+      "activity": "Quick quiz on fractional place values and conversion from binary fractions back to denary.",
+      "evidence": "Checks retention after transition between periods."
+    },
+    {
+      "time": "50-60 mins",
+      "stage": "Transition to Algorithms",
+      "activity": "Pose the question: How can we teach a computer to perform these steps automatically? Link manual steps to algorithmic thinking.",
+      "evidence": "Curriculum sequencing from data representation to programming."
+    },
+    {
+      "time": "60-75 mins",
+      "stage": "Python Code Walkthrough",
+      "activity": "Walk through Python code that inputs a decimal number, splits it into whole and fractional parts, uses loops, stores binary digits, and prints the final output.",
+      "evidence": "Programming subject knowledge, explanation, live tracing and modelling."
+    },
+    {
+      "time": "75-85 mins",
+      "stage": "Paired Programming / Debugging",
+      "activity": "Students trace or run the program with 5.5, 6.25 and 13.75. Higher attainers test additional values and explain precision limits.",
+      "evidence": "Collaboration, practical application, debugging and challenge."
+    },
+    {
+      "time": "85-90 mins",
+      "stage": "Exit Ticket",
+      "activity": "Students answer: What is 0.75 in binary? What does 2\u207b\u00b3 represent? Why do we multiply the fraction by 2? Why might precision matter?",
+      "evidence": "Summative check, reflection and next-step planning."
+    }
+  ],
+  "teachers_standards": [
+    {
+      "standard": "TS1",
+      "title": "Set high expectations",
+      "evidence": "Clear GCSE-level learning goals, precise vocabulary, differentiated challenge and expectation that all pupils can access demanding binary conversion concepts.",
+      "quick_answer": "I set high expectations by positioning the lesson as genuine GCSE preparation and giving every pupil access to challenging but scaffolded binary fraction work."
+    },
+    {
+      "standard": "TS2",
+      "title": "Promote good progress",
+      "evidence": "Progression moves from prior binary knowledge to fractional place values, manual conversion, algorithmic thinking and Python implementation.",
+      "quick_answer": "Progress is shown through a clear sequence from retrieval to manual conversion, then from manual steps to an automated Python algorithm."
+    },
+    {
+      "standard": "TS3",
+      "title": "Subject and curriculum knowledge",
+      "evidence": "Accurate teaching of binary fractional place values, repeated division, repeated multiplication, binary point notation and Python loops.",
+      "quick_answer": "The lesson demonstrates secure Computer Science subject knowledge by connecting data representation with programming and explaining precision."
+    },
+    {
+      "standard": "TS4",
+      "title": "Plan and teach well-structured lessons",
+      "evidence": "The lesson is structured in two connected phases: conceptual data representation followed by programming implementation.",
+      "quick_answer": "The lesson is deliberately sequenced so pupils first understand the mathematics of binary fractions before using Python to automate the process."
+    },
+    {
+      "standard": "TS5",
+      "title": "Adapt teaching",
+      "evidence": "Bronze/Silver/Gold tasks, visual place-value charts, worked examples, mini-whiteboards, paired programming and extension through precision errors.",
+      "quick_answer": "I adapted teaching through visual models, chunked worked examples, tiered tasks and targeted challenge for pupils ready to move into Python and precision."
+    },
+    {
+      "standard": "TS6",
+      "title": "Use assessment effectively",
+      "evidence": "Think-Pair-Share, mini-whiteboards, targeted questioning, self-checking answers, live coding checks, debugging and exit ticket.",
+      "quick_answer": "Assessment is embedded throughout, allowing me to identify misconceptions quickly and adjust explanation before pupils move to the next stage."
+    },
+    {
+      "standard": "TS7",
+      "title": "Manage behaviour effectively",
+      "evidence": "Clear routines for discussion, transitions, practical coding, device use and independent work; active circulation and positive reinforcement.",
+      "quick_answer": "Behaviour is supported by clear task structure, purposeful transitions and active monitoring during both written and practical coding tasks."
+    },
+    {
+      "standard": "TS8",
+      "title": "Wider professional responsibilities",
+      "evidence": "Final AO QTS evidence pack, reflective planning, curriculum alignment to GCSE, literacy through technical vocabulary and collaborative learning.",
+      "quick_answer": "This pack demonstrates professional preparation, curriculum awareness and reflection on how Year 10 pupils transition into GCSE Computer Science."
+    }
+  ],
+  "interview_questions": [
+    {
+      "category": "Recorded lesson",
+      "question": "Why did you choose this lesson for your final observation?",
+      "quick": "It shows a clear transition into GCSE content and provides evidence of subject knowledge, modelling, assessment, adaptive teaching and programming links.",
+      "detailed": "I chose this lesson because binary fractions are demanding but accessible when carefully scaffolded. It allows me to demonstrate how I move pupils from prior knowledge of whole-number binary into new GCSE data representation content, then connect that knowledge to Python algorithms."
+    },
+    {
+      "category": "Planning",
+      "question": "How does the lesson build on prior learning?",
+      "quick": "It builds on whole-number binary, place value, basic Python variables, input and iteration.",
+      "detailed": "Students already know that computers use binary and have encountered whole-number place values. This lesson extends that by introducing fractional place values to the right of the binary point and then links the manual method to Python loops and variables."
+    },
+    {
+      "category": "Subject knowledge",
+      "question": "What are the key concepts pupils need to understand?",
+      "quick": "They need to understand the binary point, negative powers of two, repeated division, repeated multiplication and why precision matters.",
+      "detailed": "The central concepts are that binary fractions use negative powers of two, the whole and fractional parts are converted using different methods, and Python can automate this algorithm. The precision discussion introduces pupils to the idea that not all denary fractions have exact binary representations."
+    },
+    {
+      "category": "Assessment",
+      "question": "How did you check that pupils understood the conversion process?",
+      "quick": "I used questioning, mini-whiteboards, worked examples, differentiated practice, live checking and an exit ticket.",
+      "detailed": "I checked understanding at several points: during the starter, when pupils identified fractional place values, during manual conversion practice, while they traced Python code, and at the end through the exit ticket. This helped identify whether errors came from place value, method or programming syntax."
+    },
+    {
+      "category": "Adaptive teaching",
+      "question": "How did you support pupils who struggled?",
+      "quick": "I used visual place-value charts, chunked examples, repeated modelling and Bronze tasks with simple fractions.",
+      "detailed": "Support was built in through visual models, step-by-step worked examples and simpler Bronze tasks such as 5.5 and 0.75. I also separated the whole-number and fractional steps so pupils did not have to process the entire algorithm at once."
+    },
+    {
+      "category": "Challenge",
+      "question": "How did you stretch higher-attaining pupils?",
+      "quick": "They converted more complex values, traced Python logic and explored binary precision limits.",
+      "detailed": "Higher-attaining pupils moved to Gold conversions such as 13.1875, then tested the Python code with additional values. They were also challenged to explain why values such as 0.1 may not be stored exactly in binary."
+    },
+    {
+      "category": "Behaviour",
+      "question": "How did you maintain focus during a technical lesson?",
+      "quick": "Through clear routines, short teacher input, frequent checks, structured tasks and active circulation.",
+      "detailed": "Because the content is conceptually demanding, I maintained focus by chunking the lesson into short stages, using mini-whiteboards and paired discussion, and circulating during independent and programming tasks to keep pupils accountable."
+    },
+    {
+      "category": "Reflection",
+      "question": "What would you improve next time?",
+      "quick": "I would add an earlier diagnostic question to separate mathematical misconceptions from Python misconceptions.",
+      "detailed": "Next time I would include a quick hinge question before moving into Python, so I could confirm that pupils understand manual conversion before adding programming complexity. This would make the transition from data representation to coding even sharper."
+    },
+    {
+      "category": "Safeguarding",
+      "question": "How does the lesson promote responsible computing?",
+      "quick": "It helps pupils understand that digital systems represent numbers in ways that can affect accuracy and decision-making.",
+      "detailed": "The lesson introduces pupils to the fact that computers represent values using finite binary patterns. This supports responsible computing because pupils begin to understand that software output depends on representation, precision and algorithm design."
+    },
+    {
+      "category": "Curriculum",
+      "question": "Why is this appropriate as an introduction to GCSE content?",
+      "quick": "It links KS3 binary knowledge to GCSE data representation and programming in a structured, accessible way.",
+      "detailed": "The lesson is appropriate because Year 10 pupils can access it through prior binary knowledge, but it also raises the level of challenge by introducing binary fractions, algorithms and Python implementation. This gives them a strong bridge into GCSE Computer Science."
+    }
+  ],
+  "slides_summary": [
+    {
+      "page": 1,
+      "focus": "Starter: how would a computer store 13.75? Think-Pair-Share diagnostic discussion."
+    },
+    {
+      "page": 2,
+      "focus": "Overview infographic showing decimal-to-binary conversion and the result 1101.11."
+    },
+    {
+      "page": 3,
+      "focus": "The big idea: computers store all numbers using binary and fractional place values."
+    },
+    {
+      "page": 4,
+      "focus": "Learning objectives: binary fractions, manual conversion, Python code and debugging."
+    },
+    {
+      "page": 5,
+      "focus": "Bronze, Silver and Gold success criteria for differentiation."
+    },
+    {
+      "page": 6,
+      "focus": "Binary fraction place values: 2\u207b\u00b9, 2\u207b\u00b2, 2\u207b\u00b3 and examples."
+    },
+    {
+      "page": 7,
+      "focus": "Worked example converting 13.75 to 1101.11 using repeated division and multiplication."
+    },
+    {
+      "page": 8,
+      "focus": "Student practice: 5.5, 6.125 and 13.1875 with answers."
+    },
+    {
+      "page": 10,
+      "focus": "Review of manual methods and transition from manual conversion to computer automation."
+    },
+    {
+      "page": 11,
+      "focus": "Common misconceptions for binary place values, repeated division and repeated multiplication."
+    },
+    {
+      "page": 12,
+      "focus": "Big question: how can we teach a computer to perform these steps automatically?"
+    },
+    {
+      "page": 13,
+      "focus": "Transition to Python: place values \u2192 manual conversion \u2192 algorithm \u2192 Python code."
+    },
+    {
+      "page": 14,
+      "focus": "Precision decimal-to-binary engine diagram showing whole number, fraction and string concatenation logic."
+    },
+    {
+      "page": 15,
+      "focus": "Python code walkthrough overview from input to final output."
+    },
+    {
+      "page": 16,
+      "focus": "Step 1: get decimal number using float(input())."
+    },
+    {
+      "page": 17,
+      "focus": "Step 2: split number into whole and fractional parts."
+    },
+    {
+      "page": 18,
+      "focus": "Step 3: prepare storage for whole-number binary string."
+    }
+  ]
+}
