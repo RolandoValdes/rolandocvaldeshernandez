@@ -14,6 +14,7 @@ const SITE_DATA = {
     ["qts.html", "QTS"],
     ["evidence.html", "Evidence"],
     ["observations.html", "Observations"],
+    ["teaching-evidence-centre.html", "Evidence Centre"],
     ["ai.html", "AI"],
     ["recommendations.html", "Recommendations"],
     ["projectx/index.html", "Launch Project X"],
