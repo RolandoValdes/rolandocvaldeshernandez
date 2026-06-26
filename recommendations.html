@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Professional Recommendations | Rolando Valdés</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+<div id="nav"></div>
+
+<main class="wrap">
+  <section class="hero">
+    <div>
+      <div class="pill">Professional Recommendations</div>
+      <h1>Professional Recommendations</h1>
+      <p class="lead">
+        Feedback from educational leaders, line managers, mentors, colleagues and professional referees.
+      </p>
+      <div class="btns">
+        <a class="btn primary" href="#submit">Submit a Recommendation</a>
+        <a class="btn" href="index.html">Back to Portfolio</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Approved Recommendations</h2>
+    <p class="muted">
+      Recommendations are only published with the author’s permission.
+    </p>
+    <div id="recommendationGrid" class="grid2"></div>
+  </section>
+
+  <section id="submit" class="card">
+    <h2>Submit a Recommendation</h2>
+    <p>
+      If you have worked with me professionally, I would be grateful if you would consider
+      sharing a short recommendation about my teaching, professionalism, curriculum work,
+      leadership, or contribution to school life.
+    </p>
+
+    <div class="notice">
+      Replace the button link below with your Google Form link once created.
+    </div>
+
+    <div class="btns">
+      <a class="btn primary" href="#" target="_blank">Open Recommendation Form</a>
+    </div>
+  </section>
+</main>
+
+<div id="foot"></div>
+
+<script>
+async function loadRecommendations() {
+  const grid = document.getElementById("recommendationGrid");
+
+  try {
+    const response = await fetch("data/recommendations.json");
+    const data = await response.json();
+
+    grid.innerHTML = data.recommendations.map(r => `
+      <div class="card">
+        <h3>${r.name}</h3>
+        <p class="muted">${r.role} · ${r.organisation}</p>
+        <p><strong>${r.relationship}</strong></p>
+        <p>“${r.quote}”</p>
+        <p class="muted">${r.date} · ${r.permission}</p>
+      </div>
+    `).join("");
+  } catch (error) {
+    grid.innerHTML = "<p>Recommendations could not be loaded.</p>";
+  }
+}
+
+loadRecommendations();
+</script>
+</body>
+</html>
