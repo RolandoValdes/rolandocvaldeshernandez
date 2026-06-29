@@ -1,0 +1,19 @@
+{
+  "library": "Project X Documentation Centre",
+  "version": "1.0",
+  "updated": "2026-06-29",
+  "documents": [
+    {
+      "id": "architecture-bible-v1",
+      "title": "Project X Architecture Bible",
+      "version": "1.0",
+      "category": "Architecture",
+      "status": "Current",
+      "summary": "The master blueprint for Project X as a teaching operating system, including vision, architecture, data model, modules, AI strategy and roadmap.",
+      "pdf": "/rolandocvaldeshernandez/projectx/documents/architecture/Project_X_Architecture_Bible_v1.pdf",
+      "docx": "/rolandocvaldeshernandez/projectx/documents/architecture/Project_X_Architecture_Bible_v1.docx",
+      "updated": "2026-06-29",
+      "tags": ["Architecture", "Project X", "Teaching OS", "Roadmap", "Data Model"]
+    }
+  ]
+}

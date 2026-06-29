@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Documentation Centre | Project X</title>
+  <link rel="stylesheet" href="/rolandocvaldeshernandez/projectx/assets/projectx.css" />
+</head>
+<body>
+  <div class="projectx-shell">
+    <div id="projectxSidebar"></div>
+
+    <main class="projectx-main">
+      <div id="projectxHeader"></div>
+
+      <section class="projectx-content">
+        <div class="projectx-card" style="margin-bottom: 24px;">
+          <span class="projectx-status">System Knowledge Base</span>
+          <h2>Documentation Centre</h2>
+          <p>
+            Store, version and access Project X architecture documents, release notes,
+            technical plans and future platform documentation from inside the operating system.
+          </p>
+        </div>
+
+        <div class="module-shell">
+          <aside class="module-panel">
+            <h3>Documentation Menu</h3>
+            <nav id="moduleNavigation" class="module-nav"></nav>
+          </aside>
+
+          <section class="module-workspace">
+            <h2 id="moduleTitle" style="margin-top: 0;">Dashboard</h2>
+            <div id="moduleWorkspace"></div>
+          </section>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="/rolandocvaldeshernandez/projectx/core/navigation-manager.js"></script>
+  <script src="/rolandocvaldeshernandez/projectx/core/theme-manager.js"></script>
+  <script src="/rolandocvaldeshernandez/projectx/core/projectx-loader.js"></script>
+  <script src="/rolandocvaldeshernandez/projectx/core/app-shell.js"></script>
+  <script src="/rolandocvaldeshernandez/projectx/apps/documentation/documentation-module.js"></script>
+  <script src="/rolandocvaldeshernandez/projectx/core/bootstrap.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const app = new ProjectXApp({
+        moduleKey: "documentation",
+        moduleTitle: "Documentation Centre",
+        moduleSubtitle: "Architecture, releases and system knowledge base",
+        defaultView: "dashboard"
+      });
+
+      app.initialise();
+    });
+  </script>
+</body>
+</html>

@@ -1,2 +1,25 @@
-function getCurrentAppKey(){const p=window.location.pathname;if(p.includes('/apps/curriculum/'))return'curriculum';if(p.includes('/apps/assessment/'))return'assessment';if(p.includes('/apps/revision/'))return'revision';if(p.includes('/apps/question-banks/'))return'question-banks';if(p.includes('/apps/tools/'))return'tools';if(p.includes('/apps/evidence/'))return'evidence';if(p.includes('/apps/ai-lab/'))return'ai-lab';if(p.includes('/apps/analytics/'))return'analytics';if(p.includes('/apps/admin/'))return'admin';return'dashboard'}
-function initialiseNavigation(){const current=getCurrentAppKey();document.querySelectorAll('#projectxNav a').forEach(a=>{a.classList.toggle('active',a.dataset.app===current)})}
+function getCurrentAppKey() {
+  const path = window.location.pathname;
+
+  if (path.includes("/apps/curriculum/")) return "curriculum";
+  if (path.includes("/apps/assessment/")) return "assessment";
+  if (path.includes("/apps/revision/")) return "revision";
+  if (path.includes("/apps/question-banks/")) return "question-banks";
+  if (path.includes("/apps/tools/")) return "tools";
+  if (path.includes("/apps/evidence/")) return "evidence";
+  if (path.includes("/apps/documentation/")) return "documentation";
+  if (path.includes("/apps/ai-lab/")) return "ai-lab";
+  if (path.includes("/apps/analytics/")) return "analytics";
+  if (path.includes("/apps/admin/")) return "admin";
+
+  return "dashboard";
+}
+
+function initialiseNavigation() {
+  const currentApp = getCurrentAppKey();
+  const links = document.querySelectorAll("#projectxNav a");
+
+  links.forEach(link => {
+    link.classList.toggle("active", link.dataset.app === currentApp);
+  });
+}
