@@ -7,7 +7,129 @@
   <title>Curriculum Centre | Project X</title>
 
   <link rel="stylesheet" href="/rolandocvaldeshernandez/projectx/assets/projectx.css" />
-  <link rel="stylesheet" href="/rolandocvaldeshernandez/projectx/assets/curriculum.css" />
+
+  <style>
+    .curriculum-toolbar {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 0 0 18px;
+    }
+
+    .curriculum-input,
+    .curriculum-select {
+      min-height: 42px;
+      border: 1px solid var(--px-border);
+      border-radius: 12px;
+      padding: 0 12px;
+      background: #fff;
+      color: var(--px-text);
+    }
+
+    .curriculum-input {
+      min-width: 260px;
+      flex: 1;
+    }
+
+    .curriculum-kpis {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin: 0 0 18px;
+    }
+
+    .curriculum-kpi {
+      background: #ffffff;
+      border: 1px solid var(--px-border);
+      border-radius: 16px;
+      padding: 16px;
+      box-shadow: var(--px-shadow);
+    }
+
+    .curriculum-kpi span {
+      display: block;
+      color: var(--px-muted);
+      font-size: 0.72rem;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 7px;
+    }
+
+    .curriculum-kpi strong {
+      color: var(--px-blue);
+      font-size: 1.8rem;
+      line-height: 1;
+    }
+
+    .curriculum-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      overflow: hidden;
+      border-radius: 14px;
+    }
+
+    .curriculum-table th {
+      text-align: left;
+      background: var(--px-blue-soft);
+      color: var(--px-muted);
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 12px;
+    }
+
+    .curriculum-table td {
+      border-top: 1px solid var(--px-border);
+      padding: 12px;
+      vertical-align: top;
+    }
+
+    .curriculum-table td small {
+      color: var(--px-muted);
+    }
+
+    .curriculum-status {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      padding: 4px 9px;
+      background: var(--px-blue-soft);
+      color: var(--px-blue);
+      font-size: 0.75rem;
+      font-weight: 800;
+    }
+
+    .curriculum-panel-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .curriculum-empty {
+      padding: 20px;
+      border: 1px dashed var(--px-border);
+      border-radius: 16px;
+      background: #fbfdff;
+      color: var(--px-muted);
+    }
+
+    @media (max-width: 1050px) {
+      .curriculum-kpis,
+      .curriculum-panel-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 760px) {
+      .curriculum-kpis,
+      .curriculum-panel-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -19,11 +141,11 @@
 
       <section class="projectx-content">
         <div class="projectx-card" style="margin-bottom: 24px;">
-          <span class="projectx-status">Production Module</span>
+          <span class="projectx-status">Data-Driven Module</span>
           <h2>Curriculum Centre</h2>
           <p>
-            Manage curriculum units, lesson sequences, schemes of work, resources,
-            planning evidence and future curriculum exports from one Project X workspace.
+            Reusable curriculum units and lessons have been extracted from the 2025–2026 lesson tracker.
+            Delivery, assessment and yearly teaching records are kept separately so the curriculum can be reused next year.
           </p>
         </div>
 
@@ -35,9 +157,7 @@
 
           <section class="module-workspace">
             <h2 id="moduleTitle" style="margin-top: 0;">Dashboard</h2>
-            <div id="moduleWorkspace">
-              <div class="projectx-card">Loading Curriculum Centre...</div>
-            </div>
+            <div id="moduleWorkspace"></div>
           </section>
         </div>
       </section>
@@ -48,36 +168,19 @@
   <script src="/rolandocvaldeshernandez/projectx/core/theme-manager.js"></script>
   <script src="/rolandocvaldeshernandez/projectx/core/projectx-loader.js"></script>
   <script src="/rolandocvaldeshernandez/projectx/core/app-shell.js"></script>
-  <script src="/rolandocvaldeshernandez/projectx/core/bootstrap.js"></script>
-  <script src="/rolandocvaldeshernandez/projectx/services/curriculum-service.js"></script>
   <script src="/rolandocvaldeshernandez/projectx/apps/curriculum/curriculum-module.js"></script>
+  <script src="/rolandocvaldeshernandez/projectx/core/bootstrap.js"></script>
 
   <script>
-    document.addEventListener("DOMContentLoaded", async () => {
-      try {
-        await ProjectXCurriculumService.initialise();
+    document.addEventListener("DOMContentLoaded", () => {
+      const app = new ProjectXApp({
+        moduleKey: "curriculum",
+        moduleTitle: "Curriculum Centre",
+        moduleSubtitle: "Data-driven reusable curriculum planning",
+        defaultView: "dashboard"
+      });
 
-        const app = new ProjectXApp({
-          moduleKey: "curriculum",
-          moduleTitle: "Curriculum Centre",
-          moduleSubtitle: "Curriculum planning, sequencing and evidence",
-          defaultView: "dashboard"
-        });
-
-        await app.initialise();
-      } catch (error) {
-        console.error("Curriculum Centre failed to start:", error);
-        const workspace = document.getElementById("moduleWorkspace");
-        if (workspace) {
-          workspace.innerHTML = `
-            <div class="projectx-card">
-              <span class="projectx-status">Error</span>
-              <h2>Curriculum Centre could not be loaded</h2>
-              <p>Please check the console and confirm that the curriculum data file is available.</p>
-            </div>
-          `;
-        }
-      }
+      app.initialise();
     });
   </script>
 </body>

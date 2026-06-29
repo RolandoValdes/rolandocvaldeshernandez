@@ -1,8 +1,39 @@
-window.ProjectXViews = window.ProjectXViews || {};
+const ProjectXCurriculum = {
+  data: {
+    units: [],
+    lessons: [],
+    resources: [],
+    delivery: [],
+    assessments: []
+  },
 
-(function () {
-  function safe(value) {
-    return String(value || "").replace(/[&<>"']/g, function (char) {
+  loaded: false,
+
+  async load() {
+    if (this.loaded) return this.data;
+
+    const base = "/rolandocvaldeshernandez/projectx/data";
+
+    const [units, lessons, resources, delivery, assessments] = await Promise.all([
+      fetch(`${base}/curriculum/units.json`, { cache: "no-store" }).then(r => r.json()),
+      fetch(`${base}/curriculum/lessons.json`, { cache: "no-store" }).then(r => r.json()),
+      fetch(`${base}/curriculum/resources.json`, { cache: "no-store" }).then(r => r.json()),
+      fetch(`${base}/delivery/2025-2026.json`, { cache: "no-store" }).then(r => r.json()),
+      fetch(`${base}/assessment/2025-2026.json`, { cache: "no-store" }).then(r => r.json())
+    ]);
+
+    this.data.units = units.units || [];
+    this.data.lessons = lessons.lessons || [];
+    this.data.resources = resources.resources || [];
+    this.data.delivery = delivery.delivery || [];
+    this.data.assessments = assessments.assessments || [];
+
+    this.loaded = true;
+    return this.data;
+  },
+
+  escape(value) {
+    return String(value || "").replace(/[&<>"']/g, function(char) {
       return {
         "&": "&amp;",
         "<": "&lt;",
@@ -11,83 +42,73 @@ window.ProjectXViews = window.ProjectXViews || {};
         "'": "&#039;"
       }[char];
     });
-  }
+  },
 
-  function units() {
-    return ProjectXCurriculumService.getUnits();
-  }
+  yearOptions() {
+    const years = [...new Set(this.data.units.map(unit => unit.yearGroup))].sort((a, b) => {
+      return Number(a.replace("Y", "")) - Number(b.replace("Y", ""));
+    });
 
-  function lessons() {
-    return ProjectXCurriculumService.getLessons();
-  }
+    return `<option value="">All years</option>` + years.map(year =>
+      `<option value="${this.escape(year)}">${this.escape(year)}</option>`
+    ).join("");
+  },
 
-  function resources() {
-    return ProjectXCurriculumService.getResources();
-  }
+  unitTitle(unitId) {
+    const unit = this.data.units.find(item => item.id === unitId);
+    return unit ? unit.title : "Unknown unit";
+  },
 
-  function settings() {
-    return ProjectXCurriculumService.getSettings();
-  }
-
-  function statusSummary() {
-    const unitCount = units().length;
-    const lessonCount = lessons().length;
-    const resourceCount = resources().length;
-    const keyStages = new Set(units().map(unit => unit.keyStage).filter(Boolean)).size;
+  kpis() {
+    const units = this.data.units.length;
+    const lessons = this.data.lessons.length;
+    const resources = this.data.resources.length;
+    const completed = this.data.delivery.filter(item => item.completed).length;
+    const deliveryTotal = this.data.delivery.length;
+    const coverage = deliveryTotal ? Math.round((completed / deliveryTotal) * 100) : 0;
 
     return `
-      <div class="curriculum-kpi-grid">
-        <div class="curriculum-kpi"><span>Units</span><strong>${unitCount}</strong></div>
-        <div class="curriculum-kpi"><span>Lessons</span><strong>${lessonCount}</strong></div>
-        <div class="curriculum-kpi"><span>Resources</span><strong>${resourceCount}</strong></div>
-        <div class="curriculum-kpi"><span>Key Stages</span><strong>${keyStages}</strong></div>
-      </div>
+      <section class="curriculum-kpis">
+        <div class="curriculum-kpi"><span>Reusable Units</span><strong>${units}</strong></div>
+        <div class="curriculum-kpi"><span>Reusable Lessons</span><strong>${lessons}</strong></div>
+        <div class="curriculum-kpi"><span>Resources</span><strong>${resources}</strong></div>
+        <div class="curriculum-kpi"><span>2025–26 Coverage</span><strong>${coverage}%</strong></div>
+      </section>
     `;
-  }
+  },
 
-  function unitRows(list = units()) {
-    return list.map(unit => `
-      <tr>
-        <td><strong>${safe(unit.title)}</strong><br><small>${safe(unit.intent)}</small></td>
-        <td>${safe(unit.yearGroup)}<br><small>${safe(unit.keyStage)}</small></td>
-        <td>${safe(unit.strand)}</td>
-        <td><span class="projectx-status">${safe(unit.status)}</span></td>
-        <td>${safe(unit.lessons)}</td>
-      </tr>
-    `).join("");
-  }
+  dashboardTemplate() {
+    const unitsByYear = this.data.units.reduce((acc, unit) => {
+      acc[unit.yearGroup] = (acc[unit.yearGroup] || 0) + 1;
+      return acc;
+    }, {});
 
-  function lessonRows(list = lessons()) {
-    return list.map(lesson => `
-      <tr>
-        <td><strong>${safe(lesson.title)}</strong><br><small>${safe(lesson.objective)}</small></td>
-        <td>${safe(lesson.yearGroup)}</td>
-        <td>${safe(lesson.duration)} mins</td>
-        <td><span class="projectx-status">${safe(lesson.status)}</span></td>
-        <td>${(lesson.resources || []).map(item => `<span class="curriculum-pill">${safe(item)}</span>`).join(" ")}</td>
-      </tr>
-    `).join("");
-  }
+    const lessonsByYear = this.data.lessons.reduce((acc, lesson) => {
+      acc[lesson.yearGroup] = (acc[lesson.yearGroup] || 0) + 1;
+      return acc;
+    }, {});
 
-  window.ProjectXViews.curriculum_dashboard = function () {
-    const recentUnits = units().slice(0, 3);
-    const recentLessons = lessons().slice(0, 3);
+    const years = Object.keys({ ...unitsByYear, ...lessonsByYear }).sort((a, b) =>
+      Number(a.replace("Y", "")) - Number(b.replace("Y", ""))
+    );
 
     return `
-      ${statusSummary()}
-      <div class="curriculum-split">
+      ${this.kpis()}
+
+      <div class="curriculum-panel-grid">
         <div class="projectx-card">
-          <span class="projectx-status">Curriculum</span>
-          <h3>Recent Units</h3>
-          <p>Quick overview of the most recent curriculum units in the workspace.</p>
+          <span class="projectx-status">Reusable Curriculum</span>
+          <h3>Curriculum by Year Group</h3>
           <table class="curriculum-table">
-            <thead><tr><th>Unit</th><th>Year</th><th>Status</th></tr></thead>
+            <thead>
+              <tr><th>Year</th><th>Units</th><th>Lessons</th></tr>
+            </thead>
             <tbody>
-              ${recentUnits.map(unit => `
+              ${years.map(year => `
                 <tr>
-                  <td>${safe(unit.title)}</td>
-                  <td>${safe(unit.yearGroup)}</td>
-                  <td>${safe(unit.status)}</td>
+                  <td><strong>${this.escape(year)}</strong></td>
+                  <td>${unitsByYear[year] || 0}</td>
+                  <td>${lessonsByYear[year] || 0}</td>
                 </tr>
               `).join("")}
             </tbody>
@@ -95,263 +116,284 @@ window.ProjectXViews = window.ProjectXViews || {};
         </div>
 
         <div class="projectx-card">
-          <span class="projectx-status">Planning</span>
-          <h3>Lesson Pipeline</h3>
-          <p>Current lesson items prepared for teaching, evidence or further planning.</p>
-          <table class="curriculum-table">
-            <thead><tr><th>Lesson</th><th>Year</th><th>Duration</th></tr></thead>
-            <tbody>
-              ${recentLessons.map(lesson => `
-                <tr>
-                  <td>${safe(lesson.title)}</td>
-                  <td>${safe(lesson.yearGroup)}</td>
-                  <td>${safe(lesson.duration)} mins</td>
-                </tr>
-              `).join("")}
-            </tbody>
-          </table>
+          <span class="projectx-status">2025–2026 Delivery Layer</span>
+          <h3>Reuse Model</h3>
+          <p>
+            Units and lessons are stored as reusable curriculum assets. Dates, completion status,
+            assessments and marks sit in separate academic-year files. This means the same curriculum
+            can be copied into 2026–2027 without overwriting the 2025–2026 teaching record.
+          </p>
+          <p>
+            Current delivery records: <strong>${this.data.delivery.length}</strong><br>
+            Assessment records: <strong>${this.data.assessments.length}</strong>
+          </p>
         </div>
       </div>
     `;
-  };
+  },
 
-  window.ProjectXViews.curriculum_units = function () {
-    setTimeout(() => {
-      const form = document.getElementById("addUnitForm");
-      const search = document.getElementById("unitSearch");
-      const tableBody = document.getElementById("unitTableBody");
-
-      if (form) {
-        form.addEventListener("submit", event => {
-          event.preventDefault();
-          ProjectXCurriculumService.addUnit(new FormData(form));
-          form.reset();
-          tableBody.innerHTML = unitRows();
-        });
-      }
-
-      if (search) {
-        search.addEventListener("input", () => {
-          const q = search.value.toLowerCase().trim();
-          const filtered = units().filter(unit =>
-            String(unit.title).toLowerCase().includes(q) ||
-            String(unit.yearGroup).toLowerCase().includes(q) ||
-            String(unit.keyStage).toLowerCase().includes(q) ||
-            String(unit.strand).toLowerCase().includes(q)
-          );
-          tableBody.innerHTML = unitRows(filtered);
-        });
-      }
-    }, 0);
-
+  unitsTemplate() {
     return `
+      ${this.kpis()}
       <div class="projectx-card">
         <div class="curriculum-toolbar">
-          <div>
-            <span class="projectx-status">Unit Manager</span>
-            <h2>Curriculum Units</h2>
-            <p>Create, search and review units by year group, key stage and curriculum strand.</p>
-          </div>
-          <input id="unitSearch" class="curriculum-search" placeholder="Search units...">
+          <input id="unitSearch" class="curriculum-input" type="search" placeholder="Search units..." />
+          <select id="unitYearFilter" class="curriculum-select">${this.yearOptions()}</select>
         </div>
-
-        <table class="curriculum-table">
-          <thead><tr><th>Unit</th><th>Year / KS</th><th>Strand</th><th>Status</th><th>Lessons</th></tr></thead>
-          <tbody id="unitTableBody">${unitRows()}</tbody>
-        </table>
-      </div>
-
-      <div class="projectx-card" style="margin-top: 20px;">
-        <span class="projectx-status">Create</span>
-        <h3>Add New Unit</h3>
-        <form id="addUnitForm" class="curriculum-form">
-          <div class="curriculum-form-grid">
-            <label>Title <input name="title" required placeholder="e.g. Algorithms and Flowcharts"></label>
-            <label>Year Group <input name="yearGroup" placeholder="e.g. Year 9"></label>
-            <label>Key Stage <input name="keyStage" placeholder="e.g. KS3"></label>
-            <label>Strand <input name="strand" placeholder="e.g. Programming"></label>
-            <label>Status
-              <select name="status">
-                <option>Draft</option>
-                <option>Live</option>
-                <option>Review</option>
-                <option>Published</option>
-              </select>
-            </label>
-            <label>Number of Lessons <input name="lessons" type="number" min="0" value="1"></label>
-          </div>
-          <label>Intent <textarea name="intent" placeholder="What is the purpose of this unit?"></textarea></label>
-          <label>Coverage <input name="coverage" placeholder="Comma separated: variables, loops, selection"></label>
-          <button class="projectx-button" type="submit">Add Unit</button>
-        </form>
+        <div id="unitsTable"></div>
       </div>
     `;
-  };
+  },
 
-  window.ProjectXViews.curriculum_lessons = function () {
-    setTimeout(() => {
-      const form = document.getElementById("addLessonForm");
-      const tableBody = document.getElementById("lessonTableBody");
+  renderUnitsTable(filter = "", year = "") {
+    const target = document.getElementById("unitsTable");
+    if (!target) return;
 
-      if (form) {
-        form.addEventListener("submit", event => {
-          event.preventDefault();
-          ProjectXCurriculumService.addLesson(new FormData(form));
-          form.reset();
-          tableBody.innerHTML = lessonRows();
-        });
-      }
-    }, 0);
+    const q = filter.toLowerCase().trim();
 
-    return `
-      <div class="projectx-card">
-        <span class="projectx-status">Lesson Library</span>
-        <h2>Lessons</h2>
-        <p>Manage reusable lessons connected to curriculum units and evidence workflows.</p>
+    const rows = this.data.units
+      .filter(unit => !year || unit.yearGroup === year)
+      .filter(unit =>
+        unit.title.toLowerCase().includes(q) ||
+        unit.yearGroup.toLowerCase().includes(q) ||
+        unit.keyStage.toLowerCase().includes(q)
+      )
+      .sort((a, b) => {
+        const yearA = Number(a.yearGroup.replace("Y", ""));
+        const yearB = Number(b.yearGroup.replace("Y", ""));
+        if (yearA !== yearB) return yearA - yearB;
+        return a.title.localeCompare(b.title);
+      });
 
-        <table class="curriculum-table">
-          <thead><tr><th>Lesson</th><th>Year</th><th>Duration</th><th>Status</th><th>Resources</th></tr></thead>
-          <tbody id="lessonTableBody">${lessonRows()}</tbody>
-        </table>
-      </div>
+    if (!rows.length) {
+      target.innerHTML = `<div class="curriculum-empty">No units found.</div>`;
+      return;
+    }
 
-      <div class="projectx-card" style="margin-top: 20px;">
-        <span class="projectx-status">Create</span>
-        <h3>Add New Lesson</h3>
-        <form id="addLessonForm" class="curriculum-form">
-          <div class="curriculum-form-grid">
-            <label>Title <input name="title" required placeholder="e.g. For Loops in Python"></label>
-            <label>Year Group <input name="yearGroup" placeholder="e.g. Year 8"></label>
-            <label>Duration <input name="duration" type="number" min="15" value="45"></label>
-            <label>Status
-              <select name="status">
-                <option>Draft</option>
-                <option>Ready</option>
-                <option>Evidence</option>
-                <option>Review</option>
-              </select>
-            </label>
-            <label>Linked Unit
-              <select name="unitId">
-                <option value="">Unlinked</option>
-                ${units().map(unit => `<option value="${safe(unit.id)}">${safe(unit.title)}</option>`).join("")}
-              </select>
-            </label>
-            <label>Resources <input name="resources" placeholder="Comma separated: worksheet, slides, code"></label>
-          </div>
-          <label>Learning Objective <textarea name="objective" placeholder="Students will be able to..."></textarea></label>
-          <button class="projectx-button" type="submit">Add Lesson</button>
-        </form>
-      </div>
-    `;
-  };
-
-  window.ProjectXViews.curriculum_schemes = function () {
-    return `
-      <div class="projectx-card">
-        <span class="projectx-status">Schemes of Work</span>
-        <h2>Scheme Builder</h2>
-        <p>This view groups units into teachable sequences and prepares the structure for exportable schemes of work.</p>
-        <div class="projectx-grid" style="margin-top: 20px;">
-          ${units().map(unit => `
-            <div class="projectx-card">
-              <h3>${safe(unit.yearGroup)} — ${safe(unit.title)}</h3>
-              <p>${safe(unit.intent)}</p>
-              <div class="curriculum-pill-list">
-                ${(unit.coverage || []).map(item => `<span class="curriculum-pill">${safe(item)}</span>`).join("")}
-              </div>
-            </div>
-          `).join("")}
-        </div>
-      </div>
-    `;
-  };
-
-  window.ProjectXViews.curriculum_resources = function () {
-    return `
-      <div class="projectx-card">
-        <span class="projectx-status">Resource Library</span>
-        <h2>Resources</h2>
-        <p>Track lesson plans, worksheets, slides, evidence files and reusable teaching resources.</p>
-        <table class="curriculum-table">
-          <thead><tr><th>Resource</th><th>Type</th><th>Linked To</th><th>Status</th></tr></thead>
-          <tbody>
-            ${resources().map(resource => `
+    target.innerHTML = `
+      <table class="curriculum-table">
+        <thead>
+          <tr>
+            <th>Unit</th>
+            <th>Year</th>
+            <th>Key Stage</th>
+            <th>Lessons</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${rows.map(unit => {
+            const lessonCount = this.data.lessons.filter(lesson => lesson.unitId === unit.id).length;
+            return `
               <tr>
-                <td><strong>${safe(resource.title)}</strong></td>
-                <td>${safe(resource.type)}</td>
-                <td>${safe(resource.linkedTo)}</td>
-                <td><span class="projectx-status">${safe(resource.status)}</span></td>
+                <td><strong>${this.escape(unit.title)}</strong><br><small>${this.escape(unit.id)}</small></td>
+                <td>${this.escape(unit.yearGroup)}</td>
+                <td>${this.escape(unit.keyStage)}</td>
+                <td>${lessonCount}</td>
+                <td><span class="curriculum-status">${this.escape(unit.status)}</span></td>
+              </tr>
+            `;
+          }).join("")}
+        </tbody>
+      </table>
+    `;
+  },
+
+  lessonsTemplate() {
+    return `
+      ${this.kpis()}
+      <div class="projectx-card">
+        <div class="curriculum-toolbar">
+          <input id="lessonSearch" class="curriculum-input" type="search" placeholder="Search lessons..." />
+          <select id="lessonYearFilter" class="curriculum-select">${this.yearOptions()}</select>
+        </div>
+        <div id="lessonsTable"></div>
+      </div>
+    `;
+  },
+
+  renderLessonsTable(filter = "", year = "") {
+    const target = document.getElementById("lessonsTable");
+    if (!target) return;
+
+    const q = filter.toLowerCase().trim();
+
+    const rows = this.data.lessons
+      .filter(lesson => !year || lesson.yearGroup === year)
+      .filter(lesson =>
+        lesson.title.toLowerCase().includes(q) ||
+        this.unitTitle(lesson.unitId).toLowerCase().includes(q) ||
+        lesson.yearGroup.toLowerCase().includes(q)
+      )
+      .sort((a, b) => {
+        const yearA = Number(a.yearGroup.replace("Y", ""));
+        const yearB = Number(b.yearGroup.replace("Y", ""));
+        if (yearA !== yearB) return yearA - yearB;
+        if (a.unitId !== b.unitId) return a.unitId.localeCompare(b.unitId);
+        return a.sequence - b.sequence;
+      })
+      .slice(0, 120);
+
+    if (!rows.length) {
+      target.innerHTML = `<div class="curriculum-empty">No lessons found.</div>`;
+      return;
+    }
+
+    target.innerHTML = `
+      <table class="curriculum-table">
+        <thead>
+          <tr>
+            <th>Lesson</th>
+            <th>Unit</th>
+            <th>Year</th>
+            <th>Type</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${rows.map(lesson => `
+            <tr>
+              <td><strong>${this.escape(lesson.title)}</strong><br><small>Sequence ${lesson.sequence}</small></td>
+              <td>${this.escape(this.unitTitle(lesson.unitId))}</td>
+              <td>${this.escape(lesson.yearGroup)}</td>
+              <td>${this.escape(lesson.type)}</td>
+              <td><span class="curriculum-status">${this.escape(lesson.status)}</span></td>
+            </tr>
+          `).join("")}
+        </tbody>
+      </table>
+      <p style="color: var(--px-muted); margin-top: 12px;">Showing up to 120 lessons. Use search or year filtering to narrow results.</p>
+    `;
+  },
+
+  resourcesTemplate() {
+    if (!this.data.resources.length) {
+      return `
+        ${this.kpis()}
+        <div class="curriculum-empty">
+          No web resources were found in the extracted lesson tracker.
+        </div>
+      `;
+    }
+
+    return `
+      ${this.kpis()}
+      <div class="projectx-card">
+        <h3>Resource Library</h3>
+        <table class="curriculum-table">
+          <thead>
+            <tr><th>Resource</th><th>Year</th><th>Unit</th><th>Link</th></tr>
+          </thead>
+          <tbody>
+            ${this.data.resources.map(resource => `
+              <tr>
+                <td>${this.escape(resource.title)}</td>
+                <td>${this.escape(resource.yearGroup)}</td>
+                <td>${this.escape(this.unitTitle(resource.unitId))}</td>
+                <td><a href="${this.escape(resource.url)}" target="_blank" rel="noopener">Open</a></td>
               </tr>
             `).join("")}
           </tbody>
         </table>
       </div>
     `;
-  };
+  },
 
-  window.ProjectXViews.curriculum_planner = function () {
+  placeholderTemplate(title, description) {
     return `
+      ${this.kpis()}
       <div class="projectx-card">
-        <span class="projectx-status">Planner</span>
-        <h2>Curriculum Planner</h2>
-        <p>This is the planning workspace for future timetable integration, lesson sequencing and resource preparation.</p>
-        <div class="projectx-grid" style="margin-top: 20px;">
-          <div class="projectx-card"><h3>Next Lesson</h3><p>Select a year group and prepare the next lesson in sequence.</p></div>
-          <div class="projectx-card"><h3>Upcoming Assessments</h3><p>Connect curriculum units to assessment windows and revision tasks.</p></div>
-          <div class="projectx-card"><h3>Evidence Links</h3><p>Attach lesson plans, reflections and standards evidence to curriculum delivery.</p></div>
-        </div>
+        <span class="projectx-status">Curriculum Centre</span>
+        <h3>${this.escape(title)}</h3>
+        <p>${this.escape(description)}</p>
+        <p>
+          This view will use the same reusable curriculum data layer. The 2025–2026 delivery records
+          have already been separated from the unit and lesson definitions.
+        </p>
       </div>
     `;
-  };
+  },
 
-  window.ProjectXViews.curriculum_settings = function () {
-    const s = settings();
+  bindUnitsEvents() {
+    const search = document.getElementById("unitSearch");
+    const year = document.getElementById("unitYearFilter");
+    const refresh = () => this.renderUnitsTable(search.value, year.value);
+    if (search) search.addEventListener("input", refresh);
+    if (year) year.addEventListener("change", refresh);
+    refresh();
+  },
 
-    setTimeout(() => {
-      const form = document.getElementById("curriculumSettingsForm");
-      const reset = document.getElementById("resetCurriculumData");
+  bindLessonsEvents() {
+    const search = document.getElementById("lessonSearch");
+    const year = document.getElementById("lessonYearFilter");
+    const refresh = () => this.renderLessonsTable(search.value, year.value);
+    if (search) search.addEventListener("input", refresh);
+    if (year) year.addEventListener("change", refresh);
+    refresh();
+  }
+};
 
-      if (form) {
-        form.addEventListener("submit", event => {
-          event.preventDefault();
-          ProjectXCurriculumService.updateSettings(new FormData(form));
-          alert("Curriculum settings saved locally.");
-        });
-      }
+window.ProjectXViews = window.ProjectXViews || {};
 
-      if (reset) {
-        reset.addEventListener("click", () => {
-          if (confirm("Reset Curriculum Centre data to the Sprint 04 defaults?")) {
-            ProjectXCurriculumService.reset();
-          }
-        });
-      }
-    }, 0);
+window.ProjectXViews.curriculum_dashboard = function() {
+  ProjectXCurriculum.load().then(() => {
+    const workspace = document.getElementById("moduleWorkspace");
+    if (workspace) workspace.innerHTML = ProjectXCurriculum.dashboardTemplate();
+  });
 
-    return `
-      <div class="projectx-card">
-        <span class="projectx-status">Settings</span>
-        <h2>Curriculum Settings</h2>
-        <p>These settings are saved locally in your browser for now. Later they can be connected to a full storage layer.</p>
+  return `<div class="curriculum-empty">Loading curriculum database...</div>`;
+};
 
-        <form id="curriculumSettingsForm" class="curriculum-form" style="margin-top: 18px;">
-          <div class="curriculum-form-grid">
-            <label>School <input name="school" value="${safe(s.school)}"></label>
-            <label>Subject <input name="subject" value="${safe(s.subject)}"></label>
-            <label>Default Exam Board <input name="defaultExamBoard" value="${safe(s.defaultExamBoard)}"></label>
-            <label>Academic Year <input name="academicYear" value="${safe(s.academicYear)}"></label>
-          </div>
-          <button class="projectx-button" type="submit">Save Settings</button>
-        </form>
-      </div>
+window.ProjectXViews.curriculum_units = function() {
+  ProjectXCurriculum.load().then(() => {
+    const workspace = document.getElementById("moduleWorkspace");
+    if (workspace) {
+      workspace.innerHTML = ProjectXCurriculum.unitsTemplate();
+      ProjectXCurriculum.bindUnitsEvents();
+    }
+  });
 
-      <div class="projectx-card" style="margin-top: 20px;">
-        <span class="projectx-status">Maintenance</span>
-        <h3>Reset Local Data</h3>
-        <p>Use this only if you want to reload the default Sprint 04 curriculum dataset.</p>
-        <button id="resetCurriculumData" class="projectx-button" type="button">Reset Curriculum Data</button>
-      </div>
-    `;
-  };
-})();
+  return `<div class="curriculum-empty">Loading units...</div>`;
+};
+
+window.ProjectXViews.curriculum_lessons = function() {
+  ProjectXCurriculum.load().then(() => {
+    const workspace = document.getElementById("moduleWorkspace");
+    if (workspace) {
+      workspace.innerHTML = ProjectXCurriculum.lessonsTemplate();
+      ProjectXCurriculum.bindLessonsEvents();
+    }
+  });
+
+  return `<div class="curriculum-empty">Loading lessons...</div>`;
+};
+
+window.ProjectXViews.curriculum_resources = function() {
+  ProjectXCurriculum.load().then(() => {
+    const workspace = document.getElementById("moduleWorkspace");
+    if (workspace) workspace.innerHTML = ProjectXCurriculum.resourcesTemplate();
+  });
+
+  return `<div class="curriculum-empty">Loading resources...</div>`;
+};
+
+window.ProjectXViews.curriculum_schemes = function() {
+  return ProjectXCurriculum.placeholderTemplate(
+    "Schemes of Work",
+    "This view will group reusable units and lessons into year-specific schemes of work."
+  );
+};
+
+window.ProjectXViews.curriculum_planner = function() {
+  return ProjectXCurriculum.placeholderTemplate(
+    "Planner",
+    "This view will create future yearly delivery plans from the reusable curriculum database."
+  );
+};
+
+window.ProjectXViews.curriculum_settings = function() {
+  return ProjectXCurriculum.placeholderTemplate(
+    "Settings",
+    "This view will manage curriculum configuration, academic-year copies and import/export options."
+  );
+};
