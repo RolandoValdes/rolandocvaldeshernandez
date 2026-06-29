@@ -1,10 +1,10 @@
 {
-  "title": "Project X",
-  "subtitle": "Teaching Intelligence Platform",
-  "description": "A professional collection of portfolio pages, curriculum tools, assessment dashboards, revision resources, question banks, analytics and teaching applications.",
-  "version": "3.0-sprint01",
-  "updated": "2026-06-29",
-  "apps": [
+  "title":"Project X",
+  "subtitle":"Teaching Intelligence Platform",
+  "description":"A professional teaching operating system combining a recruiter portfolio with curriculum, assessment, revision, question-bank, analytics, AI and evidence tools.",
+  "version":"3.0-sprint02",
+  "updated":"2026-06-29",
+  "apps":[
     {"title":"Professional Portfolio Home","category":"Professional Hub","section":"Professional Hub","icon":"🏠","description":"Main landing page for recruiters, schools and professional contacts.","url":"/rolandocvaldeshernandez/index.html","status":"Live","priority":5},
     {"title":"Career Profile","category":"Professional Hub","section":"Professional Hub","icon":"💼","description":"Career history, experience, salary expectations and relocation preferences.","url":"/rolandocvaldeshernandez/career.html","status":"Live","priority":5},
     {"title":"Teaching Evidence Centre","category":"Professional Hub","section":"Professional Hub","icon":"🎓","description":"Lesson observation, QTS evidence, resources, reflection and supporting evidence.","url":"/rolandocvaldeshernandez/teaching-evidence-centre.html","status":"Live","priority":5},
@@ -13,14 +13,14 @@
     {"title":"Contact","category":"Professional Hub","section":"Professional Hub","icon":"✉️","description":"Professional contact information and enquiries.","url":"/rolandocvaldeshernandez/contact.html","status":"Live","priority":4},
     {"title":"QTS Evidence","category":"Professional Hub","section":"Evidence","icon":"✅","description":"Assessment Only QTS evidence, observation materials and final recommendation status.","url":"/rolandocvaldeshernandez/qts.html","status":"Recommended for QTS","priority":5},
     {"title":"Observation Dashboards","category":"Professional Hub","section":"Evidence","icon":"🧾","description":"Interactive observation dashboards, lesson evidence maps and supporting documentation.","url":"/rolandocvaldeshernandez/dashboards/index_ofsted_evidence_map.html","status":"Live","priority":3},
-    {"title":"Curriculum Centre","category":"Teaching Workspace","section":"Teaching Workspace","icon":"🧭","description":"Curriculum maps, schemes of work, lesson sequencing and subject coverage.","url":"/rolandocvaldeshernandez/projectx/apps/curriculum/index.html","status":"In Development","priority":5},
-    {"title":"Assessment Centre","category":"Teaching Workspace","section":"Teaching Workspace","icon":"📊","description":"Assessment tracking, marks analysis, feedback workflows and progress evidence.","url":"/rolandocvaldeshernandez/projectx/apps/assessment/index.html","status":"In Development","priority":5},
-    {"title":"Revision Centre","category":"Teaching Workspace","section":"Teaching Workspace","icon":"📚","description":"Revision resources, exam preparation, topic checklists and student study pathways.","url":"/rolandocvaldeshernandez/projectx/apps/revision/index.html","status":"In Development","priority":4},
-    {"title":"Question Banks","category":"Teaching Workspace","section":"Teaching Workspace","icon":"❓","description":"Reusable questions, exam-style prompts, quizzes and retrieval practice resources.","url":"/rolandocvaldeshernandez/projectx/apps/question-banks/index.html","status":"In Development","priority":4},
-    {"title":"Teaching Tools","category":"Teaching Workspace","section":"Teaching Workspace","icon":"🛠️","description":"Classroom utilities, lesson support tools, templates and reusable teaching assets.","url":"/rolandocvaldeshernandez/projectx/apps/tools/index.html","status":"In Development","priority":4},
-    {"title":"Evidence Centre","category":"Teaching Workspace","section":"Teaching Workspace","icon":"🧾","description":"Project X evidence workspace for QTS, observations, standards and reflective practice.","url":"/rolandocvaldeshernandez/projectx/apps/evidence/index.html","status":"In Development","priority":5},
-    {"title":"AI Lab","category":"Teaching Workspace","section":"Teaching Workspace","icon":"🧠","description":"AI experiments for lesson planning, feedback, differentiation and resource generation.","url":"/rolandocvaldeshernandez/projectx/apps/ai-lab/index.html","status":"In Development","priority":4},
-    {"title":"Analytics","category":"Teaching Workspace","section":"Teaching Workspace","icon":"📈","description":"Teaching analytics, assessment insights, curriculum coverage and evidence summaries.","url":"/rolandocvaldeshernandez/projectx/apps/analytics/index.html","status":"In Development","priority":3},
-    {"title":"Administration","category":"Teaching Workspace","section":"Teaching Workspace","icon":"⚙️","description":"Administrative tools, settings, configuration and future platform management.","url":"/rolandocvaldeshernandez/projectx/apps/admin/index.html","status":"In Development","priority":3}
+    {"title":"Curriculum Centre","category":"Teaching Workspace","section":"Teaching Workspace","icon":"🧭","description":"Curriculum maps, schemes of work, lesson sequencing and subject coverage.","url":"/rolandocvaldeshernandez/projectx/apps/curriculum/","status":"Framework Ready","priority":5},
+    {"title":"Assessment Centre","category":"Teaching Workspace","section":"Teaching Workspace","icon":"📊","description":"Assessment tracking, marks analysis, feedback workflows and progress evidence.","url":"/rolandocvaldeshernandez/projectx/apps/assessment/","status":"Framework Ready","priority":5},
+    {"title":"Revision Centre","category":"Teaching Workspace","section":"Teaching Workspace","icon":"📚","description":"Revision resources, exam preparation, topic checklists and student study pathways.","url":"/rolandocvaldeshernandez/projectx/apps/revision/","status":"Framework Ready","priority":4},
+    {"title":"Question Banks","category":"Teaching Workspace","section":"Teaching Workspace","icon":"❓","description":"Reusable questions, exam-style prompts, quizzes and retrieval practice resources.","url":"/rolandocvaldeshernandez/projectx/apps/question-banks/","status":"Framework Ready","priority":4},
+    {"title":"Teaching Tools","category":"Teaching Workspace","section":"Teaching Workspace","icon":"🛠️","description":"Classroom utilities, lesson support tools, templates and reusable teaching assets.","url":"/rolandocvaldeshernandez/projectx/apps/tools/","status":"Framework Ready","priority":4},
+    {"title":"Evidence Centre","category":"Teaching Workspace","section":"Teaching Workspace","icon":"🗂️","description":"Project X workspace for QTS, observations, standards, reflection and evidence artefacts.","url":"/rolandocvaldeshernandez/projectx/apps/evidence/","status":"Framework Ready","priority":5},
+    {"title":"AI Lab","category":"Teaching Workspace","section":"Teaching Workspace","icon":"🧠","description":"AI experiments for lesson planning, feedback, differentiation and resource generation.","url":"/rolandocvaldeshernandez/projectx/apps/ai-lab/","status":"Framework Ready","priority":4},
+    {"title":"Analytics","category":"Teaching Workspace","section":"Teaching Workspace","icon":"📈","description":"Teaching analytics, assessment insights, curriculum coverage and evidence summaries.","url":"/rolandocvaldeshernandez/projectx/apps/analytics/","status":"Framework Ready","priority":3},
+    {"title":"Administration","category":"Teaching Workspace","section":"Teaching Workspace","icon":"⚙️","description":"Administrative tools, settings, configuration and platform management.","url":"/rolandocvaldeshernandez/projectx/apps/admin/","status":"Framework Ready","priority":3}
   ]
 }

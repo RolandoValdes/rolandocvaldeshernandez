@@ -1,66 +1,11 @@
 {
-  "curriculum": [
-    { "label": "Dashboard", "view": "dashboard" },
-    { "label": "Units", "view": "units" },
-    { "label": "Lessons", "view": "lessons" },
-    { "label": "Schemes of Work", "view": "schemes" },
-    { "label": "Resources", "view": "resources" },
-    { "label": "Planner", "view": "planner" },
-    { "label": "Settings", "view": "settings" }
-  ],
-  "assessment": [
-    { "label": "Dashboard", "view": "dashboard" },
-    { "label": "Markbooks", "view": "markbooks" },
-    { "label": "Gradebook", "view": "gradebook" },
-    { "label": "Feedback", "view": "feedback" },
-    { "label": "Targets", "view": "targets" },
-    { "label": "Reports", "view": "reports" }
-  ],
-  "revision": [
-    { "label": "Dashboard", "view": "dashboard" },
-    { "label": "Topics", "view": "topics" },
-    { "label": "Checklists", "view": "checklists" },
-    { "label": "Practice", "view": "practice" },
-    { "label": "Exam Prep", "view": "exam-prep" }
-  ],
-  "question-banks": [
-    { "label": "Dashboard", "view": "dashboard" },
-    { "label": "GCSE Questions", "view": "gcse" },
-    { "label": "A Level Questions", "view": "a-level" },
-    { "label": "Retrieval Practice", "view": "retrieval" },
-    { "label": "Quizzes", "view": "quizzes" }
-  ],
-  "tools": [
-    { "label": "Dashboard", "view": "dashboard" },
-    { "label": "Lesson Tools", "view": "lesson-tools" },
-    { "label": "Templates", "view": "templates" },
-    { "label": "Classroom Utilities", "view": "utilities" }
-  ],
-  "evidence": [
-    { "label": "Dashboard", "view": "dashboard" },
-    { "label": "QTS Evidence", "view": "qts" },
-    { "label": "Observation Evidence", "view": "observations" },
-    { "label": "Teacher Standards", "view": "teacher-standards" },
-    { "label": "Reflections", "view": "reflections" },
-    { "label": "Supporting Files", "view": "files" }
-  ],
-  "ai-lab": [
-    { "label": "Dashboard", "view": "dashboard" },
-    { "label": "Lesson Generator", "view": "lesson-generator" },
-    { "label": "Worksheet Generator", "view": "worksheet-generator" },
-    { "label": "Feedback Writer", "view": "feedback-writer" },
-    { "label": "Question Generator", "view": "question-generator" }
-  ],
-  "analytics": [
-    { "label": "Dashboard", "view": "dashboard" },
-    { "label": "Assessment Analytics", "view": "assessment" },
-    { "label": "Curriculum Coverage", "view": "coverage" },
-    { "label": "Evidence Analytics", "view": "evidence" }
-  ],
-  "admin": [
-    { "label": "Dashboard", "view": "dashboard" },
-    { "label": "Settings", "view": "settings" },
-    { "label": "Registry", "view": "registry" },
-    { "label": "Navigation", "view": "navigation" }
-  ]
+  "curriculum":[{"label":"Dashboard","view":"dashboard"},{"label":"Units","view":"units"},{"label":"Lessons","view":"lessons"},{"label":"Schemes of Work","view":"schemes"},{"label":"Resources","view":"resources"},{"label":"Planner","view":"planner"},{"label":"Settings","view":"settings"}],
+  "assessment":[{"label":"Dashboard","view":"dashboard"},{"label":"Markbooks","view":"markbooks"},{"label":"Gradebook","view":"gradebook"},{"label":"Feedback","view":"feedback"},{"label":"Targets","view":"targets"},{"label":"Reports","view":"reports"}],
+  "revision":[{"label":"Dashboard","view":"dashboard"},{"label":"Topics","view":"topics"},{"label":"Checklists","view":"checklists"},{"label":"Practice","view":"practice"},{"label":"Exam Prep","view":"exam-prep"}],
+  "question-banks":[{"label":"Dashboard","view":"dashboard"},{"label":"GCSE Questions","view":"gcse"},{"label":"A Level Questions","view":"a-level"},{"label":"Retrieval Practice","view":"retrieval"},{"label":"Quizzes","view":"quizzes"}],
+  "tools":[{"label":"Dashboard","view":"dashboard"},{"label":"Lesson Tools","view":"lesson-tools"},{"label":"Templates","view":"templates"},{"label":"Classroom Utilities","view":"utilities"}],
+  "evidence":[{"label":"Dashboard","view":"dashboard"},{"label":"QTS Evidence","view":"qts"},{"label":"Observations","view":"observations"},{"label":"Teacher Standards","view":"standards"},{"label":"Reflections","view":"reflections"},{"label":"Portfolio Links","view":"portfolio"}],
+  "ai-lab":[{"label":"Dashboard","view":"dashboard"},{"label":"Lesson Generator","view":"lesson-generator"},{"label":"Worksheet Generator","view":"worksheet-generator"},{"label":"Feedback Writer","view":"feedback-writer"},{"label":"Question Generator","view":"question-generator"}],
+  "analytics":[{"label":"Dashboard","view":"dashboard"},{"label":"Assessment Analytics","view":"assessment"},{"label":"Curriculum Coverage","view":"coverage"},{"label":"Evidence Analytics","view":"evidence"}],
+  "admin":[{"label":"Dashboard","view":"dashboard"},{"label":"Settings","view":"settings"},{"label":"Registry","view":"registry"},{"label":"Navigation","view":"navigation"}]
 }
