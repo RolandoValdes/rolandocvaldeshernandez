@@ -4,14 +4,11 @@ class ProjectXApp {
     this.moduleTitle = options.moduleTitle || "Project X Module";
     this.moduleSubtitle = options.moduleSubtitle || "Teaching Intelligence Platform";
     this.defaultView = options.defaultView || "dashboard";
-
-    this.navigationUrl =
-      "/rolandocvaldeshernandez/projectx/config/module-navigation.json";
+    this.navigationUrl = "/rolandocvaldeshernandez/projectx/config/module-navigation.json";
 
     this.navTarget = null;
     this.workspaceTarget = null;
     this.moduleTitleTarget = null;
-
     this.currentView = this.defaultView;
     this.navigationItems = [];
   }
@@ -132,9 +129,7 @@ class ProjectXApp {
       <div class="projectx-card">
         <span class="projectx-status">${this.escape(this.moduleTitle)}</span>
         <h2>${this.escape(title)}</h2>
-        <p>
-          This workspace view is ready for development inside Project X.
-        </p>
+        <p>This workspace view is ready for development inside Project X.</p>
 
         <div class="projectx-grid" style="margin-top: 20px;">
           <div class="projectx-card">
