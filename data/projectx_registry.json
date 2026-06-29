@@ -1,91 +1,161 @@
+```json
 {
   "title": "Project X",
   "subtitle": "Teaching Intelligence Platform",
-  "description": "A professional collection of curriculum, assessment, revision, analytics and teaching tools.",
+  "description": "A professional collection of portfolio pages, curriculum tools, assessment dashboards, revision resources, question banks, analytics and teaching applications.",
+  "version": "2.0",
+  "updated": "2026-06-29",
   "apps": [
     {
       "title": "Professional Portfolio Home",
       "category": "Professional Hub",
-      "icon": "\ud83c\udfe0",
+      "section": "Professional Hub",
+      "icon": "🏠",
       "description": "Main landing page for recruiters, schools and professional contacts.",
-      "url": "../index.html"
+      "url": "../index.html",
+      "status": "Live",
+      "priority": 5
     },
     {
       "title": "Career Profile",
       "category": "Professional Hub",
-      "icon": "\ud83d\udcbc",
+      "section": "Professional Hub",
+      "icon": "💼",
       "description": "Career history, experience, salary expectations and relocation preferences.",
-      "url": "../career.html"
+      "url": "../career.html",
+      "status": "Live",
+      "priority": 5
     },
     {
       "title": "Teaching Evidence Centre",
       "category": "Professional Hub",
-      "icon": "\ud83c\udf93",
+      "section": "Professional Hub",
+      "icon": "🎓",
       "description": "Lesson observation, QTS evidence, resources, reflection and supporting evidence.",
-      "url": "../teaching-evidence-centre.html"
+      "url": "../teaching-evidence-centre.html",
+      "status": "Live",
+      "priority": 5
     },
     {
       "title": "Professional Recommendations",
       "category": "Professional Hub",
-      "icon": "\u2b50",
+      "section": "Professional Hub",
+      "icon": "⭐",
       "description": "Professional references, recommendation form and published testimonials.",
-      "url": "../recommendations.html"
+      "url": "../recommendations.html",
+      "status": "Live",
+      "priority": 5
     },
     {
       "title": "AI in Education",
       "category": "Professional Hub",
-      "icon": "\ud83e\udd16",
+      "section": "Professional Hub",
+      "icon": "🤖",
       "description": "AI-supported teaching, curriculum design and educational innovation.",
-      "url": "../ai.html"
+      "url": "../ai.html",
+      "status": "Live",
+      "priority": 4
     },
     {
       "title": "Contact",
       "category": "Professional Hub",
-      "icon": "\u2709\ufe0f",
+      "section": "Professional Hub",
+      "icon": "✉️",
       "description": "Professional contact information and enquiries.",
-      "url": "../contact.html"
+      "url": "../contact.html",
+      "status": "Live",
+      "priority": 4
     },
     {
-      "title": "J277 Scheme of Work Browser",
+      "title": "Curriculum Centre",
       "category": "Curriculum",
-      "icon": "\ud83d\udcda",
-      "description": "Interactive OCR J277 curriculum and lesson registry browser.",
-      "url": "apps/curriculum/J277_SoW_JSON_Browser.html"
+      "section": "Teaching Workspace",
+      "icon": "📚",
+      "description": "Central workspace for schemes of work, curriculum planning, lesson sequencing and unit organisation.",
+      "url": "apps/curriculum/",
+      "status": "Live",
+      "priority": 5
     },
     {
-      "title": "Y13 Mock Results Jan 2026",
+      "title": "Assessment Centre",
       "category": "Assessment",
-      "icon": "\ud83d\udcca",
-      "description": "Interactive A Level mock results and question-level analysis.",
-      "url": "apps/assessment/Jan_2026_Mock_Results_Y13_Updated.html"
+      "section": "Teaching Workspace",
+      "icon": "📊",
+      "description": "Assessment dashboard for mock results, question-level analysis, trackers and future grade analytics.",
+      "url": "apps/assessment/",
+      "status": "Live",
+      "priority": 5
     },
     {
-      "title": "OCR A Level Review Bank",
+      "title": "Revision Centre",
       "category": "Revision",
-      "icon": "\ud83d\udcdd",
-      "description": "Question-by-question OCR A Level Computer Science review bank.",
-      "url": "apps/revision/ocr_cs_june_2025_review_bank.html"
+      "section": "Teaching Workspace",
+      "icon": "🧠",
+      "description": "GCSE and A Level revision hub containing review banks, practice resources and structured revision tools.",
+      "url": "apps/revision/",
+      "status": "Live",
+      "priority": 5
     },
     {
-      "title": "OCR GCSE Review Bank",
-      "category": "Revision",
-      "icon": "\ud83d\udcd8",
-      "description": "Interactive OCR GCSE Computer Science review bank.",
-      "url": "apps/revision/ocr_j277_june_2025_review_bank.html"
-    },
-    {
-      "title": "OCR J277/02 Combined Revision",
-      "category": "Revision",
-      "icon": "\ud83e\udde0",
-      "description": "Combined J277/02 sample and practice paper revision resource.",
-      "url": "apps/revision/ocr_j27702_combined_sample_and_practice_revision.html"
-    },
-    {
-      "title": "H446 Question Bank",
+      "title": "Question Banks",
       "category": "Question Banks",
-      "icon": "\u2753",
-      "description": "Full-fidelity OCR A Level H446 question bank data.",
-      "url": "apps/question-banks/A1h446_2025_full_question_bank.json"
+      "section": "Teaching Workspace",
+      "icon": "❓",
+      "description": "Question-bank workspace for OCR GCSE and A Level Computer Science resources.",
+      "url": "apps/question-banks/",
+      "status": "Live",
+      "priority": 5
+    },
+    {
+      "title": "Teaching Tools",
+      "category": "Teaching Tools",
+      "section": "Teaching Workspace",
+      "icon": "🛠️",
+      "description": "Workspace for lesson tools, resource generators, planning utilities and classroom support applications.",
+      "url": "apps/tools/",
+      "status": "Beta",
+      "priority": 4
+    },
+    {
+      "title": "Analytics Centre",
+      "category": "Analytics",
+      "section": "Teaching Workspace",
+      "icon": "📈",
+      "description": "Future analytics workspace for attainment, progress, assessment trends and teaching impact.",
+      "url": "apps/analytics/",
+      "status": "Coming Soon",
+      "priority": 3
+    },
+    {
+      "title": "AI Lab",
+      "category": "AI Lab",
+      "section": "Teaching Workspace",
+      "icon": "✨",
+      "description": "AI experimentation area for lesson planning, resource generation, feedback support and workflow design.",
+      "url": "apps/ai-lab/",
+      "status": "Coming Soon",
+      "priority": 3
+    },
+    {
+      "title": "Teaching Evidence App",
+      "category": "Evidence",
+      "section": "Teaching Workspace",
+      "icon": "🎥",
+      "description": "Project X evidence application for lesson video, standards, reflection, professional review and supporting documents.",
+      "url": "../teaching-evidence-centre.html",
+      "status": "Live",
+      "priority": 5
+    },
+    {
+      "title": "Administration",
+      "category": "Administration",
+      "section": "Teaching Workspace",
+      "icon": "⚙️",
+      "description": "Future administration area for registry management, settings, indexing and Project X configuration.",
+      "url": "apps/admin/",
+      "status": "Coming Soon",
+      "priority": 2
     }
   ]
 }
+```
