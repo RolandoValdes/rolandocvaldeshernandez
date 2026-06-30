@@ -40,13 +40,6 @@
         "Database-linked Digital Lesson Twin",
         "ADR-0008"
       ]
-    },
-    {
-      "release": "0.6.1",
-      "title": "Academic Year Completion Fix",
-      "date": "2026-06-30",
-      "status": "Completed",
-      "summary": "Marked all 2025-2026 lessons as Completed and bumped Curriculum Centre localStorage key to avoid stale planned statuses."
     }
   ]
 }

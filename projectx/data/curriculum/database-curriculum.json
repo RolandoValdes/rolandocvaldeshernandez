@@ -1,12 +1,10 @@
 {
   "meta": {
     "source": "data/database/schemes-export.json",
-    "release": "0.6.1",
+    "release": "Project X v4.0 Release 0.6",
     "academicYear": "2025-2026",
     "generatedAt": "2026-06-30T13:40:52.437748Z",
-    "model": "Database-powered curriculum centre export",
-    "academicYearCompletionPolicy": "All 2025-2026 lesson records are marked Completed.",
-    "lastUpdated": "2026-06-30"
+    "model": "Database-powered curriculum centre export"
   },
   "schemes": [
     {
@@ -390,7 +388,7 @@
       "lessonType": "teach",
       "duration": "60 min",
       "plannedMinutes": 60,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Year 11",
       "keyStage": "KS4",
       "examBoard": "OCR J277",
@@ -404,9 +402,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 1,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 1
       }
     },
     {
@@ -421,7 +417,7 @@
       "lessonType": "teach",
       "duration": "60 min",
       "plannedMinutes": 60,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Year 11",
       "keyStage": "KS4",
       "examBoard": "OCR J277",
@@ -435,9 +431,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 2,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 2
       }
     },
     {
@@ -452,7 +446,7 @@
       "lessonType": "practice",
       "duration": "60 min",
       "plannedMinutes": 60,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Year 11",
       "keyStage": "KS4",
       "examBoard": "OCR J277",
@@ -466,9 +460,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 3,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 3
       }
     },
     {
@@ -483,7 +475,7 @@
       "lessonType": "teach",
       "duration": "360 min",
       "plannedMinutes": 360,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR H446",
@@ -501,9 +493,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 4,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 4
       }
     },
     {
@@ -518,7 +508,7 @@
       "lessonType": "teach",
       "duration": "540 min",
       "plannedMinutes": 540,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR H446",
@@ -534,9 +524,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 5,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 5
       }
     },
     {
@@ -551,7 +539,7 @@
       "lessonType": "teach",
       "duration": "480 min",
       "plannedMinutes": 480,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR H446",
@@ -568,9 +556,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 6,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 6
       }
     },
     {
@@ -585,7 +571,7 @@
       "lessonType": "teach",
       "duration": "540 min",
       "plannedMinutes": 540,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR H446",
@@ -606,9 +592,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 7,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 7
       }
     },
     {
@@ -623,7 +607,7 @@
       "lessonType": "teach",
       "duration": "480 min",
       "plannedMinutes": 480,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR H446",
@@ -642,9 +626,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 8,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 8
       }
     },
     {
@@ -659,7 +641,7 @@
       "lessonType": "teach",
       "duration": "480 min",
       "plannedMinutes": 480,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR H446",
@@ -677,9 +659,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 9,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 9
       }
     },
     {
@@ -694,7 +674,7 @@
       "lessonType": "teach",
       "duration": "1200 min",
       "plannedMinutes": 1200,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR H446",
@@ -712,9 +692,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 10,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 10
       }
     },
     {
@@ -729,7 +707,7 @@
       "lessonType": "teach",
       "duration": "420 min",
       "plannedMinutes": 420,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR H446",
@@ -746,9 +724,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 11,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 11
       }
     },
     {
@@ -763,7 +739,7 @@
       "lessonType": "teach",
       "duration": "360 min",
       "plannedMinutes": 360,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR H446",
@@ -782,9 +758,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 12,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 12
       }
     },
     {
@@ -799,7 +773,7 @@
       "lessonType": "teach",
       "duration": "300 min",
       "plannedMinutes": 300,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR H446",
@@ -817,9 +791,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 13,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 13
       }
     },
     {
@@ -834,7 +806,7 @@
       "lessonType": "teach",
       "duration": "420 min",
       "plannedMinutes": 420,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR H446",
@@ -851,9 +823,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 14,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 14
       }
     },
     {
@@ -868,7 +838,7 @@
       "lessonType": "teach",
       "duration": "480 min",
       "plannedMinutes": 480,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR H446",
@@ -889,9 +859,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 15,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 15
       }
     },
     {
@@ -906,7 +874,7 @@
       "lessonType": "teach",
       "duration": "600 min",
       "plannedMinutes": 600,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR H446",
@@ -924,9 +892,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 16,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 16
       }
     },
     {
@@ -941,7 +907,7 @@
       "lessonType": "teach",
       "duration": "300 min",
       "plannedMinutes": 300,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR H446",
@@ -958,9 +924,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 17,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 17
       }
     },
     {
@@ -975,7 +939,7 @@
       "lessonType": "teach",
       "duration": "300 min",
       "plannedMinutes": 300,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR H446",
@@ -989,9 +953,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 18,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 18
       }
     },
     {
@@ -1006,7 +968,7 @@
       "lessonType": "teach",
       "duration": "300 min",
       "plannedMinutes": 300,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR H446",
@@ -1023,9 +985,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 19,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 19
       }
     },
     {
@@ -1040,7 +1000,7 @@
       "lessonType": "teach",
       "duration": "300 min",
       "plannedMinutes": 300,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR H446",
@@ -1057,9 +1017,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 20,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 20
       }
     },
     {
@@ -1074,7 +1032,7 @@
       "lessonType": "teach",
       "duration": "300 min",
       "plannedMinutes": 300,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR H446",
@@ -1091,9 +1049,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 21,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 21
       }
     },
     {
@@ -1108,7 +1064,7 @@
       "lessonType": "teach",
       "duration": "300 min",
       "plannedMinutes": 300,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR H446",
@@ -1124,9 +1080,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 22,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 22
       }
     },
     {
@@ -1141,7 +1095,7 @@
       "lessonType": "teach",
       "duration": "300 min",
       "plannedMinutes": 300,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR H446",
@@ -1156,9 +1110,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 23,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 23
       }
     },
     {
@@ -1173,7 +1125,7 @@
       "lessonType": "teach",
       "duration": "1800 min",
       "plannedMinutes": 1800,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR H446",
@@ -1192,9 +1144,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 24,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 24
       }
     },
     {
@@ -1209,7 +1159,7 @@
       "lessonType": "teach",
       "duration": "600 min",
       "plannedMinutes": 600,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR H446",
@@ -1227,9 +1177,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 25,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 25
       }
     },
     {
@@ -1244,7 +1192,7 @@
       "lessonType": "teach",
       "duration": "600 min",
       "plannedMinutes": 600,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR H446",
@@ -1263,9 +1211,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 26,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 26
       }
     },
     {
@@ -1280,7 +1226,7 @@
       "lessonType": "teach",
       "duration": "900 min",
       "plannedMinutes": 900,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR H446",
@@ -1301,9 +1247,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 27,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 27
       }
     },
     {
@@ -1318,7 +1262,7 @@
       "lessonType": "teach",
       "duration": "660 min",
       "plannedMinutes": 660,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR H446",
@@ -1334,9 +1278,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 28,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 28
       }
     },
     {
@@ -1351,7 +1293,7 @@
       "lessonType": "teach",
       "duration": "60 min",
       "plannedMinutes": 60,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR H446",
@@ -1366,9 +1308,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 29,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 29
       }
     },
     {
@@ -1383,7 +1323,7 @@
       "lessonType": "teach",
       "duration": "60 min",
       "plannedMinutes": 60,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR H446",
@@ -1401,9 +1341,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 30,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 30
       }
     },
     {
@@ -1418,7 +1356,7 @@
       "lessonType": "teach",
       "duration": "60 min",
       "plannedMinutes": 60,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR H446",
@@ -1435,9 +1373,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 31,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 31
       }
     },
     {
@@ -1452,7 +1388,7 @@
       "lessonType": "teach",
       "duration": "1020 min",
       "plannedMinutes": 1020,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR H446",
@@ -1467,9 +1403,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 32,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 32
       }
     },
     {
@@ -1484,7 +1418,7 @@
       "lessonType": "teach",
       "duration": "60 min",
       "plannedMinutes": 60,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR H446",
@@ -1504,9 +1438,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 33,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 33
       }
     },
     {
@@ -1521,7 +1453,7 @@
       "lessonType": "teach",
       "duration": "60 min",
       "plannedMinutes": 60,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR H446",
@@ -1542,9 +1474,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 34,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 34
       }
     },
     {
@@ -1559,7 +1489,7 @@
       "lessonType": "teach",
       "duration": "2100 min",
       "plannedMinutes": 2100,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR H446",
@@ -1576,9 +1506,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 35,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 35
       }
     },
     {
@@ -1593,7 +1521,7 @@
       "lessonType": "teach",
       "duration": "60 min",
       "plannedMinutes": 60,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR H446",
@@ -1610,9 +1538,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 36,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 36
       }
     },
     {
@@ -1627,7 +1553,7 @@
       "lessonType": "teach",
       "duration": "900 min",
       "plannedMinutes": 900,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR H446",
@@ -1642,9 +1568,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 37,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 37
       }
     },
     {
@@ -1659,7 +1583,7 @@
       "lessonType": "teach",
       "duration": "60 min",
       "plannedMinutes": 60,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR H446",
@@ -1673,9 +1597,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 38,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 38
       }
     },
     {
@@ -1690,7 +1612,7 @@
       "lessonType": "teach",
       "duration": "60 min",
       "plannedMinutes": 60,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR H446",
@@ -1704,9 +1626,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 39,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 39
       }
     },
     {
@@ -1721,7 +1641,7 @@
       "lessonType": "teach",
       "duration": "60 min",
       "plannedMinutes": 60,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR H446",
@@ -1736,9 +1656,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 40,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 40
       }
     },
     {
@@ -1753,7 +1671,7 @@
       "lessonType": "teach",
       "duration": "300 min",
       "plannedMinutes": 300,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR J277",
@@ -1774,9 +1692,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 41,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 41
       }
     },
     {
@@ -1791,7 +1707,7 @@
       "lessonType": "teach",
       "duration": "120 min",
       "plannedMinutes": 120,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR J277",
@@ -1808,9 +1724,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 42,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 42
       }
     },
     {
@@ -1825,7 +1739,7 @@
       "lessonType": "teach",
       "duration": "120 min",
       "plannedMinutes": 120,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR J277",
@@ -1840,9 +1754,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 43,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 43
       }
     },
     {
@@ -1857,7 +1769,7 @@
       "lessonType": "teach",
       "duration": "120 min",
       "plannedMinutes": 120,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR J277",
@@ -1877,9 +1789,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 44,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 44
       }
     },
     {
@@ -1894,7 +1804,7 @@
       "lessonType": "teach",
       "duration": "300 min",
       "plannedMinutes": 300,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR J277",
@@ -1915,9 +1825,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 45,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 45
       }
     },
     {
@@ -1932,7 +1840,7 @@
       "lessonType": "teach",
       "duration": "60 min",
       "plannedMinutes": 60,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR J277",
@@ -1953,9 +1861,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 46,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 46
       }
     },
     {
@@ -1970,7 +1876,7 @@
       "lessonType": "teach",
       "duration": "660 min",
       "plannedMinutes": 660,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR J277",
@@ -1991,9 +1897,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 47,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 47
       }
     },
     {
@@ -2008,7 +1912,7 @@
       "lessonType": "teach",
       "duration": "120 min",
       "plannedMinutes": 120,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR J277",
@@ -2025,9 +1929,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 48,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 48
       }
     },
     {
@@ -2042,7 +1944,7 @@
       "lessonType": "teach",
       "duration": "480 min",
       "plannedMinutes": 480,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR J277",
@@ -2063,9 +1965,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 49,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 49
       }
     },
     {
@@ -2080,7 +1980,7 @@
       "lessonType": "teach",
       "duration": "480 min",
       "plannedMinutes": 480,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR J277",
@@ -2101,9 +2001,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 50,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 50
       }
     },
     {
@@ -2118,7 +2016,7 @@
       "lessonType": "teach",
       "duration": "180 min",
       "plannedMinutes": 180,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR J277",
@@ -2139,9 +2037,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 51,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 51
       }
     },
     {
@@ -2156,7 +2052,7 @@
       "lessonType": "teach",
       "duration": "120 min",
       "plannedMinutes": 120,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR J277",
@@ -2177,9 +2073,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 52,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 52
       }
     },
     {
@@ -2194,7 +2088,7 @@
       "lessonType": "teach",
       "duration": "180 min",
       "plannedMinutes": 180,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR J277",
@@ -2215,9 +2109,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 53,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 53
       }
     },
     {
@@ -2232,7 +2124,7 @@
       "lessonType": "teach",
       "duration": "180 min",
       "plannedMinutes": 180,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR J277",
@@ -2250,9 +2142,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 54,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 54
       }
     },
     {
@@ -2267,7 +2157,7 @@
       "lessonType": "teach",
       "duration": "360 min",
       "plannedMinutes": 360,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR J277",
@@ -2288,9 +2178,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 55,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 55
       }
     },
     {
@@ -2305,7 +2193,7 @@
       "lessonType": "teach",
       "duration": "480 min",
       "plannedMinutes": 480,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR J277",
@@ -2326,9 +2214,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 56,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 56
       }
     },
     {
@@ -2343,7 +2229,7 @@
       "lessonType": "teach",
       "duration": "240 min",
       "plannedMinutes": 240,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR J277",
@@ -2363,9 +2249,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 57,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 57
       }
     },
     {
@@ -2380,7 +2264,7 @@
       "lessonType": "teach",
       "duration": "420 min",
       "plannedMinutes": 420,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR J277",
@@ -2401,9 +2285,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 58,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 58
       }
     },
     {
@@ -2418,7 +2300,7 @@
       "lessonType": "teach",
       "duration": "240 min",
       "plannedMinutes": 240,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR J277",
@@ -2439,9 +2321,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 59,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 59
       }
     },
     {
@@ -2456,7 +2336,7 @@
       "lessonType": "teach",
       "duration": "480 min",
       "plannedMinutes": 480,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR J277",
@@ -2477,9 +2357,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 60,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 60
       }
     },
     {
@@ -2494,7 +2372,7 @@
       "lessonType": "teach",
       "duration": "300 min",
       "plannedMinutes": 300,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR J277",
@@ -2515,9 +2393,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 61,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 61
       }
     },
     {
@@ -2532,7 +2408,7 @@
       "lessonType": "teach",
       "duration": "240 min",
       "plannedMinutes": 240,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR J277",
@@ -2553,9 +2429,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 62,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 62
       }
     },
     {
@@ -2570,7 +2444,7 @@
       "lessonType": "teach",
       "duration": "240 min",
       "plannedMinutes": 240,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR J277",
@@ -2589,9 +2463,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 63,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 63
       }
     },
     {
@@ -2606,7 +2478,7 @@
       "lessonType": "teach",
       "duration": "120 min",
       "plannedMinutes": 120,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR J277",
@@ -2626,9 +2498,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 64,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 64
       }
     },
     {
@@ -2643,7 +2513,7 @@
       "lessonType": "teach",
       "duration": "120 min",
       "plannedMinutes": 120,
-      "status": "Completed",
+      "status": "Planned",
       "yearGroup": "Unspecified",
       "keyStage": "Unspecified",
       "examBoard": "OCR J277",
@@ -2661,9 +2531,7 @@
       "digitalLessonTwin": {
         "readiness": "Database linked",
         "sourceTable": "scheme_lessons",
-        "databaseId": 65,
-        "deliveryStatus": "Completed",
-        "academicYearStatus": "2025-2026 lessons marked complete after year-end verification"
+        "databaseId": 65
       }
     }
   ],

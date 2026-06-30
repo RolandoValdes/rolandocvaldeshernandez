@@ -1,5 +1,5 @@
 (function () {
-  const STORAGE_KEY = "projectx.curriculum.database.v061";
+  const STORAGE_KEY = "projectx.curriculum.database.v06";
   const DATA_URL = "/rolandocvaldeshernandez/projectx/data/curriculum/database-curriculum.json";
   const FALLBACK_URL = "../../data/curriculum/database-curriculum.json";
 
@@ -243,7 +243,7 @@
       ${renderKPIs()}
       <div class="projectx-grid">
         <div class="projectx-card">
-          <span class="projectx-status">Release 0.6.1</span>
+          <span class="projectx-status">Release 0.6</span>
           <h3>Database-Powered Curriculum Centre</h3>
           <p>The Curriculum Centre now reads from the database-derived curriculum model generated from the Unified Teaching Database.</p>
         </div>
