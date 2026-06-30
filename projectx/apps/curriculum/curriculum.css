@@ -270,3 +270,12 @@
     width: 100%;
   }
 }
+.curriculum-filter-summary {
+  color: var(--px-muted);
+  margin-top: -4px;
+  margin-bottom: 14px;
+}
+
+#curriculumYearGroupFilter {
+  min-width: 170px;
+}

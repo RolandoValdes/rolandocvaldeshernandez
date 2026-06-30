@@ -1,5 +1,6 @@
 (function () {
   const STORAGE_KEY = "projectx.curriculum.unified.v1";
+  const FILTER_STORAGE_KEY = "projectx.curriculum.filters.v1";
   const LEGACY_STORAGE_KEY = "projectx.curriculum.operational.v1";
   const DATA_BASE_URL = "/rolandocvaldeshernandez/projectx/data";
   const REPOSITORY_VERSION = "ADR-0005-unified-curriculum-repository";
@@ -9,6 +10,7 @@
     activeView: "dashboard",
     selectedUnitId: null,
     search: "",
+    selectedYearGroup: "all",
     modalMode: null,
     editingId: null
   };
@@ -65,6 +67,7 @@
 
     const lessons = (raw.lessons?.lessons || raw.lessons || []).map(lesson => ({
       ...lesson,
+      yearGroup: lesson.yearGroup || units.find(unit => unit.id === lesson.unitId)?.yearGroup || "Unassigned",
       lessonNumber: Number(lesson.lessonNumber || lesson.sequence || 0),
       duration: lesson.duration || 45,
       status: lesson.status || "Imported",
@@ -91,6 +94,7 @@
 
     units.forEach(unit => {
       unit.lessonCount = lessonCounts[unit.id] || 0;
+      unit.yearGroup = unit.yearGroup || "Unassigned";
     });
 
     return {
@@ -143,8 +147,52 @@
 
   function resetData() {
     localStorage.removeItem(STORAGE_KEY);
+    localStorage.removeItem(FILTER_STORAGE_KEY);
     localStorage.removeItem(LEGACY_STORAGE_KEY);
     location.reload();
+  }
+
+  function loadFilters() {
+    try {
+      const stored = JSON.parse(localStorage.getItem(FILTER_STORAGE_KEY) || "{}");
+      state.search = stored.search || "";
+      state.selectedYearGroup = stored.selectedYearGroup || "all";
+    } catch (error) {
+      state.search = "";
+      state.selectedYearGroup = "all";
+    }
+  }
+
+  function saveFilters() {
+    localStorage.setItem(FILTER_STORAGE_KEY, JSON.stringify({
+      search: state.search,
+      selectedYearGroup: state.selectedYearGroup
+    }));
+  }
+
+  function getYearGroupValue(item) {
+    if (!item) return "Unassigned";
+    return item.yearGroup || getUnit(item.unitId)?.yearGroup || "Unassigned";
+  }
+
+  function yearGroupSortValue(value) {
+    const match = String(value || "").match(/\d+/);
+    return match ? Number(match[0]) : 999;
+  }
+
+  function availableYearGroups() {
+    const values = new Set();
+    state.data.units.forEach(unit => values.add(getYearGroupValue(unit)));
+    state.data.lessons.forEach(lesson => values.add(getYearGroupValue(lesson)));
+    return [...values].filter(Boolean).sort((a, b) => {
+      const ay = yearGroupSortValue(a);
+      const by = yearGroupSortValue(b);
+      return ay === by ? String(a).localeCompare(String(b)) : ay - by;
+    });
+  }
+
+  function matchesYearGroup(item) {
+    return state.selectedYearGroup === "all" || getYearGroupValue(item) === state.selectedYearGroup;
   }
 
   function exportData() {
@@ -181,12 +229,23 @@
 
   function filteredUnits() {
     const q = state.search.toLowerCase();
-    return state.data.units.filter(unit =>
-      [unit.title, unit.yearGroup, unit.keyStage, unit.examBoard, unit.status]
+    return state.data.units.filter(unit => {
+      const haystack = [unit.title, unit.yearGroup, unit.keyStage, unit.examBoard, unit.status]
         .join(" ")
-        .toLowerCase()
-        .includes(q)
-    );
+        .toLowerCase();
+      return matchesYearGroup(unit) && haystack.includes(q);
+    });
+  }
+
+  function filteredLessons(sourceLessons = state.data.lessons) {
+    const q = state.search.toLowerCase();
+    return sourceLessons.filter(lesson => {
+      const unit = getUnit(lesson.unitId);
+      const haystack = [lesson.title, lesson.status, lesson.yearGroup, unit?.title, unit?.yearGroup, unit?.examBoard]
+        .join(" ")
+        .toLowerCase();
+      return matchesYearGroup(lesson) && haystack.includes(q);
+    });
   }
 
   function lessonsForUnit(unitId) {
@@ -214,15 +273,21 @@
   }
 
   function renderKPIs() {
-    const units = state.data.units.length;
-    const lessons = state.data.lessons.length;
-    const complete = state.data.delivery.filter(l => l.completed || String(l.status).toLowerCase() === "completed").length;
-    const resources = state.data.resources.length;
+    const units = filteredUnits().length;
+    const lessons = filteredLessons().length;
+    const complete = state.data.delivery.filter(l => {
+      const lesson = getLesson(l.lessonId);
+      return lesson && matchesYearGroup(lesson) && (l.completed || String(l.status).toLowerCase() === "completed");
+    }).length;
+    const resources = state.data.resources.filter(resource => {
+      const lesson = getLesson(resource.lessonId);
+      return !lesson || matchesYearGroup(lesson);
+    }).length;
 
     return `
       <div class="curriculum-kpi-grid">
-        <div class="curriculum-kpi"><span>Units</span><strong>${units}</strong></div>
-        <div class="curriculum-kpi"><span>Lessons</span><strong>${lessons}</strong></div>
+        <div class="curriculum-kpi"><span>${state.selectedYearGroup === "all" ? "Units" : state.selectedYearGroup + " Units"}</span><strong>${units}</strong></div>
+        <div class="curriculum-kpi"><span>${state.selectedYearGroup === "all" ? "Lessons" : state.selectedYearGroup + " Lessons"}</span><strong>${lessons}</strong></div>
         <div class="curriculum-kpi"><span>2025–26 Completed</span><strong>${complete}</strong></div>
         <div class="curriculum-kpi"><span>Assets</span><strong>${resources}</strong></div>
       </div>
@@ -230,7 +295,7 @@
   }
 
   function renderDashboard() {
-    const recent = [...state.data.lessons].slice(-6).reverse();
+    const recent = filteredLessons([...state.data.lessons]).slice(-6).reverse();
 
     return `
       ${renderKPIs()}
@@ -299,7 +364,8 @@
   }
 
   function renderSelectedUnit() {
-    const unit = getUnit(state.selectedUnitId) || filteredUnits()[0];
+    const availableUnits = filteredUnits();
+    const unit = availableUnits.find(item => item.id === state.selectedUnitId) || availableUnits[0];
 
     if (!unit) return `<div class="curriculum-empty">Select or create a unit.</div>`;
 
@@ -335,18 +401,12 @@
   }
 
   function renderLessons() {
-    const lessons = state.data.lessons.filter(lesson => {
-      const unit = getUnit(lesson.unitId);
-      const q = state.search.toLowerCase();
-      return [lesson.title, lesson.status, unit?.title, unit?.yearGroup, unit?.examBoard]
-        .join(" ")
-        .toLowerCase()
-        .includes(q);
-    });
+    const lessons = filteredLessons();
 
     return `
       <div class="projectx-card">
         <h3>Lessons Library</h3>
+        <p class="curriculum-filter-summary">Showing ${lessons.length} reusable lessons${state.selectedYearGroup === "all" ? "" : " for " + escape(state.selectedYearGroup)}.</p>
         ${renderLessonsTable(lessons)}
       </div>
     `;
@@ -379,7 +439,7 @@
                 <td><strong>${escape(lesson.title)}</strong></td>
                 <td>${escape(unit?.title || "Unlinked")}</td>
                 <td>${statusPill(lesson.status)}</td>
-                <td>${escape(lesson.yearGroup || "")}</td>
+                <td>${escape(getYearGroupValue(lesson))}</td>
                 <td>${escape(lesson.duration || "")}</td>
                 <td>
                   <div class="curriculum-actions">
@@ -519,7 +579,7 @@
 
   function renderPlanner() {
     const completedLessonIds = new Set((state.data.delivery || []).filter(item => item.completed || String(item.status).toLowerCase() === "completed").map(item => item.lessonId));
-    const planned = state.data.lessons.filter(l => !completedLessonIds.has(l.id));
+    const planned = filteredLessons(state.data.lessons.filter(l => !completedLessonIds.has(l.id)));
     return `
       <div class="projectx-card">
         <h3>Upcoming / Planned Lessons</h3>
@@ -575,6 +635,11 @@
       <div class="curriculum-toolbar">
         <div class="curriculum-toolbar-left">
           <input id="curriculumSearch" class="curriculum-input" placeholder="Search units, lessons, resources..." value="${escape(state.search)}">
+          <select id="curriculumYearGroupFilter" class="curriculum-select" aria-label="Filter by year group">
+            <option value="all" ${state.selectedYearGroup === "all" ? "selected" : ""}>All Year Groups</option>
+            ${availableYearGroups().map(year => `<option value="${escape(year)}" ${state.selectedYearGroup === year ? "selected" : ""}>${escape(year)}</option>`).join("")}
+          </select>
+          <button class="curriculum-button secondary" id="clearCurriculumFiltersBtn" ${state.search || state.selectedYearGroup !== "all" ? "" : "disabled"}>Clear Filters</button>
         </div>
         <div class="curriculum-toolbar-right">
           <button class="curriculum-button" id="newUnitBtn">New Unit</button>
@@ -683,6 +748,22 @@
   function bindEvents() {
     document.getElementById("curriculumSearch")?.addEventListener("input", (e) => {
       state.search = e.target.value;
+      saveFilters();
+      render();
+    });
+
+    document.getElementById("curriculumYearGroupFilter")?.addEventListener("change", (e) => {
+      state.selectedYearGroup = e.target.value;
+      state.selectedUnitId = null;
+      saveFilters();
+      render();
+    });
+
+    document.getElementById("clearCurriculumFiltersBtn")?.addEventListener("click", () => {
+      state.search = "";
+      state.selectedYearGroup = "all";
+      state.selectedUnitId = null;
+      saveFilters();
       render();
     });
 
@@ -852,6 +933,7 @@
   window.ProjectXCurriculum = {
     async initialise() {
       await loadData();
+      loadFilters();
       state.activeView = "dashboard";
       render();
       setTimeout(connectModuleNavigation, 300);
