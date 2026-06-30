@@ -15,6 +15,14 @@
       "status": "Current",
       "summary": "Separates user help, engineering documentation and published documents into distinct areas.",
       "date": "2026-06-30"
+    },
+    {
+      "id": "PX-REL-004-041",
+      "name": "Project X v4.0 Release 0.4.1",
+      "codename": "Unified Curriculum Repository",
+      "status": "Implemented",
+      "summary": "Connects the Curriculum Centre Lesson Library to the canonical imported curriculum repository so Lesson Tracker units, lessons, resources, delivery records and assessment summaries are available through one source of truth.",
+      "date": "2026-06-30"
     }
   ]
 }

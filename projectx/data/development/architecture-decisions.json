@@ -13,6 +13,20 @@
         "Published files are managed through the Document Library.",
         "Knowledge attached to lessons remains part of the Knowledge Engine, not generic documentation."
       ]
+    },
+    {
+      "id": "ADR-0005",
+      "title": "Unified Curriculum Repository",
+      "status": "Accepted",
+      "date": "2026-06-30",
+      "context": "The Lesson Tracker import created complete 2025-2026 curriculum data, but the operational Curriculum Centre was still loading a small seed dataset. This caused imported units and lessons to exist in the repository while not appearing in the Curriculum Centre Lesson Library.",
+      "decision": "Curriculum Centre now loads the canonical curriculum JSON sources: data/curriculum/units.json, data/curriculum/lessons.json, data/curriculum/resources.json, data/delivery/2025-2026.json and data/assessment/2025-2026.json. Local browser storage uses projectx.curriculum.unified.v1 and old operational seed storage is cleared.",
+      "consequences": [
+        "Lesson Tracker imports and the Curriculum Centre share one lesson repository.",
+        "Reusable lesson content is separated from academic-year delivery and assessment records.",
+        "All 2025-2026 lessons become available in the Curriculum Centre Lesson Library.",
+        "Future modules can consume one canonical lesson object instead of copying lesson data between modules."
+      ]
     }
   ]
 }
