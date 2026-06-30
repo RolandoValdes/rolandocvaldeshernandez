@@ -1,0 +1,17 @@
+{
+  "title": "Project X Document Library",
+  "updated": "2026-06-30",
+  "documents": [
+    {
+      "id": "DOC-TDS-CH-001",
+      "title": "Technical Design Specification \u2014 Chapter 1: Why Project X Exists",
+      "category": "Technical Design Specification",
+      "status": "Draft",
+      "version": "0.1",
+      "format": "Live HTML / Markdown",
+      "html": "/rolandocvaldeshernandez/projectx/documents/tds/chapters/chapter-01-why-project-x-exists.html",
+      "markdown": "/rolandocvaldeshernandez/projectx/documents/tds/chapters/chapter-01-why-project-x-exists.md",
+      "updated": "2026-06-30"
+    }
+  ]
+}

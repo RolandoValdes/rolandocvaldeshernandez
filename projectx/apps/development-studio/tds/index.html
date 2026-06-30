@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Development Studio — TDS | Project X</title>
+  <link rel="stylesheet" href="/rolandocvaldeshernandez/projectx/assets/projectx.css" />
+  <style>
+    .tds-toolbar { display:flex; justify-content:space-between; gap:16px; align-items:flex-start; margin-bottom:20px; }
+    .tds-list { display:grid; gap:14px; }
+    .tds-row { display:grid; grid-template-columns: 1fr auto; gap:14px; align-items:center; }
+    .tds-actions { display:flex; gap:10px; flex-wrap:wrap; }
+    @media(max-width:760px) { .tds-row, .tds-toolbar { display:block; } .tds-actions { margin-top:12px; } }
+  </style>
+</head>
+<body>
+  <div class="projectx-shell">
+    <div id="projectxSidebar"></div>
+    <main class="projectx-main">
+      <div id="projectxHeader"></div>
+      <section class="projectx-content">
+        <div class="projectx-card">
+          <div class="tds-toolbar">
+            <div>
+              <span class="projectx-status">Release 0.2</span>
+              <h2>Development Studio — TDS</h2>
+              <p>Track and open live Technical Design Specification chapters</p>
+            </div>
+          </div>
+          <div id="tdsChapters" class="tds-list">Loading TDS chapters...</div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="/rolandocvaldeshernandez/projectx/core/navigation-manager.js"></script>
+  <script src="/rolandocvaldeshernandez/projectx/core/theme-manager.js"></script>
+  <script src="/rolandocvaldeshernandez/projectx/core/projectx-loader.js"></script>
+  <script src="/rolandocvaldeshernandez/projectx/core/bootstrap.js"></script>
+  <script>
+    function escapeHtml(value) {
+      return String(value || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
+    }
+    async function loadTDSChapters() {
+      const target = document.getElementById('tdsChapters');
+      try {
+        const response = await fetch('/rolandocvaldeshernandez/projectx/data/development/tds-chapters.json', {cache:'no-store'});
+        if (!response.ok) throw new Error(response.status);
+        const data = await response.json();
+        const chapters = data.chapters || [];
+        target.innerHTML = chapters.map(chapter => `
+          <article class="projectx-card tds-row">
+            <div>
+              <span class="projectx-status">${escapeHtml(chapter.status)} · v${escapeHtml(chapter.version)}</span>
+              <h3>Chapter ${escapeHtml(chapter.number)} — ${escapeHtml(chapter.title)}</h3>
+              <p>${escapeHtml(chapter.summary)}</p>
+              <p><strong>Last updated:</strong> ${escapeHtml(chapter.lastUpdated)}</p>
+            </div>
+            <div class="tds-actions">
+              <a class="projectx-button" href="${escapeHtml(chapter.html)}">Open Chapter</a>
+              <a class="projectx-button" href="${escapeHtml(chapter.sourceMarkdown)}">View Markdown</a>
+            </div>
+          </article>`).join('') || '<div class="projectx-card">No chapters found.</div>';
+      } catch(error) {
+        target.innerHTML = '<div class="projectx-card"><strong>TDS data could not be loaded.</strong></div>';
+        console.error(error);
+      }
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+      loadTDSChapters();
+      setTimeout(() => {
+        const title = document.getElementById('projectxPageTitle');
+        const subtitle = document.getElementById('projectxPageSubtitle');
+        if (title) title.textContent = 'Development Studio — TDS';
+        if (subtitle) subtitle.textContent = 'Track and open live Technical Design Specification chapters';
+      }, 200);
+    });
+  </script>
+</body>
+</html>
