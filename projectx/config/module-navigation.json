@@ -17,7 +17,7 @@
       "view": "schemes"
     },
     {
-      "label": "Resources",
+      "label": "Teaching Assets",
       "view": "resources"
     },
     {
@@ -55,224 +55,44 @@
       "view": "reports"
     }
   ],
-  "revision": [
-    {
-      "label": "Dashboard",
-      "view": "dashboard"
-    },
-    {
-      "label": "Topics",
-      "view": "topics"
-    },
-    {
-      "label": "Checklists",
-      "view": "checklists"
-    },
-    {
-      "label": "Practice",
-      "view": "practice"
-    },
-    {
-      "label": "Exam Prep",
-      "view": "exam-prep"
-    }
-  ],
-  "question-banks": [
-    {
-      "label": "Dashboard",
-      "view": "dashboard"
-    },
-    {
-      "label": "GCSE Questions",
-      "view": "gcse"
-    },
-    {
-      "label": "A Level Questions",
-      "view": "a-level"
-    },
-    {
-      "label": "Retrieval Practice",
-      "view": "retrieval"
-    },
-    {
-      "label": "Quizzes",
-      "view": "quizzes"
-    }
-  ],
-  "tools": [
-    {
-      "label": "Dashboard",
-      "view": "dashboard"
-    },
-    {
-      "label": "Lesson Tools",
-      "view": "lesson-tools"
-    },
-    {
-      "label": "Templates",
-      "view": "templates"
-    },
-    {
-      "label": "Classroom Utilities",
-      "view": "utilities"
-    }
-  ],
-  "evidence": [
-    {
-      "label": "Dashboard",
-      "view": "dashboard"
-    },
-    {
-      "label": "QTS Evidence",
-      "view": "qts"
-    },
-    {
-      "label": "Teacher Standards",
-      "view": "standards"
-    },
-    {
-      "label": "Observations",
-      "view": "observations"
-    },
-    {
-      "label": "Reflection",
-      "view": "reflection"
-    }
-  ],
   "documentation": [
     {
       "label": "Dashboard",
       "view": "dashboard"
     },
     {
-      "label": "Architecture",
-      "view": "architecture"
+      "label": "Architecture Bible",
+      "view": "architecture-bible"
+    },
+    {
+      "label": "Technical Design",
+      "view": "tds"
     },
     {
       "label": "Release Notes",
-      "view": "releases"
-    },
-    {
-      "label": "Templates",
-      "view": "templates"
-    },
-    {
-      "label": "Settings",
-      "view": "settings"
+      "view": "release-notes"
     }
   ],
-  "ai-lab": [
+  "development-studio": [
     {
       "label": "Dashboard",
       "view": "dashboard"
     },
     {
-      "label": "Lesson Generator",
-      "view": "lesson-generator"
+      "label": "TDS Chapters",
+      "view": "tds-chapters"
     },
     {
-      "label": "Worksheet Generator",
-      "view": "worksheet-generator"
+      "label": "Roadmap",
+      "view": "roadmap"
     },
     {
-      "label": "Feedback Writer",
-      "view": "feedback-writer"
+      "label": "ADRs",
+      "view": "adrs"
     },
     {
-      "label": "Question Generator",
-      "view": "question-generator"
-    }
-  ],
-  "analytics": [
-    {
-      "label": "Dashboard",
-      "view": "dashboard"
-    },
-    {
-      "label": "Assessment Analytics",
-      "view": "assessment"
-    },
-    {
-      "label": "Curriculum Coverage",
-      "view": "coverage"
-    },
-    {
-      "label": "Evidence Analytics",
-      "view": "evidence"
-    }
-  ],
-  "admin": [
-    {
-      "label": "Dashboard",
-      "view": "dashboard"
-    },
-    {
-      "label": "Settings",
-      "view": "settings"
-    },
-    {
-      "label": "Registry",
-      "view": "registry"
-    },
-    {
-      "label": "Navigation",
-      "view": "navigation"
-    },
-    {
-      "label": "Documentation",
-      "view": "documentation"
-    }
-  ],
-  "import-centre": [
-    {
-      "label": "Dashboard",
-      "view": "dashboard"
-    },
-    {
-      "label": "Lesson Tracker",
-      "view": "lesson-tracker"
-    },
-    {
-      "label": "Academic Years",
-      "view": "academic-years"
-    },
-    {
-      "label": "Data Model",
-      "view": "data-model"
-    },
-    {
-      "label": "Backups",
-      "view": "backups"
-    },
-    {
-      "label": "Settings",
-      "view": "settings"
-    }
-  ],
-  "prospect-centre": [
-    {
-      "label": "Dashboard",
-      "view": "dashboard"
-    },
-    {
-      "label": "Share Packs",
-      "view": "share-packs"
-    },
-    {
-      "label": "Prospect Links",
-      "view": "links"
-    },
-    {
-      "label": "Evidence Links",
-      "view": "evidence"
-    },
-    {
-      "label": "Message Templates",
-      "view": "templates"
-    },
-    {
-      "label": "Settings",
-      "view": "settings"
+      "label": "Release History",
+      "view": "release-history"
     }
   ]
 }

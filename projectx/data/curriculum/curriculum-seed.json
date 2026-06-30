@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "source": "Project X v4.0 Release 0.3 seed",
+    "version": "1.0",
+    "academicYear": "2025-2026",
+    "privacy": "No student names or individual marks included."
+  },
+  "units": [
+    {
+      "id": "PX-UNIT-0001",
+      "title": "Programming Foundations",
+      "yearGroup": "Year 7",
+      "keyStage": "KS3",
+      "examBoard": "Internal",
+      "status": "Active",
+      "intent": "Introduce sequence, inputs, variables and basic program design.",
+      "notes": "Reusable foundation unit for KS3 programming."
+    },
+    {
+      "id": "PX-UNIT-0002",
+      "title": "Data Representation",
+      "yearGroup": "Year 10",
+      "keyStage": "KS4",
+      "examBoard": "OCR J277",
+      "status": "Active",
+      "intent": "Develop understanding of binary, hexadecimal, images, sound and compression.",
+      "notes": "Core GCSE theory unit."
+    },
+    {
+      "id": "PX-UNIT-0003",
+      "title": "Sphero Programming",
+      "yearGroup": "Year 9",
+      "keyStage": "KS3",
+      "examBoard": "Internal",
+      "status": "Draft",
+      "intent": "Apply sequence, selection and iteration through physical computing.",
+      "notes": "Useful for engagement and practical evidence."
+    }
+  ],
+  "lessons": [
+    {
+      "id": "PX-LSN-0001",
+      "unitId": "PX-UNIT-0001",
+      "title": "Sequence and Instructions",
+      "lessonNumber": 1,
+      "status": "Completed",
+      "duration": "45 min",
+      "objectives": [
+        "Understand that programs follow ordered instructions."
+      ],
+      "vocabulary": [
+        "sequence",
+        "algorithm",
+        "instruction"
+      ],
+      "misconceptions": [
+        "Students may think computers can infer missing steps."
+      ]
+    },
+    {
+      "id": "PX-LSN-0002",
+      "unitId": "PX-UNIT-0001",
+      "title": "Inputs and Variables",
+      "lessonNumber": 2,
+      "status": "Planned",
+      "duration": "45 min",
+      "objectives": [
+        "Use input and variables in a simple program."
+      ],
+      "vocabulary": [
+        "input",
+        "variable",
+        "value"
+      ],
+      "misconceptions": [
+        "Students may confuse variable names with text strings."
+      ]
+    },
+    {
+      "id": "PX-LSN-0003",
+      "unitId": "PX-UNIT-0002",
+      "title": "Binary Place Values",
+      "lessonNumber": 1,
+      "status": "Completed",
+      "duration": "45 min",
+      "objectives": [
+        "Convert binary integers using place values."
+      ],
+      "vocabulary": [
+        "binary",
+        "denary",
+        "place value"
+      ],
+      "misconceptions": [
+        "Students may read binary digits as normal denary numbers."
+      ]
+    },
+    {
+      "id": "PX-LSN-0004",
+      "unitId": "PX-UNIT-0002",
+      "title": "Binary Fractions in Python",
+      "lessonNumber": 2,
+      "status": "Planned",
+      "duration": "90 min",
+      "objectives": [
+        "Convert fractional denary values into binary using repeated multiplication."
+      ],
+      "vocabulary": [
+        "fraction",
+        "mantissa",
+        "conversion"
+      ],
+      "misconceptions": [
+        "Students may mix repeated division and repeated multiplication."
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "id": "PX-AST-0001",
+      "lessonId": "PX-LSN-0004",
+      "title": "Binary Fractions Lesson Plan",
+      "type": "PDF",
+      "url": "#",
+      "notes": "Add final PDF link when uploaded."
+    },
+    {
+      "id": "PX-AST-0002",
+      "lessonId": "PX-LSN-0004",
+      "title": "Python Conversion Code",
+      "type": "Code",
+      "url": "#",
+      "notes": "Reusable code example."
+    }
+  ]
+}
