@@ -1,0 +1,20 @@
+{
+  "releases": [
+    {
+      "id": "PX-REL-004-000",
+      "name": "Project X v4.0 Release 0",
+      "codename": "Foundation",
+      "status": "In Progress",
+      "summary": "Defines the technical and philosophical foundation for Project X as a Teaching Operating System.",
+      "date": "2026-06-30"
+    },
+    {
+      "id": "PX-REL-004-001",
+      "name": "Project X v4.0 Release 0.1",
+      "codename": "Documentation Architecture",
+      "status": "Current",
+      "summary": "Separates user help, engineering documentation and published documents into distinct areas.",
+      "date": "2026-06-30"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "topics": [
+    {
+      "id": "HELP-001",
+      "title": "Getting Started with Project X",
+      "category": "Basics",
+      "summary": "Understand the dashboard, sidebar, modules and workspaces.",
+      "status": "Draft"
+    },
+    {
+      "id": "HELP-002",
+      "title": "Using the Curriculum Centre",
+      "category": "Teaching Workspace",
+      "summary": "Open units, lessons and imported curriculum data.",
+      "status": "Draft"
+    },
+    {
+      "id": "HELP-003",
+      "title": "Importing Curriculum Data",
+      "category": "Import Centre",
+      "summary": "Understand how lesson tracker data becomes reusable Project X curriculum data.",
+      "status": "Draft"
+    }
+  ]
+}

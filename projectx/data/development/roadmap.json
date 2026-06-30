@@ -1,0 +1,9 @@
+{
+  "roadmap": [
+    { "release": "v4.0 Release 1", "title": "Knowledge Workspace", "status": "Next" },
+    { "release": "v4.0 Release 2", "title": "Digital Lesson Twin", "status": "Planned" },
+    { "release": "v4.0 Release 3", "title": "Teaching Asset Manager", "status": "Planned" },
+    { "release": "v4.0 Release 4", "title": "Academic Year Engine", "status": "Planned" },
+    { "release": "v4.0 Release 5", "title": "AI Context Engine", "status": "Planned" }
+  ]
+}

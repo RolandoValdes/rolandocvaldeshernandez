@@ -1,0 +1,14 @@
+{
+  "chapters": [
+    {
+      "id": "TDS-CH-001",
+      "title": "Why Project X Exists",
+      "status": "Draft",
+      "version": "0.1",
+      "lastUpdated": "2026-06-30",
+      "summary": "Defines the educational and philosophical reason Project X exists and establishes the purpose of the Teaching Operating System.",
+      "source": "/rolandocvaldeshernandez/projectx/documents/tds/chapter-01-why-project-x-exists.md",
+      "type": "Technical Design Specification"
+    }
+  ]
+}

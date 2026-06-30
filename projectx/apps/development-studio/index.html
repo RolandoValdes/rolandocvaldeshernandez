@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Development Studio | Project X</title>
+  <link rel="stylesheet" href="/rolandocvaldeshernandez/projectx/assets/projectx.css" />
+  <style>
+    .studio-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}.studio-table{width:100%;border-collapse:collapse}.studio-table th,.studio-table td{padding:12px;border-bottom:1px solid var(--px-border);text-align:left}.studio-table th{color:var(--px-muted);font-size:.78rem;text-transform:uppercase;letter-spacing:.08em}.studio-section{margin-top:24px}.studio-link{font-weight:800;color:var(--px-blue)}
+  </style>
+</head>
+<body>
+  <div class="projectx-shell">
+    <div id="projectxSidebar"></div>
+    <main class="projectx-main">
+      <div id="projectxHeader"></div>
+      <section class="projectx-content">
+        <div class="projectx-card" style="margin-bottom:24px;">
+          <span class="projectx-status">Administration</span>
+          <h2>Development Studio</h2>
+          <p>The internal engineering control room for Project X. Track architecture, releases, roadmap, technical design chapters, decisions and future development.</p>
+        </div>
+        <div class="studio-grid">
+          <div class="projectx-card"><h3>TDS Chapters</h3><p id="chapterCount">Loading...</p></div>
+          <div class="projectx-card"><h3>Architecture Decisions</h3><p id="decisionCount">Loading...</p></div>
+          <div class="projectx-card"><h3>Releases</h3><p id="releaseCount">Loading...</p></div>
+          <div class="projectx-card"><h3>Roadmap</h3><p id="roadmapCount">Loading...</p></div>
+        </div>
+        <div class="projectx-card studio-section">
+          <h3>Technical Design Specification Chapters</h3>
+          <table class="studio-table"><thead><tr><th>ID</th><th>Title</th><th>Version</th><th>Status</th><th>Source</th></tr></thead><tbody id="tdsRows"></tbody></table>
+        </div>
+        <div class="projectx-card studio-section">
+          <h3>Architecture Decision Records</h3>
+          <table class="studio-table"><thead><tr><th>ID</th><th>Decision</th><th>Status</th><th>Date</th></tr></thead><tbody id="adrRows"></tbody></table>
+        </div>
+        <div class="projectx-card studio-section">
+          <h3>Roadmap</h3>
+          <table class="studio-table"><thead><tr><th>Release</th><th>Title</th><th>Status</th></tr></thead><tbody id="roadmapRows"></tbody></table>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="/rolandocvaldeshernandez/projectx/core/navigation-manager.js"></script>
+  <script src="/rolandocvaldeshernandez/projectx/core/theme-manager.js"></script>
+  <script src="/rolandocvaldeshernandez/projectx/core/projectx-loader.js"></script>
+  <script src="/rolandocvaldeshernandez/projectx/core/bootstrap.js"></script>
+  <script>
+    const safe=v=>String(v||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
+    async function json(url){const r=await fetch(url,{cache:'no-store'});if(!r.ok)throw new Error(url);return r.json();}
+    async function initStudio(){
+      try{
+        const [tds,adr,rel,road]=await Promise.all([
+          json('/rolandocvaldeshernandez/projectx/data/development/tds-chapters.json'),
+          json('/rolandocvaldeshernandez/projectx/data/development/architecture-decisions.json'),
+          json('/rolandocvaldeshernandez/projectx/data/development/release-history.json'),
+          json('/rolandocvaldeshernandez/projectx/data/development/roadmap.json')
+        ]);
+        chapterCount.textContent=(tds.chapters||[]).length+' tracked chapter(s)';
+        decisionCount.textContent=(adr.decisions||[]).length+' accepted decision(s)';
+        releaseCount.textContent=(rel.releases||[]).length+' release record(s)';
+        roadmapCount.textContent=(road.roadmap||[]).length+' roadmap item(s)';
+        tdsRows.innerHTML=(tds.chapters||[]).map(c=>`<tr><td>${safe(c.id)}</td><td>${safe(c.title)}</td><td>${safe(c.version)}</td><td>${safe(c.status)}</td><td><a class="studio-link" href="${safe(c.source)}">Open</a></td></tr>`).join('');
+        adrRows.innerHTML=(adr.decisions||[]).map(d=>`<tr><td>${safe(d.id)}</td><td>${safe(d.title)}</td><td>${safe(d.status)}</td><td>${safe(d.date)}</td></tr>`).join('');
+        roadmapRows.innerHTML=(road.roadmap||[]).map(r=>`<tr><td>${safe(r.release)}</td><td>${safe(r.title)}</td><td>${safe(r.status)}</td></tr>`).join('');
+      }catch(e){console.error(e)}
+    }
+    document.addEventListener('DOMContentLoaded',()=>{initStudio();setTimeout(()=>{projectxPageTitle.textContent='Development Studio';projectxPageSubtitle.textContent='Engineering, architecture, roadmap and release control';},200)});
+  </script>
+</body>
+</html>

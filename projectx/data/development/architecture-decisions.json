@@ -1,0 +1,18 @@
+{
+  "decisions": [
+    {
+      "id": "ADR-0001",
+      "title": "Project X Documentation Architecture",
+      "status": "Accepted",
+      "date": "2026-06-30",
+      "context": "The previous Documentation Centre risked becoming too broad and overlapping with engineering documentation, user guidance and knowledge records.",
+      "decision": "Documentation is separated into Help Centre, Development Studio and Document Library.",
+      "consequences": [
+        "User guidance is kept separate from engineering documentation.",
+        "Architecture and roadmap decisions are tracked in Development Studio.",
+        "Published files are managed through the Document Library.",
+        "Knowledge attached to lessons remains part of the Knowledge Engine, not generic documentation."
+      ]
+    }
+  ]
+}

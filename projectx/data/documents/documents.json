@@ -1,0 +1,24 @@
+{
+  "documents": [
+    {
+      "id": "DOC-ARCH-001",
+      "title": "Project X Architecture Bible",
+      "category": "Architecture",
+      "version": "1.0",
+      "status": "Current",
+      "description": "Strategic architecture and product vision for Project X.",
+      "pdf": "/rolandocvaldeshernandez/projectx/documents/architecture/Project_X_Architecture_Bible_v1.pdf",
+      "docx": "/rolandocvaldeshernandez/projectx/documents/architecture/Project_X_Architecture_Bible_v1.docx"
+    },
+    {
+      "id": "DOC-TDS-001",
+      "title": "Technical Design Specification",
+      "category": "Engineering",
+      "version": "0.1",
+      "status": "Draft",
+      "description": "Engineering foundation for Project X v4.0 Release 0.",
+      "pdf": "/rolandocvaldeshernandez/projectx/documents/tds/Project_X_v4_Technical_Design_Specification_Release0.pdf",
+      "docx": "/rolandocvaldeshernandez/projectx/documents/tds/Project_X_v4_Technical_Design_Specification_Release0.docx"
+    }
+  ]
+}
