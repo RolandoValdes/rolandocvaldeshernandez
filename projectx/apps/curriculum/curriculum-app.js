@@ -1,5 +1,5 @@
 (function () {
-  const STORAGE_KEY = "projectx.curriculum.database.v10alpha1.navigation";
+  const STORAGE_KEY = "projectx.curriculum.database.v1alpha.milestone1.populated";
   const DATA_URL = "/rolandocvaldeshernandez/projectx/data/curriculum/database-curriculum.json";
   const FALLBACK_URL = "../../data/curriculum/database-curriculum.json";
 
@@ -141,17 +141,36 @@
   }
 
   async function loadData() {
+    const legacyKeys = [
+      "projectx.curriculum.database.v10alpha1.navigation",
+      "projectx.curriculum.database.v062",
+      "projectx.curriculum.database.v061",
+      "projectx.curriculum.database.v06",
+      "projectx.curriculum.data.v1"
+    ];
+    legacyKeys.forEach(key => localStorage.removeItem(key));
+
+    const loadCanonical = async () => {
+      try {
+        return normaliseData(await fetchJson(DATA_URL));
+      } catch (error) {
+        return normaliseData(await fetchJson(FALLBACK_URL));
+      }
+    };
+
     const stored = localStorage.getItem(STORAGE_KEY);
     if (stored) {
-      state.data = normaliseData(JSON.parse(stored));
-      return;
+      const parsed = normaliseData(JSON.parse(stored));
+      const lessonCount = Array.isArray(parsed.lessons) ? parsed.lessons.length : 0;
+      const unitCount = Array.isArray(parsed.units) ? parsed.units.length : 0;
+      if (lessonCount >= 400 && unitCount >= 90) {
+        state.data = parsed;
+        return;
+      }
+      localStorage.removeItem(STORAGE_KEY);
     }
 
-    try {
-      state.data = normaliseData(await fetchJson(DATA_URL));
-    } catch (error) {
-      state.data = normaliseData(await fetchJson(FALLBACK_URL));
-    }
+    state.data = await loadCanonical();
     save();
   }
 
