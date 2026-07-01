@@ -32,3 +32,24 @@ A teacher should never need to leave the Lesson Workspace to prepare, teach, ass
 
 ## Design Rule
 Every workspace must declare its purpose, components, data sources, events, quick actions, dependencies and validation checks in Development Studio before implementation.
+
+## Release 1.0 Alpha.2 — Curriculum Workspace Implementation
+
+The first implementation of the Universal Workspace Architecture is now active in the Curriculum Intelligence Centre.
+
+### Implemented workspace components
+
+- Breadcrumb trail
+- Workspace header
+- Teaching Ribbon
+- Context panel
+- Workspace tabs
+- Unit Workspace
+- Lesson Workspace / Digital Lesson Twin 2.0 shell
+- Teaching readiness indicator
+- Lesson timeline
+- Reflection, AI, Evidence and Assessment placeholders
+
+### Rule
+
+A teacher should never need to leave the Lesson Workspace to prepare, teach, assess, review or improve a lesson.

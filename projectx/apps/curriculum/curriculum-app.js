@@ -8,6 +8,7 @@
     activeView: "dashboard",
     selectedUnitId: null,
     selectedLessonId: null,
+    activeWorkspaceTab: "overview",
     search: "",
     filters: {
       yearGroup: localStorage.getItem("projectx.curriculum.filter.yearGroup") || "all",
@@ -510,30 +511,39 @@
     state.selectedUnitId = unit.id;
     const scheme = getScheme(unit.schemeId);
     const lessons = lessonsForUnit(unit.id);
-    return `
-      <div class="projectx-card">
-        <span class="projectx-status">${escape(unit.yearGroup)} • ${escape(unit.keyStage)} • ${escape(scheme?.title || "No Scheme")}</span>
-        <h2>${escape(unit.title)}</h2>
-        <p>${escape(unit.intent || unit.description || "No unit description recorded yet.")}</p>
-        <div class="curriculum-actions" style="margin-bottom:16px;">
-          <button class="curriculum-button secondary" data-edit-unit="${escape(unit.id)}">Edit Unit</button>
-          <button class="curriculum-button danger" data-delete-unit="${escape(unit.id)}">Delete Unit</button>
+    const completed = lessons.filter(lesson => String(lesson.status || "").toLowerCase().includes("complete")).length;
+    const context = { scheme, unit, lesson: null };
+    const content = `
+      <div class="workspace-grid">
+        <div class="workspace-card large">
+          <h3>Unit Overview</h3>
+          <p>${escape(unit.intent || unit.description || "No unit description recorded yet.")}</p>
+          <div class="workspace-metrics">
+            <div><span>Lessons</span><strong>${lessons.length}</strong></div>
+            <div><span>Completed</span><strong>${completed}</strong></div>
+            <div><span>Planned Time</span><strong>${Math.round(Number(unit.plannedMinutes || 0) / 60)}h</strong></div>
+            <div><span>Status</span><strong>${escape(unit.status || "Draft")}</strong></div>
+          </div>
         </div>
-        <table class="curriculum-table">
-          <tbody>
-            <tr><th>Scheme of Work</th><td>${escape(scheme?.title || "Unlinked")}</td></tr>
-            <tr><th>Exam Board</th><td>${escape(unit.examBoard)}</td></tr>
-            <tr><th>Planned Lessons</th><td>${lessons.length}</td></tr>
-            <tr><th>Planned Time</th><td>${escape(unit.plannedMinutes || 0)} minutes</td></tr>
-            <tr><th>Status</th><td>${statusPill(unit.status)}</td></tr>
-          </tbody>
-        </table>
+        <div class="workspace-card">
+          <h3>Quick Actions</h3>
+          <div class="workspace-action-stack">
+            <button class="curriculum-button secondary" data-edit-unit="${escape(unit.id)}">Edit Unit</button>
+            <button class="curriculum-button secondary">Open Resources</button>
+            <button class="curriculum-button secondary">Assessment</button>
+            <button class="curriculum-button secondary">Reflection</button>
+          </div>
+        </div>
       </div>
-      <div class="projectx-card" style="margin-top:20px;">
-        <h3>Database Lesson Sequence</h3>
+      <div class="workspace-card">
+        <h3>Teaching Sequence</h3>
+        ${renderUnitTimeline(unit)}
+      </div>
+      <div class="workspace-card">
+        <h3>Linked Lessons</h3>
         ${renderLessonsTable(lessons)}
-      </div>
-    `;
+      </div>`;
+    return renderWorkspaceFrame(context, content);
   }
 
   function renderLessons() {
@@ -574,19 +584,26 @@
     const unit = getUnit(lesson.unitId);
     const scheme = getScheme(lesson.schemeId);
     const resources = resourcesForLesson(lesson.id);
-    return `
-      <div class="projectx-card">
-        <span class="projectx-status">Digital Lesson Twin • Database ID ${escape(lesson.databaseId || "new")}</span>
-        <h2>${escape(lesson.title)}</h2>
-        <p><strong>Scheme:</strong> ${escape(scheme?.title || "Unlinked")} • <strong>Unit:</strong> ${escape(unit?.title || "Unlinked")} • <strong>Status:</strong> ${escape(lesson.status)}</p>
-        <div class="projectx-grid" style="margin-top:20px;">
-          <div class="projectx-card"><h3>Teaching Notes / Specification Detail</h3><p>${escape(lesson.notes || "No database notes recorded.")}</p></div>
-          <div class="projectx-card"><h3>Learning Objectives</h3><ul>${(lesson.objectives || []).map(item => `<li>${escape(item)}</li>`).join("") || "<li>No objectives recorded.</li>"}</ul></div>
-          <div class="projectx-card"><h3>Database Context</h3><p>${escape(lesson.examBoard)} • ${escape(lesson.yearGroup)} • ${escape(lesson.plannedMinutes || 0)} minutes</p></div>
+    const context = { scheme, unit, lesson };
+    const objectives = lesson.objectives || [];
+    const tab = state.activeWorkspaceTab || "overview";
+    const tabContent = {
+      overview: `
+        <div class="workspace-grid">
+          <div class="workspace-card large"><h3>Lesson Overview</h3><p>${escape(lesson.notes || "No teaching notes recorded yet.")}</p><div class="workspace-metrics"><div><span>Lesson #</span><strong>${escape(lesson.lessonNumber || lesson.sequenceIndex || "—")}</strong></div><div><span>Duration</span><strong>${escape(lesson.duration || lesson.plannedMinutes || "—")}</strong></div><div><span>Type</span><strong>${escape(lesson.lessonType || "Teach")}</strong></div><div><span>Status</span><strong>${escape(lesson.status || "Draft")}</strong></div></div></div>
+          ${renderReadinessIndicator(lesson)}
         </div>
-      </div>
-      <div class="projectx-card" style="margin-top:20px;"><h3>Linked Teaching Assets</h3>${renderResourcesTable(resources)}</div>
-    `;
+        <div class="workspace-card"><h3>Unit Timeline</h3>${renderUnitTimeline(unit, lesson.id)}</div>`,
+      objectives: `<div class="workspace-card"><h3>Objectives & Success Criteria</h3><ul>${objectives.map(item => `<li>${escape(item)}</li>`).join("") || "<li>No learning objectives recorded yet.</li>"}</ul><h4>Keywords</h4><p>${escape((lesson.vocabulary || []).join(", ") || "No keywords recorded yet.")}</p><h4>Misconceptions</h4><p class="muted">Placeholder for common misconceptions and prior knowledge.</p></div>`,
+      resources: `<div class="workspace-card"><h3>Teaching Assets</h3>${renderResourcesTable(resources)}<div class="workspace-action-stack horizontal"><button class="curriculum-button secondary">Add Slides</button><button class="curriculum-button secondary">Add Worksheet</button><button class="curriculum-button secondary">Add Code File</button></div></div>`,
+      assessment: `<div class="workspace-card"><h3>Assessment</h3><p>Assessment shell ready for AFL, exit tickets, homework, OCR question links and question-bank integration.</p><div class="workspace-metrics"><div><span>AFL</span><strong>Ready</strong></div><div><span>Exit Ticket</span><strong>Pending</strong></div><div><span>Question Bank</span><strong>Linked Later</strong></div></div></div>`,
+      evidence: `<div class="workspace-card"><h3>Evidence</h3><p>Evidence space for observation notes, anonymised class-level outcomes, teacher evidence and professional reflections. No pupil names should be stored here.</p></div>`,
+      reflection: `<div class="workspace-card"><h3>Reflection</h3><div class="reflection-prompts"><label>What worked well?</label><textarea class="curriculum-textarea" placeholder="Add reflection after teaching..."></textarea><label>What needs improving next year?</label><textarea class="curriculum-textarea" placeholder="Add improvement actions..."></textarea><label>Common misconceptions</label><textarea class="curriculum-textarea" placeholder="Record class-level misconceptions only..."></textarea></div></div>`,
+      history: `<div class="workspace-card"><h3>Teaching History</h3><div class="workspace-history"><div><strong>2025–2026</strong><span>Lesson marked Completed. Digital Lesson Twin created.</span></div><div><strong>Next cycle</strong><span>Reflection and improvement actions will appear here.</span></div></div></div>`,
+      ai: `<div class="workspace-card"><h3>AI Assistant</h3><p>Context-aware AI shell. Later this panel will use the lesson, unit, scheme, resources, assessment summary and reflections to generate support.</p><div class="workspace-action-stack horizontal"><button class="curriculum-button secondary">Generate Starter</button><button class="curriculum-button secondary">Differentiate</button><button class="curriculum-button secondary">Suggest Improvements</button></div></div>`
+    }[tab] || "";
+    const content = `${renderWorkspaceTabs(tab)}<div class="workspace-tab-panel">${tabContent}</div>`;
+    return renderWorkspaceFrame(context, content);
   }
 
   function renderResources() {
@@ -702,6 +719,8 @@
     document.getElementById("statusFilter")?.addEventListener("change", e => { state.filters.status = e.target.value; saveFilters(); render(); });
     document.getElementById("clearFiltersBtn")?.addEventListener("click", () => { state.search = ""; state.filters = { yearGroup: "all", schemeId: "all", unitId: "all", status: "all" }; saveFilters(); render(); });
     document.querySelectorAll("[data-filter-scheme]").forEach(btn => btn.addEventListener("click", () => { state.filters.schemeId = btn.dataset.filterScheme; state.activeView = "units"; saveFilters(); render(); }));
+    document.querySelectorAll(".curriculum-tab[data-view]").forEach(btn => btn.addEventListener("click", () => { state.activeView = btn.dataset.view || "dashboard"; render(); }));
+    document.querySelectorAll("[data-workspace-tab]").forEach(btn => btn.addEventListener("click", () => { state.activeWorkspaceTab = btn.dataset.workspaceTab || "overview"; if (state.selectedLessonId) openLessonTwin(state.selectedLessonId); else render(); }));
     document.querySelectorAll("[data-tree-year]").forEach(btn => btn.addEventListener("click", event => { event.preventDefault(); state.filters.yearGroup = btn.dataset.treeYear; state.filters.schemeId = "all"; state.filters.unitId = "all"; state.selectedUnitId = null; state.activeView = "dashboard"; saveFilters(); render(); }));
     document.querySelectorAll("[data-tree-scheme]").forEach(btn => btn.addEventListener("click", event => { event.preventDefault(); state.filters.schemeId = btn.dataset.treeScheme; state.filters.unitId = "all"; state.selectedUnitId = null; state.activeView = "units"; saveFilters(); render(); }));
     document.querySelectorAll("[data-tree-unit]").forEach(btn => btn.addEventListener("click", event => { event.preventDefault(); const unit = getUnit(btn.dataset.treeUnit); if (!unit) return; state.selectedUnitId = unit.id; state.filters.yearGroup = unit.yearGroup || state.filters.yearGroup; state.filters.schemeId = unit.schemeId || "all"; state.filters.unitId = unit.id; state.activeView = "units"; saveFilters(); render(); }));
@@ -730,6 +749,7 @@
     if (!lesson) return;
     state.selectedLessonId = lesson.id;
     state.selectedUnitId = lesson.unitId;
+    state.activeWorkspaceTab = state.activeWorkspaceTab || "overview";
     state.filters.yearGroup = lesson.yearGroup || state.filters.yearGroup;
     state.filters.schemeId = lesson.schemeId || state.filters.schemeId;
     state.filters.unitId = lesson.unitId || state.filters.unitId;

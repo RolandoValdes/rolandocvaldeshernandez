@@ -68,6 +68,13 @@
       "date": "2026-06-30",
       "status": "Completed",
       "summary": "Marked all 2025-2026 lessons as Completed and bumped Curriculum Centre localStorage key to avoid stale planned statuses."
+    },
+    {
+      "version": "1.0 Alpha.2",
+      "title": "Curriculum Workspaces",
+      "status": "Completed",
+      "date": "2026-07-01",
+      "summary": "Introduced Unit Workspace, Lesson Workspace, Digital Lesson Twin 2.0 shell, Teaching Ribbon, workspace tabs, context panel and readiness indicator."
     }
   ]
 }

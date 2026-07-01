@@ -60,6 +60,12 @@
       "status": "Accepted",
       "date": "2026-06-30",
       "document": "documents/architecture/ADR-0008-database-powered-curriculum-centre.md"
+    },
+    {
+      "id": "ADR-0014",
+      "title": "Curriculum Workspaces",
+      "status": "Accepted",
+      "summary": "Lesson and Unit objects open in reusable teacher workspaces with ribbon, tabs, context, readiness and Digital Lesson Twin structure."
     }
   ]
 }
