@@ -1,0 +1,35 @@
+{
+  "platformVersion": "1.3 Alpha Preview",
+  "module": "Story Studio",
+  "updated": "2026-07-01",
+  "stories": [
+    {
+      "id": "story-project-x-general",
+      "title": "The Story of Project X",
+      "status": "Operational Preview",
+      "audience": "General / Showcase / NotebookLM",
+      "duration": "5\u20137 minutes",
+      "purpose": "Explain Project X as a Teaching Operating System that preserves teacher expertise and ultimately supports personalised learning journeys for students.",
+      "readUrl": "/rolandocvaldeshernandez/projectx/documents/narrative/THE_PROJECT_X_VISION.md",
+      "notebookUrl": "/rolandocvaldeshernandez/projectx/documents/narrative/THE_STORY_OF_PROJECT_X_NOTEBOOKLM.md",
+      "scriptUrl": "/rolandocvaldeshernandez/projectx/documents/narrative/THE_STORY_OF_PROJECT_X_NOTEBOOKLM.md",
+      "modes": [
+        "Read",
+        "Listen",
+        "Watch",
+        "Explore"
+      ],
+      "sections": [
+        "Opening",
+        "From Portfolio to Teaching Operating System",
+        "Platform Foundation",
+        "Teaching Intelligence",
+        "Assessment Intelligence",
+        "Resource Intelligence",
+        "Story Studio and Media Centre",
+        "Learning OS Vision",
+        "Closing"
+      ]
+    }
+  ]
+}

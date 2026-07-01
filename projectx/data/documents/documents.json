@@ -120,6 +120,33 @@
       "category": "Technical Specifications",
       "path": "documents/specifications/ASSESSMENT_INTELLIGENCE_SPECIFICATION.md",
       "status": "Current"
+    },
+    {
+      "id": "DOC-VISION-001",
+      "title": "The Project X Vision",
+      "category": "Narrative Documentation",
+      "version": "1.0",
+      "status": "Current",
+      "description": "The long-term vision of Project X as a Teaching OS that leads toward personalised learning journeys for students.",
+      "url": "/rolandocvaldeshernandez/projectx/documents/narrative/THE_PROJECT_X_VISION.md"
+    },
+    {
+      "id": "DOC-STORY-001",
+      "title": "The Story of Project X \u2014 NotebookLM Source",
+      "category": "Narrative Documentation",
+      "version": "1.0",
+      "status": "Current",
+      "description": "A general narration-ready document for NotebookLM audio overview or video narration.",
+      "url": "/rolandocvaldeshernandez/projectx/documents/narrative/THE_STORY_OF_PROJECT_X_NOTEBOOKLM.md"
+    },
+    {
+      "id": "DOC-STORY-STUDIO-SPEC",
+      "title": "Story Studio Specification",
+      "category": "Technical Specifications",
+      "version": "0.1",
+      "status": "Preview",
+      "description": "Initial specification for the Story Studio, Media Centre and Guided Experience Framework.",
+      "url": "/rolandocvaldeshernandez/projectx/documents/narrative/STORY_STUDIO_SPECIFICATION.md"
     }
   ]
 }

@@ -1,0 +1,54 @@
+{
+  "apps": [
+    {
+      "title": "Curriculum Centre",
+      "category": "Teaching Workspace",
+      "section": "Curriculum",
+      "description": "Explore the 2025\u20132026 curriculum package, units, lessons and workspaces.",
+      "status": "Operational",
+      "url": "/rolandocvaldeshernandez/projectx/apps/curriculum/index.html",
+      "icon": "\ud83d\udcda",
+      "priority": 100
+    },
+    {
+      "title": "Assessment Centre",
+      "category": "Teaching Workspace",
+      "section": "Assessment",
+      "description": "Assessment intelligence, concept assessment maps and misconception bank.",
+      "status": "Operational",
+      "url": "/rolandocvaldeshernandez/projectx/apps/assessment/index.html",
+      "icon": "\u2705",
+      "priority": 95
+    },
+    {
+      "title": "Story Studio",
+      "category": "Showcase",
+      "section": "Media",
+      "description": "Narrative, NotebookLM and guided showcase preparation for Project X.",
+      "status": "Preview",
+      "url": "/rolandocvaldeshernandez/projectx/apps/story-studio/index.html",
+      "icon": "\ud83c\udf99\ufe0f",
+      "priority": 90
+    },
+    {
+      "title": "Professional Standards",
+      "category": "Professional Hub",
+      "section": "Compliance",
+      "description": "Safeguarding certificates and professional compliance evidence.",
+      "status": "Operational",
+      "url": "/rolandocvaldeshernandez/projectx/apps/professional-standards/index.html",
+      "icon": "\ud83d\udee1\ufe0f",
+      "priority": 85
+    },
+    {
+      "title": "Development Studio",
+      "category": "Engineering",
+      "section": "Platform",
+      "description": "Engineering dashboard, architecture, releases and validation.",
+      "status": "Operational",
+      "url": "/rolandocvaldeshernandez/projectx/apps/development-studio/index.html",
+      "icon": "\ud83e\udde0",
+      "priority": 80
+    }
+  ]
+}
