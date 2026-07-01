@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Assessment Centre | Project X</title>
+  <title>Assessment Intelligence Centre | Project X</title>
   <link rel="stylesheet" href="/rolandocvaldeshernandez/projectx/assets/projectx.css" />
+  <style>
+    .ai-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;margin:18px 0}.ai-card{background:#fff;border:1px solid #dbeafe;border-radius:18px;padding:18px;box-shadow:0 10px 24px rgba(15,23,42,.06)}.ai-card span{display:block;color:#64748b;font-size:.82rem;text-transform:uppercase;letter-spacing:.08em}.ai-card strong{display:block;color:#0f172a;font-size:1.7rem;margin-top:6px}.ai-panel{background:#fff;border:1px solid #e2e8f0;border-radius:18px;padding:18px;margin:16px 0}.ai-list{display:grid;gap:10px}.ai-row{display:grid;grid-template-columns:1.2fr .8fr .8fr .8fr;gap:12px;align-items:center;border-bottom:1px solid #eef2ff;padding:10px 0}.ai-badge{display:inline-flex;align-items:center;border-radius:999px;background:#eff6ff;color:#1d4ed8;padding:5px 10px;font-size:.8rem;font-weight:700}.ai-warn{background:#fff7ed;color:#c2410c}.ai-ok{background:#ecfdf5;color:#047857}.ai-progress{height:9px;border-radius:999px;background:#e5e7eb;overflow:hidden}.ai-progress b{display:block;height:100%;background:#2563eb}.ai-muted{color:#64748b}.ai-search{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}.ai-search input,.ai-search select{padding:10px 12px;border:1px solid #cbd5e1;border-radius:12px}.ai-table-head{font-weight:800;color:#334155;text-transform:uppercase;font-size:.75rem;letter-spacing:.08em}.privacy-box{border-left:5px solid #047857;background:#ecfdf5;padding:16px;border-radius:14px}.ai-small{font-size:.9rem;color:#475569}
+  </style>
 </head>
 <body>
   <div class="projectx-shell">
@@ -13,9 +16,9 @@
       <div id="projectxHeader"></div>
       <section class="projectx-content">
         <div class="projectx-card" style="margin-bottom:24px;">
-          <span class="projectx-status">Teaching Workspace</span>
-          <h2>Assessment Centre</h2>
-          <p>Track assessments, markbooks, feedback, targets, reports and progress evidence.</p>
+          <span class="projectx-status">Project X Platform 1.2 Alpha</span>
+          <h2>Assessment Intelligence Centre</h2>
+          <p>Connect assessments to concepts, lessons, misconceptions and revision priorities using aggregate, privacy-safe data.</p>
         </div>
         <div class="module-shell">
           <aside class="module-panel">
@@ -37,11 +40,25 @@
   <script src="/rolandocvaldeshernandez/projectx/core/app-shell.js"></script>
   <script src="/rolandocvaldeshernandez/projectx/core/bootstrap.js"></script>
   <script>
+    window.ProjectXAssessment = { data:null };
+    async function loadAssessmentIntel(){
+      if(window.ProjectXAssessment.data) return window.ProjectXAssessment.data;
+      const res = await fetch('/rolandocvaldeshernandez/projectx/data/assessment/assessment-intelligence-2025-2026.json?version=milestone3');
+      window.ProjectXAssessment.data = await res.json();
+      return window.ProjectXAssessment.data;
+    }
+    function metric(label,value,note){return `<div class="ai-card"><span>${label}</span><strong>${value}</strong><p class="ai-muted">${note||''}</p></div>`}
+    function progress(p){return `<div class="ai-progress"><b style="width:${Math.max(0,Math.min(100,p||0))}%"></b></div><small>${p||0}%</small>`}
+    function setWorkspace(html){document.getElementById('moduleWorkspace').innerHTML=html}
     window.ProjectXViews = window.ProjectXViews || {};
-    window.ProjectXViews['assessment_dashboard'] = function(){
-      return '<div class="workspace-kpi-grid"><div class="workspace-kpi"><span>Status</span><strong>Ready</strong></div><div class="workspace-kpi"><span>Module</span><strong>v3</strong></div><div class="workspace-kpi"><span>Views</span><strong>Live</strong></div></div><div class="projectx-grid"><div class="projectx-card"><h3>Module Dashboard</h3><p>This module now runs inside the Project X Workspace Engine.</p></div><div class="projectx-card"><h3>Secondary Navigation</h3><p>Use the module menu to switch views without leaving the application shell.</p></div><div class="projectx-card"><h3>Next Build</h3><p>Functional data tools will be added in future sprints.</p></div></div>';
-    };
-    document.addEventListener('DOMContentLoaded',()=>{const app=new ProjectXApp({moduleKey:'assessment',moduleTitle:'Assessment Centre',moduleSubtitle:'Track assessments, markbooks, feedback, targets, reports and progress evidence.',defaultView:'dashboard'});app.initialise();});
+    ProjectXViews['assessment_dashboard']=async function(){const d=await loadAssessmentIntel();const s=d.summary;return `<div class="ai-grid">${metric('Assessment Records Linked',s.assessmentRecordsLinked,'aggregate records mapped to CTOs')}${metric('Assessment Coverage',s.assessmentCoveragePercent+'%','lessons with an assessment record')}${metric('Question Blueprints',s.questionBlueprints,'concept-level diagnostic shells')}${metric('Misconception Signals',s.misconceptionSignals,'generated from curriculum lesson data')}</div><div class="privacy-box"><strong>Privacy by Design:</strong> ${s.privacy}</div><div class="ai-panel"><h3>Assessment Intelligence Mission</h3><p>Questions assess concepts. Concepts connect to Canonical Teaching Objects. Assessment intelligence identifies gaps, revision priorities and misconception patterns without storing pupil identity.</p></div>`};
+    ProjectXViews['assessment_coverage']=async function(){const d=await loadAssessmentIntel();let rows=Object.entries(d.coverageByYearGroup).map(([y,r])=>`<div class="ai-row"><strong>${y}</strong><span>${r.assessedLessons} / ${r.lessons} lessons</span><span>${progress(r.coveragePercent)}</span><span>${r.averageScore??'—'} avg</span></div>`).join('');return `<div class="ai-panel"><h3>Coverage by Year Group</h3><div class="ai-row ai-table-head"><span>Year Group</span><span>Coverage</span><span>Progress</span><span>Average</span></div>${rows}</div>`};
+    ProjectXViews['assessment_concepts']=async function(){const d=await loadAssessmentIntel();let rows=d.coverageByConcept.map(c=>`<div class="ai-row"><strong>${c.concept}</strong><span>${c.assessedLessons} / ${c.lessons}</span><span>${progress(c.coveragePercent)}</span><span>${c.yearGroups.join(', ')}</span></div>`).join('');return `<div class="ai-panel"><h3>Concept Assessment Map</h3><div class="ai-row ai-table-head"><span>Concept</span><span>Assessed</span><span>Coverage</span><span>Year Groups</span></div>${rows}</div>`};
+    ProjectXViews['assessment_questions']=async function(){const d=await loadAssessmentIntel();let rows=d.questionBlueprints.map(q=>`<div class="ai-row"><strong>${q.title}</strong><span>${q.concept}</span><span>${q.linkedLessonCount} lessons</span><span class="ai-badge">${q.status}</span></div>`).join('');return `<div class="ai-panel"><h3>Question Intelligence Foundation</h3><p class="ai-small">These are safe diagnostic question blueprints. Real questions can be added later and mapped to concepts.</p><div class="ai-row ai-table-head"><span>Blueprint</span><span>Concept</span><span>Coverage</span><span>Status</span></div>${rows}</div>`};
+    ProjectXViews['assessment_misconceptions']=async function(){const d=await loadAssessmentIntel();let rows=d.misconceptionBank.slice(0,120).map(m=>`<div class="ai-row"><strong>${m.concept||'Unclassified'}</strong><span style="grid-column:span 2">${m.statement}</span><span class="ai-badge ai-warn">AFL Prompt</span></div>`).join('');return `<div class="ai-panel"><h3>Misconception Bank</h3><p class="ai-small">Generated from PX-CDL misconception fields. These can become distractors, hinge questions and AFL prompts.</p>${rows}</div>`};
+    ProjectXViews['assessment_readiness']=async function(){const d=await loadAssessmentIntel();let missing=d.lessonAssessmentReadiness.filter(x=>!x.hasAssessment).slice(0,100);let rows=missing.map(x=>`<div class="ai-row"><strong>${x.title}</strong><span>${x.yearGroup}</span><span>${x.primaryConcept||'—'}</span><span class="ai-badge ai-warn">${x.status}</span></div>`).join('');return `<div class="ai-panel"><h3>Assessment Readiness</h3><p>${missing.length} lessons shown that need an assessment placeholder or linked task.</p><div class="ai-row ai-table-head"><span>Lesson</span><span>Year</span><span>Concept</span><span>Status</span></div>${rows}</div>`};
+    ProjectXViews['assessment_privacy']=async function(){const d=await loadAssessmentIntel();return `<div class="ai-panel"><h3>Assessment Privacy Boundary</h3><div class="privacy-box"><p><strong>${d.meta.privacy}</strong></p><p>No student names, emails, dates of birth, SEND information, safeguarding notes, medical information, behaviour notes or individual marks are stored in this intelligence package.</p></div><h3>Allowed Data</h3><ul><li>Class-level/aggregate assessment scores</li><li>Concept coverage</li><li>Lesson assessment readiness</li><li>Misconception patterns</li><li>Question blueprints</li></ul></div>`};
+    document.addEventListener('DOMContentLoaded',()=>{const app=new ProjectXApp({moduleKey:'assessment',moduleTitle:'Assessment Intelligence Centre',moduleSubtitle:'Concept-linked assessment, question intelligence and privacy-safe analytics.',defaultView:'dashboard'});app.initialise();});
   </script>
 </body>
 </html>

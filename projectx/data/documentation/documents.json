@@ -13,7 +13,34 @@
       "pdf": "/rolandocvaldeshernandez/projectx/documents/architecture/Project_X_Architecture_Bible_v1.pdf",
       "docx": "/rolandocvaldeshernandez/projectx/documents/architecture/Project_X_Architecture_Bible_v1.docx",
       "updated": "2026-06-29",
-      "tags": ["Architecture", "Project X", "Teaching OS", "Roadmap", "Data Model"]
+      "tags": [
+        "Architecture",
+        "Project X",
+        "Teaching OS",
+        "Roadmap",
+        "Data Model"
+      ]
+    },
+    {
+      "id": "doc-milestone-3",
+      "title": "Milestone 3 \u2014 Assessment Intelligence",
+      "category": "Milestones",
+      "path": "documents/milestones/MILESTONE_3_COMPLETION.md",
+      "status": "Complete"
+    },
+    {
+      "id": "doc-adr-0016",
+      "title": "ADR-0016 \u2014 Assessment Intelligence Centre",
+      "category": "ADRs",
+      "path": "documents/architecture/ADR-0016-assessment-intelligence-centre.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "doc-assessment-intel-spec",
+      "title": "Assessment Intelligence Specification",
+      "category": "Technical Specifications",
+      "path": "documents/specifications/ASSESSMENT_INTELLIGENCE_SPECIFICATION.md",
+      "status": "Current"
     }
   ]
 }

@@ -35,24 +35,28 @@
       "view": "dashboard"
     },
     {
-      "label": "Markbooks",
-      "view": "markbooks"
+      "label": "Coverage",
+      "view": "coverage"
     },
     {
-      "label": "Gradebook",
-      "view": "gradebook"
+      "label": "Concept Assessment",
+      "view": "concepts"
     },
     {
-      "label": "Feedback",
-      "view": "feedback"
+      "label": "Question Intelligence",
+      "view": "questions"
     },
     {
-      "label": "Targets",
-      "view": "targets"
+      "label": "Misconceptions",
+      "view": "misconceptions"
     },
     {
-      "label": "Reports",
-      "view": "reports"
+      "label": "Assessment Readiness",
+      "view": "readiness"
+    },
+    {
+      "label": "Privacy",
+      "view": "privacy"
     }
   ],
   "documentation": [
@@ -109,6 +113,14 @@
     {
       "label": "Roadmap",
       "view": "roadmap"
+    },
+    {
+      "label": "Assessment Validator",
+      "view": "assessment-validator"
+    },
+    {
+      "label": "Question Intelligence",
+      "view": "question-intelligence"
     }
   ]
 }

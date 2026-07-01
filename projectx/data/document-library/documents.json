@@ -12,6 +12,27 @@
       "html": "/rolandocvaldeshernandez/projectx/documents/tds/chapters/chapter-01-why-project-x-exists.html",
       "markdown": "/rolandocvaldeshernandez/projectx/documents/tds/chapters/chapter-01-why-project-x-exists.md",
       "updated": "2026-06-30"
+    },
+    {
+      "id": "doc-milestone-3",
+      "title": "Milestone 3 \u2014 Assessment Intelligence",
+      "category": "Milestones",
+      "path": "documents/milestones/MILESTONE_3_COMPLETION.md",
+      "status": "Complete"
+    },
+    {
+      "id": "doc-adr-0016",
+      "title": "ADR-0016 \u2014 Assessment Intelligence Centre",
+      "category": "ADRs",
+      "path": "documents/architecture/ADR-0016-assessment-intelligence-centre.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "doc-assessment-intel-spec",
+      "title": "Assessment Intelligence Specification",
+      "category": "Technical Specifications",
+      "path": "documents/specifications/ASSESSMENT_INTELLIGENCE_SPECIFICATION.md",
+      "status": "Current"
     }
   ]
 }

@@ -17,5 +17,13 @@
   "resourceCoveragePct": 0,
   "assessmentCoveragePct": 0,
   "reflectionCoveragePct": 0,
-  "aiReadinessPct": 100
+  "aiReadinessPct": 100,
+  "assessmentIntelligence": {
+    "status": "Active",
+    "assessmentRecordsLinked": 309,
+    "assessmentCoveragePercent": 71.1,
+    "questionBlueprints": 17,
+    "misconceptionSignals": 16,
+    "privacy": "Aggregate/anonymised only"
+  }
 }

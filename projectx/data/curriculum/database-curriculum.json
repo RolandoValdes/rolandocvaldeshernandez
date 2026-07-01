@@ -5,7 +5,7 @@
     "academicYear": "2025-2026",
     "generatedAt": "2026-07-01T11:48:44Z",
     "model": "PX-CDL generated Curriculum Package + CTO repository",
-    "platformVersion": "Project X Platform 1.1 Alpha",
+    "platformVersion": "Project X Platform 1.2 Alpha",
     "curriculumPackage": "PX-CURR-2025-2026",
     "knowledgePackage": "PX-KNOWLEDGE-v1",
     "academicYearCompletionPolicy": "All 2025-2026 lesson records are marked Completed.",
@@ -15,13 +15,16 @@
       "units": 100,
       "lessons": 402,
       "ctos": 402,
-      "digitalLessonTwins": 402
+      "digitalLessonTwins": 402,
+      "assessmentRecordsLinked": 309,
+      "assessmentCoveragePercent": 71.1
     },
-    "milestone": "Milestone 1 Complete",
+    "milestone": "Milestone 3 \u2014 Assessment Intelligence",
     "intelligencePackage": "v1",
     "conceptCount": 17,
     "relationshipCount": 4259,
-    "relationshipCoveragePct": 100
+    "relationshipCoveragePct": 100,
+    "assessmentIntelligencePackage": "v1"
   },
   "schemes": [
     {
