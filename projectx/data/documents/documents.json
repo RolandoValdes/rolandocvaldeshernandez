@@ -19,6 +19,51 @@
       "description": "Engineering foundation for Project X v4.0 Release 0.",
       "pdf": "/rolandocvaldeshernandez/projectx/documents/tds/Project_X_v4_Technical_Design_Specification_Release0.pdf",
       "docx": "/rolandocvaldeshernandez/projectx/documents/tds/Project_X_v4_Technical_Design_Specification_Release0.docx"
+    },
+    {
+      "id": "DOC-GEN-001",
+      "title": "Project X Manifesto",
+      "category": "Genesis",
+      "version": "1.0",
+      "status": "Current",
+      "description": "The founding philosophy of the Project X Teaching Operating System.",
+      "url": "/rolandocvaldeshernandez/projectx/documents/genesis/PROJECT_X_MANIFESTO.md"
+    },
+    {
+      "id": "DOC-GEN-002",
+      "title": "Project X Genesis",
+      "category": "Genesis",
+      "version": "1.0",
+      "status": "Current",
+      "description": "The origin story and architectural breakthroughs behind Project X.",
+      "url": "/rolandocvaldeshernandez/projectx/documents/genesis/GENESIS.md"
+    },
+    {
+      "id": "DOC-MILESTONE-001",
+      "title": "Milestone 1 \u2013 Curriculum Foundation",
+      "category": "Milestones",
+      "version": "1.0",
+      "status": "Complete",
+      "description": "Completion record for Project X Platform 1.0 Alpha Milestone 1.",
+      "url": "/rolandocvaldeshernandez/projectx/documents/milestones/MILESTONE_1_COMPLETION.md"
+    },
+    {
+      "id": "DOC-CURR-001",
+      "title": "PX-CDL v1.0 Curriculum Definition 2025\u20132026",
+      "category": "Curriculum Packages",
+      "version": "1.0",
+      "status": "Current",
+      "description": "The canonical curriculum source for Years 5\u201313.",
+      "xlsx": "/rolandocvaldeshernandez/projectx/documents/curriculum/PX_CDL_v1_0_Curriculum_Definition_2025_2026.xlsx"
+    },
+    {
+      "id": "DOC-REPORT-001",
+      "title": "Curriculum Integrity Report 2025\u20132026",
+      "category": "Reports",
+      "version": "1.0",
+      "status": "Pass",
+      "description": "Validation report for the populated curriculum package.",
+      "url": "/rolandocvaldeshernandez/projectx/documents/reports/CURRICULUM_INTEGRITY_REPORT_2025_2026.md"
     }
   ]
 }

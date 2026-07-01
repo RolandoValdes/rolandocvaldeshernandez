@@ -1,0 +1,59 @@
+{
+  "generatedAt": "2026-07-01T11:18:21Z",
+  "status": "Pass",
+  "counts": {
+    "yearGroups": 9,
+    "schemes": 9,
+    "units": 100,
+    "lessons": 402,
+    "ctos": 402,
+    "digitalLessonTwins": 402
+  },
+  "yearGroups": {
+    "Year 5": {
+      "schemes": 1,
+      "units": 6,
+      "lessons": 34
+    },
+    "Year 6": {
+      "schemes": 1,
+      "units": 7,
+      "lessons": 35
+    },
+    "Year 7": {
+      "schemes": 1,
+      "units": 9,
+      "lessons": 34
+    },
+    "Year 8": {
+      "schemes": 1,
+      "units": 7,
+      "lessons": 30
+    },
+    "Year 9": {
+      "schemes": 1,
+      "units": 8,
+      "lessons": 36
+    },
+    "Year 10": {
+      "schemes": 1,
+      "units": 12,
+      "lessons": 40
+    },
+    "Year 11": {
+      "schemes": 1,
+      "units": 26,
+      "lessons": 94
+    },
+    "Year 12": {
+      "schemes": 1,
+      "units": 16,
+      "lessons": 57
+    },
+    "Year 13": {
+      "schemes": 1,
+      "units": 9,
+      "lessons": 42
+    }
+  }
+}
