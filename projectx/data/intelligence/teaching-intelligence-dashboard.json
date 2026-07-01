@@ -1,0 +1,21 @@
+{
+  "platformVersion": "1.1 Alpha",
+  "milestone": "Milestone 2 \u2014 Teaching Intelligence",
+  "curriculumPackage": "2025-2026",
+  "knowledgePackage": "v1",
+  "intelligencePackage": "v1",
+  "yearGroups": 9,
+  "schemes": 9,
+  "units": 100,
+  "lessons": 402,
+  "canonicalTeachingObjects": 402,
+  "canonicalConceptObjects": 17,
+  "relationships": 4259,
+  "lessonsWithConcepts": 402,
+  "relationshipCoveragePct": 100,
+  "digitalTwinKnowledgeGraphPct": 100,
+  "resourceCoveragePct": 0,
+  "assessmentCoveragePct": 0,
+  "reflectionCoveragePct": 0,
+  "aiReadinessPct": 100
+}

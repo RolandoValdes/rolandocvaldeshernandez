@@ -1,0 +1,12 @@
+{
+  "milestone": "Milestone 2 \u2014 Teaching Intelligence",
+  "status": "Complete",
+  "tasks": [
+    "CCO model",
+    "Relationship Engine",
+    "Knowledge Graph",
+    "Progression Maps",
+    "Graph Validator",
+    "Development Studio data"
+  ]
+}

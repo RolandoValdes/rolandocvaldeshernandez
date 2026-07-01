@@ -1,0 +1,25 @@
+{
+  "status": "Passed",
+  "checks": [
+    {
+      "check": "CTOs with concept relationships",
+      "result": "Passed",
+      "value": 402
+    },
+    {
+      "check": "Relationship graph generated",
+      "result": "Passed",
+      "value": 4259
+    },
+    {
+      "check": "Concept registry generated",
+      "result": "Passed",
+      "value": 17
+    },
+    {
+      "check": "Digital Lesson Twins updated with knowledgeGraph section",
+      "result": "Passed",
+      "value": 100
+    }
+  ]
+}

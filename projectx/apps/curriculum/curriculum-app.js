@@ -1,5 +1,5 @@
 (function () {
-  const STORAGE_KEY = "projectx.curriculum.database.v1alpha.milestone1.populated";
+  const STORAGE_KEY = "projectx.curriculum.database.v1_1alpha.milestone2.teaching_intelligence";
   const DATA_URL = "/rolandocvaldeshernandez/projectx/data/curriculum/database-curriculum.json";
   const FALLBACK_URL = "../../data/curriculum/database-curriculum.json";
 
@@ -436,12 +436,42 @@
     const units = filteredUnits().length;
     const lessons = filteredLessons().length;
     const minutes = filteredLessons().reduce((sum, lesson) => sum + Number(lesson.plannedMinutes || 0), 0);
+    const concepts = state.data.intelligence?.conceptCount || state.data.meta?.conceptCount || 0;
+    const relationships = state.data.intelligence?.relationshipCount || state.data.meta?.relationshipCount || 0;
     return `
       <div class="curriculum-kpi-grid">
         <div class="curriculum-kpi"><span>Schemes</span><strong>${schemes}</strong></div>
         <div class="curriculum-kpi"><span>Units</span><strong>${units}</strong></div>
         <div class="curriculum-kpi"><span>Lessons</span><strong>${lessons}</strong></div>
+        <div class="curriculum-kpi"><span>Concepts</span><strong>${concepts}</strong></div>
+        <div class="curriculum-kpi"><span>Relationships</span><strong>${relationships}</strong></div>
         <div class="curriculum-kpi"><span>Planned Hours</span><strong>${Math.round(minutes / 60)}</strong></div>
+      </div>
+    `;
+  }
+
+  function renderTeachingIntelligence() {
+    const intelligence = state.data.intelligence || {};
+    const health = intelligence.health || {};
+    const topConcepts = intelligence.topConcepts || [];
+    return `
+      <div class="projectx-card">
+        <span class="projectx-status">Milestone 2</span>
+        <h3>Teaching Intelligence Engine</h3>
+        <p>The curriculum is now connected through Canonical Teaching Objects, Canonical Concept Objects and generated relationship records.</p>
+        <div class="workspace-metrics">
+          <div><span>Concept Objects</span><strong>${escape(intelligence.conceptCount || 0)}</strong></div>
+          <div><span>Relationships</span><strong>${escape(intelligence.relationshipCount || 0)}</strong></div>
+          <div><span>Graph Coverage</span><strong>${escape(health.relationshipCoveragePct || 0)}%</strong></div>
+          <div><span>Digital Twins</span><strong>${escape(health.digitalTwinKnowledgeGraphPct || 0)}%</strong></div>
+        </div>
+      </div>
+      <div class="projectx-card">
+        <span class="projectx-status">Concept Registry</span>
+        <h3>Top Curriculum Concepts</h3>
+        <div class="curriculum-timeline">
+          ${topConcepts.slice(0, 8).map(c => `<div class="timeline-item"><span>${escape((c.yearGroups || []).join(", "))}</span><strong>${escape(c.name)}</strong><em>${escape(c.lessonCount)} lessons</em></div>`).join("") || `<p>No concept data available yet.</p>`}
+        </div>
       </div>
     `;
   }
@@ -452,9 +482,9 @@
       ${renderKPIs()}
       <div class="projectx-grid">
         <div class="projectx-card">
-          <span class="projectx-status">Release 1.0 Alpha.1</span>
-          <h3>Curriculum Intelligence Centre</h3>
-          <p>Phase 1 introduces tree navigation, persistent filters, curriculum health and faster three-click access to schemes, units and lessons.</p>
+          <span class="projectx-status">Release 1.1 Alpha</span>
+          <h3>Teaching Intelligence Layer</h3>
+          <p>Milestone 2 connects lessons to concepts, progression maps and relationship records so the curriculum can be understood as a knowledge graph.</p>
         </div>
         <div class="projectx-card">
           <span class="projectx-status">Three Click Rule</span>
@@ -462,14 +492,17 @@
           <p>The curriculum tree keeps every lesson reachable through a consistent hierarchy rather than long tables or disconnected filters.</p>
         </div>
         <div class="projectx-card">
-          <span class="projectx-status">Single Source</span>
-          <h3>Database Curriculum</h3>
-          <p>Schemes, units and lessons still inherit their context from the database-derived Scheme → Unit → Lesson model.</p>
+          <span class="projectx-status">Knowledge Graph</span>
+          <h3>CTO + CCO Model</h3>
+          <p>Canonical Teaching Objects now connect to Canonical Concept Objects so lessons can be navigated by knowledge as well as teaching sequence.</p>
         </div>
       </div>
       <div class="curriculum-dashboard-grid">
         ${renderCurriculumHealth()}
         ${renderTeachingTimeline()}
+      </div>
+      <div class="curriculum-dashboard-grid">
+        ${renderTeachingIntelligence()}
       </div>
       <div class="projectx-card" style="margin-top:20px;">
         <h3>Filtered Lesson Timeline</h3>
@@ -613,16 +646,41 @@
           ${renderReadinessIndicator(lesson)}
         </div>
         <div class="workspace-card"><h3>Unit Timeline</h3>${renderUnitTimeline(unit, lesson.id)}</div>`,
-      objectives: `<div class="workspace-card"><h3>Objectives & Success Criteria</h3><ul>${objectives.map(item => `<li>${escape(item)}</li>`).join("") || "<li>No learning objectives recorded yet.</li>"}</ul><h4>Keywords</h4><p>${escape((lesson.vocabulary || []).join(", ") || "No keywords recorded yet.")}</p><h4>Misconceptions</h4><p class="muted">Placeholder for common misconceptions and prior knowledge.</p></div>`,
+      objectives: `<div class="workspace-card"><h3>Objectives & Success Criteria</h3><ul>${objectives.map(item => `<li>${escape(item)}</li>`).join("") || "<li>No learning objectives recorded yet.</li>"}</ul><h4>Concepts</h4><p>${escape((lesson.knowledgeGraph?.concepts || []).map(c => c.name).join(", ") || (lesson.conceptTags || []).join(", ") || "No concepts recorded yet.")}</p><h4>Keywords</h4><p>${escape((lesson.vocabulary || []).join(", ") || "No keywords recorded yet.")}</p><h4>Misconceptions</h4><p>${escape((lesson.misconceptions || []).join(" ") || "No misconceptions recorded yet.")}</p></div>`,
       resources: `<div class="workspace-card"><h3>Teaching Assets</h3>${renderResourcesTable(resources)}<div class="workspace-action-stack horizontal"><button class="curriculum-button secondary">Add Slides</button><button class="curriculum-button secondary">Add Worksheet</button><button class="curriculum-button secondary">Add Code File</button></div></div>`,
       assessment: `<div class="workspace-card"><h3>Assessment</h3><p>Assessment shell ready for AFL, exit tickets, homework, OCR question links and question-bank integration.</p><div class="workspace-metrics"><div><span>AFL</span><strong>Ready</strong></div><div><span>Exit Ticket</span><strong>Pending</strong></div><div><span>Question Bank</span><strong>Linked Later</strong></div></div></div>`,
       evidence: `<div class="workspace-card"><h3>Evidence</h3><p>Evidence space for observation notes, anonymised class-level outcomes, teacher evidence and professional reflections. No pupil names should be stored here.</p></div>`,
       reflection: `<div class="workspace-card"><h3>Reflection</h3><div class="reflection-prompts"><label>What worked well?</label><textarea class="curriculum-textarea" placeholder="Add reflection after teaching..."></textarea><label>What needs improving next year?</label><textarea class="curriculum-textarea" placeholder="Add improvement actions..."></textarea><label>Common misconceptions</label><textarea class="curriculum-textarea" placeholder="Record class-level misconceptions only..."></textarea></div></div>`,
       history: `<div class="workspace-card"><h3>Teaching History</h3><div class="workspace-history"><div><strong>2025–2026</strong><span>Lesson marked Completed. Digital Lesson Twin created.</span></div><div><strong>Next cycle</strong><span>Reflection and improvement actions will appear here.</span></div></div></div>`,
+      knowledge: `<div class="workspace-card"><h3>Knowledge Graph</h3><p><strong>Concepts:</strong> ${escape((lesson.knowledgeGraph?.concepts || []).map(c => c.name).join(", ") || "No concepts recorded yet.")}</p><p><strong>Previous Lesson:</strong> ${escape(getLesson(lesson.knowledgeGraph?.relationships?.previousLessonId)?.title || "Start of unit")}</p><p><strong>Next Lesson:</strong> ${escape(getLesson(lesson.knowledgeGraph?.relationships?.nextLessonId)?.title || "End of unit")}</p><p class="muted">Relationship status: ${escape(lesson.knowledgeGraph?.relationshipStatus || "Pending")}</p></div>`,
       ai: `<div class="workspace-card"><h3>AI Assistant</h3><p>Context-aware AI shell. Later this panel will use the lesson, unit, scheme, resources, assessment summary and reflections to generate support.</p><div class="workspace-action-stack horizontal"><button class="curriculum-button secondary">Generate Starter</button><button class="curriculum-button secondary">Differentiate</button><button class="curriculum-button secondary">Suggest Improvements</button></div></div>`
     }[tab] || "";
     const content = `${renderWorkspaceTabs(tab)}<div class="workspace-tab-panel">${tabContent}</div>`;
     return renderWorkspaceFrame(context, content);
+  }
+
+  function renderWorkspaceTabs(active) {
+    const tabs = ["overview", "objectives", "resources", "assessment", "evidence", "reflection", "history", "knowledge", "ai"];
+    return `<div class="workspace-tabs">${tabs.map(tab => `<button class="curriculum-tab ${active === tab ? "active" : ""}" data-workspace-tab="${tab}">${tab.charAt(0).toUpperCase() + tab.slice(1)}</button>`).join("")}</div>`;
+  }
+
+  function renderReadinessIndicator(lesson) {
+    const score = Number(lesson.readinessScore || 20);
+    return `<div class="workspace-card"><h3>Teaching Readiness</h3><div class="curriculum-progress-row"><span>Digital Twin</span><strong>${score}%</strong><div class="curriculum-progress"><i style="width:${Math.min(100, score)}%"></i></div></div><p class="muted">Readiness will increase as resources, assessments, reflections and evidence are linked.</p></div>`;
+  }
+
+  function renderUnitTimeline(unit, activeLessonId = null) {
+    if (!unit) return `<div class="curriculum-empty">No unit context available.</div>`;
+    const sequence = lessonsForUnit(unit.id);
+    return `<div class="curriculum-timeline">${sequence.map(lesson => `<button class="timeline-item ${lesson.id === activeLessonId ? "active" : ""}" data-view-lesson="${escape(lesson.id)}"><span>Lesson ${escape(lesson.lessonNumber || lesson.sequenceIndex || "")}</span><strong>${escape(lesson.title)}</strong><em>${escape(lesson.status || "")}</em></button>`).join("")}</div>`;
+  }
+
+  function renderWorkspaceFrame(context, content) {
+    const scheme = context.scheme || {};
+    const unit = context.unit || {};
+    const lesson = context.lesson || {};
+    const title = lesson.title || unit.title || scheme.title || "Workspace";
+    return `<div class="workspace-shell"><div class="workspace-breadcrumb">${escape(scheme.yearGroup || unit.yearGroup || lesson.yearGroup || "Curriculum")} › ${escape(scheme.title || "Scheme")} › ${escape(unit.title || "Unit")} ${lesson.title ? "› " + escape(lesson.title) : ""}</div><div class="workspace-header"><div><span class="projectx-status">Digital Workspace</span><h2>${escape(title)}</h2></div><div class="curriculum-actions"><button class="curriculum-button secondary">Teach</button><button class="curriculum-button secondary">Assess</button><button class="curriculum-button secondary">Reflect</button></div></div>${content}</div>`;
   }
 
   function renderResources() {

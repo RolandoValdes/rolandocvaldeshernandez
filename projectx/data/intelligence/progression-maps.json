@@ -1,0 +1,3811 @@
+{
+  "meta": {
+    "title": "Project X Progression Maps",
+    "version": "1.0",
+    "conceptCount": 17
+  },
+  "progressionMaps": [
+    {
+      "conceptId": "CCO-AI",
+      "conceptName": "AI",
+      "firstIntroduced": "Year 5",
+      "masteryCandidate": "Year 12",
+      "stages": [
+        {
+          "yearGroup": "Year 5",
+          "stage": "Introduce",
+          "lessonCount": 2,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y5-U01-L005",
+              "title": "(a)Understand how we use technology in school and home.\n(b) Use a word processor to type and edit text\n(c) Use a paint or drawing tool to create digital art",
+              "unitTitle": "Unit 1: Digital Safety"
+            },
+            {
+              "lessonId": "PX25-Y5-U04-L002",
+              "title": "L2 \u2013 Inside the Computer (Main Components)",
+              "unitTitle": "Computer Hardware"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 6",
+          "stage": "Revisit and extend",
+          "lessonCount": 1,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y6-U01-L005",
+              "title": "Understand copyright and fair use",
+              "unitTitle": "Unit 1: Digital Literacy"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 12",
+          "stage": "Mastery candidate",
+          "lessonCount": 1,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y12-U03-L003",
+              "title": "(d) Scheduling: round robin, first come first served, multi-level feedback queues, shortest job first and shortest remaining time.",
+              "unitTitle": "Software and software development"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conceptId": "CCO-ALGORITHMS",
+      "conceptName": "Algorithms",
+      "firstIntroduced": "Year 6",
+      "masteryCandidate": "Year 13",
+      "stages": [
+        {
+          "yearGroup": "Year 6",
+          "stage": "Introduce",
+          "lessonCount": 3,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y6-U01-L006",
+              "title": "Use search engines effectively",
+              "unitTitle": "Unit 1: Digital Literacy"
+            },
+            {
+              "lessonId": "PX25-Y6-U07-L003",
+              "title": "L3 \u2013 How to Sort Information",
+              "unitTitle": "Unit 4: Data and information - Flat File Databases"
+            },
+            {
+              "lessonId": "PX25-Y6-U07-L004",
+              "title": "L4 \u2013 How to Search and Filter Data",
+              "unitTitle": "Unit 4: Data and information - Flat File Databases"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 10",
+          "stage": "Revisit and extend",
+          "lessonCount": 3,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y10-U09-L001",
+              "title": "1.1 - Computational Thinking",
+              "unitTitle": "1. Algorithms"
+            },
+            {
+              "lessonId": "PX25-Y10-U09-L002",
+              "title": "1.2 - Designing Algorithms",
+              "unitTitle": "1. Algorithms"
+            },
+            {
+              "lessonId": "PX25-Y10-U09-L003",
+              "title": "1.3 - Searching & Sorting Algorithms",
+              "unitTitle": "1. Algorithms"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 11",
+          "stage": "Revisit and extend",
+          "lessonCount": 6,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y11-U08-L001",
+              "title": "1.1 - Computational Thinking",
+              "unitTitle": "1. Algorithms"
+            },
+            {
+              "lessonId": "PX25-Y11-U08-L002",
+              "title": "1.2 - Designing Algorithms",
+              "unitTitle": "1. Algorithms"
+            },
+            {
+              "lessonId": "PX25-Y11-U08-L003",
+              "title": "1.3 - Searching & Sorting Algorithms",
+              "unitTitle": "1. Algorithms"
+            },
+            {
+              "lessonId": "PX25-Y11-U08-L004",
+              "title": "4.5 - Character Sets & Data Types",
+              "unitTitle": "1. Algorithms"
+            },
+            {
+              "lessonId": "PX25-Y11-U08-L005",
+              "title": "Summative Assesment",
+              "unitTitle": "1. Algorithms"
+            },
+            {
+              "lessonId": "PX25-Y11-U24-L002",
+              "title": "b. Read & Search Files",
+              "unitTitle": "File Handling"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 12",
+          "stage": "Revisit and extend",
+          "lessonCount": 11,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y12-U14-L001",
+              "title": "Thinking abstractly                                                                                                       (a) The nature of abstraction.                                         (b) The need for abstraction.                                        (c) The differences between an abstraction and reality.                                   (d) Devise an abstract model for a variety of situations.",
+              "unitTitle": "Elements of computational thinking"
+            },
+            {
+              "lessonId": "PX25-Y12-U14-L002",
+              "title": "Thinking ahead (a) Identify the inputs and outputs for a given situation.                                                          (b) Determine the preconditionsThinking ahead for devising a solution to a problem.                                                           (c) The need for reusable program components.",
+              "unitTitle": "Elements of computational thinking"
+            },
+            {
+              "lessonId": "PX25-Y12-U14-L003",
+              "title": "Thinking procedurally                                                                           (a) Identify the components of a problem.                                                            (b) Identify the components of a solution to a problem.                                                            (c) Determine the order of the steps needed to solve a problem.                                                                                                                        (d) Identify sub-procedures necessary to solve a problem.",
+              "unitTitle": "Elements of computational thinking"
+            },
+            {
+              "lessonId": "PX25-Y12-U14-L004",
+              "title": "Thinking logically                                                           (a) Identify the points in a solution where a decision has to be taken.                                                             (b) Determine the logical conditions that affect the outcome of a decision.                                                            (c) Determine how decisions affect flow through a program.",
+              "unitTitle": "Elements of computational thinking"
+            },
+            {
+              "lessonId": "PX25-Y12-U15-L002",
+              "title": "Software Development                                                                                                           (a) Understand the waterfall lifecycle, agile methodologies, extreme programming, the spiral model and rapid application development.                                                                    b ) The relative merits and drawbacks of different methodologies and when they might be used.                                                             (c) Writing and following algorithms.                                                              (d) Different test strategies, including black and white box testing and alpha and beta testing.                                                              (e) Test programs that solve problems using suitable test data and end user feedback, justify a test strategy for a given situation.",
+              "unitTitle": "Problem solving and programming"
+            },
+            {
+              "lessonId": "PX25-Y12-U16-L001",
+              "title": "(a) Analysis and design of algorithms for a given situation.(d) Implement binary and linear search.",
+              "unitTitle": "Algorithms"
+            },
+            {
+              "lessonId": "PX25-Y12-U16-L002",
+              "title": "(b) Standard algorithms (bubble sort, insertion sort, binary search and linear search).",
+              "unitTitle": "Algorithms"
+            },
+            {
+              "lessonId": "PX25-Y12-U16-L003",
+              "title": "(c) Implement bubble sort, insertion sort.",
+              "unitTitle": "Algorithms"
+            },
+            {
+              "lessonId": "PX25-Y12-U16-L004",
+              "title": "(d) Implement binary and linear search.",
+              "unitTitle": "Algorithms"
+            },
+            {
+              "lessonId": "PX25-Y12-U16-L005",
+              "title": "(e) Representing, adding data to and removing data from queues and stacks.",
+              "unitTitle": "Algorithms"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 13",
+          "stage": "Mastery candidate",
+          "lessonCount": 11,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y13-U01-L015",
+              "title": "Dikstra's Shorter Path Algorithm",
+              "unitTitle": "1. Hardware OCR H446 Computer Science A Level Specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U01-L016",
+              "title": "A* Shorter Path Algorithm",
+              "unitTitle": "1. Hardware OCR H446 Computer Science A Level Specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U03-L001",
+              "title": "Comp. Thinking Abstraction",
+              "unitTitle": "1. Computational Thinking OCR H446 Computer Science specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U03-L002",
+              "title": "Comp.  Thinking Ahead",
+              "unitTitle": "1. Computational Thinking OCR H446 Computer Science specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U03-L003",
+              "title": "Comp. Thinking Prodedurably",
+              "unitTitle": "1. Computational Thinking OCR H446 Computer Science specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U03-L004",
+              "title": "Comp. Thinking Logically",
+              "unitTitle": "1. Computational Thinking OCR H446 Computer Science specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U03-L005",
+              "title": "Summative Assesment",
+              "unitTitle": "1. Computational Thinking OCR H446 Computer Science specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U06-L001",
+              "title": "3.5 - Algorithm Complexity",
+              "unitTitle": "3. Algorithms OCR H446 Computer Science specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U06-L002",
+              "title": "3.6 - Data Structure Algorithms",
+              "unitTitle": "3. Algorithms OCR H446 Computer Science specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U06-L003",
+              "title": "3.7 - Sorting & Searching Algorithms",
+              "unitTitle": "3. Algorithms OCR H446 Computer Science specification. REVISION"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conceptId": "CCO-APP_DESIGN",
+      "conceptName": "App Design",
+      "firstIntroduced": "Year 6",
+      "masteryCandidate": "Year 12",
+      "stages": [
+        {
+          "yearGroup": "Year 6",
+          "stage": "Introduce",
+          "lessonCount": 3,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y6-U04-L002",
+              "title": "Becoming a games designer",
+              "unitTitle": "Unit 3: Programming A \u2013 Variables in games"
+            },
+            {
+              "lessonId": "PX25-Y6-U04-L003",
+              "title": "Design to code",
+              "unitTitle": "Unit 3: Programming A \u2013 Variables in games"
+            },
+            {
+              "lessonId": "PX25-Y6-U07-L005",
+              "title": "L5 \u2013 Designing Your Own Database",
+              "unitTitle": "Unit 4: Data and information - Flat File Databases"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 8",
+          "stage": "Revisit and extend",
+          "lessonCount": 4,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y8-U04-L001",
+              "title": "What Makes a Good App?",
+              "unitTitle": "Unit 4 App Design with App Lab"
+            },
+            {
+              "lessonId": "PX25-Y8-U04-L002",
+              "title": "Introduction to App Lab Interface",
+              "unitTitle": "Unit 4 App Design with App Lab"
+            },
+            {
+              "lessonId": "PX25-Y8-U04-L003",
+              "title": "Building a Simple Multi-Screen App",
+              "unitTitle": "Unit 4 App Design with App Lab"
+            },
+            {
+              "lessonId": "PX25-Y8-U04-L004",
+              "title": "Summative Assesment",
+              "unitTitle": "Unit 4 App Design with App Lab"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 10",
+          "stage": "Revisit and extend",
+          "lessonCount": 2,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y10-U09-L002",
+              "title": "1.2 - Designing Algorithms",
+              "unitTitle": "1. Algorithms"
+            },
+            {
+              "lessonId": "PX25-Y10-U11-L001",
+              "title": "3.1 - Defensive Design",
+              "unitTitle": "3. Producing Robust Programs"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 11",
+          "stage": "Revisit and extend",
+          "lessonCount": 3,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y11-U08-L002",
+              "title": "1.2 - Designing Algorithms",
+              "unitTitle": "1. Algorithms"
+            },
+            {
+              "lessonId": "PX25-Y11-U10-L001",
+              "title": "3.1 - Defensive Design",
+              "unitTitle": "3. Producing Robust Programs"
+            },
+            {
+              "lessonId": "PX25-Y11-U25-L001",
+              "title": "a. Graphical User Interface",
+              "unitTitle": "User Interface"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 12",
+          "stage": "Mastery candidate",
+          "lessonCount": 2,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y12-U13-L001",
+              "title": "(a) The Data Protection Act 1998.                                  (b) The Computer Misuse Act 1990.                                   (c) The Copyright Design and Patents Act 1988.                                   (d) The Regulation of Investigatory Powers Act 2000.",
+              "unitTitle": "Legal, moral, ethical and cultural issues"
+            },
+            {
+              "lessonId": "PX25-Y12-U16-L001",
+              "title": "(a) Analysis and design of algorithms for a given situation.(d) Implement binary and linear search.",
+              "unitTitle": "Algorithms"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conceptId": "CCO-BOOLEAN_LOGIC",
+      "conceptName": "Boolean Logic",
+      "firstIntroduced": "Year 5",
+      "masteryCandidate": "Year 13",
+      "stages": [
+        {
+          "yearGroup": "Year 5",
+          "stage": "Introduce",
+          "lessonCount": 28,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y5-U01-L001",
+              "title": "Know how to stay safe online and use kind language",
+              "unitTitle": "Unit 1: Digital Safety"
+            },
+            {
+              "lessonId": "PX25-Y5-U01-L002",
+              "title": "Recognise trusted adults and websites",
+              "unitTitle": "Unit 1: Digital Safety"
+            },
+            {
+              "lessonId": "PX25-Y5-U01-L003",
+              "title": "Understand why passwords matter",
+              "unitTitle": "Unit 1: Digital Safety"
+            },
+            {
+              "lessonId": "PX25-Y5-U01-L004",
+              "title": "Identify input and output devices",
+              "unitTitle": "Unit 1: Digital Safety"
+            },
+            {
+              "lessonId": "PX25-Y5-U01-L005",
+              "title": "(a)Understand how we use technology in school and home.\n(b) Use a word processor to type and edit text\n(c) Use a paint or drawing tool to create digital art",
+              "unitTitle": "Unit 1: Digital Safety"
+            },
+            {
+              "lessonId": "PX25-Y5-U01-L006",
+              "title": "File names, folders, and saving work",
+              "unitTitle": "Unit 1: Digital Safety"
+            },
+            {
+              "lessonId": "PX25-Y5-U02-L002",
+              "title": "Create a short animated sequence",
+              "unitTitle": "Unit 2: Scratch Jr / Basic"
+            },
+            {
+              "lessonId": "PX25-Y5-U02-L004",
+              "title": "Add sound and looks blocks",
+              "unitTitle": "Unit 2: Scratch Jr / Basic"
+            },
+            {
+              "lessonId": "PX25-Y5-U02-L006",
+              "title": "Combine blocks for story scenes",
+              "unitTitle": "Unit 2: Scratch Jr / Basic"
+            },
+            {
+              "lessonId": "PX25-Y5-U02-L007",
+              "title": "Build your story animation",
+              "unitTitle": "Unit 2: Scratch Jr / Basic"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 6",
+          "stage": "Revisit and extend",
+          "lessonCount": 25,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y6-U01-L001",
+              "title": "Recognise good and bad digital habits",
+              "unitTitle": "Unit 1: Digital Literacy"
+            },
+            {
+              "lessonId": "PX25-Y6-U01-L002",
+              "title": "Use Google Docs to write and format text",
+              "unitTitle": "Unit 1: Digital Literacy"
+            },
+            {
+              "lessonId": "PX25-Y6-U01-L004",
+              "title": "Inserting images, audio and video files",
+              "unitTitle": "Unit 1: Digital Literacy"
+            },
+            {
+              "lessonId": "PX25-Y6-U01-L005",
+              "title": "Understand copyright and fair use",
+              "unitTitle": "Unit 1: Digital Literacy"
+            },
+            {
+              "lessonId": "PX25-Y6-U01-L007",
+              "title": "Spot fake websites and images",
+              "unitTitle": "Unit 1: Digital Literacy"
+            },
+            {
+              "lessonId": "PX25-Y6-U02-L001",
+              "title": "Use Google Sites for Web Pages, Creating a WebPage, Templates.",
+              "unitTitle": "Unit 2: Creating media \u2013 Web page creation"
+            },
+            {
+              "lessonId": "PX25-Y6-U02-L002",
+              "title": "Adding text,  media and Sharing.",
+              "unitTitle": "Unit 2: Creating media \u2013 Web page creation"
+            },
+            {
+              "lessonId": "PX25-Y6-U03-L002",
+              "title": "Add sound and looks blocks (2)",
+              "unitTitle": "Unit 3: Intro. to Programming \u2013 Scratch"
+            },
+            {
+              "lessonId": "PX25-Y6-U03-L004",
+              "title": "Combine blocks for story scenes (2)",
+              "unitTitle": "Unit 3: Intro. to Programming \u2013 Scratch"
+            },
+            {
+              "lessonId": "PX25-Y6-U03-L005",
+              "title": "Build your story animation (2)",
+              "unitTitle": "Unit 3: Intro. to Programming \u2013 Scratch"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 7",
+          "stage": "Revisit and extend",
+          "lessonCount": 21,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y7-U01-L001",
+              "title": "Understand personal information and digital footprint",
+              "unitTitle": "Unit 1: Online Safety"
+            },
+            {
+              "lessonId": "PX25-Y7-U01-L002",
+              "title": "Identify cyberbullying and how to report it",
+              "unitTitle": "Unit 1: Online Safety"
+            },
+            {
+              "lessonId": "PX25-Y7-U01-L003",
+              "title": "Recognise phishing and fake content",
+              "unitTitle": "Unit 1: Online Safety"
+            },
+            {
+              "lessonId": "PX25-Y7-U02-L001",
+              "title": "The Building Blocks of a Computer: Motherboard, CPU, and Memory",
+              "unitTitle": "Unit 2 Computer Systems"
+            },
+            {
+              "lessonId": "PX25-Y7-U02-L002",
+              "title": "Communicating with Computers: Input and Output Devices",
+              "unitTitle": "Unit 2 Computer Systems"
+            },
+            {
+              "lessonId": "PX25-Y7-U02-L003",
+              "title": "Storing Information - Storage Devices",
+              "unitTitle": "Unit 2 Computer Systems"
+            },
+            {
+              "lessonId": "PX25-Y7-U03-L001",
+              "title": "Use Google Docs for writing and formatting",
+              "unitTitle": "Unit 3: Clear messaging in digital media"
+            },
+            {
+              "lessonId": "PX25-Y7-U03-L002",
+              "title": "Use Google Slides for presentations",
+              "unitTitle": "Unit 3: Clear messaging in digital media"
+            },
+            {
+              "lessonId": "PX25-Y7-U03-L003",
+              "title": "Creating a brand",
+              "unitTitle": "Unit 3: Clear messaging in digital media"
+            },
+            {
+              "lessonId": "PX25-Y7-U04-L001",
+              "title": "Computer networks and protocols",
+              "unitTitle": "Unit 4: Networks from semaphores to the Internet"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 8",
+          "stage": "Revisit and extend",
+          "lessonCount": 10,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y8-U02-L003",
+              "title": "Malware, Phishing, and Staying Safe",
+              "unitTitle": "Unit 2 CyberSecurity KS3 Computing"
+            },
+            {
+              "lessonId": "PX25-Y8-U02-L004",
+              "title": "Malware, Phishing, and Staying Safe Assesment",
+              "unitTitle": "Unit 2 CyberSecurity KS3 Computing"
+            },
+            {
+              "lessonId": "PX25-Y8-U03-L001",
+              "title": "\u2013 Introduction to Web Pages (HTML Basics)",
+              "unitTitle": "Unit 3: Developing for the web"
+            },
+            {
+              "lessonId": "PX25-Y8-U03-L002",
+              "title": "Structuring Content with HTML",
+              "unitTitle": "Unit 3: Developing for the web"
+            },
+            {
+              "lessonId": "PX25-Y8-U03-L003",
+              "title": "Adding Links and Images",
+              "unitTitle": "Unit 3: Developing for the web"
+            },
+            {
+              "lessonId": "PX25-Y8-U03-L004",
+              "title": "Recap",
+              "unitTitle": "Unit 3: Developing for the web"
+            },
+            {
+              "lessonId": "PX25-Y8-U05-L003",
+              "title": "Converting Denary to Binary and Viseversa",
+              "unitTitle": "Unit 5: Data Representations KS3 Computing"
+            },
+            {
+              "lessonId": "PX25-Y8-U07-L003",
+              "title": "Variables and Data Types, Storing values in variables",
+              "unitTitle": "Unit 6: Programming essentials in Pythonm \u2013 part I"
+            },
+            {
+              "lessonId": "PX25-Y8-U07-L004",
+              "title": "Inputs and Simple Maths, User input and arithmetic operations",
+              "unitTitle": "Unit 6: Programming essentials in Pythonm \u2013 part I"
+            },
+            {
+              "lessonId": "PX25-Y8-U07-L006",
+              "title": "Loops and Mini Project",
+              "unitTitle": "Unit 6: Programming essentials in Pythonm \u2013 part I"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 9",
+          "stage": "Revisit and extend",
+          "lessonCount": 21,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y9-U01-L003",
+              "title": "Primary, Secondary and Virtual Memory",
+              "unitTitle": "Unit1: Hardware KS3 Computing"
+            },
+            {
+              "lessonId": "PX25-Y9-U01-L004",
+              "title": "Input and Output Devices",
+              "unitTitle": "Unit1: Hardware KS3 Computing"
+            },
+            {
+              "lessonId": "PX25-Y9-U01-L005",
+              "title": "Storage Devices, Type of storages and thier use.",
+              "unitTitle": "Unit1: Hardware KS3 Computing"
+            },
+            {
+              "lessonId": "PX25-Y9-U03-L001",
+              "title": "Images: Pixels and resolution",
+              "unitTitle": "Unit 3: Data Representations KS3 Computing"
+            },
+            {
+              "lessonId": "PX25-Y9-U03-L002",
+              "title": "Color Depth and File Size.",
+              "unitTitle": "Unit 3: Data Representations KS3 Computing"
+            },
+            {
+              "lessonId": "PX25-Y9-U04-L001",
+              "title": "Binary system & conversion between binary and denary",
+              "unitTitle": "Unit 4 Understanding Binary"
+            },
+            {
+              "lessonId": "PX25-Y9-U04-L002",
+              "title": "Binary Arithmetic:Binary addition and overflow",
+              "unitTitle": "Unit 4 Understanding Binary"
+            },
+            {
+              "lessonId": "PX25-Y9-U04-L003",
+              "title": "Summative Assesment",
+              "unitTitle": "Unit 4 Understanding Binary"
+            },
+            {
+              "lessonId": "PX25-Y9-U05-L001",
+              "title": "L1 Input, output, and variables",
+              "unitTitle": "Unit 5: Introduction to Python programming"
+            },
+            {
+              "lessonId": "PX25-Y9-U06-L001",
+              "title": "Basic String Handling",
+              "unitTitle": "Unit 6: Introduction to Python programming (cont)"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 10",
+          "stage": "Revisit and extend",
+          "lessonCount": 27,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y10-U01-L003",
+              "title": "1.2 - CPU Performance",
+              "unitTitle": "SLR 1.1 Systems Architecture  OCR GCSE Specification."
+            },
+            {
+              "lessonId": "PX25-Y10-U02-L001",
+              "title": "2.1 - Primary Storage",
+              "unitTitle": "SLR 1.2 Memory & Storage - Part 1"
+            },
+            {
+              "lessonId": "PX25-Y10-U02-L002",
+              "title": "2.2 - Secondary Storage and Storage |Units",
+              "unitTitle": "SLR 1.2 Memory & Storage - Part 1"
+            },
+            {
+              "lessonId": "PX25-Y10-U02-L003",
+              "title": "Self Assesment",
+              "unitTitle": "SLR 1.2 Memory & Storage - Part 1"
+            },
+            {
+              "lessonId": "PX25-Y10-U02-L004",
+              "title": "Summative Assesment",
+              "unitTitle": "SLR 1.2 Memory & Storage - Part 1"
+            },
+            {
+              "lessonId": "PX25-Y10-U02-L005",
+              "title": "2.3 - Data Units",
+              "unitTitle": "SLR 1.2 Memory & Storage - Part 1"
+            },
+            {
+              "lessonId": "PX25-Y10-U02-L006",
+              "title": "2.4a - Number Systems",
+              "unitTitle": "SLR 1.2 Memory & Storage - Part 1"
+            },
+            {
+              "lessonId": "PX25-Y10-U02-L007",
+              "title": "2.4b - Binary Addition & Shifts",
+              "unitTitle": "SLR 1.2 Memory & Storage - Part 1"
+            },
+            {
+              "lessonId": "PX25-Y10-U02-L008",
+              "title": "2.4c - Character Storage",
+              "unitTitle": "SLR 1.2 Memory & Storage - Part 1"
+            },
+            {
+              "lessonId": "PX25-Y10-U02-L009",
+              "title": "Self Assesment",
+              "unitTitle": "SLR 1.2 Memory & Storage - Part 1"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 11",
+          "stage": "Revisit and extend",
+          "lessonCount": 54,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y11-U01-L003",
+              "title": "1.3 - Primary Storage",
+              "unitTitle": "1. System Architecture OCR GCSE Computer Science (J277)"
+            },
+            {
+              "lessonId": "PX25-Y11-U01-L004",
+              "title": "1.4 - Secondary Storage",
+              "unitTitle": "1. System Architecture OCR GCSE Computer Science (J277)"
+            },
+            {
+              "lessonId": "PX25-Y11-U01-L005",
+              "title": "1.5 - Performance",
+              "unitTitle": "1. System Architecture OCR GCSE Computer Science (J277)"
+            },
+            {
+              "lessonId": "PX25-Y11-U02-L001",
+              "title": "2.1 - Primary Storage",
+              "unitTitle": "2. Memory & Storage"
+            },
+            {
+              "lessonId": "PX25-Y11-U02-L002",
+              "title": "2.2 - Secondary Storage",
+              "unitTitle": "2. Memory & Storage"
+            },
+            {
+              "lessonId": "PX25-Y11-U02-L003",
+              "title": "2.3 - Units",
+              "unitTitle": "2. Memory & Storage"
+            },
+            {
+              "lessonId": "PX25-Y11-U03-L003",
+              "title": "2.4b(I) negative number representation unsigned and signed binary numbers, 2's Complement",
+              "unitTitle": "2.1 Data Representation"
+            },
+            {
+              "lessonId": "PX25-Y11-U03-L006",
+              "title": "2.4c - Character Storage",
+              "unitTitle": "2.1 Data Representation"
+            },
+            {
+              "lessonId": "PX25-Y11-U03-L007",
+              "title": "2.4d - Image Storage",
+              "unitTitle": "2.1 Data Representation"
+            },
+            {
+              "lessonId": "PX25-Y11-U03-L008",
+              "title": "2.4e - Sound Storage",
+              "unitTitle": "2.1 Data Representation"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 12",
+          "stage": "Revisit and extend",
+          "lessonCount": 43,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y12-U01-L001",
+              "title": "The Arithmetic and Logic Unit; ALU, Control Unit and Registers (Program Counter; PC, Accumulator; ACC, Memory Address Register; MAR, Memory Data Register; MDR, Current Instruction Register; CIR). Buses: data, address and control: how this relates to assembly language programs.",
+              "unitTitle": "Unit 01: Computer Systems    ................   OCR Computer Science AS-Level curriculum, under specification H046/H446"
+            },
+            {
+              "lessonId": "PX25-Y12-U01-L003",
+              "title": "The factors affecting the performance of the CPU, clock speed, number of cores, cache.",
+              "unitTitle": "Unit 01: Computer Systems    ................   OCR Computer Science AS-Level curriculum, under specification H046/H446"
+            },
+            {
+              "lessonId": "PX25-Y12-U01-L004",
+              "title": "Von Neumann, Harvard and contemporary processor architecture.",
+              "unitTitle": "Unit 01: Computer Systems    ................   OCR Computer Science AS-Level curriculum, under specification H046/H446"
+            },
+            {
+              "lessonId": "PX25-Y12-U01-L005",
+              "title": "Types of Processors.  The differences between and uses of CISC and RISC processors. (b) Multicore and Parallel systems.",
+              "unitTitle": "Unit 01: Computer Systems    ................   OCR Computer Science AS-Level curriculum, under specification H046/H446"
+            },
+            {
+              "lessonId": "PX25-Y12-U02-L001",
+              "title": "How different input, output and storage devices can be applied to the solution of different problems. (b) The uses of magnetic, flash and optical storage devices.",
+              "unitTitle": "SLR3 Input, output and storage devices"
+            },
+            {
+              "lessonId": "PX25-Y12-U02-L002",
+              "title": "(c) RAM and ROM. (d) Virtual storage.",
+              "unitTitle": "SLR3 Input, output and storage devices"
+            },
+            {
+              "lessonId": "PX25-Y12-U03-L001",
+              "title": "(a) The need for, function and purpose of operating systems. (b) Memory Management (paging, segmentation and virtual memory).",
+              "unitTitle": "Software and software development"
+            },
+            {
+              "lessonId": "PX25-Y12-U03-L002",
+              "title": "(c) Interrupts, the role of interrupts and Interrupt Service Routines (ISR), role within the Fetch-Decode-Execute Cycle.",
+              "unitTitle": "Software and software development"
+            },
+            {
+              "lessonId": "PX25-Y12-U03-L003",
+              "title": "(d) Scheduling: round robin, first come first served, multi-level feedback queues, shortest job first and shortest remaining time.",
+              "unitTitle": "Software and software development"
+            },
+            {
+              "lessonId": "PX25-Y12-U03-L004",
+              "title": "(e) Distributed, embedded, multi-tasking, multi-user and real time .operating systems.",
+              "unitTitle": "Software and software development"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 13",
+          "stage": "Mastery candidate",
+          "lessonCount": 26,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y13-U01-L001",
+              "title": "1.1 - Structure & Function of the Processor (The CPU)",
+              "unitTitle": "1. Hardware OCR H446 Computer Science A Level Specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U01-L002",
+              "title": "1.2 - Types of Processor",
+              "unitTitle": "1. Hardware OCR H446 Computer Science A Level Specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U01-L003",
+              "title": "1.3 - Input, Output & Storage",
+              "unitTitle": "1. Hardware OCR H446 Computer Science A Level Specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U01-L005",
+              "title": "4.3 - Boolean Algebra",
+              "unitTitle": "1. Hardware OCR H446 Computer Science A Level Specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U01-L006",
+              "title": "Logic Gates & Truth Tables",
+              "unitTitle": "1. Hardware OCR H446 Computer Science A Level Specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U01-L007",
+              "title": "Simplifiying Boolean Expressions",
+              "unitTitle": "1. Hardware OCR H446 Computer Science A Level Specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U01-L010",
+              "title": "4.3 - Boolean Algebra",
+              "unitTitle": "1. Hardware OCR H446 Computer Science A Level Specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U01-L011",
+              "title": "Logic Gates & Truth Tables",
+              "unitTitle": "1. Hardware OCR H446 Computer Science A Level Specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U01-L012",
+              "title": "Simplifiying Boolean Expressions",
+              "unitTitle": "1. Hardware OCR H446 Computer Science A Level Specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U01-L015",
+              "title": "Dikstra's Shorter Path Algorithm",
+              "unitTitle": "1. Hardware OCR H446 Computer Science A Level Specification. REVISION"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conceptId": "CCO-COMPUTER_SYSTEMS",
+      "conceptName": "Computer Systems",
+      "firstIntroduced": "Year 5",
+      "masteryCandidate": "Year 13",
+      "stages": [
+        {
+          "yearGroup": "Year 5",
+          "stage": "Introduce",
+          "lessonCount": 8,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y5-U01-L005",
+              "title": "(a)Understand how we use technology in school and home.\n(b) Use a word processor to type and edit text\n(c) Use a paint or drawing tool to create digital art",
+              "unitTitle": "Unit 1: Digital Safety"
+            },
+            {
+              "lessonId": "PX25-Y5-U03-L002",
+              "title": "L2 Program Sphero to follow a path",
+              "unitTitle": "Robotics & Logic"
+            },
+            {
+              "lessonId": "PX25-Y5-U04-L001",
+              "title": "L1 \u2013 What Is Computer Hardware?",
+              "unitTitle": "Computer Hardware"
+            },
+            {
+              "lessonId": "PX25-Y5-U04-L002",
+              "title": "L2 \u2013 Inside the Computer (Main Components)",
+              "unitTitle": "Computer Hardware"
+            },
+            {
+              "lessonId": "PX25-Y5-U04-L003",
+              "title": "L3 \u2013 Input and Output Devices",
+              "unitTitle": "Computer Hardware"
+            },
+            {
+              "lessonId": "PX25-Y5-U04-L004",
+              "title": "L4 \u2013 Storage Devices",
+              "unitTitle": "Computer Hardware"
+            },
+            {
+              "lessonId": "PX25-Y5-U04-L005",
+              "title": "L5 \u2013 How a Computer Works (Putting the Parts Together)",
+              "unitTitle": "Computer Hardware"
+            },
+            {
+              "lessonId": "PX25-Y5-U05-L003",
+              "title": "L3 \u2013 Network Hardware (Router, Switch, Access Point)",
+              "unitTitle": "Know Your Network"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 6",
+          "stage": "Revisit and extend",
+          "lessonCount": 15,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y6-U03-L001",
+              "title": "L1 Use loops to repeat actions (2)",
+              "unitTitle": "Unit 3: Intro. to Programming \u2013 Scratch"
+            },
+            {
+              "lessonId": "PX25-Y6-U03-L002",
+              "title": "Add sound and looks blocks (2)",
+              "unitTitle": "Unit 3: Intro. to Programming \u2013 Scratch"
+            },
+            {
+              "lessonId": "PX25-Y6-U03-L003",
+              "title": "Use events to control characters",
+              "unitTitle": "Unit 3: Intro. to Programming \u2013 Scratch"
+            },
+            {
+              "lessonId": "PX25-Y6-U03-L004",
+              "title": "Combine blocks for story scenes (2)",
+              "unitTitle": "Unit 3: Intro. to Programming \u2013 Scratch"
+            },
+            {
+              "lessonId": "PX25-Y6-U03-L005",
+              "title": "Build your story animation (2)",
+              "unitTitle": "Unit 3: Intro. to Programming \u2013 Scratch"
+            },
+            {
+              "lessonId": "PX25-Y6-U04-L001",
+              "title": "Improving a game",
+              "unitTitle": "Unit 3: Programming A \u2013 Variables in games"
+            },
+            {
+              "lessonId": "PX25-Y6-U04-L002",
+              "title": "Becoming a games designer",
+              "unitTitle": "Unit 3: Programming A \u2013 Variables in games"
+            },
+            {
+              "lessonId": "PX25-Y6-U04-L003",
+              "title": "Design to code",
+              "unitTitle": "Unit 3: Programming A \u2013 Variables in games"
+            },
+            {
+              "lessonId": "PX25-Y6-U04-L004",
+              "title": "Using Selection",
+              "unitTitle": "Unit 3: Programming A \u2013 Variables in games"
+            },
+            {
+              "lessonId": "PX25-Y6-U04-L005",
+              "title": "Using Iterations",
+              "unitTitle": "Unit 3: Programming A \u2013 Variables in games"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 7",
+          "stage": "Revisit and extend",
+          "lessonCount": 20,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y7-U02-L001",
+              "title": "The Building Blocks of a Computer: Motherboard, CPU, and Memory",
+              "unitTitle": "Unit 2 Computer Systems"
+            },
+            {
+              "lessonId": "PX25-Y7-U02-L002",
+              "title": "Communicating with Computers: Input and Output Devices",
+              "unitTitle": "Unit 2 Computer Systems"
+            },
+            {
+              "lessonId": "PX25-Y7-U02-L003",
+              "title": "Storing Information - Storage Devices",
+              "unitTitle": "Unit 2 Computer Systems"
+            },
+            {
+              "lessonId": "PX25-Y7-U04-L001",
+              "title": "Computer networks and protocols",
+              "unitTitle": "Unit 4: Networks from semaphores to the Internet"
+            },
+            {
+              "lessonId": "PX25-Y7-U05-L001",
+              "title": "Networking hardware",
+              "unitTitle": "Unit 5: Networks from semaphores to the Internet"
+            },
+            {
+              "lessonId": "PX25-Y7-U05-L002",
+              "title": "Wired and wireless networks",
+              "unitTitle": "Unit 5: Networks from semaphores to the Internet"
+            },
+            {
+              "lessonId": "PX25-Y7-U05-L003",
+              "title": "The internet",
+              "unitTitle": "Unit 5: Networks from semaphores to the Internet"
+            },
+            {
+              "lessonId": "PX25-Y7-U05-L004",
+              "title": "Internet services",
+              "unitTitle": "Unit 5: Networks from semaphores to the Internet"
+            },
+            {
+              "lessonId": "PX25-Y7-U05-L005",
+              "title": "The world wide web",
+              "unitTitle": "Unit 5: Networks from semaphores to the Internet"
+            },
+            {
+              "lessonId": "PX25-Y7-U06-L001",
+              "title": "Introduction to programming and sequencing",
+              "unitTitle": "Unit 6: Programming essentials in Python \u2013 part I"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 8",
+          "stage": "Revisit and extend",
+          "lessonCount": 9,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y8-U01-L001",
+              "title": "L1 The Motherboard, Assessment",
+              "unitTitle": "Unit 1 Hardware KS3 Computing"
+            },
+            {
+              "lessonId": "PX25-Y8-U01-L002",
+              "title": "L2 The CPU I",
+              "unitTitle": "Unit 1 Hardware KS3 Computing"
+            },
+            {
+              "lessonId": "PX25-Y8-U01-L003",
+              "title": "L2 The CPUAssesment",
+              "unitTitle": "Unit 1 Hardware KS3 Computing"
+            },
+            {
+              "lessonId": "PX25-Y8-U07-L001",
+              "title": "L1 The Motherboard, https://www.csnewbs.com/ks3-themotherboard",
+              "unitTitle": "Unit 6: Programming essentials in Pythonm \u2013 part I"
+            },
+            {
+              "lessonId": "PX25-Y8-U07-L002",
+              "title": "Hello Python Getting started with Python basics",
+              "unitTitle": "Unit 6: Programming essentials in Pythonm \u2013 part I"
+            },
+            {
+              "lessonId": "PX25-Y8-U07-L003",
+              "title": "Variables and Data Types, Storing values in variables",
+              "unitTitle": "Unit 6: Programming essentials in Pythonm \u2013 part I"
+            },
+            {
+              "lessonId": "PX25-Y8-U07-L004",
+              "title": "Inputs and Simple Maths, User input and arithmetic operations",
+              "unitTitle": "Unit 6: Programming essentials in Pythonm \u2013 part I"
+            },
+            {
+              "lessonId": "PX25-Y8-U07-L005",
+              "title": "Selection (IF Statements), Making decisions with conditions",
+              "unitTitle": "Unit 6: Programming essentials in Pythonm \u2013 part I"
+            },
+            {
+              "lessonId": "PX25-Y8-U07-L006",
+              "title": "Loops and Mini Project",
+              "unitTitle": "Unit 6: Programming essentials in Pythonm \u2013 part I"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 9",
+          "stage": "Revisit and extend",
+          "lessonCount": 20,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y9-U01-L001",
+              "title": "L1 The Motherboard     https://www.csnewbs.com/ks3-themotherboard",
+              "unitTitle": "Unit1: Hardware KS3 Computing"
+            },
+            {
+              "lessonId": "PX25-Y9-U01-L002",
+              "title": "L2 The CPU",
+              "unitTitle": "Unit1: Hardware KS3 Computing"
+            },
+            {
+              "lessonId": "PX25-Y9-U01-L003",
+              "title": "Primary, Secondary and Virtual Memory",
+              "unitTitle": "Unit1: Hardware KS3 Computing"
+            },
+            {
+              "lessonId": "PX25-Y9-U01-L004",
+              "title": "Input and Output Devices",
+              "unitTitle": "Unit1: Hardware KS3 Computing"
+            },
+            {
+              "lessonId": "PX25-Y9-U01-L005",
+              "title": "Storage Devices, Type of storages and thier use.",
+              "unitTitle": "Unit1: Hardware KS3 Computing"
+            },
+            {
+              "lessonId": "PX25-Y9-U01-L006",
+              "title": "Units Of Data",
+              "unitTitle": "Unit1: Hardware KS3 Computing"
+            },
+            {
+              "lessonId": "PX25-Y9-U02-L001",
+              "title": "L1 Malware  Six types of Malware (a) Staying Safe (b) 4 ways malware can infect your system",
+              "unitTitle": "Unit 2. CyberSecurity KS3 Computing"
+            },
+            {
+              "lessonId": "PX25-Y9-U04-L001",
+              "title": "Binary system & conversion between binary and denary",
+              "unitTitle": "Unit 4 Understanding Binary"
+            },
+            {
+              "lessonId": "PX25-Y9-U05-L001",
+              "title": "L1 Input, output, and variables",
+              "unitTitle": "Unit 5: Introduction to Python programming"
+            },
+            {
+              "lessonId": "PX25-Y9-U05-L002",
+              "title": "L2 Data Types.",
+              "unitTitle": "Unit 5: Introduction to Python programming"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 10",
+          "stage": "Revisit and extend",
+          "lessonCount": 25,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y10-U01-L001",
+              "title": "1.1a - The CPU",
+              "unitTitle": "SLR 1.1 Systems Architecture  OCR GCSE Specification."
+            },
+            {
+              "lessonId": "PX25-Y10-U01-L002",
+              "title": "1.1b - Registers & FE Cycle",
+              "unitTitle": "SLR 1.1 Systems Architecture  OCR GCSE Specification."
+            },
+            {
+              "lessonId": "PX25-Y10-U01-L003",
+              "title": "1.2 - CPU Performance",
+              "unitTitle": "SLR 1.1 Systems Architecture  OCR GCSE Specification."
+            },
+            {
+              "lessonId": "PX25-Y10-U01-L004",
+              "title": "1.3 - Embedded Systems",
+              "unitTitle": "SLR 1.1 Systems Architecture  OCR GCSE Specification."
+            },
+            {
+              "lessonId": "PX25-Y10-U02-L001",
+              "title": "2.1 - Primary Storage",
+              "unitTitle": "SLR 1.2 Memory & Storage - Part 1"
+            },
+            {
+              "lessonId": "PX25-Y10-U02-L002",
+              "title": "2.2 - Secondary Storage and Storage |Units",
+              "unitTitle": "SLR 1.2 Memory & Storage - Part 1"
+            },
+            {
+              "lessonId": "PX25-Y10-U02-L003",
+              "title": "Self Assesment",
+              "unitTitle": "SLR 1.2 Memory & Storage - Part 1"
+            },
+            {
+              "lessonId": "PX25-Y10-U02-L004",
+              "title": "Summative Assesment",
+              "unitTitle": "SLR 1.2 Memory & Storage - Part 1"
+            },
+            {
+              "lessonId": "PX25-Y10-U02-L005",
+              "title": "2.3 - Data Units",
+              "unitTitle": "SLR 1.2 Memory & Storage - Part 1"
+            },
+            {
+              "lessonId": "PX25-Y10-U02-L006",
+              "title": "2.4a - Number Systems",
+              "unitTitle": "SLR 1.2 Memory & Storage - Part 1"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 11",
+          "stage": "Revisit and extend",
+          "lessonCount": 31,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y11-U01-L001",
+              "title": "1.1 - The Central Processing Unit (CPU)",
+              "unitTitle": "1. System Architecture OCR GCSE Computer Science (J277)"
+            },
+            {
+              "lessonId": "PX25-Y11-U01-L002",
+              "title": "1.2 - The FDE Cycle",
+              "unitTitle": "1. System Architecture OCR GCSE Computer Science (J277)"
+            },
+            {
+              "lessonId": "PX25-Y11-U01-L003",
+              "title": "1.3 - Primary Storage",
+              "unitTitle": "1. System Architecture OCR GCSE Computer Science (J277)"
+            },
+            {
+              "lessonId": "PX25-Y11-U01-L004",
+              "title": "1.4 - Secondary Storage",
+              "unitTitle": "1. System Architecture OCR GCSE Computer Science (J277)"
+            },
+            {
+              "lessonId": "PX25-Y11-U01-L005",
+              "title": "1.5 - Performance",
+              "unitTitle": "1. System Architecture OCR GCSE Computer Science (J277)"
+            },
+            {
+              "lessonId": "PX25-Y11-U01-L006",
+              "title": "1.5 - Embedded Systems",
+              "unitTitle": "1. System Architecture OCR GCSE Computer Science (J277)"
+            },
+            {
+              "lessonId": "PX25-Y11-U01-L007",
+              "title": "Summative Assesment",
+              "unitTitle": "1. System Architecture OCR GCSE Computer Science (J277)"
+            },
+            {
+              "lessonId": "PX25-Y11-U02-L001",
+              "title": "2.1 - Primary Storage",
+              "unitTitle": "2. Memory & Storage"
+            },
+            {
+              "lessonId": "PX25-Y11-U02-L002",
+              "title": "2.2 - Secondary Storage",
+              "unitTitle": "2. Memory & Storage"
+            },
+            {
+              "lessonId": "PX25-Y11-U02-L003",
+              "title": "2.3 - Units",
+              "unitTitle": "2. Memory & Storage"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 12",
+          "stage": "Revisit and extend",
+          "lessonCount": 29,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y12-U01-L001",
+              "title": "The Arithmetic and Logic Unit; ALU, Control Unit and Registers (Program Counter; PC, Accumulator; ACC, Memory Address Register; MAR, Memory Data Register; MDR, Current Instruction Register; CIR). Buses: data, address and control: how this relates to assembly language programs.",
+              "unitTitle": "Unit 01: Computer Systems    ................   OCR Computer Science AS-Level curriculum, under specification H046/H446"
+            },
+            {
+              "lessonId": "PX25-Y12-U01-L002",
+              "title": "The fetch-decode-execute cycle, including its effect on registers.",
+              "unitTitle": "Unit 01: Computer Systems    ................   OCR Computer Science AS-Level curriculum, under specification H046/H446"
+            },
+            {
+              "lessonId": "PX25-Y12-U01-L003",
+              "title": "The factors affecting the performance of the CPU, clock speed, number of cores, cache.",
+              "unitTitle": "Unit 01: Computer Systems    ................   OCR Computer Science AS-Level curriculum, under specification H046/H446"
+            },
+            {
+              "lessonId": "PX25-Y12-U01-L004",
+              "title": "Von Neumann, Harvard and contemporary processor architecture.",
+              "unitTitle": "Unit 01: Computer Systems    ................   OCR Computer Science AS-Level curriculum, under specification H046/H446"
+            },
+            {
+              "lessonId": "PX25-Y12-U01-L005",
+              "title": "Types of Processors.  The differences between and uses of CISC and RISC processors. (b) Multicore and Parallel systems.",
+              "unitTitle": "Unit 01: Computer Systems    ................   OCR Computer Science AS-Level curriculum, under specification H046/H446"
+            },
+            {
+              "lessonId": "PX25-Y12-U01-L006",
+              "title": "CISC, RISC, LMC Assembly code",
+              "unitTitle": "Unit 01: Computer Systems    ................   OCR Computer Science AS-Level curriculum, under specification H046/H446"
+            },
+            {
+              "lessonId": "PX25-Y12-U01-L007",
+              "title": "Summative Assesment",
+              "unitTitle": "Unit 01: Computer Systems    ................   OCR Computer Science AS-Level curriculum, under specification H046/H446"
+            },
+            {
+              "lessonId": "PX25-Y12-U02-L001",
+              "title": "How different input, output and storage devices can be applied to the solution of different problems. (b) The uses of magnetic, flash and optical storage devices.",
+              "unitTitle": "SLR3 Input, output and storage devices"
+            },
+            {
+              "lessonId": "PX25-Y12-U02-L002",
+              "title": "(c) RAM and ROM. (d) Virtual storage.",
+              "unitTitle": "SLR3 Input, output and storage devices"
+            },
+            {
+              "lessonId": "PX25-Y12-U03-L001",
+              "title": "(a) The need for, function and purpose of operating systems. (b) Memory Management (paging, segmentation and virtual memory).",
+              "unitTitle": "Software and software development"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 13",
+          "stage": "Mastery candidate",
+          "lessonCount": 22,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y13-U01-L001",
+              "title": "1.1 - Structure & Function of the Processor (The CPU)",
+              "unitTitle": "1. Hardware OCR H446 Computer Science A Level Specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U01-L002",
+              "title": "1.2 - Types of Processor",
+              "unitTitle": "1. Hardware OCR H446 Computer Science A Level Specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U01-L003",
+              "title": "1.3 - Input, Output & Storage",
+              "unitTitle": "1. Hardware OCR H446 Computer Science A Level Specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U01-L004",
+              "title": "Mini Mock Exam",
+              "unitTitle": "1. Hardware OCR H446 Computer Science A Level Specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U01-L005",
+              "title": "4.3 - Boolean Algebra",
+              "unitTitle": "1. Hardware OCR H446 Computer Science A Level Specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U01-L006",
+              "title": "Logic Gates & Truth Tables",
+              "unitTitle": "1. Hardware OCR H446 Computer Science A Level Specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U01-L007",
+              "title": "Simplifiying Boolean Expressions",
+              "unitTitle": "1. Hardware OCR H446 Computer Science A Level Specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U01-L008",
+              "title": "D-Type",
+              "unitTitle": "1. Hardware OCR H446 Computer Science A Level Specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U01-L009",
+              "title": "K-Maps",
+              "unitTitle": "1. Hardware OCR H446 Computer Science A Level Specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U01-L010",
+              "title": "4.3 - Boolean Algebra",
+              "unitTitle": "1. Hardware OCR H446 Computer Science A Level Specification. REVISION"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conceptId": "CCO-COMPUTING",
+      "conceptName": "Computing",
+      "firstIntroduced": "Year 9",
+      "masteryCandidate": "Year 12",
+      "stages": [
+        {
+          "yearGroup": "Year 9",
+          "stage": "Introduce",
+          "lessonCount": 2,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y9-U07-L001",
+              "title": "Getting Started with Tkinter",
+              "unitTitle": "Unit 7: Intro to Tkinter"
+            },
+            {
+              "lessonId": "PX25-Y9-U07-L005",
+              "title": "Mini-Project: Build a Simple App",
+              "unitTitle": "Unit 7: Intro to Tkinter"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 11",
+          "stage": "Revisit and extend",
+          "lessonCount": 5,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y11-U21-L003",
+              "title": "Section 7 Practice Tasks",
+              "unitTitle": "Subrtoutines"
+            },
+            {
+              "lessonId": "PX25-Y11-U22-L001",
+              "title": "a. Using Lists",
+              "unitTitle": "Lists"
+            },
+            {
+              "lessonId": "PX25-Y11-U22-L002",
+              "title": "b. 2D Lists",
+              "unitTitle": "Lists"
+            },
+            {
+              "lessonId": "PX25-Y11-U22-L003",
+              "title": "c. Dictionaries",
+              "unitTitle": "Lists"
+            },
+            {
+              "lessonId": "PX25-Y11-U22-L004",
+              "title": "Section 8 Practice Tasks",
+              "unitTitle": "Lists"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 12",
+          "stage": "Mastery candidate",
+          "lessonCount": 2,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y12-U04-L002",
+              "title": "(b)Utilities.",
+              "unitTitle": "Applicationsgeneration"
+            },
+            {
+              "lessonId": "PX25-Y12-U04-L003",
+              "title": "(c) Open source vs closed source.",
+              "unitTitle": "Applicationsgeneration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conceptId": "CCO-CYBER_SECURITY",
+      "conceptName": "Cyber Security",
+      "firstIntroduced": "Year 7",
+      "masteryCandidate": "Year 13",
+      "stages": [
+        {
+          "yearGroup": "Year 7",
+          "stage": "Introduce",
+          "lessonCount": 2,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y7-U01-L002",
+              "title": "Identify cyberbullying and how to report it",
+              "unitTitle": "Unit 1: Online Safety"
+            },
+            {
+              "lessonId": "PX25-Y7-U01-L003",
+              "title": "Recognise phishing and fake content",
+              "unitTitle": "Unit 1: Online Safety"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 8",
+          "stage": "Revisit and extend",
+          "lessonCount": 4,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y8-U02-L001",
+              "title": "L3 Malware, Types",
+              "unitTitle": "Unit 2 CyberSecurity KS3 Computing"
+            },
+            {
+              "lessonId": "PX25-Y8-U02-L002",
+              "title": "L3 Malware, Types Assesment",
+              "unitTitle": "Unit 2 CyberSecurity KS3 Computing"
+            },
+            {
+              "lessonId": "PX25-Y8-U02-L003",
+              "title": "Malware, Phishing, and Staying Safe",
+              "unitTitle": "Unit 2 CyberSecurity KS3 Computing"
+            },
+            {
+              "lessonId": "PX25-Y8-U02-L004",
+              "title": "Malware, Phishing, and Staying Safe Assesment",
+              "unitTitle": "Unit 2 CyberSecurity KS3 Computing"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 9",
+          "stage": "Revisit and extend",
+          "lessonCount": 2,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y9-U02-L001",
+              "title": "L1 Malware  Six types of Malware (a) Staying Safe (b) 4 ways malware can infect your system",
+              "unitTitle": "Unit 2. CyberSecurity KS3 Computing"
+            },
+            {
+              "lessonId": "PX25-Y9-U02-L002",
+              "title": "Summative Assesment",
+              "unitTitle": "Unit 2. CyberSecurity KS3 Computing"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 10",
+          "stage": "Revisit and extend",
+          "lessonCount": 3,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y10-U05-L001",
+              "title": "4.1 - Network Threats",
+              "unitTitle": "SLR 1.4 Network Security"
+            },
+            {
+              "lessonId": "PX25-Y10-U05-L002",
+              "title": "4.2 - Preventing Vulnerabilities",
+              "unitTitle": "SLR 1.4 Network Security"
+            },
+            {
+              "lessonId": "PX25-Y10-U05-L003",
+              "title": "Summative Assesment",
+              "unitTitle": "SLR 1.4 Network Security"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 11",
+          "stage": "Revisit and extend",
+          "lessonCount": 4,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y11-U05-L001",
+              "title": "4.1 - Network Threats",
+              "unitTitle": "3. Networks & Security"
+            },
+            {
+              "lessonId": "PX25-Y11-U05-L002",
+              "title": "4.2 - Preventing Vulnerabilities",
+              "unitTitle": "3. Networks & Security"
+            },
+            {
+              "lessonId": "PX25-Y11-U05-L003",
+              "title": "Summative Assesment",
+              "unitTitle": "3. Networks & Security"
+            },
+            {
+              "lessonId": "PX25-Y11-U26-L001",
+              "title": "a. Error Handling",
+              "unitTitle": "Authentication"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 13",
+          "stage": "Mastery candidate",
+          "lessonCount": 1,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y13-U05-L001",
+              "title": "3.1 - Compression, Encryption & Hashing",
+              "unitTitle": "3. Networks & Databases OCR H446 Computer Science specification. REVISION"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conceptId": "CCO-DATA_REPRESENTATION",
+      "conceptName": "Data Representation",
+      "firstIntroduced": "Year 5",
+      "masteryCandidate": "Year 13",
+      "stages": [
+        {
+          "yearGroup": "Year 5",
+          "stage": "Introduce",
+          "lessonCount": 2,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y5-U02-L004",
+              "title": "Add sound and looks blocks",
+              "unitTitle": "Unit 2: Scratch Jr / Basic"
+            },
+            {
+              "lessonId": "PX25-Y5-U06-L004",
+              "title": "L4 \u2013 Adding Text, Images, and Links",
+              "unitTitle": "Developing for the Web"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 6",
+          "stage": "Revisit and extend",
+          "lessonCount": 3,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y6-U01-L004",
+              "title": "Inserting images, audio and video files",
+              "unitTitle": "Unit 1: Digital Literacy"
+            },
+            {
+              "lessonId": "PX25-Y6-U01-L007",
+              "title": "Spot fake websites and images",
+              "unitTitle": "Unit 1: Digital Literacy"
+            },
+            {
+              "lessonId": "PX25-Y6-U03-L002",
+              "title": "Add sound and looks blocks (2)",
+              "unitTitle": "Unit 3: Intro. to Programming \u2013 Scratch"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 7",
+          "stage": "Revisit and extend",
+          "lessonCount": 2,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y7-U08-L001",
+              "title": "Becoming a data master",
+              "unitTitle": "Introduction to Binary Numbers"
+            },
+            {
+              "lessonId": "PX25-Y7-U08-L002",
+              "title": "Level up your data skills",
+              "unitTitle": "Introduction to Binary Numbers"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 8",
+          "stage": "Revisit and extend",
+          "lessonCount": 6,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y8-U03-L003",
+              "title": "Adding Links and Images",
+              "unitTitle": "Unit 3: Developing for the web"
+            },
+            {
+              "lessonId": "PX25-Y8-U05-L001",
+              "title": "Binary digits",
+              "unitTitle": "Unit 5: Data Representations KS3 Computing"
+            },
+            {
+              "lessonId": "PX25-Y8-U05-L002",
+              "title": "Numbers in binary",
+              "unitTitle": "Unit 5: Data Representations KS3 Computing"
+            },
+            {
+              "lessonId": "PX25-Y8-U05-L003",
+              "title": "Converting Denary to Binary and Viseversa",
+              "unitTitle": "Unit 5: Data Representations KS3 Computing"
+            },
+            {
+              "lessonId": "PX25-Y8-U05-L004",
+              "title": "Binary Addition",
+              "unitTitle": "Unit 5: Data Representations KS3 Computing"
+            },
+            {
+              "lessonId": "PX25-Y8-U07-L003",
+              "title": "Variables and Data Types, Storing values in variables",
+              "unitTitle": "Unit 6: Programming essentials in Pythonm \u2013 part I"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 9",
+          "stage": "Revisit and extend",
+          "lessonCount": 8,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y9-U03-L001",
+              "title": "Images: Pixels and resolution",
+              "unitTitle": "Unit 3: Data Representations KS3 Computing"
+            },
+            {
+              "lessonId": "PX25-Y9-U03-L002",
+              "title": "Color Depth and File Size.",
+              "unitTitle": "Unit 3: Data Representations KS3 Computing"
+            },
+            {
+              "lessonId": "PX25-Y9-U03-L003",
+              "title": "How Computers Represent Sound: Sampling, Sample Rate, Bit Depth",
+              "unitTitle": "Unit 3: Data Representations KS3 Computing"
+            },
+            {
+              "lessonId": "PX25-Y9-U03-L004",
+              "title": "Calculating Sound File Size",
+              "unitTitle": "Unit 3: Data Representations KS3 Computing"
+            },
+            {
+              "lessonId": "PX25-Y9-U04-L001",
+              "title": "Binary system & conversion between binary and denary",
+              "unitTitle": "Unit 4 Understanding Binary"
+            },
+            {
+              "lessonId": "PX25-Y9-U04-L002",
+              "title": "Binary Arithmetic:Binary addition and overflow",
+              "unitTitle": "Unit 4 Understanding Binary"
+            },
+            {
+              "lessonId": "PX25-Y9-U04-L003",
+              "title": "Summative Assesment",
+              "unitTitle": "Unit 4 Understanding Binary"
+            },
+            {
+              "lessonId": "PX25-Y9-U05-L002",
+              "title": "L2 Data Types.",
+              "unitTitle": "Unit 5: Introduction to Python programming"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 10",
+          "stage": "Revisit and extend",
+          "lessonCount": 6,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y10-U02-L007",
+              "title": "2.4b - Binary Addition & Shifts",
+              "unitTitle": "SLR 1.2 Memory & Storage - Part 1"
+            },
+            {
+              "lessonId": "PX25-Y10-U03-L001",
+              "title": "2.4d - Image Storage",
+              "unitTitle": "SLR 1.2 Memory & Storage - Part 2"
+            },
+            {
+              "lessonId": "PX25-Y10-U03-L002",
+              "title": "2.4e - Sound Storage",
+              "unitTitle": "SLR 1.2 Memory & Storage - Part 2"
+            },
+            {
+              "lessonId": "PX25-Y10-U03-L003",
+              "title": "2.5 - Compression",
+              "unitTitle": "SLR 1.2 Memory & Storage - Part 2"
+            },
+            {
+              "lessonId": "PX25-Y10-U10-L002",
+              "title": "2.2 - Data Types",
+              "unitTitle": "2. Programming Fundamentals"
+            },
+            {
+              "lessonId": "PX25-Y10-U13-L002",
+              "title": "L1 Representing Decimal Fractions in Binary",
+              "unitTitle": "5. Languages & IDEs"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 11",
+          "stage": "Revisit and extend",
+          "lessonCount": 14,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y11-U03-L001",
+              "title": "2.4a - Number Systems",
+              "unitTitle": "2.1 Data Representation"
+            },
+            {
+              "lessonId": "PX25-Y11-U03-L002",
+              "title": "2.4b - Binary Addition & Shifts",
+              "unitTitle": "2.1 Data Representation"
+            },
+            {
+              "lessonId": "PX25-Y11-U03-L003",
+              "title": "2.4b(I) negative number representation unsigned and signed binary numbers, 2's Complement",
+              "unitTitle": "2.1 Data Representation"
+            },
+            {
+              "lessonId": "PX25-Y11-U03-L004",
+              "title": "2.4b(Ii) Floating Point Binary Representation",
+              "unitTitle": "2.1 Data Representation"
+            },
+            {
+              "lessonId": "PX25-Y11-U03-L005",
+              "title": "2.4b(Ii)i Floating Point Binary Arithmetic",
+              "unitTitle": "2.1 Data Representation"
+            },
+            {
+              "lessonId": "PX25-Y11-U03-L006",
+              "title": "2.4c - Character Storage",
+              "unitTitle": "2.1 Data Representation"
+            },
+            {
+              "lessonId": "PX25-Y11-U03-L007",
+              "title": "2.4d - Image Storage",
+              "unitTitle": "2.1 Data Representation"
+            },
+            {
+              "lessonId": "PX25-Y11-U03-L008",
+              "title": "2.4e - Sound Storage",
+              "unitTitle": "2.1 Data Representation"
+            },
+            {
+              "lessonId": "PX25-Y11-U03-L009",
+              "title": "2.5 - Compression",
+              "unitTitle": "2.1 Data Representation"
+            },
+            {
+              "lessonId": "PX25-Y11-U08-L004",
+              "title": "4.5 - Character Sets & Data Types",
+              "unitTitle": "1. Algorithms"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 12",
+          "stage": "Revisit and extend",
+          "lessonCount": 9,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y12-U06-L001",
+              "title": "L1 The Numbers System",
+              "unitTitle": "Binary Numbers"
+            },
+            {
+              "lessonId": "PX25-Y12-U06-L002",
+              "title": "Binary Addition & Shifts",
+              "unitTitle": "Binary Numbers"
+            },
+            {
+              "lessonId": "PX25-Y12-U06-L003",
+              "title": "Bitwise Manipulation",
+              "unitTitle": "Binary Numbers"
+            },
+            {
+              "lessonId": "PX25-Y12-U06-L004",
+              "title": "Floting Point Binary Numbers",
+              "unitTitle": "Binary Numbers"
+            },
+            {
+              "lessonId": "PX25-Y12-U09-L001",
+              "title": "(a) HTML, CSS and JavaScript. (b) (b) Lossy v lossless compression.",
+              "unitTitle": "Web Technologies"
+            },
+            {
+              "lessonId": "PX25-Y12-U10-L001",
+              "title": "(a) Primitive data types, integer, real/floating point, character, string and Boolean. (b) Represent positive integers in binary. (c) Use of sign and magnitude and two\u2019s complement to represent negative numbers in binary. (d) Addition and subtraction of binary integers. (e) Represent positive integers in hexadecimal. (f) Convert positive integers between  binary hexadecimal and denary. (g) Positive and negative real numbers using normalised floating point representation. (h) How character sets (ASCII and UNICODE) are used to represent text.",
+              "unitTitle": "Data Types"
+            },
+            {
+              "lessonId": "PX25-Y12-U16-L001",
+              "title": "(a) Analysis and design of algorithms for a given situation.(d) Implement binary and linear search.",
+              "unitTitle": "Algorithms"
+            },
+            {
+              "lessonId": "PX25-Y12-U16-L002",
+              "title": "(b) Standard algorithms (bubble sort, insertion sort, binary search and linear search).",
+              "unitTitle": "Algorithms"
+            },
+            {
+              "lessonId": "PX25-Y12-U16-L004",
+              "title": "(d) Implement binary and linear search.",
+              "unitTitle": "Algorithms"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 13",
+          "stage": "Mastery candidate",
+          "lessonCount": 3,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y13-U05-L001",
+              "title": "3.1 - Compression, Encryption & Hashing",
+              "unitTitle": "3. Networks & Databases OCR H446 Computer Science specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U08-L001",
+              "title": "4.1 - Data Types",
+              "unitTitle": "4. Data & Logic OCR H446 Computer Science specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U08-L002",
+              "title": "4.1a- Data Types",
+              "unitTitle": "4. Data & Logic OCR H446 Computer Science specification. REVISION"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conceptId": "CCO-DATABASES",
+      "conceptName": "Databases",
+      "firstIntroduced": "Year 6",
+      "masteryCandidate": "Year 13",
+      "stages": [
+        {
+          "yearGroup": "Year 6",
+          "stage": "Introduce",
+          "lessonCount": 8,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y6-U07-L001",
+              "title": "L1 \u2013 What Is a Database?",
+              "unitTitle": "Unit 4: Data and information - Flat File Databases"
+            },
+            {
+              "lessonId": "PX25-Y6-U07-L002",
+              "title": "L2 \u2013 Understanding Fields and Records",
+              "unitTitle": "Unit 4: Data and information - Flat File Databases"
+            },
+            {
+              "lessonId": "PX25-Y6-U07-L003",
+              "title": "L3 \u2013 How to Sort Information",
+              "unitTitle": "Unit 4: Data and information - Flat File Databases"
+            },
+            {
+              "lessonId": "PX25-Y6-U07-L004",
+              "title": "L4 \u2013 How to Search and Filter Data",
+              "unitTitle": "Unit 4: Data and information - Flat File Databases"
+            },
+            {
+              "lessonId": "PX25-Y6-U07-L005",
+              "title": "L5 \u2013 Designing Your Own Database",
+              "unitTitle": "Unit 4: Data and information - Flat File Databases"
+            },
+            {
+              "lessonId": "PX25-Y6-U07-L006",
+              "title": "L6 \u2013 Building Your Database",
+              "unitTitle": "Unit 4: Data and information - Flat File Databases"
+            },
+            {
+              "lessonId": "PX25-Y6-U07-L007",
+              "title": "L7 \u2013 Using Your Database to Answer Questions",
+              "unitTitle": "Unit 4: Data and information - Flat File Databases"
+            },
+            {
+              "lessonId": "PX25-Y6-U07-L008",
+              "title": "L8 \u2013 Sharing and Improving Your Database",
+              "unitTitle": "Unit 4: Data and information - Flat File Databases"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 12",
+          "stage": "Revisit and extend",
+          "lessonCount": 9,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y12-U04-L001",
+              "title": "(a)The nature of applications, justifying suitable applications for a specific purpose.",
+              "unitTitle": "Applicationsgeneration"
+            },
+            {
+              "lessonId": "PX25-Y12-U07-L001",
+              "title": "(a) Relational database, flat file",
+              "unitTitle": "Databases"
+            },
+            {
+              "lessonId": "PX25-Y12-U07-L002",
+              "title": "(b) Primary key, foreign key, secondary key, entity relationship modelling",
+              "unitTitle": "Databases"
+            },
+            {
+              "lessonId": "PX25-Y12-U07-L003",
+              "title": "(b) Methods of capturing, selecting, managing and exchanging data.",
+              "unitTitle": "Databases"
+            },
+            {
+              "lessonId": "PX25-Y12-U07-L004",
+              "title": "Review",
+              "unitTitle": "Databases"
+            },
+            {
+              "lessonId": "PX25-Y12-U07-L005",
+              "title": "Summative Assesment",
+              "unitTitle": "Databases"
+            },
+            {
+              "lessonId": "PX25-Y12-U11-L001",
+              "title": "(a) Arrays (of up to 3 dimensions), records, lists, tuples.",
+              "unitTitle": "Data Structures"
+            },
+            {
+              "lessonId": "PX25-Y12-U12-L003",
+              "title": "(c) Use logic gate diagrams and truth tables.",
+              "unitTitle": "Boolean Algebra"
+            },
+            {
+              "lessonId": "PX25-Y12-U15-L002",
+              "title": "Software Development                                                                                                           (a) Understand the waterfall lifecycle, agile methodologies, extreme programming, the spiral model and rapid application development.                                                                    b ) The relative merits and drawbacks of different methodologies and when they might be used.                                                             (c) Writing and following algorithms.                                                              (d) Different test strategies, including black and white box testing and alpha and beta testing.                                                              (e) Test programs that solve problems using suitable test data and end user feedback, justify a test strategy for a given situation.",
+              "unitTitle": "Problem solving and programming"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 13",
+          "stage": "Mastery candidate",
+          "lessonCount": 7,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y13-U01-L006",
+              "title": "Logic Gates & Truth Tables",
+              "unitTitle": "1. Hardware OCR H446 Computer Science A Level Specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U01-L011",
+              "title": "Logic Gates & Truth Tables",
+              "unitTitle": "1. Hardware OCR H446 Computer Science A Level Specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U05-L001",
+              "title": "3.1 - Compression, Encryption & Hashing",
+              "unitTitle": "3. Networks & Databases OCR H446 Computer Science specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U05-L002",
+              "title": "3.2 - Databases",
+              "unitTitle": "3. Networks & Databases OCR H446 Computer Science specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U05-L003",
+              "title": "Assesment",
+              "unitTitle": "3. Networks & Databases OCR H446 Computer Science specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U05-L004",
+              "title": "3.3 - Networks",
+              "unitTitle": "3. Networks & Databases OCR H446 Computer Science specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U05-L005",
+              "title": "3.4 - Web Technologies",
+              "unitTitle": "3. Networks & Databases OCR H446 Computer Science specification. REVISION"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conceptId": "CCO-DIGITAL_LITERACY",
+      "conceptName": "Digital Literacy",
+      "firstIntroduced": "Year 5",
+      "masteryCandidate": "Year 13",
+      "stages": [
+        {
+          "yearGroup": "Year 5",
+          "stage": "Introduce",
+          "lessonCount": 3,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y5-U01-L005",
+              "title": "(a)Understand how we use technology in school and home.\n(b) Use a word processor to type and edit text\n(c) Use a paint or drawing tool to create digital art",
+              "unitTitle": "Unit 1: Digital Safety"
+            },
+            {
+              "lessonId": "PX25-Y5-U01-L006",
+              "title": "File names, folders, and saving work",
+              "unitTitle": "Unit 1: Digital Safety"
+            },
+            {
+              "lessonId": "PX25-Y5-U01-L007",
+              "title": "Create a digital poster on safety",
+              "unitTitle": "Unit 1: Digital Safety"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 6",
+          "stage": "Revisit and extend",
+          "lessonCount": 14,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y6-U01-L002",
+              "title": "Use Google Docs to write and format text",
+              "unitTitle": "Unit 1: Digital Literacy"
+            },
+            {
+              "lessonId": "PX25-Y6-U01-L003",
+              "title": "Use Google Slides to present ideas",
+              "unitTitle": "Unit 1: Digital Literacy"
+            },
+            {
+              "lessonId": "PX25-Y6-U01-L004",
+              "title": "Inserting images, audio and video files",
+              "unitTitle": "Unit 1: Digital Literacy"
+            },
+            {
+              "lessonId": "PX25-Y6-U01-L006",
+              "title": "Use search engines effectively",
+              "unitTitle": "Unit 1: Digital Literacy"
+            },
+            {
+              "lessonId": "PX25-Y6-U02-L001",
+              "title": "Use Google Sites for Web Pages, Creating a WebPage, Templates.",
+              "unitTitle": "Unit 2: Creating media \u2013 Web page creation"
+            },
+            {
+              "lessonId": "PX25-Y6-U02-L002",
+              "title": "Adding text,  media and Sharing.",
+              "unitTitle": "Unit 2: Creating media \u2013 Web page creation"
+            },
+            {
+              "lessonId": "PX25-Y6-U07-L001",
+              "title": "L1 \u2013 What Is a Database?",
+              "unitTitle": "Unit 4: Data and information - Flat File Databases"
+            },
+            {
+              "lessonId": "PX25-Y6-U07-L002",
+              "title": "L2 \u2013 Understanding Fields and Records",
+              "unitTitle": "Unit 4: Data and information - Flat File Databases"
+            },
+            {
+              "lessonId": "PX25-Y6-U07-L003",
+              "title": "L3 \u2013 How to Sort Information",
+              "unitTitle": "Unit 4: Data and information - Flat File Databases"
+            },
+            {
+              "lessonId": "PX25-Y6-U07-L004",
+              "title": "L4 \u2013 How to Search and Filter Data",
+              "unitTitle": "Unit 4: Data and information - Flat File Databases"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 7",
+          "stage": "Revisit and extend",
+          "lessonCount": 5,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y7-U03-L001",
+              "title": "Use Google Docs for writing and formatting",
+              "unitTitle": "Unit 3: Clear messaging in digital media"
+            },
+            {
+              "lessonId": "PX25-Y7-U03-L002",
+              "title": "Use Google Slides for presentations",
+              "unitTitle": "Unit 3: Clear messaging in digital media"
+            },
+            {
+              "lessonId": "PX25-Y7-U03-L003",
+              "title": "Creating a brand",
+              "unitTitle": "Unit 3: Clear messaging in digital media"
+            },
+            {
+              "lessonId": "PX25-Y7-U03-L004",
+              "title": "Adding content",
+              "unitTitle": "Unit 3: Clear messaging in digital media"
+            },
+            {
+              "lessonId": "PX25-Y7-U03-L005",
+              "title": "Presenting",
+              "unitTitle": "Unit 3: Clear messaging in digital media"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 8",
+          "stage": "Revisit and extend",
+          "lessonCount": 4,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y8-U05-L001",
+              "title": "Binary digits",
+              "unitTitle": "Unit 5: Data Representations KS3 Computing"
+            },
+            {
+              "lessonId": "PX25-Y8-U05-L002",
+              "title": "Numbers in binary",
+              "unitTitle": "Unit 5: Data Representations KS3 Computing"
+            },
+            {
+              "lessonId": "PX25-Y8-U05-L003",
+              "title": "Converting Denary to Binary and Viseversa",
+              "unitTitle": "Unit 5: Data Representations KS3 Computing"
+            },
+            {
+              "lessonId": "PX25-Y8-U05-L004",
+              "title": "Binary Addition",
+              "unitTitle": "Unit 5: Data Representations KS3 Computing"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 9",
+          "stage": "Revisit and extend",
+          "lessonCount": 6,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y9-U03-L001",
+              "title": "Images: Pixels and resolution",
+              "unitTitle": "Unit 3: Data Representations KS3 Computing"
+            },
+            {
+              "lessonId": "PX25-Y9-U03-L002",
+              "title": "Color Depth and File Size.",
+              "unitTitle": "Unit 3: Data Representations KS3 Computing"
+            },
+            {
+              "lessonId": "PX25-Y9-U03-L003",
+              "title": "How Computers Represent Sound: Sampling, Sample Rate, Bit Depth",
+              "unitTitle": "Unit 3: Data Representations KS3 Computing"
+            },
+            {
+              "lessonId": "PX25-Y9-U03-L004",
+              "title": "Calculating Sound File Size",
+              "unitTitle": "Unit 3: Data Representations KS3 Computing"
+            },
+            {
+              "lessonId": "PX25-Y9-U06-L003",
+              "title": "File Handling",
+              "unitTitle": "Unit 6: Introduction to Python programming (cont)"
+            },
+            {
+              "lessonId": "PX25-Y9-U08-L001",
+              "title": "L17 Working with Files (Saving Data) Writing to a file using Tkinter input",
+              "unitTitle": "Unit 8: More on Tkinter"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 10",
+          "stage": "Revisit and extend",
+          "lessonCount": 1,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y10-U09-L003",
+              "title": "1.3 - Searching & Sorting Algorithms",
+              "unitTitle": "1. Algorithms"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 11",
+          "stage": "Revisit and extend",
+          "lessonCount": 14,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y11-U03-L001",
+              "title": "2.4a - Number Systems",
+              "unitTitle": "2.1 Data Representation"
+            },
+            {
+              "lessonId": "PX25-Y11-U03-L002",
+              "title": "2.4b - Binary Addition & Shifts",
+              "unitTitle": "2.1 Data Representation"
+            },
+            {
+              "lessonId": "PX25-Y11-U03-L003",
+              "title": "2.4b(I) negative number representation unsigned and signed binary numbers, 2's Complement",
+              "unitTitle": "2.1 Data Representation"
+            },
+            {
+              "lessonId": "PX25-Y11-U03-L004",
+              "title": "2.4b(Ii) Floating Point Binary Representation",
+              "unitTitle": "2.1 Data Representation"
+            },
+            {
+              "lessonId": "PX25-Y11-U03-L005",
+              "title": "2.4b(Ii)i Floating Point Binary Arithmetic",
+              "unitTitle": "2.1 Data Representation"
+            },
+            {
+              "lessonId": "PX25-Y11-U03-L006",
+              "title": "2.4c - Character Storage",
+              "unitTitle": "2.1 Data Representation"
+            },
+            {
+              "lessonId": "PX25-Y11-U03-L007",
+              "title": "2.4d - Image Storage",
+              "unitTitle": "2.1 Data Representation"
+            },
+            {
+              "lessonId": "PX25-Y11-U03-L008",
+              "title": "2.4e - Sound Storage",
+              "unitTitle": "2.1 Data Representation"
+            },
+            {
+              "lessonId": "PX25-Y11-U03-L009",
+              "title": "2.5 - Compression",
+              "unitTitle": "2.1 Data Representation"
+            },
+            {
+              "lessonId": "PX25-Y11-U08-L003",
+              "title": "1.3 - Searching & Sorting Algorithms",
+              "unitTitle": "1. Algorithms"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 12",
+          "stage": "Revisit and extend",
+          "lessonCount": 7,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y12-U03-L005",
+              "title": "(f) BIOS. (g) Device drivers. (h)        Virtual machines, any instance        where software is        used to take on the function of a machine including executing intermediate code or running an        operating system within another.",
+              "unitTitle": "Software and software development"
+            },
+            {
+              "lessonId": "PX25-Y12-U05-L005",
+              "title": "(c) File handling.",
+              "unitTitle": "Introduction to Programming Procedural programming language techniques:"
+            },
+            {
+              "lessonId": "PX25-Y12-U07-L001",
+              "title": "(a) Relational database, flat file",
+              "unitTitle": "Databases"
+            },
+            {
+              "lessonId": "PX25-Y12-U10-L001",
+              "title": "(a) Primitive data types, integer, real/floating point, character, string and Boolean. (b) Represent positive integers in binary. (c) Use of sign and magnitude and two\u2019s complement to represent negative numbers in binary. (d) Addition and subtraction of binary integers. (e) Represent positive integers in hexadecimal. (f) Convert positive integers between  binary hexadecimal and denary. (g) Positive and negative real numbers using normalised floating point representation. (h) How character sets (ASCII and UNICODE) are used to represent text.",
+              "unitTitle": "Data Types"
+            },
+            {
+              "lessonId": "PX25-Y12-U16-L001",
+              "title": "(a) Analysis and design of algorithms for a given situation.(d) Implement binary and linear search.",
+              "unitTitle": "Algorithms"
+            },
+            {
+              "lessonId": "PX25-Y12-U16-L002",
+              "title": "(b) Standard algorithms (bubble sort, insertion sort, binary search and linear search).",
+              "unitTitle": "Algorithms"
+            },
+            {
+              "lessonId": "PX25-Y12-U16-L004",
+              "title": "(d) Implement binary and linear search.",
+              "unitTitle": "Algorithms"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 13",
+          "stage": "Mastery candidate",
+          "lessonCount": 1,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y13-U06-L003",
+              "title": "3.7 - Sorting & Searching Algorithms",
+              "unitTitle": "3. Algorithms OCR H446 Computer Science specification. REVISION"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conceptId": "CCO-ETHICS_AND_LAW",
+      "conceptName": "Ethics and Law",
+      "firstIntroduced": "Year 6",
+      "masteryCandidate": "Year 13",
+      "stages": [
+        {
+          "yearGroup": "Year 6",
+          "stage": "Introduce",
+          "lessonCount": 1,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y6-U01-L005",
+              "title": "Understand copyright and fair use",
+              "unitTitle": "Unit 1: Digital Literacy"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 10",
+          "stage": "Revisit and extend",
+          "lessonCount": 3,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y10-U07-L001",
+              "title": "6.1a - Impacts of Technology",
+              "unitTitle": "6. Impacts"
+            },
+            {
+              "lessonId": "PX25-Y10-U07-L002",
+              "title": "6.1b - Legislation",
+              "unitTitle": "6. Impacts"
+            },
+            {
+              "lessonId": "PX25-Y10-U13-L001",
+              "title": "5.1 - Languages & Translators                                  5.2 - Integrated Development Environment",
+              "unitTitle": "5. Languages & IDEs"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 11",
+          "stage": "Revisit and extend",
+          "lessonCount": 6,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y11-U07-L001",
+              "title": "6.1a - Impacts of Technology",
+              "unitTitle": "6. Impacts"
+            },
+            {
+              "lessonId": "PX25-Y11-U07-L002",
+              "title": "6.1b - Legislation",
+              "unitTitle": "6. Impacts"
+            },
+            {
+              "lessonId": "PX25-Y11-U07-L003",
+              "title": "Summative Assesment",
+              "unitTitle": "6. Impacts"
+            },
+            {
+              "lessonId": "PX25-Y11-U12-L002",
+              "title": "5.2 - Integrated Development Environment",
+              "unitTitle": "5. Languages & IDEs"
+            },
+            {
+              "lessonId": "PX25-Y11-U13-L001",
+              "title": "11.1 - Impacts of Technology",
+              "unitTitle": "11. Technological Issues"
+            },
+            {
+              "lessonId": "PX25-Y11-U13-L002",
+              "title": "11.2 - Legislation",
+              "unitTitle": "11. Technological Issues"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 12",
+          "stage": "Revisit and extend",
+          "lessonCount": 1,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y12-U13-L001",
+              "title": "(a) The Data Protection Act 1998.                                  (b) The Computer Misuse Act 1990.                                   (c) The Copyright Design and Patents Act 1988.                                   (d) The Regulation of Investigatory Powers Act 2000.",
+              "unitTitle": "Legal, moral, ethical and cultural issues"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 13",
+          "stage": "Mastery candidate",
+          "lessonCount": 2,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y13-U09-L001",
+              "title": "5.1 - Computing-Related Legislation",
+              "unitTitle": "5. Laws OCR H446 Computer Science specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U09-L002",
+              "title": "5.2 - Moral & Ethical Issues",
+              "unitTitle": "5. Laws OCR H446 Computer Science specification. REVISION"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conceptId": "CCO-NETWORKS",
+      "conceptName": "Networks",
+      "firstIntroduced": "Year 5",
+      "masteryCandidate": "Year 13",
+      "stages": [
+        {
+          "yearGroup": "Year 5",
+          "stage": "Introduce",
+          "lessonCount": 6,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y5-U01-L001",
+              "title": "Know how to stay safe online and use kind language",
+              "unitTitle": "Unit 1: Digital Safety"
+            },
+            {
+              "lessonId": "PX25-Y5-U03-L005",
+              "title": "L5 Plan and present robot journey",
+              "unitTitle": "Robotics & Logic"
+            },
+            {
+              "lessonId": "PX25-Y5-U05-L001",
+              "title": "L1 \u2013 What Is a Computer Network?",
+              "unitTitle": "Know Your Network"
+            },
+            {
+              "lessonId": "PX25-Y5-U05-L002",
+              "title": "L2 \u2013 How Devices Connect (Wired and Wireless)",
+              "unitTitle": "Know Your Network"
+            },
+            {
+              "lessonId": "PX25-Y5-U05-L003",
+              "title": "L3 \u2013 Network Hardware (Router, Switch, Access Point)",
+              "unitTitle": "Know Your Network"
+            },
+            {
+              "lessonId": "PX25-Y5-U05-L004",
+              "title": "L4 \u2013 The Internet and How Data Travels",
+              "unitTitle": "Know Your Network"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 6",
+          "stage": "Revisit and extend",
+          "lessonCount": 1,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y6-U05-L002",
+              "title": "Event planning",
+              "unitTitle": "Unit 5: Data and information - Introduction to Spreadsheets"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 7",
+          "stage": "Revisit and extend",
+          "lessonCount": 6,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y7-U04-L001",
+              "title": "Computer networks and protocols",
+              "unitTitle": "Unit 4: Networks from semaphores to the Internet"
+            },
+            {
+              "lessonId": "PX25-Y7-U05-L001",
+              "title": "Networking hardware",
+              "unitTitle": "Unit 5: Networks from semaphores to the Internet"
+            },
+            {
+              "lessonId": "PX25-Y7-U05-L002",
+              "title": "Wired and wireless networks",
+              "unitTitle": "Unit 5: Networks from semaphores to the Internet"
+            },
+            {
+              "lessonId": "PX25-Y7-U05-L003",
+              "title": "The internet",
+              "unitTitle": "Unit 5: Networks from semaphores to the Internet"
+            },
+            {
+              "lessonId": "PX25-Y7-U05-L004",
+              "title": "Internet services",
+              "unitTitle": "Unit 5: Networks from semaphores to the Internet"
+            },
+            {
+              "lessonId": "PX25-Y7-U05-L005",
+              "title": "The world wide web",
+              "unitTitle": "Unit 5: Networks from semaphores to the Internet"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 10",
+          "stage": "Revisit and extend",
+          "lessonCount": 10,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y10-U04-L001",
+              "title": "3.1a - Network Types & Performance",
+              "unitTitle": "SLR 1.3 Computer networks, connections and protocols"
+            },
+            {
+              "lessonId": "PX25-Y10-U04-L002",
+              "title": "3.1b - Network Hardware & Internet",
+              "unitTitle": "SLR 1.3 Computer networks, connections and protocols"
+            },
+            {
+              "lessonId": "PX25-Y10-U04-L003",
+              "title": "3.2a - Wired & Wireless networks",
+              "unitTitle": "SLR 1.3 Computer networks, connections and protocols"
+            },
+            {
+              "lessonId": "PX25-Y10-U04-L004",
+              "title": "3.2b - Protocols & Layers",
+              "unitTitle": "SLR 1.3 Computer networks, connections and protocols"
+            },
+            {
+              "lessonId": "PX25-Y10-U04-L005",
+              "title": "Summative Assesment",
+              "unitTitle": "SLR 1.3 Computer networks, connections and protocols"
+            },
+            {
+              "lessonId": "PX25-Y10-U05-L001",
+              "title": "4.1 - Network Threats",
+              "unitTitle": "SLR 1.4 Network Security"
+            },
+            {
+              "lessonId": "PX25-Y10-U05-L002",
+              "title": "4.2 - Preventing Vulnerabilities",
+              "unitTitle": "SLR 1.4 Network Security"
+            },
+            {
+              "lessonId": "PX25-Y10-U05-L003",
+              "title": "Summative Assesment",
+              "unitTitle": "SLR 1.4 Network Security"
+            },
+            {
+              "lessonId": "PX25-Y10-U13-L001",
+              "title": "5.1 - Languages & Translators                                  5.2 - Integrated Development Environment",
+              "unitTitle": "5. Languages & IDEs"
+            },
+            {
+              "lessonId": "PX25-Y10-U13-L002",
+              "title": "L1 Representing Decimal Fractions in Binary",
+              "unitTitle": "5. Languages & IDEs"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 11",
+          "stage": "Revisit and extend",
+          "lessonCount": 13,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y11-U04-L001",
+              "title": "3.1a - Network Types & Performance",
+              "unitTitle": "3. Networks"
+            },
+            {
+              "lessonId": "PX25-Y11-U04-L002",
+              "title": "3.1b - Network Hardware & Internet",
+              "unitTitle": "3. Networks"
+            },
+            {
+              "lessonId": "PX25-Y11-U04-L003",
+              "title": "3.2a - Wired & Wireless networks",
+              "unitTitle": "3. Networks"
+            },
+            {
+              "lessonId": "PX25-Y11-U04-L004",
+              "title": "3.2b - Protocols & Layers",
+              "unitTitle": "3. Networks"
+            },
+            {
+              "lessonId": "PX25-Y11-U04-L005",
+              "title": "Summative Assesment",
+              "unitTitle": "3. Networks"
+            },
+            {
+              "lessonId": "PX25-Y11-U05-L001",
+              "title": "4.1 - Network Threats",
+              "unitTitle": "3. Networks & Security"
+            },
+            {
+              "lessonId": "PX25-Y11-U05-L002",
+              "title": "4.2 - Preventing Vulnerabilities",
+              "unitTitle": "3. Networks & Security"
+            },
+            {
+              "lessonId": "PX25-Y11-U05-L003",
+              "title": "Summative Assesment",
+              "unitTitle": "3. Networks & Security"
+            },
+            {
+              "lessonId": "PX25-Y11-U12-L001",
+              "title": "5.1 - Languages & Translators",
+              "unitTitle": "5. Languages & IDEs"
+            },
+            {
+              "lessonId": "PX25-Y11-U12-L002",
+              "title": "5.2 - Integrated Development Environment",
+              "unitTitle": "5. Languages & IDEs"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 12",
+          "stage": "Revisit and extend",
+          "lessonCount": 15,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y12-U01-L001",
+              "title": "The Arithmetic and Logic Unit; ALU, Control Unit and Registers (Program Counter; PC, Accumulator; ACC, Memory Address Register; MAR, Memory Data Register; MDR, Current Instruction Register; CIR). Buses: data, address and control: how this relates to assembly language programs.",
+              "unitTitle": "Unit 01: Computer Systems    ................   OCR Computer Science AS-Level curriculum, under specification H046/H446"
+            },
+            {
+              "lessonId": "PX25-Y12-U05-L001",
+              "title": "Program flow variables and constants",
+              "unitTitle": "Introduction to Programming Procedural programming language techniques:"
+            },
+            {
+              "lessonId": "PX25-Y12-U05-L002",
+              "title": "procedures and functions",
+              "unitTitle": "Introduction to Programming Procedural programming language techniques:"
+            },
+            {
+              "lessonId": "PX25-Y12-U05-L003",
+              "title": "(a)Arithmetic, Boolean and assignment operators",
+              "unitTitle": "Introduction to Programming Procedural programming language techniques:"
+            },
+            {
+              "lessonId": "PX25-Y12-U05-L004",
+              "title": "(b) String handling",
+              "unitTitle": "Introduction to Programming Procedural programming language techniques:"
+            },
+            {
+              "lessonId": "PX25-Y12-U05-L005",
+              "title": "(c) File handling.",
+              "unitTitle": "Introduction to Programming Procedural programming language techniques:"
+            },
+            {
+              "lessonId": "PX25-Y12-U05-L006",
+              "title": "(d) Assembly language (including following writing simple programs with Little Man Computer).",
+              "unitTitle": "Introduction to Programming Procedural programming language techniques:"
+            },
+            {
+              "lessonId": "PX25-Y12-U05-L007",
+              "title": "Summative Assesment",
+              "unitTitle": "Introduction to Programming Procedural programming language techniques:"
+            },
+            {
+              "lessonId": "PX25-Y12-U06-L003",
+              "title": "Bitwise Manipulation",
+              "unitTitle": "Binary Numbers"
+            },
+            {
+              "lessonId": "PX25-Y12-U07-L002",
+              "title": "(b) Primary key, foreign key, secondary key, entity relationship modelling",
+              "unitTitle": "Databases"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 13",
+          "stage": "Mastery candidate",
+          "lessonCount": 6,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y13-U02-L003",
+              "title": "2.4 - Types of Programming Language",
+              "unitTitle": "2 Software OCR H446 Computer Science A Level Specification.. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U05-L001",
+              "title": "3.1 - Compression, Encryption & Hashing",
+              "unitTitle": "3. Networks & Databases OCR H446 Computer Science specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U05-L002",
+              "title": "3.2 - Databases",
+              "unitTitle": "3. Networks & Databases OCR H446 Computer Science specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U05-L003",
+              "title": "Assesment",
+              "unitTitle": "3. Networks & Databases OCR H446 Computer Science specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U05-L004",
+              "title": "3.3 - Networks",
+              "unitTitle": "3. Networks & Databases OCR H446 Computer Science specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U05-L005",
+              "title": "3.4 - Web Technologies",
+              "unitTitle": "3. Networks & Databases OCR H446 Computer Science specification. REVISION"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conceptId": "CCO-ONLINE_SAFETY",
+      "conceptName": "Online Safety",
+      "firstIntroduced": "Year 5",
+      "masteryCandidate": "Year 12",
+      "stages": [
+        {
+          "yearGroup": "Year 5",
+          "stage": "Introduce",
+          "lessonCount": 7,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y5-U01-L001",
+              "title": "Know how to stay safe online and use kind language",
+              "unitTitle": "Unit 1: Digital Safety"
+            },
+            {
+              "lessonId": "PX25-Y5-U01-L002",
+              "title": "Recognise trusted adults and websites",
+              "unitTitle": "Unit 1: Digital Safety"
+            },
+            {
+              "lessonId": "PX25-Y5-U01-L003",
+              "title": "Understand why passwords matter",
+              "unitTitle": "Unit 1: Digital Safety"
+            },
+            {
+              "lessonId": "PX25-Y5-U01-L004",
+              "title": "Identify input and output devices",
+              "unitTitle": "Unit 1: Digital Safety"
+            },
+            {
+              "lessonId": "PX25-Y5-U01-L005",
+              "title": "(a)Understand how we use technology in school and home.\n(b) Use a word processor to type and edit text\n(c) Use a paint or drawing tool to create digital art",
+              "unitTitle": "Unit 1: Digital Safety"
+            },
+            {
+              "lessonId": "PX25-Y5-U01-L006",
+              "title": "File names, folders, and saving work",
+              "unitTitle": "Unit 1: Digital Safety"
+            },
+            {
+              "lessonId": "PX25-Y5-U01-L007",
+              "title": "Create a digital poster on safety",
+              "unitTitle": "Unit 1: Digital Safety"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 7",
+          "stage": "Revisit and extend",
+          "lessonCount": 4,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y7-U01-L001",
+              "title": "Understand personal information and digital footprint",
+              "unitTitle": "Unit 1: Online Safety"
+            },
+            {
+              "lessonId": "PX25-Y7-U01-L002",
+              "title": "Identify cyberbullying and how to report it",
+              "unitTitle": "Unit 1: Online Safety"
+            },
+            {
+              "lessonId": "PX25-Y7-U01-L003",
+              "title": "Recognise phishing and fake content",
+              "unitTitle": "Unit 1: Online Safety"
+            },
+            {
+              "lessonId": "PX25-Y7-U01-L004",
+              "title": "Summative Assesment",
+              "unitTitle": "Unit 1: Online Safety"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 8",
+          "stage": "Revisit and extend",
+          "lessonCount": 2,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y8-U02-L003",
+              "title": "Malware, Phishing, and Staying Safe",
+              "unitTitle": "Unit 2 CyberSecurity KS3 Computing"
+            },
+            {
+              "lessonId": "PX25-Y8-U02-L004",
+              "title": "Malware, Phishing, and Staying Safe Assesment",
+              "unitTitle": "Unit 2 CyberSecurity KS3 Computing"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 9",
+          "stage": "Revisit and extend",
+          "lessonCount": 1,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y9-U02-L001",
+              "title": "L1 Malware  Six types of Malware (a) Staying Safe (b) 4 ways malware can infect your system",
+              "unitTitle": "Unit 2. CyberSecurity KS3 Computing"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 12",
+          "stage": "Mastery candidate",
+          "lessonCount": 1,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y12-U13-L001",
+              "title": "(a) The Data Protection Act 1998.                                  (b) The Computer Misuse Act 1990.                                   (c) The Copyright Design and Patents Act 1988.                                   (d) The Regulation of Investigatory Powers Act 2000.",
+              "unitTitle": "Legal, moral, ethical and cultural issues"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conceptId": "CCO-PROGRAMMING",
+      "conceptName": "Programming",
+      "firstIntroduced": "Year 5",
+      "masteryCandidate": "Year 13",
+      "stages": [
+        {
+          "yearGroup": "Year 5",
+          "stage": "Introduce",
+          "lessonCount": 11,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y5-U01-L004",
+              "title": "Identify input and output devices",
+              "unitTitle": "Unit 1: Digital Safety"
+            },
+            {
+              "lessonId": "PX25-Y5-U02-L001",
+              "title": "Use blocks to move a character",
+              "unitTitle": "Unit 2: Scratch Jr / Basic"
+            },
+            {
+              "lessonId": "PX25-Y5-U02-L002",
+              "title": "Create a short animated sequence",
+              "unitTitle": "Unit 2: Scratch Jr / Basic"
+            },
+            {
+              "lessonId": "PX25-Y5-U02-L003",
+              "title": "Use loops to repeat actions",
+              "unitTitle": "Unit 2: Scratch Jr / Basic"
+            },
+            {
+              "lessonId": "PX25-Y5-U02-L004",
+              "title": "Add sound and looks blocks",
+              "unitTitle": "Unit 2: Scratch Jr / Basic"
+            },
+            {
+              "lessonId": "PX25-Y5-U02-L005",
+              "title": "Use events to control characters",
+              "unitTitle": "Unit 2: Scratch Jr / Basic"
+            },
+            {
+              "lessonId": "PX25-Y5-U02-L006",
+              "title": "Combine blocks for story scenes",
+              "unitTitle": "Unit 2: Scratch Jr / Basic"
+            },
+            {
+              "lessonId": "PX25-Y5-U02-L007",
+              "title": "Build your story animation",
+              "unitTitle": "Unit 2: Scratch Jr / Basic"
+            },
+            {
+              "lessonId": "PX25-Y5-U03-L002",
+              "title": "L2 Program Sphero to follow a path",
+              "unitTitle": "Robotics & Logic"
+            },
+            {
+              "lessonId": "PX25-Y5-U03-L003",
+              "title": "L3 Use loops and delays with Sphero",
+              "unitTitle": "Robotics & Logic"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 6",
+          "stage": "Revisit and extend",
+          "lessonCount": 15,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y6-U03-L001",
+              "title": "L1 Use loops to repeat actions (2)",
+              "unitTitle": "Unit 3: Intro. to Programming \u2013 Scratch"
+            },
+            {
+              "lessonId": "PX25-Y6-U03-L002",
+              "title": "Add sound and looks blocks (2)",
+              "unitTitle": "Unit 3: Intro. to Programming \u2013 Scratch"
+            },
+            {
+              "lessonId": "PX25-Y6-U03-L003",
+              "title": "Use events to control characters",
+              "unitTitle": "Unit 3: Intro. to Programming \u2013 Scratch"
+            },
+            {
+              "lessonId": "PX25-Y6-U03-L004",
+              "title": "Combine blocks for story scenes (2)",
+              "unitTitle": "Unit 3: Intro. to Programming \u2013 Scratch"
+            },
+            {
+              "lessonId": "PX25-Y6-U03-L005",
+              "title": "Build your story animation (2)",
+              "unitTitle": "Unit 3: Intro. to Programming \u2013 Scratch"
+            },
+            {
+              "lessonId": "PX25-Y6-U04-L001",
+              "title": "Improving a game",
+              "unitTitle": "Unit 3: Programming A \u2013 Variables in games"
+            },
+            {
+              "lessonId": "PX25-Y6-U04-L002",
+              "title": "Becoming a games designer",
+              "unitTitle": "Unit 3: Programming A \u2013 Variables in games"
+            },
+            {
+              "lessonId": "PX25-Y6-U04-L003",
+              "title": "Design to code",
+              "unitTitle": "Unit 3: Programming A \u2013 Variables in games"
+            },
+            {
+              "lessonId": "PX25-Y6-U04-L004",
+              "title": "Using Selection",
+              "unitTitle": "Unit 3: Programming A \u2013 Variables in games"
+            },
+            {
+              "lessonId": "PX25-Y6-U04-L005",
+              "title": "Using Iterations",
+              "unitTitle": "Unit 3: Programming A \u2013 Variables in games"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 7",
+          "stage": "Revisit and extend",
+          "lessonCount": 12,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y7-U02-L002",
+              "title": "Communicating with Computers: Input and Output Devices",
+              "unitTitle": "Unit 2 Computer Systems"
+            },
+            {
+              "lessonId": "PX25-Y7-U06-L001",
+              "title": "Introduction to programming and sequencing",
+              "unitTitle": "Unit 6: Programming essentials in Python \u2013 part I"
+            },
+            {
+              "lessonId": "PX25-Y7-U06-L002",
+              "title": "Sequence and variables",
+              "unitTitle": "Unit 6: Programming essentials in Python \u2013 part I"
+            },
+            {
+              "lessonId": "PX25-Y7-U06-L003",
+              "title": "Selection",
+              "unitTitle": "Unit 6: Programming essentials in Python \u2013 part I"
+            },
+            {
+              "lessonId": "PX25-Y7-U06-L004",
+              "title": "Operators",
+              "unitTitle": "Unit 6: Programming essentials in Python \u2013 part I"
+            },
+            {
+              "lessonId": "PX25-Y7-U06-L005",
+              "title": "Basic Iterationms",
+              "unitTitle": "Unit 6: Programming essentials in Python \u2013 part I"
+            },
+            {
+              "lessonId": "PX25-Y7-U06-L006",
+              "title": "Summative Assesment",
+              "unitTitle": "Unit 6: Programming essentials in Python \u2013 part I"
+            },
+            {
+              "lessonId": "PX25-Y7-U09-L001",
+              "title": "Hello Python First steps with Python",
+              "unitTitle": "Unit 6: Programming essentials in Pythonm \u2013 part I"
+            },
+            {
+              "lessonId": "PX25-Y7-U09-L002",
+              "title": "Variables and Simple Output, Storing and displaying data",
+              "unitTitle": "Unit 6: Programming essentials in Pythonm \u2013 part I"
+            },
+            {
+              "lessonId": "PX25-Y7-U09-L003",
+              "title": "Inputs from the User, Using input()",
+              "unitTitle": "Unit 6: Programming essentials in Pythonm \u2013 part I"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 8",
+          "stage": "Revisit and extend",
+          "lessonCount": 6,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y8-U07-L001",
+              "title": "L1 The Motherboard, https://www.csnewbs.com/ks3-themotherboard",
+              "unitTitle": "Unit 6: Programming essentials in Pythonm \u2013 part I"
+            },
+            {
+              "lessonId": "PX25-Y8-U07-L002",
+              "title": "Hello Python Getting started with Python basics",
+              "unitTitle": "Unit 6: Programming essentials in Pythonm \u2013 part I"
+            },
+            {
+              "lessonId": "PX25-Y8-U07-L003",
+              "title": "Variables and Data Types, Storing values in variables",
+              "unitTitle": "Unit 6: Programming essentials in Pythonm \u2013 part I"
+            },
+            {
+              "lessonId": "PX25-Y8-U07-L004",
+              "title": "Inputs and Simple Maths, User input and arithmetic operations",
+              "unitTitle": "Unit 6: Programming essentials in Pythonm \u2013 part I"
+            },
+            {
+              "lessonId": "PX25-Y8-U07-L005",
+              "title": "Selection (IF Statements), Making decisions with conditions",
+              "unitTitle": "Unit 6: Programming essentials in Pythonm \u2013 part I"
+            },
+            {
+              "lessonId": "PX25-Y8-U07-L006",
+              "title": "Loops and Mini Project",
+              "unitTitle": "Unit 6: Programming essentials in Pythonm \u2013 part I"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 9",
+          "stage": "Revisit and extend",
+          "lessonCount": 14,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y9-U01-L004",
+              "title": "Input and Output Devices",
+              "unitTitle": "Unit1: Hardware KS3 Computing"
+            },
+            {
+              "lessonId": "PX25-Y9-U05-L001",
+              "title": "L1 Input, output, and variables",
+              "unitTitle": "Unit 5: Introduction to Python programming"
+            },
+            {
+              "lessonId": "PX25-Y9-U05-L002",
+              "title": "L2 Data Types.",
+              "unitTitle": "Unit 5: Introduction to Python programming"
+            },
+            {
+              "lessonId": "PX25-Y9-U05-L003",
+              "title": "L3 Sequences",
+              "unitTitle": "Unit 5: Introduction to Python programming"
+            },
+            {
+              "lessonId": "PX25-Y9-U05-L004",
+              "title": "L4 Selection",
+              "unitTitle": "Unit 5: Introduction to Python programming"
+            },
+            {
+              "lessonId": "PX25-Y9-U05-L005",
+              "title": "L5 Iterations",
+              "unitTitle": "Unit 5: Introduction to Python programming"
+            },
+            {
+              "lessonId": "PX25-Y9-U05-L006",
+              "title": "Procedures vs Functions (Local vs Global Variables)",
+              "unitTitle": "Unit 5: Introduction to Python programming"
+            },
+            {
+              "lessonId": "PX25-Y9-U06-L001",
+              "title": "Basic String Handling",
+              "unitTitle": "Unit 6: Introduction to Python programming (cont)"
+            },
+            {
+              "lessonId": "PX25-Y9-U06-L002",
+              "title": "Basic Random Number generation",
+              "unitTitle": "Unit 6: Introduction to Python programming (cont)"
+            },
+            {
+              "lessonId": "PX25-Y9-U06-L003",
+              "title": "File Handling",
+              "unitTitle": "Unit 6: Introduction to Python programming (cont)"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 10",
+          "stage": "Revisit and extend",
+          "lessonCount": 8,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y10-U09-L001",
+              "title": "1.1 - Computational Thinking",
+              "unitTitle": "1. Algorithms"
+            },
+            {
+              "lessonId": "PX25-Y10-U09-L002",
+              "title": "1.2 - Designing Algorithms",
+              "unitTitle": "1. Algorithms"
+            },
+            {
+              "lessonId": "PX25-Y10-U09-L003",
+              "title": "1.3 - Searching & Sorting Algorithms",
+              "unitTitle": "1. Algorithms"
+            },
+            {
+              "lessonId": "PX25-Y10-U10-L001",
+              "title": "2.1 - Programming Fundamentals",
+              "unitTitle": "2. Programming Fundamentals"
+            },
+            {
+              "lessonId": "PX25-Y10-U10-L002",
+              "title": "2.2 - Data Types",
+              "unitTitle": "2. Programming Fundamentals"
+            },
+            {
+              "lessonId": "PX25-Y10-U10-L003",
+              "title": "2.3 - Additional Programming Techniques",
+              "unitTitle": "2. Programming Fundamentals"
+            },
+            {
+              "lessonId": "PX25-Y10-U11-L001",
+              "title": "3.1 - Defensive Design",
+              "unitTitle": "3. Producing Robust Programs"
+            },
+            {
+              "lessonId": "PX25-Y10-U11-L002",
+              "title": "3.2 - Testing",
+              "unitTitle": "3. Producing Robust Programs"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 11",
+          "stage": "Revisit and extend",
+          "lessonCount": 30,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y11-U08-L001",
+              "title": "1.1 - Computational Thinking",
+              "unitTitle": "1. Algorithms"
+            },
+            {
+              "lessonId": "PX25-Y11-U08-L002",
+              "title": "1.2 - Designing Algorithms",
+              "unitTitle": "1. Algorithms"
+            },
+            {
+              "lessonId": "PX25-Y11-U08-L003",
+              "title": "1.3 - Searching & Sorting Algorithms",
+              "unitTitle": "1. Algorithms"
+            },
+            {
+              "lessonId": "PX25-Y11-U08-L004",
+              "title": "4.5 - Character Sets & Data Types",
+              "unitTitle": "1. Algorithms"
+            },
+            {
+              "lessonId": "PX25-Y11-U08-L005",
+              "title": "Summative Assesment",
+              "unitTitle": "1. Algorithms"
+            },
+            {
+              "lessonId": "PX25-Y11-U09-L001",
+              "title": "2.1 - Programming Fundamentals",
+              "unitTitle": "2. Programming Fundamentals"
+            },
+            {
+              "lessonId": "PX25-Y11-U09-L002",
+              "title": "2.2 - Data Types",
+              "unitTitle": "2. Programming Fundamentals"
+            },
+            {
+              "lessonId": "PX25-Y11-U09-L003",
+              "title": "2.3 - Additional Programming Techniques",
+              "unitTitle": "2. Programming Fundamentals"
+            },
+            {
+              "lessonId": "PX25-Y11-U09-L004",
+              "title": "Summative Assesment",
+              "unitTitle": "2. Programming Fundamentals"
+            },
+            {
+              "lessonId": "PX25-Y11-U10-L001",
+              "title": "3.1 - Defensive Design",
+              "unitTitle": "3. Producing Robust Programs"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 12",
+          "stage": "Revisit and extend",
+          "lessonCount": 27,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y12-U01-L001",
+              "title": "The Arithmetic and Logic Unit; ALU, Control Unit and Registers (Program Counter; PC, Accumulator; ACC, Memory Address Register; MAR, Memory Data Register; MDR, Current Instruction Register; CIR). Buses: data, address and control: how this relates to assembly language programs.",
+              "unitTitle": "Unit 01: Computer Systems    ................   OCR Computer Science AS-Level curriculum, under specification H046/H446"
+            },
+            {
+              "lessonId": "PX25-Y12-U01-L002",
+              "title": "The fetch-decode-execute cycle, including its effect on registers.",
+              "unitTitle": "Unit 01: Computer Systems    ................   OCR Computer Science AS-Level curriculum, under specification H046/H446"
+            },
+            {
+              "lessonId": "PX25-Y12-U01-L006",
+              "title": "CISC, RISC, LMC Assembly code",
+              "unitTitle": "Unit 01: Computer Systems    ................   OCR Computer Science AS-Level curriculum, under specification H046/H446"
+            },
+            {
+              "lessonId": "PX25-Y12-U02-L001",
+              "title": "How different input, output and storage devices can be applied to the solution of different problems. (b) The uses of magnetic, flash and optical storage devices.",
+              "unitTitle": "SLR3 Input, output and storage devices"
+            },
+            {
+              "lessonId": "PX25-Y12-U02-L002",
+              "title": "(c) RAM and ROM. (d) Virtual storage.",
+              "unitTitle": "SLR3 Input, output and storage devices"
+            },
+            {
+              "lessonId": "PX25-Y12-U03-L001",
+              "title": "(a) The need for, function and purpose of operating systems. (b) Memory Management (paging, segmentation and virtual memory).",
+              "unitTitle": "Software and software development"
+            },
+            {
+              "lessonId": "PX25-Y12-U03-L002",
+              "title": "(c) Interrupts, the role of interrupts and Interrupt Service Routines (ISR), role within the Fetch-Decode-Execute Cycle.",
+              "unitTitle": "Software and software development"
+            },
+            {
+              "lessonId": "PX25-Y12-U03-L005",
+              "title": "(f) BIOS. (g) Device drivers. (h)        Virtual machines, any instance        where software is        used to take on the function of a machine including executing intermediate code or running an        operating system within another.",
+              "unitTitle": "Software and software development"
+            },
+            {
+              "lessonId": "PX25-Y12-U05-L001",
+              "title": "Program flow variables and constants",
+              "unitTitle": "Introduction to Programming Procedural programming language techniques:"
+            },
+            {
+              "lessonId": "PX25-Y12-U05-L002",
+              "title": "procedures and functions",
+              "unitTitle": "Introduction to Programming Procedural programming language techniques:"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 13",
+          "stage": "Mastery candidate",
+          "lessonCount": 12,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y13-U01-L001",
+              "title": "1.1 - Structure & Function of the Processor (The CPU)",
+              "unitTitle": "1. Hardware OCR H446 Computer Science A Level Specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U01-L003",
+              "title": "1.3 - Input, Output & Storage",
+              "unitTitle": "1. Hardware OCR H446 Computer Science A Level Specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U01-L015",
+              "title": "Dikstra's Shorter Path Algorithm",
+              "unitTitle": "1. Hardware OCR H446 Computer Science A Level Specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U01-L016",
+              "title": "A* Shorter Path Algorithm",
+              "unitTitle": "1. Hardware OCR H446 Computer Science A Level Specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U02-L003",
+              "title": "2.4 - Types of Programming Language",
+              "unitTitle": "2 Software OCR H446 Computer Science A Level Specification.. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U04-L001",
+              "title": "2.1 - Programming Techniques",
+              "unitTitle": "2. Problem Solving & Programming OCR H446 Computer Science specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U04-L002",
+              "title": "2.2 - Computational Methods",
+              "unitTitle": "2. Problem Solving & Programming OCR H446 Computer Science specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U04-L003",
+              "title": "Assesment Mock Testing",
+              "unitTitle": "2. Problem Solving & Programming OCR H446 Computer Science specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U06-L001",
+              "title": "3.5 - Algorithm Complexity",
+              "unitTitle": "3. Algorithms OCR H446 Computer Science specification. REVISION"
+            },
+            {
+              "lessonId": "PX25-Y13-U06-L002",
+              "title": "3.6 - Data Structure Algorithms",
+              "unitTitle": "3. Algorithms OCR H446 Computer Science specification. REVISION"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conceptId": "CCO-ROBOTICS",
+      "conceptName": "Robotics",
+      "firstIntroduced": "Year 5",
+      "masteryCandidate": "Year 5",
+      "stages": [
+        {
+          "yearGroup": "Year 5",
+          "stage": "Introduce",
+          "lessonCount": 6,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y5-U03-L001",
+              "title": "L1 Understand how robots like Sphero follow commands",
+              "unitTitle": "Robotics & Logic"
+            },
+            {
+              "lessonId": "PX25-Y5-U03-L002",
+              "title": "L2 Program Sphero to follow a path",
+              "unitTitle": "Robotics & Logic"
+            },
+            {
+              "lessonId": "PX25-Y5-U03-L003",
+              "title": "L3 Use loops and delays with Sphero",
+              "unitTitle": "Robotics & Logic"
+            },
+            {
+              "lessonId": "PX25-Y5-U03-L004",
+              "title": "L4 Practice logical reasoning with unplugged tasks",
+              "unitTitle": "Robotics & Logic"
+            },
+            {
+              "lessonId": "PX25-Y5-U03-L005",
+              "title": "L5 Plan and present robot journey",
+              "unitTitle": "Robotics & Logic"
+            },
+            {
+              "lessonId": "PX25-Y5-U03-L006",
+              "title": "L6 Summative Assesment",
+              "unitTitle": "Robotics & Logic"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conceptId": "CCO-SPREADSHEETS",
+      "conceptName": "Spreadsheets",
+      "firstIntroduced": "Year 5",
+      "masteryCandidate": "Year 13",
+      "stages": [
+        {
+          "yearGroup": "Year 5",
+          "stage": "Introduce",
+          "lessonCount": 1,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y5-U03-L006",
+              "title": "L6 Summative Assesment",
+              "unitTitle": "Robotics & Logic"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 6",
+          "stage": "Revisit and extend",
+          "lessonCount": 3,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y6-U05-L001",
+              "title": "What's the formula?",
+              "unitTitle": "Unit 5: Data and information - Introduction to Spreadsheets"
+            },
+            {
+              "lessonId": "PX25-Y6-U05-L002",
+              "title": "Event planning",
+              "unitTitle": "Unit 5: Data and information - Introduction to Spreadsheets"
+            },
+            {
+              "lessonId": "PX25-Y6-U05-L003",
+              "title": "Presenting data",
+              "unitTitle": "Unit 5: Data and information - Introduction to Spreadsheets"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 7",
+          "stage": "Revisit and extend",
+          "lessonCount": 5,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y7-U01-L004",
+              "title": "Summative Assesment",
+              "unitTitle": "Unit 1: Online Safety"
+            },
+            {
+              "lessonId": "PX25-Y7-U06-L006",
+              "title": "Summative Assesment",
+              "unitTitle": "Unit 6: Programming essentials in Python \u2013 part I"
+            },
+            {
+              "lessonId": "PX25-Y7-U07-L001",
+              "title": "Creating and formating a spreadsheet.",
+              "unitTitle": "Unit 5: Modelling data using spreadsheets"
+            },
+            {
+              "lessonId": "PX25-Y7-U07-L002",
+              "title": "Quick calculations",
+              "unitTitle": "Unit 5: Modelling data using spreadsheets"
+            },
+            {
+              "lessonId": "PX25-Y7-U07-L003",
+              "title": "Collecting data",
+              "unitTitle": "Unit 5: Modelling data using spreadsheets"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 8",
+          "stage": "Revisit and extend",
+          "lessonCount": 6,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y8-U04-L004",
+              "title": "Summative Assesment",
+              "unitTitle": "Unit 4 App Design with App Lab"
+            },
+            {
+              "lessonId": "PX25-Y8-U06-L001",
+              "title": "L1 Problem Solving",
+              "unitTitle": "Unit 5: Modelling data using spreadsheets"
+            },
+            {
+              "lessonId": "PX25-Y8-U06-L002",
+              "title": "Quick Calculations",
+              "unitTitle": "Unit 5: Modelling data using spreadsheets"
+            },
+            {
+              "lessonId": "PX25-Y8-U06-L003",
+              "title": "Collecting Data",
+              "unitTitle": "Unit 5: Modelling data using spreadsheets"
+            },
+            {
+              "lessonId": "PX25-Y8-U06-L004",
+              "title": "Become a Data Master",
+              "unitTitle": "Unit 5: Modelling data using spreadsheets"
+            },
+            {
+              "lessonId": "PX25-Y8-U06-L005",
+              "title": "Assessment",
+              "unitTitle": "Unit 5: Modelling data using spreadsheets"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 9",
+          "stage": "Revisit and extend",
+          "lessonCount": 2,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y9-U02-L002",
+              "title": "Summative Assesment",
+              "unitTitle": "Unit 2. CyberSecurity KS3 Computing"
+            },
+            {
+              "lessonId": "PX25-Y9-U04-L003",
+              "title": "Summative Assesment",
+              "unitTitle": "Unit 4 Understanding Binary"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 10",
+          "stage": "Revisit and extend",
+          "lessonCount": 4,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y10-U02-L004",
+              "title": "Summative Assesment",
+              "unitTitle": "SLR 1.2 Memory & Storage - Part 1"
+            },
+            {
+              "lessonId": "PX25-Y10-U03-L004",
+              "title": "Summative Assesment",
+              "unitTitle": "SLR 1.2 Memory & Storage - Part 2"
+            },
+            {
+              "lessonId": "PX25-Y10-U04-L005",
+              "title": "Summative Assesment",
+              "unitTitle": "SLR 1.3 Computer networks, connections and protocols"
+            },
+            {
+              "lessonId": "PX25-Y10-U05-L003",
+              "title": "Summative Assesment",
+              "unitTitle": "SLR 1.4 Network Security"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 11",
+          "stage": "Revisit and extend",
+          "lessonCount": 9,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y11-U01-L007",
+              "title": "Summative Assesment",
+              "unitTitle": "1. System Architecture OCR GCSE Computer Science (J277)"
+            },
+            {
+              "lessonId": "PX25-Y11-U04-L005",
+              "title": "Summative Assesment",
+              "unitTitle": "3. Networks"
+            },
+            {
+              "lessonId": "PX25-Y11-U05-L003",
+              "title": "Summative Assesment",
+              "unitTitle": "3. Networks & Security"
+            },
+            {
+              "lessonId": "PX25-Y11-U06-L003",
+              "title": "Summative Assesment",
+              "unitTitle": "5. Systems Software"
+            },
+            {
+              "lessonId": "PX25-Y11-U07-L003",
+              "title": "Summative Assesment",
+              "unitTitle": "6. Impacts"
+            },
+            {
+              "lessonId": "PX25-Y11-U08-L005",
+              "title": "Summative Assesment",
+              "unitTitle": "1. Algorithms"
+            },
+            {
+              "lessonId": "PX25-Y11-U09-L004",
+              "title": "Summative Assesment",
+              "unitTitle": "2. Programming Fundamentals"
+            },
+            {
+              "lessonId": "PX25-Y11-U11-L002",
+              "title": "Summative Assesment",
+              "unitTitle": "4. Boolean Logic"
+            },
+            {
+              "lessonId": "PX25-Y11-U12-L003",
+              "title": "Summative Assesment",
+              "unitTitle": "5. Languages & IDEs"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 12",
+          "stage": "Revisit and extend",
+          "lessonCount": 3,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y12-U01-L007",
+              "title": "Summative Assesment",
+              "unitTitle": "Unit 01: Computer Systems    ................   OCR Computer Science AS-Level curriculum, under specification H046/H446"
+            },
+            {
+              "lessonId": "PX25-Y12-U05-L007",
+              "title": "Summative Assesment",
+              "unitTitle": "Introduction to Programming Procedural programming language techniques:"
+            },
+            {
+              "lessonId": "PX25-Y12-U07-L005",
+              "title": "Summative Assesment",
+              "unitTitle": "Databases"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 13",
+          "stage": "Mastery candidate",
+          "lessonCount": 1,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y13-U03-L005",
+              "title": "Summative Assesment",
+              "unitTitle": "1. Computational Thinking OCR H446 Computer Science specification. REVISION"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conceptId": "CCO-WEB_DEVELOPMENT",
+      "conceptName": "Web Development",
+      "firstIntroduced": "Year 5",
+      "masteryCandidate": "Year 13",
+      "stages": [
+        {
+          "yearGroup": "Year 5",
+          "stage": "Introduce",
+          "lessonCount": 6,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y5-U01-L002",
+              "title": "Recognise trusted adults and websites",
+              "unitTitle": "Unit 1: Digital Safety"
+            },
+            {
+              "lessonId": "PX25-Y5-U06-L001",
+              "title": "L1 \u2013 What Is a Website?",
+              "unitTitle": "Developing for the Web"
+            },
+            {
+              "lessonId": "PX25-Y5-U06-L002",
+              "title": "L2 \u2013 How Web Pages Work (HTML Basics)",
+              "unitTitle": "Developing for the Web"
+            },
+            {
+              "lessonId": "PX25-Y5-U06-L003",
+              "title": "L3 \u2013 Creating a Simple Web Page",
+              "unitTitle": "Developing for the Web"
+            },
+            {
+              "lessonId": "PX25-Y5-U06-L004",
+              "title": "L4 \u2013 Adding Text, Images, and Links",
+              "unitTitle": "Developing for the Web"
+            },
+            {
+              "lessonId": "PX25-Y5-U06-L005",
+              "title": "L5 \u2013 Publishing and Sharing Your Web Page",
+              "unitTitle": "Developing for the Web"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 6",
+          "stage": "Revisit and extend",
+          "lessonCount": 3,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y6-U01-L007",
+              "title": "Spot fake websites and images",
+              "unitTitle": "Unit 1: Digital Literacy"
+            },
+            {
+              "lessonId": "PX25-Y6-U02-L001",
+              "title": "Use Google Sites for Web Pages, Creating a WebPage, Templates.",
+              "unitTitle": "Unit 2: Creating media \u2013 Web page creation"
+            },
+            {
+              "lessonId": "PX25-Y6-U02-L002",
+              "title": "Adding text,  media and Sharing.",
+              "unitTitle": "Unit 2: Creating media \u2013 Web page creation"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 7",
+          "stage": "Revisit and extend",
+          "lessonCount": 1,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y7-U05-L005",
+              "title": "The world wide web",
+              "unitTitle": "Unit 5: Networks from semaphores to the Internet"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 8",
+          "stage": "Revisit and extend",
+          "lessonCount": 4,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y8-U03-L001",
+              "title": "\u2013 Introduction to Web Pages (HTML Basics)",
+              "unitTitle": "Unit 3: Developing for the web"
+            },
+            {
+              "lessonId": "PX25-Y8-U03-L002",
+              "title": "Structuring Content with HTML",
+              "unitTitle": "Unit 3: Developing for the web"
+            },
+            {
+              "lessonId": "PX25-Y8-U03-L003",
+              "title": "Adding Links and Images",
+              "unitTitle": "Unit 3: Developing for the web"
+            },
+            {
+              "lessonId": "PX25-Y8-U03-L004",
+              "title": "Recap",
+              "unitTitle": "Unit 3: Developing for the web"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 12",
+          "stage": "Revisit and extend",
+          "lessonCount": 1,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y12-U09-L001",
+              "title": "(a) HTML, CSS and JavaScript. (b) (b) Lossy v lossless compression.",
+              "unitTitle": "Web Technologies"
+            }
+          ]
+        },
+        {
+          "yearGroup": "Year 13",
+          "stage": "Mastery candidate",
+          "lessonCount": 1,
+          "lessons": [
+            {
+              "lessonId": "PX25-Y13-U05-L005",
+              "title": "3.4 - Web Technologies",
+              "unitTitle": "3. Networks & Databases OCR H446 Computer Science specification. REVISION"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

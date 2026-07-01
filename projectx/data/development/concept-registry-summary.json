@@ -1,0 +1,2087 @@
+{
+  "canonicalConceptObjects": 17,
+  "topConcepts": [
+    {
+      "id": "CCO-BOOLEAN_LOGIC",
+      "name": "Boolean Logic",
+      "slug": "boolean-logic",
+      "type": "Canonical Concept Object",
+      "domain": "Computing",
+      "description": "Canonical Concept Object for Boolean Logic. Generated from PX-CDL lesson concepts and vocabulary.",
+      "status": "Generated",
+      "source": "PX-CDL v1.0 / Milestone 2 Relationship Engine",
+      "validationStatus": "Generated from teacher-authored progression; official mapping to be refined",
+      "lessonCount": 255,
+      "yearGroups": [
+        "Year 5",
+        "Year 6",
+        "Year 7",
+        "Year 8",
+        "Year 9",
+        "Year 10",
+        "Year 11",
+        "Year 12",
+        "Year 13"
+      ],
+      "keyStages": [
+        "KS2",
+        "KS3",
+        "KS4",
+        "KS5"
+      ],
+      "firstIntroduced": "Year 5",
+      "masteryCandidate": "Year 13",
+      "relatedConcepts": [
+        {
+          "conceptId": "CCO-COMPUTER_SYSTEMS",
+          "name": "Computer Systems",
+          "weight": 106
+        },
+        {
+          "conceptId": "CCO-PROGRAMMING",
+          "name": "Programming",
+          "weight": 80
+        },
+        {
+          "conceptId": "CCO-NETWORKS",
+          "name": "Networks",
+          "weight": 49
+        },
+        {
+          "conceptId": "CCO-DIGITAL_LITERACY",
+          "name": "Digital Literacy",
+          "weight": 39
+        },
+        {
+          "conceptId": "CCO-DATA_REPRESENTATION",
+          "name": "Data Representation",
+          "weight": 33
+        },
+        {
+          "conceptId": "CCO-ALGORITHMS",
+          "name": "Algorithms",
+          "weight": 29
+        },
+        {
+          "conceptId": "CCO-DATABASES",
+          "name": "Databases",
+          "weight": 21
+        },
+        {
+          "conceptId": "CCO-WEB_DEVELOPMENT",
+          "name": "Web Development",
+          "weight": 16
+        }
+      ],
+      "sampleLessons": [
+        {
+          "lessonId": "PX25-Y5-U01-L001",
+          "title": "Know how to stay safe online and use kind language",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U01"
+        },
+        {
+          "lessonId": "PX25-Y5-U01-L002",
+          "title": "Recognise trusted adults and websites",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U01"
+        },
+        {
+          "lessonId": "PX25-Y5-U01-L003",
+          "title": "Understand why passwords matter",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U01"
+        },
+        {
+          "lessonId": "PX25-Y5-U01-L004",
+          "title": "Identify input and output devices",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U01"
+        },
+        {
+          "lessonId": "PX25-Y5-U01-L005",
+          "title": "(a)Understand how we use technology in school and home.\n(b) Use a word processor to type and edit text\n(c) Use a paint or drawing tool to create digital art",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U01"
+        },
+        {
+          "lessonId": "PX25-Y5-U01-L006",
+          "title": "File names, folders, and saving work",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U01"
+        },
+        {
+          "lessonId": "PX25-Y5-U02-L002",
+          "title": "Create a short animated sequence",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U02"
+        },
+        {
+          "lessonId": "PX25-Y5-U02-L004",
+          "title": "Add sound and looks blocks",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U02"
+        },
+        {
+          "lessonId": "PX25-Y5-U02-L006",
+          "title": "Combine blocks for story scenes",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U02"
+        },
+        {
+          "lessonId": "PX25-Y5-U02-L007",
+          "title": "Build your story animation",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U02"
+        },
+        {
+          "lessonId": "PX25-Y5-U03-L001",
+          "title": "L1 Understand how robots like Sphero follow commands",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U03"
+        },
+        {
+          "lessonId": "PX25-Y5-U03-L002",
+          "title": "L2 Program Sphero to follow a path",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U03"
+        }
+      ]
+    },
+    {
+      "id": "CCO-COMPUTER_SYSTEMS",
+      "name": "Computer Systems",
+      "slug": "computer-systems",
+      "type": "Canonical Concept Object",
+      "domain": "Computing",
+      "description": "Canonical Concept Object for Computer Systems. Generated from PX-CDL lesson concepts and vocabulary.",
+      "status": "Generated",
+      "source": "PX-CDL v1.0 / Milestone 2 Relationship Engine",
+      "validationStatus": "Generated from teacher-authored progression; official mapping to be refined",
+      "lessonCount": 179,
+      "yearGroups": [
+        "Year 5",
+        "Year 6",
+        "Year 7",
+        "Year 8",
+        "Year 9",
+        "Year 10",
+        "Year 11",
+        "Year 12",
+        "Year 13"
+      ],
+      "keyStages": [
+        "KS2",
+        "KS3",
+        "KS4",
+        "KS5"
+      ],
+      "firstIntroduced": "Year 5",
+      "masteryCandidate": "Year 13",
+      "relatedConcepts": [
+        {
+          "conceptId": "CCO-BOOLEAN_LOGIC",
+          "name": "Boolean Logic",
+          "weight": 106
+        },
+        {
+          "conceptId": "CCO-PROGRAMMING",
+          "name": "Programming",
+          "weight": 88
+        },
+        {
+          "conceptId": "CCO-NETWORKS",
+          "name": "Networks",
+          "weight": 19
+        },
+        {
+          "conceptId": "CCO-DATA_REPRESENTATION",
+          "name": "Data Representation",
+          "weight": 15
+        },
+        {
+          "conceptId": "CCO-DIGITAL_LITERACY",
+          "name": "Digital Literacy",
+          "weight": 8
+        },
+        {
+          "conceptId": "CCO-SPREADSHEETS",
+          "name": "Spreadsheets",
+          "weight": 8
+        },
+        {
+          "conceptId": "CCO-ALGORITHMS",
+          "name": "Algorithms",
+          "weight": 7
+        },
+        {
+          "conceptId": "CCO-APP_DESIGN",
+          "name": "App Design",
+          "weight": 4
+        }
+      ],
+      "sampleLessons": [
+        {
+          "lessonId": "PX25-Y5-U01-L005",
+          "title": "(a)Understand how we use technology in school and home.\n(b) Use a word processor to type and edit text\n(c) Use a paint or drawing tool to create digital art",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U01"
+        },
+        {
+          "lessonId": "PX25-Y5-U03-L002",
+          "title": "L2 Program Sphero to follow a path",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U03"
+        },
+        {
+          "lessonId": "PX25-Y5-U04-L001",
+          "title": "L1 \u2013 What Is Computer Hardware?",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U04"
+        },
+        {
+          "lessonId": "PX25-Y5-U04-L002",
+          "title": "L2 \u2013 Inside the Computer (Main Components)",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U04"
+        },
+        {
+          "lessonId": "PX25-Y5-U04-L003",
+          "title": "L3 \u2013 Input and Output Devices",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U04"
+        },
+        {
+          "lessonId": "PX25-Y5-U04-L004",
+          "title": "L4 \u2013 Storage Devices",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U04"
+        },
+        {
+          "lessonId": "PX25-Y5-U04-L005",
+          "title": "L5 \u2013 How a Computer Works (Putting the Parts Together)",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U04"
+        },
+        {
+          "lessonId": "PX25-Y5-U05-L003",
+          "title": "L3 \u2013 Network Hardware (Router, Switch, Access Point)",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U05"
+        },
+        {
+          "lessonId": "PX25-Y6-U03-L001",
+          "title": "L1 Use loops to repeat actions (2)",
+          "yearGroup": "Year 6",
+          "unitId": "PX25-Y6-U03"
+        },
+        {
+          "lessonId": "PX25-Y6-U03-L002",
+          "title": "Add sound and looks blocks (2)",
+          "yearGroup": "Year 6",
+          "unitId": "PX25-Y6-U03"
+        },
+        {
+          "lessonId": "PX25-Y6-U03-L003",
+          "title": "Use events to control characters",
+          "yearGroup": "Year 6",
+          "unitId": "PX25-Y6-U03"
+        },
+        {
+          "lessonId": "PX25-Y6-U03-L004",
+          "title": "Combine blocks for story scenes (2)",
+          "yearGroup": "Year 6",
+          "unitId": "PX25-Y6-U03"
+        }
+      ]
+    },
+    {
+      "id": "CCO-PROGRAMMING",
+      "name": "Programming",
+      "slug": "programming",
+      "type": "Canonical Concept Object",
+      "domain": "Computing",
+      "description": "Canonical Concept Object for Programming. Generated from PX-CDL lesson concepts and vocabulary.",
+      "status": "Generated",
+      "source": "PX-CDL v1.0 / Milestone 2 Relationship Engine",
+      "validationStatus": "Generated from teacher-authored progression; official mapping to be refined",
+      "lessonCount": 135,
+      "yearGroups": [
+        "Year 5",
+        "Year 6",
+        "Year 7",
+        "Year 8",
+        "Year 9",
+        "Year 10",
+        "Year 11",
+        "Year 12",
+        "Year 13"
+      ],
+      "keyStages": [
+        "KS2",
+        "KS3",
+        "KS4",
+        "KS5"
+      ],
+      "firstIntroduced": "Year 5",
+      "masteryCandidate": "Year 13",
+      "relatedConcepts": [
+        {
+          "conceptId": "CCO-COMPUTER_SYSTEMS",
+          "name": "Computer Systems",
+          "weight": 88
+        },
+        {
+          "conceptId": "CCO-BOOLEAN_LOGIC",
+          "name": "Boolean Logic",
+          "weight": 80
+        },
+        {
+          "conceptId": "CCO-ALGORITHMS",
+          "name": "Algorithms",
+          "weight": 24
+        },
+        {
+          "conceptId": "CCO-DATA_REPRESENTATION",
+          "name": "Data Representation",
+          "weight": 11
+        },
+        {
+          "conceptId": "CCO-DIGITAL_LITERACY",
+          "name": "Digital Literacy",
+          "weight": 11
+        },
+        {
+          "conceptId": "CCO-NETWORKS",
+          "name": "Networks",
+          "weight": 10
+        },
+        {
+          "conceptId": "CCO-APP_DESIGN",
+          "name": "App Design",
+          "weight": 7
+        },
+        {
+          "conceptId": "CCO-SPREADSHEETS",
+          "name": "Spreadsheets",
+          "weight": 4
+        }
+      ],
+      "sampleLessons": [
+        {
+          "lessonId": "PX25-Y5-U01-L004",
+          "title": "Identify input and output devices",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U01"
+        },
+        {
+          "lessonId": "PX25-Y5-U02-L001",
+          "title": "Use blocks to move a character",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U02"
+        },
+        {
+          "lessonId": "PX25-Y5-U02-L002",
+          "title": "Create a short animated sequence",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U02"
+        },
+        {
+          "lessonId": "PX25-Y5-U02-L003",
+          "title": "Use loops to repeat actions",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U02"
+        },
+        {
+          "lessonId": "PX25-Y5-U02-L004",
+          "title": "Add sound and looks blocks",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U02"
+        },
+        {
+          "lessonId": "PX25-Y5-U02-L005",
+          "title": "Use events to control characters",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U02"
+        },
+        {
+          "lessonId": "PX25-Y5-U02-L006",
+          "title": "Combine blocks for story scenes",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U02"
+        },
+        {
+          "lessonId": "PX25-Y5-U02-L007",
+          "title": "Build your story animation",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U02"
+        },
+        {
+          "lessonId": "PX25-Y5-U03-L002",
+          "title": "L2 Program Sphero to follow a path",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U03"
+        },
+        {
+          "lessonId": "PX25-Y5-U03-L003",
+          "title": "L3 Use loops and delays with Sphero",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U03"
+        },
+        {
+          "lessonId": "PX25-Y5-U04-L003",
+          "title": "L3 \u2013 Input and Output Devices",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U04"
+        },
+        {
+          "lessonId": "PX25-Y6-U03-L001",
+          "title": "L1 Use loops to repeat actions (2)",
+          "yearGroup": "Year 6",
+          "unitId": "PX25-Y6-U03"
+        }
+      ]
+    },
+    {
+      "id": "CCO-NETWORKS",
+      "name": "Networks",
+      "slug": "networks",
+      "type": "Canonical Concept Object",
+      "domain": "Computing",
+      "description": "Canonical Concept Object for Networks. Generated from PX-CDL lesson concepts and vocabulary.",
+      "status": "Generated",
+      "source": "PX-CDL v1.0 / Milestone 2 Relationship Engine",
+      "validationStatus": "Generated from teacher-authored progression; official mapping to be refined",
+      "lessonCount": 57,
+      "yearGroups": [
+        "Year 5",
+        "Year 6",
+        "Year 7",
+        "Year 10",
+        "Year 11",
+        "Year 12",
+        "Year 13"
+      ],
+      "keyStages": [
+        "KS2",
+        "KS3",
+        "KS4",
+        "KS5"
+      ],
+      "firstIntroduced": "Year 5",
+      "masteryCandidate": "Year 13",
+      "relatedConcepts": [
+        {
+          "conceptId": "CCO-BOOLEAN_LOGIC",
+          "name": "Boolean Logic",
+          "weight": 49
+        },
+        {
+          "conceptId": "CCO-COMPUTER_SYSTEMS",
+          "name": "Computer Systems",
+          "weight": 19
+        },
+        {
+          "conceptId": "CCO-PROGRAMMING",
+          "name": "Programming",
+          "weight": 10
+        },
+        {
+          "conceptId": "CCO-SPREADSHEETS",
+          "name": "Spreadsheets",
+          "weight": 7
+        },
+        {
+          "conceptId": "CCO-CYBER_SECURITY",
+          "name": "Cyber Security",
+          "weight": 7
+        },
+        {
+          "conceptId": "CCO-DATABASES",
+          "name": "Databases",
+          "weight": 6
+        },
+        {
+          "conceptId": "CCO-DATA_REPRESENTATION",
+          "name": "Data Representation",
+          "weight": 4
+        },
+        {
+          "conceptId": "CCO-WEB_DEVELOPMENT",
+          "name": "Web Development",
+          "weight": 3
+        }
+      ],
+      "sampleLessons": [
+        {
+          "lessonId": "PX25-Y5-U01-L001",
+          "title": "Know how to stay safe online and use kind language",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U01"
+        },
+        {
+          "lessonId": "PX25-Y5-U03-L005",
+          "title": "L5 Plan and present robot journey",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U03"
+        },
+        {
+          "lessonId": "PX25-Y5-U05-L001",
+          "title": "L1 \u2013 What Is a Computer Network?",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U05"
+        },
+        {
+          "lessonId": "PX25-Y5-U05-L002",
+          "title": "L2 \u2013 How Devices Connect (Wired and Wireless)",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U05"
+        },
+        {
+          "lessonId": "PX25-Y5-U05-L003",
+          "title": "L3 \u2013 Network Hardware (Router, Switch, Access Point)",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U05"
+        },
+        {
+          "lessonId": "PX25-Y5-U05-L004",
+          "title": "L4 \u2013 The Internet and How Data Travels",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U05"
+        },
+        {
+          "lessonId": "PX25-Y6-U05-L002",
+          "title": "Event planning",
+          "yearGroup": "Year 6",
+          "unitId": "PX25-Y6-U05"
+        },
+        {
+          "lessonId": "PX25-Y7-U04-L001",
+          "title": "Computer networks and protocols",
+          "yearGroup": "Year 7",
+          "unitId": "PX25-Y7-U04"
+        },
+        {
+          "lessonId": "PX25-Y7-U05-L001",
+          "title": "Networking hardware",
+          "yearGroup": "Year 7",
+          "unitId": "PX25-Y7-U05"
+        },
+        {
+          "lessonId": "PX25-Y7-U05-L002",
+          "title": "Wired and wireless networks",
+          "yearGroup": "Year 7",
+          "unitId": "PX25-Y7-U05"
+        },
+        {
+          "lessonId": "PX25-Y7-U05-L003",
+          "title": "The internet",
+          "yearGroup": "Year 7",
+          "unitId": "PX25-Y7-U05"
+        },
+        {
+          "lessonId": "PX25-Y7-U05-L004",
+          "title": "Internet services",
+          "yearGroup": "Year 7",
+          "unitId": "PX25-Y7-U05"
+        }
+      ]
+    },
+    {
+      "id": "CCO-DIGITAL_LITERACY",
+      "name": "Digital Literacy",
+      "slug": "digital-literacy",
+      "type": "Canonical Concept Object",
+      "domain": "Computing",
+      "description": "Canonical Concept Object for Digital Literacy. Generated from PX-CDL lesson concepts and vocabulary.",
+      "status": "Generated",
+      "source": "PX-CDL v1.0 / Milestone 2 Relationship Engine",
+      "validationStatus": "Generated from teacher-authored progression; official mapping to be refined",
+      "lessonCount": 55,
+      "yearGroups": [
+        "Year 5",
+        "Year 6",
+        "Year 7",
+        "Year 8",
+        "Year 9",
+        "Year 10",
+        "Year 11",
+        "Year 12",
+        "Year 13"
+      ],
+      "keyStages": [
+        "KS2",
+        "KS3",
+        "KS4",
+        "KS5"
+      ],
+      "firstIntroduced": "Year 5",
+      "masteryCandidate": "Year 13",
+      "relatedConcepts": [
+        {
+          "conceptId": "CCO-BOOLEAN_LOGIC",
+          "name": "Boolean Logic",
+          "weight": 39
+        },
+        {
+          "conceptId": "CCO-DATA_REPRESENTATION",
+          "name": "Data Representation",
+          "weight": 22
+        },
+        {
+          "conceptId": "CCO-PROGRAMMING",
+          "name": "Programming",
+          "weight": 11
+        },
+        {
+          "conceptId": "CCO-ALGORITHMS",
+          "name": "Algorithms",
+          "weight": 10
+        },
+        {
+          "conceptId": "CCO-DATABASES",
+          "name": "Databases",
+          "weight": 9
+        },
+        {
+          "conceptId": "CCO-COMPUTER_SYSTEMS",
+          "name": "Computer Systems",
+          "weight": 8
+        },
+        {
+          "conceptId": "CCO-ONLINE_SAFETY",
+          "name": "Online Safety",
+          "weight": 3
+        },
+        {
+          "conceptId": "CCO-WEB_DEVELOPMENT",
+          "name": "Web Development",
+          "weight": 2
+        }
+      ],
+      "sampleLessons": [
+        {
+          "lessonId": "PX25-Y5-U01-L005",
+          "title": "(a)Understand how we use technology in school and home.\n(b) Use a word processor to type and edit text\n(c) Use a paint or drawing tool to create digital art",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U01"
+        },
+        {
+          "lessonId": "PX25-Y5-U01-L006",
+          "title": "File names, folders, and saving work",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U01"
+        },
+        {
+          "lessonId": "PX25-Y5-U01-L007",
+          "title": "Create a digital poster on safety",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U01"
+        },
+        {
+          "lessonId": "PX25-Y6-U01-L002",
+          "title": "Use Google Docs to write and format text",
+          "yearGroup": "Year 6",
+          "unitId": "PX25-Y6-U01"
+        },
+        {
+          "lessonId": "PX25-Y6-U01-L003",
+          "title": "Use Google Slides to present ideas",
+          "yearGroup": "Year 6",
+          "unitId": "PX25-Y6-U01"
+        },
+        {
+          "lessonId": "PX25-Y6-U01-L004",
+          "title": "Inserting images, audio and video files",
+          "yearGroup": "Year 6",
+          "unitId": "PX25-Y6-U01"
+        },
+        {
+          "lessonId": "PX25-Y6-U01-L006",
+          "title": "Use search engines effectively",
+          "yearGroup": "Year 6",
+          "unitId": "PX25-Y6-U01"
+        },
+        {
+          "lessonId": "PX25-Y6-U02-L001",
+          "title": "Use Google Sites for Web Pages, Creating a WebPage, Templates.",
+          "yearGroup": "Year 6",
+          "unitId": "PX25-Y6-U02"
+        },
+        {
+          "lessonId": "PX25-Y6-U02-L002",
+          "title": "Adding text,  media and Sharing.",
+          "yearGroup": "Year 6",
+          "unitId": "PX25-Y6-U02"
+        },
+        {
+          "lessonId": "PX25-Y6-U07-L001",
+          "title": "L1 \u2013 What Is a Database?",
+          "yearGroup": "Year 6",
+          "unitId": "PX25-Y6-U07"
+        },
+        {
+          "lessonId": "PX25-Y6-U07-L002",
+          "title": "L2 \u2013 Understanding Fields and Records",
+          "yearGroup": "Year 6",
+          "unitId": "PX25-Y6-U07"
+        },
+        {
+          "lessonId": "PX25-Y6-U07-L003",
+          "title": "L3 \u2013 How to Sort Information",
+          "yearGroup": "Year 6",
+          "unitId": "PX25-Y6-U07"
+        }
+      ]
+    },
+    {
+      "id": "CCO-DATA_REPRESENTATION",
+      "name": "Data Representation",
+      "slug": "data-representation",
+      "type": "Canonical Concept Object",
+      "domain": "Computing",
+      "description": "Canonical Concept Object for Data Representation. Generated from PX-CDL lesson concepts and vocabulary.",
+      "status": "Generated",
+      "source": "PX-CDL v1.0 / Milestone 2 Relationship Engine",
+      "validationStatus": "Generated from teacher-authored progression; official mapping to be refined",
+      "lessonCount": 53,
+      "yearGroups": [
+        "Year 5",
+        "Year 6",
+        "Year 7",
+        "Year 8",
+        "Year 9",
+        "Year 10",
+        "Year 11",
+        "Year 12",
+        "Year 13"
+      ],
+      "keyStages": [
+        "KS2",
+        "KS3",
+        "KS4",
+        "KS5"
+      ],
+      "firstIntroduced": "Year 5",
+      "masteryCandidate": "Year 13",
+      "relatedConcepts": [
+        {
+          "conceptId": "CCO-BOOLEAN_LOGIC",
+          "name": "Boolean Logic",
+          "weight": 33
+        },
+        {
+          "conceptId": "CCO-DIGITAL_LITERACY",
+          "name": "Digital Literacy",
+          "weight": 22
+        },
+        {
+          "conceptId": "CCO-COMPUTER_SYSTEMS",
+          "name": "Computer Systems",
+          "weight": 15
+        },
+        {
+          "conceptId": "CCO-PROGRAMMING",
+          "name": "Programming",
+          "weight": 11
+        },
+        {
+          "conceptId": "CCO-WEB_DEVELOPMENT",
+          "name": "Web Development",
+          "weight": 4
+        },
+        {
+          "conceptId": "CCO-NETWORKS",
+          "name": "Networks",
+          "weight": 4
+        },
+        {
+          "conceptId": "CCO-ALGORITHMS",
+          "name": "Algorithms",
+          "weight": 4
+        },
+        {
+          "conceptId": "CCO-SPREADSHEETS",
+          "name": "Spreadsheets",
+          "weight": 1
+        }
+      ],
+      "sampleLessons": [
+        {
+          "lessonId": "PX25-Y5-U02-L004",
+          "title": "Add sound and looks blocks",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U02"
+        },
+        {
+          "lessonId": "PX25-Y5-U06-L004",
+          "title": "L4 \u2013 Adding Text, Images, and Links",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U06"
+        },
+        {
+          "lessonId": "PX25-Y6-U01-L004",
+          "title": "Inserting images, audio and video files",
+          "yearGroup": "Year 6",
+          "unitId": "PX25-Y6-U01"
+        },
+        {
+          "lessonId": "PX25-Y6-U01-L007",
+          "title": "Spot fake websites and images",
+          "yearGroup": "Year 6",
+          "unitId": "PX25-Y6-U01"
+        },
+        {
+          "lessonId": "PX25-Y6-U03-L002",
+          "title": "Add sound and looks blocks (2)",
+          "yearGroup": "Year 6",
+          "unitId": "PX25-Y6-U03"
+        },
+        {
+          "lessonId": "PX25-Y7-U08-L001",
+          "title": "Becoming a data master",
+          "yearGroup": "Year 7",
+          "unitId": "PX25-Y7-U08"
+        },
+        {
+          "lessonId": "PX25-Y7-U08-L002",
+          "title": "Level up your data skills",
+          "yearGroup": "Year 7",
+          "unitId": "PX25-Y7-U08"
+        },
+        {
+          "lessonId": "PX25-Y8-U03-L003",
+          "title": "Adding Links and Images",
+          "yearGroup": "Year 8",
+          "unitId": "PX25-Y8-U03"
+        },
+        {
+          "lessonId": "PX25-Y8-U05-L001",
+          "title": "Binary digits",
+          "yearGroup": "Year 8",
+          "unitId": "PX25-Y8-U05"
+        },
+        {
+          "lessonId": "PX25-Y8-U05-L002",
+          "title": "Numbers in binary",
+          "yearGroup": "Year 8",
+          "unitId": "PX25-Y8-U05"
+        },
+        {
+          "lessonId": "PX25-Y8-U05-L003",
+          "title": "Converting Denary to Binary and Viseversa",
+          "yearGroup": "Year 8",
+          "unitId": "PX25-Y8-U05"
+        },
+        {
+          "lessonId": "PX25-Y8-U05-L004",
+          "title": "Binary Addition",
+          "yearGroup": "Year 8",
+          "unitId": "PX25-Y8-U05"
+        }
+      ]
+    },
+    {
+      "id": "CCO-ALGORITHMS",
+      "name": "Algorithms",
+      "slug": "algorithms",
+      "type": "Canonical Concept Object",
+      "domain": "Computing",
+      "description": "Canonical Concept Object for Algorithms. Generated from PX-CDL lesson concepts and vocabulary.",
+      "status": "Generated",
+      "source": "PX-CDL v1.0 / Milestone 2 Relationship Engine",
+      "validationStatus": "Generated from teacher-authored progression; official mapping to be refined",
+      "lessonCount": 34,
+      "yearGroups": [
+        "Year 6",
+        "Year 10",
+        "Year 11",
+        "Year 12",
+        "Year 13"
+      ],
+      "keyStages": [
+        "KS2",
+        "KS4",
+        "KS5"
+      ],
+      "firstIntroduced": "Year 6",
+      "masteryCandidate": "Year 13",
+      "relatedConcepts": [
+        {
+          "conceptId": "CCO-BOOLEAN_LOGIC",
+          "name": "Boolean Logic",
+          "weight": 29
+        },
+        {
+          "conceptId": "CCO-PROGRAMMING",
+          "name": "Programming",
+          "weight": 24
+        },
+        {
+          "conceptId": "CCO-DIGITAL_LITERACY",
+          "name": "Digital Literacy",
+          "weight": 10
+        },
+        {
+          "conceptId": "CCO-COMPUTER_SYSTEMS",
+          "name": "Computer Systems",
+          "weight": 7
+        },
+        {
+          "conceptId": "CCO-DATA_REPRESENTATION",
+          "name": "Data Representation",
+          "weight": 4
+        },
+        {
+          "conceptId": "CCO-DATABASES",
+          "name": "Databases",
+          "weight": 3
+        },
+        {
+          "conceptId": "CCO-APP_DESIGN",
+          "name": "App Design",
+          "weight": 3
+        },
+        {
+          "conceptId": "CCO-SPREADSHEETS",
+          "name": "Spreadsheets",
+          "weight": 2
+        }
+      ],
+      "sampleLessons": [
+        {
+          "lessonId": "PX25-Y6-U01-L006",
+          "title": "Use search engines effectively",
+          "yearGroup": "Year 6",
+          "unitId": "PX25-Y6-U01"
+        },
+        {
+          "lessonId": "PX25-Y6-U07-L003",
+          "title": "L3 \u2013 How to Sort Information",
+          "yearGroup": "Year 6",
+          "unitId": "PX25-Y6-U07"
+        },
+        {
+          "lessonId": "PX25-Y6-U07-L004",
+          "title": "L4 \u2013 How to Search and Filter Data",
+          "yearGroup": "Year 6",
+          "unitId": "PX25-Y6-U07"
+        },
+        {
+          "lessonId": "PX25-Y10-U09-L001",
+          "title": "1.1 - Computational Thinking",
+          "yearGroup": "Year 10",
+          "unitId": "PX25-Y10-U09"
+        },
+        {
+          "lessonId": "PX25-Y10-U09-L002",
+          "title": "1.2 - Designing Algorithms",
+          "yearGroup": "Year 10",
+          "unitId": "PX25-Y10-U09"
+        },
+        {
+          "lessonId": "PX25-Y10-U09-L003",
+          "title": "1.3 - Searching & Sorting Algorithms",
+          "yearGroup": "Year 10",
+          "unitId": "PX25-Y10-U09"
+        },
+        {
+          "lessonId": "PX25-Y11-U08-L001",
+          "title": "1.1 - Computational Thinking",
+          "yearGroup": "Year 11",
+          "unitId": "PX25-Y11-U08"
+        },
+        {
+          "lessonId": "PX25-Y11-U08-L002",
+          "title": "1.2 - Designing Algorithms",
+          "yearGroup": "Year 11",
+          "unitId": "PX25-Y11-U08"
+        },
+        {
+          "lessonId": "PX25-Y11-U08-L003",
+          "title": "1.3 - Searching & Sorting Algorithms",
+          "yearGroup": "Year 11",
+          "unitId": "PX25-Y11-U08"
+        },
+        {
+          "lessonId": "PX25-Y11-U08-L004",
+          "title": "4.5 - Character Sets & Data Types",
+          "yearGroup": "Year 11",
+          "unitId": "PX25-Y11-U08"
+        },
+        {
+          "lessonId": "PX25-Y11-U08-L005",
+          "title": "Summative Assesment",
+          "yearGroup": "Year 11",
+          "unitId": "PX25-Y11-U08"
+        },
+        {
+          "lessonId": "PX25-Y11-U24-L002",
+          "title": "b. Read & Search Files",
+          "yearGroup": "Year 11",
+          "unitId": "PX25-Y11-U24"
+        }
+      ]
+    },
+    {
+      "id": "CCO-SPREADSHEETS",
+      "name": "Spreadsheets",
+      "slug": "spreadsheets",
+      "type": "Canonical Concept Object",
+      "domain": "Computing",
+      "description": "Canonical Concept Object for Spreadsheets. Generated from PX-CDL lesson concepts and vocabulary.",
+      "status": "Generated",
+      "source": "PX-CDL v1.0 / Milestone 2 Relationship Engine",
+      "validationStatus": "Generated from teacher-authored progression; official mapping to be refined",
+      "lessonCount": 34,
+      "yearGroups": [
+        "Year 5",
+        "Year 6",
+        "Year 7",
+        "Year 8",
+        "Year 9",
+        "Year 10",
+        "Year 11",
+        "Year 12",
+        "Year 13"
+      ],
+      "keyStages": [
+        "KS2",
+        "KS3",
+        "KS4",
+        "KS5"
+      ],
+      "firstIntroduced": "Year 5",
+      "masteryCandidate": "Year 13",
+      "relatedConcepts": [
+        {
+          "conceptId": "CCO-BOOLEAN_LOGIC",
+          "name": "Boolean Logic",
+          "weight": 14
+        },
+        {
+          "conceptId": "CCO-COMPUTER_SYSTEMS",
+          "name": "Computer Systems",
+          "weight": 8
+        },
+        {
+          "conceptId": "CCO-NETWORKS",
+          "name": "Networks",
+          "weight": 7
+        },
+        {
+          "conceptId": "CCO-PROGRAMMING",
+          "name": "Programming",
+          "weight": 4
+        },
+        {
+          "conceptId": "CCO-CYBER_SECURITY",
+          "name": "Cyber Security",
+          "weight": 3
+        },
+        {
+          "conceptId": "CCO-ALGORITHMS",
+          "name": "Algorithms",
+          "weight": 2
+        },
+        {
+          "conceptId": "CCO-ROBOTICS",
+          "name": "Robotics",
+          "weight": 1
+        },
+        {
+          "conceptId": "CCO-ONLINE_SAFETY",
+          "name": "Online Safety",
+          "weight": 1
+        }
+      ],
+      "sampleLessons": [
+        {
+          "lessonId": "PX25-Y5-U03-L006",
+          "title": "L6 Summative Assesment",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U03"
+        },
+        {
+          "lessonId": "PX25-Y6-U05-L001",
+          "title": "What's the formula?",
+          "yearGroup": "Year 6",
+          "unitId": "PX25-Y6-U05"
+        },
+        {
+          "lessonId": "PX25-Y6-U05-L002",
+          "title": "Event planning",
+          "yearGroup": "Year 6",
+          "unitId": "PX25-Y6-U05"
+        },
+        {
+          "lessonId": "PX25-Y6-U05-L003",
+          "title": "Presenting data",
+          "yearGroup": "Year 6",
+          "unitId": "PX25-Y6-U05"
+        },
+        {
+          "lessonId": "PX25-Y7-U01-L004",
+          "title": "Summative Assesment",
+          "yearGroup": "Year 7",
+          "unitId": "PX25-Y7-U01"
+        },
+        {
+          "lessonId": "PX25-Y7-U06-L006",
+          "title": "Summative Assesment",
+          "yearGroup": "Year 7",
+          "unitId": "PX25-Y7-U06"
+        },
+        {
+          "lessonId": "PX25-Y7-U07-L001",
+          "title": "Creating and formating a spreadsheet.",
+          "yearGroup": "Year 7",
+          "unitId": "PX25-Y7-U07"
+        },
+        {
+          "lessonId": "PX25-Y7-U07-L002",
+          "title": "Quick calculations",
+          "yearGroup": "Year 7",
+          "unitId": "PX25-Y7-U07"
+        },
+        {
+          "lessonId": "PX25-Y7-U07-L003",
+          "title": "Collecting data",
+          "yearGroup": "Year 7",
+          "unitId": "PX25-Y7-U07"
+        },
+        {
+          "lessonId": "PX25-Y8-U04-L004",
+          "title": "Summative Assesment",
+          "yearGroup": "Year 8",
+          "unitId": "PX25-Y8-U04"
+        },
+        {
+          "lessonId": "PX25-Y8-U06-L001",
+          "title": "L1 Problem Solving",
+          "yearGroup": "Year 8",
+          "unitId": "PX25-Y8-U06"
+        },
+        {
+          "lessonId": "PX25-Y8-U06-L002",
+          "title": "Quick Calculations",
+          "yearGroup": "Year 8",
+          "unitId": "PX25-Y8-U06"
+        }
+      ]
+    },
+    {
+      "id": "CCO-DATABASES",
+      "name": "Databases",
+      "slug": "databases",
+      "type": "Canonical Concept Object",
+      "domain": "Computing",
+      "description": "Canonical Concept Object for Databases. Generated from PX-CDL lesson concepts and vocabulary.",
+      "status": "Generated",
+      "source": "PX-CDL v1.0 / Milestone 2 Relationship Engine",
+      "validationStatus": "Generated from teacher-authored progression; official mapping to be refined",
+      "lessonCount": 24,
+      "yearGroups": [
+        "Year 6",
+        "Year 12",
+        "Year 13"
+      ],
+      "keyStages": [
+        "KS2",
+        "KS5"
+      ],
+      "firstIntroduced": "Year 6",
+      "masteryCandidate": "Year 13",
+      "relatedConcepts": [
+        {
+          "conceptId": "CCO-BOOLEAN_LOGIC",
+          "name": "Boolean Logic",
+          "weight": 21
+        },
+        {
+          "conceptId": "CCO-DIGITAL_LITERACY",
+          "name": "Digital Literacy",
+          "weight": 9
+        },
+        {
+          "conceptId": "CCO-NETWORKS",
+          "name": "Networks",
+          "weight": 6
+        },
+        {
+          "conceptId": "CCO-COMPUTER_SYSTEMS",
+          "name": "Computer Systems",
+          "weight": 4
+        },
+        {
+          "conceptId": "CCO-ALGORITHMS",
+          "name": "Algorithms",
+          "weight": 3
+        },
+        {
+          "conceptId": "CCO-APP_DESIGN",
+          "name": "App Design",
+          "weight": 1
+        },
+        {
+          "conceptId": "CCO-SPREADSHEETS",
+          "name": "Spreadsheets",
+          "weight": 1
+        },
+        {
+          "conceptId": "CCO-PROGRAMMING",
+          "name": "Programming",
+          "weight": 1
+        }
+      ],
+      "sampleLessons": [
+        {
+          "lessonId": "PX25-Y6-U07-L001",
+          "title": "L1 \u2013 What Is a Database?",
+          "yearGroup": "Year 6",
+          "unitId": "PX25-Y6-U07"
+        },
+        {
+          "lessonId": "PX25-Y6-U07-L002",
+          "title": "L2 \u2013 Understanding Fields and Records",
+          "yearGroup": "Year 6",
+          "unitId": "PX25-Y6-U07"
+        },
+        {
+          "lessonId": "PX25-Y6-U07-L003",
+          "title": "L3 \u2013 How to Sort Information",
+          "yearGroup": "Year 6",
+          "unitId": "PX25-Y6-U07"
+        },
+        {
+          "lessonId": "PX25-Y6-U07-L004",
+          "title": "L4 \u2013 How to Search and Filter Data",
+          "yearGroup": "Year 6",
+          "unitId": "PX25-Y6-U07"
+        },
+        {
+          "lessonId": "PX25-Y6-U07-L005",
+          "title": "L5 \u2013 Designing Your Own Database",
+          "yearGroup": "Year 6",
+          "unitId": "PX25-Y6-U07"
+        },
+        {
+          "lessonId": "PX25-Y6-U07-L006",
+          "title": "L6 \u2013 Building Your Database",
+          "yearGroup": "Year 6",
+          "unitId": "PX25-Y6-U07"
+        },
+        {
+          "lessonId": "PX25-Y6-U07-L007",
+          "title": "L7 \u2013 Using Your Database to Answer Questions",
+          "yearGroup": "Year 6",
+          "unitId": "PX25-Y6-U07"
+        },
+        {
+          "lessonId": "PX25-Y6-U07-L008",
+          "title": "L8 \u2013 Sharing and Improving Your Database",
+          "yearGroup": "Year 6",
+          "unitId": "PX25-Y6-U07"
+        },
+        {
+          "lessonId": "PX25-Y12-U04-L001",
+          "title": "(a)The nature of applications, justifying suitable applications for a specific purpose.",
+          "yearGroup": "Year 12",
+          "unitId": "PX25-Y12-U04"
+        },
+        {
+          "lessonId": "PX25-Y12-U07-L001",
+          "title": "(a) Relational database, flat file",
+          "yearGroup": "Year 12",
+          "unitId": "PX25-Y12-U07"
+        },
+        {
+          "lessonId": "PX25-Y12-U07-L002",
+          "title": "(b) Primary key, foreign key, secondary key, entity relationship modelling",
+          "yearGroup": "Year 12",
+          "unitId": "PX25-Y12-U07"
+        },
+        {
+          "lessonId": "PX25-Y12-U07-L003",
+          "title": "(b) Methods of capturing, selecting, managing and exchanging data.",
+          "yearGroup": "Year 12",
+          "unitId": "PX25-Y12-U07"
+        }
+      ]
+    },
+    {
+      "id": "CCO-CYBER_SECURITY",
+      "name": "Cyber Security",
+      "slug": "cyber-security",
+      "type": "Canonical Concept Object",
+      "domain": "Computing",
+      "description": "Canonical Concept Object for Cyber Security. Generated from PX-CDL lesson concepts and vocabulary.",
+      "status": "Generated",
+      "source": "PX-CDL v1.0 / Milestone 2 Relationship Engine",
+      "validationStatus": "Generated from teacher-authored progression; official mapping to be refined",
+      "lessonCount": 16,
+      "yearGroups": [
+        "Year 7",
+        "Year 8",
+        "Year 9",
+        "Year 10",
+        "Year 11",
+        "Year 13"
+      ],
+      "keyStages": [
+        "KS3",
+        "KS4",
+        "KS5"
+      ],
+      "firstIntroduced": "Year 7",
+      "masteryCandidate": "Year 13",
+      "relatedConcepts": [
+        {
+          "conceptId": "CCO-BOOLEAN_LOGIC",
+          "name": "Boolean Logic",
+          "weight": 12
+        },
+        {
+          "conceptId": "CCO-NETWORKS",
+          "name": "Networks",
+          "weight": 7
+        },
+        {
+          "conceptId": "CCO-ONLINE_SAFETY",
+          "name": "Online Safety",
+          "weight": 5
+        },
+        {
+          "conceptId": "CCO-SPREADSHEETS",
+          "name": "Spreadsheets",
+          "weight": 3
+        },
+        {
+          "conceptId": "CCO-COMPUTER_SYSTEMS",
+          "name": "Computer Systems",
+          "weight": 1
+        },
+        {
+          "conceptId": "CCO-DATABASES",
+          "name": "Databases",
+          "weight": 1
+        },
+        {
+          "conceptId": "CCO-DATA_REPRESENTATION",
+          "name": "Data Representation",
+          "weight": 1
+        }
+      ],
+      "sampleLessons": [
+        {
+          "lessonId": "PX25-Y7-U01-L002",
+          "title": "Identify cyberbullying and how to report it",
+          "yearGroup": "Year 7",
+          "unitId": "PX25-Y7-U01"
+        },
+        {
+          "lessonId": "PX25-Y7-U01-L003",
+          "title": "Recognise phishing and fake content",
+          "yearGroup": "Year 7",
+          "unitId": "PX25-Y7-U01"
+        },
+        {
+          "lessonId": "PX25-Y8-U02-L001",
+          "title": "L3 Malware, Types",
+          "yearGroup": "Year 8",
+          "unitId": "PX25-Y8-U02"
+        },
+        {
+          "lessonId": "PX25-Y8-U02-L002",
+          "title": "L3 Malware, Types Assesment",
+          "yearGroup": "Year 8",
+          "unitId": "PX25-Y8-U02"
+        },
+        {
+          "lessonId": "PX25-Y8-U02-L003",
+          "title": "Malware, Phishing, and Staying Safe",
+          "yearGroup": "Year 8",
+          "unitId": "PX25-Y8-U02"
+        },
+        {
+          "lessonId": "PX25-Y8-U02-L004",
+          "title": "Malware, Phishing, and Staying Safe Assesment",
+          "yearGroup": "Year 8",
+          "unitId": "PX25-Y8-U02"
+        },
+        {
+          "lessonId": "PX25-Y9-U02-L001",
+          "title": "L1 Malware  Six types of Malware (a) Staying Safe (b) 4 ways malware can infect your system",
+          "yearGroup": "Year 9",
+          "unitId": "PX25-Y9-U02"
+        },
+        {
+          "lessonId": "PX25-Y9-U02-L002",
+          "title": "Summative Assesment",
+          "yearGroup": "Year 9",
+          "unitId": "PX25-Y9-U02"
+        },
+        {
+          "lessonId": "PX25-Y10-U05-L001",
+          "title": "4.1 - Network Threats",
+          "yearGroup": "Year 10",
+          "unitId": "PX25-Y10-U05"
+        },
+        {
+          "lessonId": "PX25-Y10-U05-L002",
+          "title": "4.2 - Preventing Vulnerabilities",
+          "yearGroup": "Year 10",
+          "unitId": "PX25-Y10-U05"
+        },
+        {
+          "lessonId": "PX25-Y10-U05-L003",
+          "title": "Summative Assesment",
+          "yearGroup": "Year 10",
+          "unitId": "PX25-Y10-U05"
+        },
+        {
+          "lessonId": "PX25-Y11-U05-L001",
+          "title": "4.1 - Network Threats",
+          "yearGroup": "Year 11",
+          "unitId": "PX25-Y11-U05"
+        }
+      ]
+    },
+    {
+      "id": "CCO-WEB_DEVELOPMENT",
+      "name": "Web Development",
+      "slug": "web-development",
+      "type": "Canonical Concept Object",
+      "domain": "Computing",
+      "description": "Canonical Concept Object for Web Development. Generated from PX-CDL lesson concepts and vocabulary.",
+      "status": "Generated",
+      "source": "PX-CDL v1.0 / Milestone 2 Relationship Engine",
+      "validationStatus": "Generated from teacher-authored progression; official mapping to be refined",
+      "lessonCount": 16,
+      "yearGroups": [
+        "Year 5",
+        "Year 6",
+        "Year 7",
+        "Year 8",
+        "Year 12",
+        "Year 13"
+      ],
+      "keyStages": [
+        "KS2",
+        "KS3",
+        "KS5"
+      ],
+      "firstIntroduced": "Year 5",
+      "masteryCandidate": "Year 13",
+      "relatedConcepts": [
+        {
+          "conceptId": "CCO-BOOLEAN_LOGIC",
+          "name": "Boolean Logic",
+          "weight": 16
+        },
+        {
+          "conceptId": "CCO-DATA_REPRESENTATION",
+          "name": "Data Representation",
+          "weight": 4
+        },
+        {
+          "conceptId": "CCO-NETWORKS",
+          "name": "Networks",
+          "weight": 3
+        },
+        {
+          "conceptId": "CCO-DIGITAL_LITERACY",
+          "name": "Digital Literacy",
+          "weight": 2
+        },
+        {
+          "conceptId": "CCO-ONLINE_SAFETY",
+          "name": "Online Safety",
+          "weight": 1
+        },
+        {
+          "conceptId": "CCO-COMPUTER_SYSTEMS",
+          "name": "Computer Systems",
+          "weight": 1
+        },
+        {
+          "conceptId": "CCO-DATABASES",
+          "name": "Databases",
+          "weight": 1
+        }
+      ],
+      "sampleLessons": [
+        {
+          "lessonId": "PX25-Y5-U01-L002",
+          "title": "Recognise trusted adults and websites",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U01"
+        },
+        {
+          "lessonId": "PX25-Y5-U06-L001",
+          "title": "L1 \u2013 What Is a Website?",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U06"
+        },
+        {
+          "lessonId": "PX25-Y5-U06-L002",
+          "title": "L2 \u2013 How Web Pages Work (HTML Basics)",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U06"
+        },
+        {
+          "lessonId": "PX25-Y5-U06-L003",
+          "title": "L3 \u2013 Creating a Simple Web Page",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U06"
+        },
+        {
+          "lessonId": "PX25-Y5-U06-L004",
+          "title": "L4 \u2013 Adding Text, Images, and Links",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U06"
+        },
+        {
+          "lessonId": "PX25-Y5-U06-L005",
+          "title": "L5 \u2013 Publishing and Sharing Your Web Page",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U06"
+        },
+        {
+          "lessonId": "PX25-Y6-U01-L007",
+          "title": "Spot fake websites and images",
+          "yearGroup": "Year 6",
+          "unitId": "PX25-Y6-U01"
+        },
+        {
+          "lessonId": "PX25-Y6-U02-L001",
+          "title": "Use Google Sites for Web Pages, Creating a WebPage, Templates.",
+          "yearGroup": "Year 6",
+          "unitId": "PX25-Y6-U02"
+        },
+        {
+          "lessonId": "PX25-Y6-U02-L002",
+          "title": "Adding text,  media and Sharing.",
+          "yearGroup": "Year 6",
+          "unitId": "PX25-Y6-U02"
+        },
+        {
+          "lessonId": "PX25-Y7-U05-L005",
+          "title": "The world wide web",
+          "yearGroup": "Year 7",
+          "unitId": "PX25-Y7-U05"
+        },
+        {
+          "lessonId": "PX25-Y8-U03-L001",
+          "title": "\u2013 Introduction to Web Pages (HTML Basics)",
+          "yearGroup": "Year 8",
+          "unitId": "PX25-Y8-U03"
+        },
+        {
+          "lessonId": "PX25-Y8-U03-L002",
+          "title": "Structuring Content with HTML",
+          "yearGroup": "Year 8",
+          "unitId": "PX25-Y8-U03"
+        }
+      ]
+    },
+    {
+      "id": "CCO-ONLINE_SAFETY",
+      "name": "Online Safety",
+      "slug": "online-safety",
+      "type": "Canonical Concept Object",
+      "domain": "Computing",
+      "description": "Canonical Concept Object for Online Safety. Generated from PX-CDL lesson concepts and vocabulary.",
+      "status": "Generated",
+      "source": "PX-CDL v1.0 / Milestone 2 Relationship Engine",
+      "validationStatus": "Generated from teacher-authored progression; official mapping to be refined",
+      "lessonCount": 15,
+      "yearGroups": [
+        "Year 5",
+        "Year 7",
+        "Year 8",
+        "Year 9",
+        "Year 12"
+      ],
+      "keyStages": [
+        "KS2",
+        "KS3",
+        "KS5"
+      ],
+      "firstIntroduced": "Year 5",
+      "masteryCandidate": "Year 12",
+      "relatedConcepts": [
+        {
+          "conceptId": "CCO-BOOLEAN_LOGIC",
+          "name": "Boolean Logic",
+          "weight": 12
+        },
+        {
+          "conceptId": "CCO-CYBER_SECURITY",
+          "name": "Cyber Security",
+          "weight": 5
+        },
+        {
+          "conceptId": "CCO-DIGITAL_LITERACY",
+          "name": "Digital Literacy",
+          "weight": 3
+        },
+        {
+          "conceptId": "CCO-COMPUTER_SYSTEMS",
+          "name": "Computer Systems",
+          "weight": 2
+        },
+        {
+          "conceptId": "CCO-NETWORKS",
+          "name": "Networks",
+          "weight": 1
+        },
+        {
+          "conceptId": "CCO-WEB_DEVELOPMENT",
+          "name": "Web Development",
+          "weight": 1
+        },
+        {
+          "conceptId": "CCO-PROGRAMMING",
+          "name": "Programming",
+          "weight": 1
+        },
+        {
+          "conceptId": "CCO-AI",
+          "name": "AI",
+          "weight": 1
+        }
+      ],
+      "sampleLessons": [
+        {
+          "lessonId": "PX25-Y5-U01-L001",
+          "title": "Know how to stay safe online and use kind language",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U01"
+        },
+        {
+          "lessonId": "PX25-Y5-U01-L002",
+          "title": "Recognise trusted adults and websites",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U01"
+        },
+        {
+          "lessonId": "PX25-Y5-U01-L003",
+          "title": "Understand why passwords matter",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U01"
+        },
+        {
+          "lessonId": "PX25-Y5-U01-L004",
+          "title": "Identify input and output devices",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U01"
+        },
+        {
+          "lessonId": "PX25-Y5-U01-L005",
+          "title": "(a)Understand how we use technology in school and home.\n(b) Use a word processor to type and edit text\n(c) Use a paint or drawing tool to create digital art",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U01"
+        },
+        {
+          "lessonId": "PX25-Y5-U01-L006",
+          "title": "File names, folders, and saving work",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U01"
+        },
+        {
+          "lessonId": "PX25-Y5-U01-L007",
+          "title": "Create a digital poster on safety",
+          "yearGroup": "Year 5",
+          "unitId": "PX25-Y5-U01"
+        },
+        {
+          "lessonId": "PX25-Y7-U01-L001",
+          "title": "Understand personal information and digital footprint",
+          "yearGroup": "Year 7",
+          "unitId": "PX25-Y7-U01"
+        },
+        {
+          "lessonId": "PX25-Y7-U01-L002",
+          "title": "Identify cyberbullying and how to report it",
+          "yearGroup": "Year 7",
+          "unitId": "PX25-Y7-U01"
+        },
+        {
+          "lessonId": "PX25-Y7-U01-L003",
+          "title": "Recognise phishing and fake content",
+          "yearGroup": "Year 7",
+          "unitId": "PX25-Y7-U01"
+        },
+        {
+          "lessonId": "PX25-Y7-U01-L004",
+          "title": "Summative Assesment",
+          "yearGroup": "Year 7",
+          "unitId": "PX25-Y7-U01"
+        },
+        {
+          "lessonId": "PX25-Y8-U02-L003",
+          "title": "Malware, Phishing, and Staying Safe",
+          "yearGroup": "Year 8",
+          "unitId": "PX25-Y8-U02"
+        }
+      ]
+    },
+    {
+      "id": "CCO-APP_DESIGN",
+      "name": "App Design",
+      "slug": "app-design",
+      "type": "Canonical Concept Object",
+      "domain": "Computing",
+      "description": "Canonical Concept Object for App Design. Generated from PX-CDL lesson concepts and vocabulary.",
+      "status": "Generated",
+      "source": "PX-CDL v1.0 / Milestone 2 Relationship Engine",
+      "validationStatus": "Generated from teacher-authored progression; official mapping to be refined",
+      "lessonCount": 14,
+      "yearGroups": [
+        "Year 6",
+        "Year 8",
+        "Year 10",
+        "Year 11",
+        "Year 12"
+      ],
+      "keyStages": [
+        "KS2",
+        "KS3",
+        "KS4",
+        "KS5"
+      ],
+      "firstIntroduced": "Year 6",
+      "masteryCandidate": "Year 12",
+      "relatedConcepts": [
+        {
+          "conceptId": "CCO-PROGRAMMING",
+          "name": "Programming",
+          "weight": 7
+        },
+        {
+          "conceptId": "CCO-BOOLEAN_LOGIC",
+          "name": "Boolean Logic",
+          "weight": 5
+        },
+        {
+          "conceptId": "CCO-COMPUTER_SYSTEMS",
+          "name": "Computer Systems",
+          "weight": 4
+        },
+        {
+          "conceptId": "CCO-ALGORITHMS",
+          "name": "Algorithms",
+          "weight": 3
+        },
+        {
+          "conceptId": "CCO-DIGITAL_LITERACY",
+          "name": "Digital Literacy",
+          "weight": 2
+        },
+        {
+          "conceptId": "CCO-DATABASES",
+          "name": "Databases",
+          "weight": 1
+        },
+        {
+          "conceptId": "CCO-SPREADSHEETS",
+          "name": "Spreadsheets",
+          "weight": 1
+        },
+        {
+          "conceptId": "CCO-ETHICS_AND_LAW",
+          "name": "Ethics and Law",
+          "weight": 1
+        }
+      ],
+      "sampleLessons": [
+        {
+          "lessonId": "PX25-Y6-U04-L002",
+          "title": "Becoming a games designer",
+          "yearGroup": "Year 6",
+          "unitId": "PX25-Y6-U04"
+        },
+        {
+          "lessonId": "PX25-Y6-U04-L003",
+          "title": "Design to code",
+          "yearGroup": "Year 6",
+          "unitId": "PX25-Y6-U04"
+        },
+        {
+          "lessonId": "PX25-Y6-U07-L005",
+          "title": "L5 \u2013 Designing Your Own Database",
+          "yearGroup": "Year 6",
+          "unitId": "PX25-Y6-U07"
+        },
+        {
+          "lessonId": "PX25-Y8-U04-L001",
+          "title": "What Makes a Good App?",
+          "yearGroup": "Year 8",
+          "unitId": "PX25-Y8-U04"
+        },
+        {
+          "lessonId": "PX25-Y8-U04-L002",
+          "title": "Introduction to App Lab Interface",
+          "yearGroup": "Year 8",
+          "unitId": "PX25-Y8-U04"
+        },
+        {
+          "lessonId": "PX25-Y8-U04-L003",
+          "title": "Building a Simple Multi-Screen App",
+          "yearGroup": "Year 8",
+          "unitId": "PX25-Y8-U04"
+        },
+        {
+          "lessonId": "PX25-Y8-U04-L004",
+          "title": "Summative Assesment",
+          "yearGroup": "Year 8",
+          "unitId": "PX25-Y8-U04"
+        },
+        {
+          "lessonId": "PX25-Y10-U09-L002",
+          "title": "1.2 - Designing Algorithms",
+          "yearGroup": "Year 10",
+          "unitId": "PX25-Y10-U09"
+        },
+        {
+          "lessonId": "PX25-Y10-U11-L001",
+          "title": "3.1 - Defensive Design",
+          "yearGroup": "Year 10",
+          "unitId": "PX25-Y10-U11"
+        },
+        {
+          "lessonId": "PX25-Y11-U08-L002",
+          "title": "1.2 - Designing Algorithms",
+          "yearGroup": "Year 11",
+          "unitId": "PX25-Y11-U08"
+        },
+        {
+          "lessonId": "PX25-Y11-U10-L001",
+          "title": "3.1 - Defensive Design",
+          "yearGroup": "Year 11",
+          "unitId": "PX25-Y11-U10"
+        },
+        {
+          "lessonId": "PX25-Y11-U25-L001",
+          "title": "a. Graphical User Interface",
+          "yearGroup": "Year 11",
+          "unitId": "PX25-Y11-U25"
+        }
+      ]
+    },
+    {
+      "id": "CCO-ETHICS_AND_LAW",
+      "name": "Ethics and Law",
+      "slug": "ethics-and-law",
+      "type": "Canonical Concept Object",
+      "domain": "Computing",
+      "description": "Canonical Concept Object for Ethics and Law. Generated from PX-CDL lesson concepts and vocabulary.",
+      "status": "Generated",
+      "source": "PX-CDL v1.0 / Milestone 2 Relationship Engine",
+      "validationStatus": "Generated from teacher-authored progression; official mapping to be refined",
+      "lessonCount": 13,
+      "yearGroups": [
+        "Year 6",
+        "Year 10",
+        "Year 11",
+        "Year 12",
+        "Year 13"
+      ],
+      "keyStages": [
+        "KS2",
+        "KS4",
+        "KS5"
+      ],
+      "firstIntroduced": "Year 6",
+      "masteryCandidate": "Year 13",
+      "relatedConcepts": [
+        {
+          "conceptId": "CCO-BOOLEAN_LOGIC",
+          "name": "Boolean Logic",
+          "weight": 6
+        },
+        {
+          "conceptId": "CCO-NETWORKS",
+          "name": "Networks",
+          "weight": 2
+        },
+        {
+          "conceptId": "CCO-AI",
+          "name": "AI",
+          "weight": 1
+        },
+        {
+          "conceptId": "CCO-SPREADSHEETS",
+          "name": "Spreadsheets",
+          "weight": 1
+        },
+        {
+          "conceptId": "CCO-APP_DESIGN",
+          "name": "App Design",
+          "weight": 1
+        },
+        {
+          "conceptId": "CCO-ONLINE_SAFETY",
+          "name": "Online Safety",
+          "weight": 1
+        }
+      ],
+      "sampleLessons": [
+        {
+          "lessonId": "PX25-Y6-U01-L005",
+          "title": "Understand copyright and fair use",
+          "yearGroup": "Year 6",
+          "unitId": "PX25-Y6-U01"
+        },
+        {
+          "lessonId": "PX25-Y10-U07-L001",
+          "title": "6.1a - Impacts of Technology",
+          "yearGroup": "Year 10",
+          "unitId": "PX25-Y10-U07"
+        },
+        {
+          "lessonId": "PX25-Y10-U07-L002",
+          "title": "6.1b - Legislation",
+          "yearGroup": "Year 10",
+          "unitId": "PX25-Y10-U07"
+        },
+        {
+          "lessonId": "PX25-Y10-U13-L001",
+          "title": "5.1 - Languages & Translators                                  5.2 - Integrated Development Environment",
+          "yearGroup": "Year 10",
+          "unitId": "PX25-Y10-U13"
+        },
+        {
+          "lessonId": "PX25-Y11-U07-L001",
+          "title": "6.1a - Impacts of Technology",
+          "yearGroup": "Year 11",
+          "unitId": "PX25-Y11-U07"
+        },
+        {
+          "lessonId": "PX25-Y11-U07-L002",
+          "title": "6.1b - Legislation",
+          "yearGroup": "Year 11",
+          "unitId": "PX25-Y11-U07"
+        },
+        {
+          "lessonId": "PX25-Y11-U07-L003",
+          "title": "Summative Assesment",
+          "yearGroup": "Year 11",
+          "unitId": "PX25-Y11-U07"
+        },
+        {
+          "lessonId": "PX25-Y11-U12-L002",
+          "title": "5.2 - Integrated Development Environment",
+          "yearGroup": "Year 11",
+          "unitId": "PX25-Y11-U12"
+        },
+        {
+          "lessonId": "PX25-Y11-U13-L001",
+          "title": "11.1 - Impacts of Technology",
+          "yearGroup": "Year 11",
+          "unitId": "PX25-Y11-U13"
+        },
+        {
+          "lessonId": "PX25-Y11-U13-L002",
+          "title": "11.2 - Legislation",
+          "yearGroup": "Year 11",
+          "unitId": "PX25-Y11-U13"
+        },
+        {
+          "lessonId": "PX25-Y12-U13-L001",
+          "title": "(a) The Data Protection Act 1998.                                  (b) The Computer Misuse Act 1990.                                   (c) The Copyright Design and Patents Act 1988.                                   (d) The Regulation of Investigatory Powers Act 2000.",
+          "yearGroup": "Year 12",
+          "unitId": "PX25-Y12-U13"
+        },
+        {
+          "lessonId": "PX25-Y13-U09-L001",
+          "title": "5.1 - Computing-Related Legislation",
+          "yearGroup": "Year 13",
+          "unitId": "PX25-Y13-U09"
+        }
+      ]
+    },
+    {
+      "id": "CCO-COMPUTING",
+      "name": "Computing",
+      "slug": "computing",
+      "type": "Canonical Concept Object",
+      "domain": "Computing",
+      "description": "Canonical Concept Object for Computing. Generated from PX-CDL lesson concepts and vocabulary.",
+      "status": "Generated",
+      "source": "PX-CDL v1.0 / Milestone 2 Relationship Engine",
+      "validationStatus": "Generated from teacher-authored progression; official mapping to be refined",
+      "lessonCount": 9,
+      "yearGroups": [
+        "Year 9",
+        "Year 11",
+        "Year 12"
+      ],
+      "keyStages": [
+        "KS3",
+        "KS4",
+        "KS5"
+      ],
+      "firstIntroduced": "Year 9",
+      "masteryCandidate": "Year 12",
+      "relatedConcepts": [],
+      "sampleLessons": [
+        {
+          "lessonId": "PX25-Y9-U07-L001",
+          "title": "Getting Started with Tkinter",
+          "yearGroup": "Year 9",
+          "unitId": "PX25-Y9-U07"
+        },
+        {
+          "lessonId": "PX25-Y9-U07-L005",
+          "title": "Mini-Project: Build a Simple App",
+          "yearGroup": "Year 9",
+          "unitId": "PX25-Y9-U07"
+        },
+        {
+          "lessonId": "PX25-Y11-U21-L003",
+          "title": "Section 7 Practice Tasks",
+          "yearGroup": "Year 11",
+          "unitId": "PX25-Y11-U21"
+        },
+        {
+          "lessonId": "PX25-Y11-U22-L001",
+          "title": "a. Using Lists",
+          "yearGroup": "Year 11",
+          "unitId": "PX25-Y11-U22"
+        },
+        {
+          "lessonId": "PX25-Y11-U22-L002",
+          "title": "b. 2D Lists",
+          "yearGroup": "Year 11",
+          "unitId": "PX25-Y11-U22"
+        },
+        {
+          "lessonId": "PX25-Y11-U22-L003",
+          "title": "c. Dictionaries",
+          "yearGroup": "Year 11",
+          "unitId": "PX25-Y11-U22"
+        },
+        {
+          "lessonId": "PX25-Y11-U22-L004",
+          "title": "Section 8 Practice Tasks",
+          "yearGroup": "Year 11",
+          "unitId": "PX25-Y11-U22"
+        },
+        {
+          "lessonId": "PX25-Y12-U04-L002",
+          "title": "(b)Utilities.",
+          "yearGroup": "Year 12",
+          "unitId": "PX25-Y12-U04"
+        },
+        {
+          "lessonId": "PX25-Y12-U04-L003",
+          "title": "(c) Open source vs closed source.",
+          "yearGroup": "Year 12",
+          "unitId": "PX25-Y12-U04"
+        }
+      ]
+    }
+  ]
+}

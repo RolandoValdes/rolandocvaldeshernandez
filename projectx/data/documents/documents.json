@@ -64,6 +64,41 @@
       "status": "Pass",
       "description": "Validation report for the populated curriculum package.",
       "url": "/rolandocvaldeshernandez/projectx/documents/reports/CURRICULUM_INTEGRITY_REPORT_2025_2026.md"
+    },
+    {
+      "id": "MILESTONE-2",
+      "title": "Milestone 2 \u2014 Teaching Intelligence",
+      "category": "Milestones",
+      "path": "documents/milestones/MILESTONE_2_COMPLETION.md",
+      "status": "Complete"
+    },
+    {
+      "id": "ADR-0015",
+      "title": "ADR-0015 \u2014 Teaching Intelligence Engine",
+      "category": "ADRs",
+      "path": "documents/architecture/ADR-0015-teaching-intelligence-engine.md",
+      "status": "Accepted"
+    },
+    {
+      "id": "CCO-SPEC",
+      "title": "Canonical Concept Object Specification",
+      "category": "Technical Specifications",
+      "path": "documents/specifications/CANONICAL_CONCEPT_OBJECT_SPECIFICATION.md",
+      "status": "Current"
+    },
+    {
+      "id": "KG-SPEC",
+      "title": "Knowledge Graph Specification",
+      "category": "Technical Specifications",
+      "path": "documents/specifications/KNOWLEDGE_GRAPH_SPECIFICATION.md",
+      "status": "Current"
+    },
+    {
+      "id": "TIE-REPORT",
+      "title": "Teaching Intelligence Report 2025\u20132026",
+      "category": "Reports",
+      "path": "documents/reports/TEACHING_INTELLIGENCE_REPORT_2025_2026.md",
+      "status": "Complete"
     }
   ]
 }
