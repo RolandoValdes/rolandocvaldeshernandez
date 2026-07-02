@@ -1,0 +1,14 @@
+{
+  "id": "project-x-story-v1",
+  "title": "The Story of Project X",
+  "category": "Platform Vision",
+  "version": "1.0",
+  "status": "Released",
+  "audience": ["Recruiters", "Headteachers", "Teachers", "School Leaders"],
+  "summary": "The evolution of Project X into a Teaching Operating System built around curriculum intelligence, professional knowledge and personalised learning pathways.",
+  "audio": "../../assets/media/audio/project-x-story-v1.m4a",
+  "video": "../../assets/media/video/project-x-story-v1.mp4",
+  "infographic": "../../assets/media/infographics/project-x-story-v1.png",
+  "script": "../../assets/media/scripts/project-x-story-v1.md",
+  "tags": ["Vision", "Teaching OS", "Knowledge Graph", "Personalised Learning", "Project X"]
+}
